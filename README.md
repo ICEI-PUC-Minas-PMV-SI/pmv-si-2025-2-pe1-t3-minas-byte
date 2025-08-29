@@ -1,4 +1,4 @@
-# Título do Projeto
+# InovaEla
 
 `CURSO: Sistemas de Informação`
 
@@ -6,7 +6,7 @@
 
 `SEMESTRE: 1º`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Este projeto tem como objetivo identificar, dar visibilidade e combater as diversas formas de vulnerabilidade enfrentadas por mulheres em situação de vulnerabilidade social, financeira e oportunidades de trabalho. A iniciativa promove ações de acolhimento e capacitação profissional, buscando fortalecer a autonomia feminina e ampliar as redes e apoio.
 
 ## Integrantes
 
