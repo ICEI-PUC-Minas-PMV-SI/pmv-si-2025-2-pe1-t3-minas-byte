@@ -10,12 +10,12 @@ Este projeto tem como objetivo identificar, dar visibilidade e combater as diver
 
 ## Integrantes
 
-* Raphaela Luiza Vargas Marcolino
-* Matheus Henrique Santos Silva
-* Isabelly Guimaraes Coelho
-* Stanley Wallace Rodrigues Belo
 * Giovana Carolina Ferreira Moser
-
+* Isabelly Guimaraes Coelho
+* Matheus Henrique Santos Silva
+* Raphaela Luiza Vargas Marcolino
+* Stanley Wallace Rodrigues Belo
+  
 
 ## Orientador
 
