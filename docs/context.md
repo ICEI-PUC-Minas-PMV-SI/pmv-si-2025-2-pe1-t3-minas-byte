@@ -5,6 +5,8 @@
  Essas dificuldades estruturais criam um ciclo de pobreza que torna ainda mais difícil para elas conquistarem independência econômica e social. Quando falta autonomia financeira, muitas mulheres ficam presas em relacionamentos abusivos e têm dificuldades para buscar educação, saúde e melhores condições de vida para si mesmas e seus filhos.
 Este projeto tem como enfoque principal promover a autonomia delas e a inclusão na sociedade, assim como no mercado de trabalho.
 
+## Problemas
+
 
 ## Objetivos
 
