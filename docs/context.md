@@ -1,13 +1,10 @@
 # InovaEla
 
  A vulnerabilidade social e financeira que afeta muitas mulheres ao redor do mundo vai além da questão do dinheiro. Ela envolve também a dificuldade de acessar recursos essenciais, oportunidades e direitos básicos. Problemas como a desigualdade de gênero, a violência doméstica, a discriminação no mercado de e a sobrecarga de tarefas não remuneradas, cuidar da família e da, são alguns dos principais motivos que colocam muitas mulheres em uma situação de fragilidade.
+ 
  Essas dificuldades estruturais criam um ciclo de pobreza que torna ainda mais difícil para elas conquistarem independência econômica e social. Quando falta autonomia financeira, muitas mulheres ficam presas em relacionamentos abusivos e têm dificuldades para buscar educação, saúde e melhores condições de vida para si mesmas e seus filhos.
 Este projeto tem como enfoque principal promover a autonomia delas e a inclusão na sociedade, assim como no mercado de trabalho.
 
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
 
 ## Objetivos
 
