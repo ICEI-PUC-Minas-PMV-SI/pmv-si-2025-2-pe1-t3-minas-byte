@@ -1,4 +1,4 @@
-# InovaEla
+# Introdução
 
  A vulnerabilidade social e financeira que afeta muitas mulheres ao redor do mundo vai além da questão do dinheiro. Ela envolve também a dificuldade de acessar recursos essenciais, oportunidades e direitos básicos. Problemas como a desigualdade de gênero, a violência doméstica, a discriminação no mercado de e a sobrecarga de tarefas não remuneradas, cuidar da família e da, são alguns dos principais motivos que colocam muitas mulheres em uma situação de fragilidade.
  
