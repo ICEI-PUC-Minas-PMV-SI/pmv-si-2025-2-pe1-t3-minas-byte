@@ -12,10 +12,10 @@ O contexto da aplicação é, fornecer cursos profissionalizantes e auxilio na i
 
 ## Objetivos
 
-# Objetivo Geral
+### Objetivo Geral
 Oferecer qualificação acessível para mulheres em situação de vulnerabilidade na cidade do Rio de Janeiro.
 
-# Objetivos Específicos
+### Objetivos Específicos
 - Estimular a educação contínua como ferramenta de transformação social.
 - Promover o ensino de conhecimentos técnicos e práticos voltados para a inserção no mercado de trabalho.
 - Incentivar o aprendizado de valores como autonomia, solidariedade e autoconfiança.
