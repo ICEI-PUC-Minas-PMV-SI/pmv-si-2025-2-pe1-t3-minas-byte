@@ -7,6 +7,8 @@ Este projeto tem como enfoque principal promover a autonomia delas e a inclusão
 
 ## Problemas
 
+Muitas mulheres em situação de vulnerabilidade social — como mães solo, desempregadas de longa duração ou em contextos de baixa renda — enfrentam barreiras significativas para conquistar autonomia econômica e inserção no mercado de trabalho.
+O contexto da aplicação é, fornecer cursos profissionalizantes e auxilio na inserção no mercado de trabalho na área da tecnologia para mulheres de baixa renda e que nunca tiveram a oportunidade de ter acesso as ferramentas necessárias para se profissionalizar.
 
 ## Objetivos
 
