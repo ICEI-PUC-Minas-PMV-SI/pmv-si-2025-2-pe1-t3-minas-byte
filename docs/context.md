@@ -12,12 +12,14 @@ O contexto da aplicação é, fornecer cursos profissionalizantes e auxilio na i
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+# Objetivo Geral
+Oferecer qualificação acessível para mulheres em situação de vulnerabilidade na cidade do Rio de Janeiro.
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+# Objetivos Específicos
+- Estimular a educação contínua como ferramenta de transformação social.
+- Promover o ensino de conhecimentos técnicos e práticos voltados para a inserção no mercado de trabalho.
+- Incentivar o aprendizado de valores como autonomia, solidariedade e autoconfiança.
+- Monitorar e avaliar os resultados dos programas, garantindo melhorias contínuas.
 
 ## Justificativa
 
