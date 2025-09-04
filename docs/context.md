@@ -23,14 +23,13 @@ Oferecer qualificação acessível para mulheres em situação de vulnerabilidad
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+O projeto Inova Ela nasceu para enfrentar um problema que atinge milhares de mulheres no Rio de Janeiro: a falta de qualificação profissional e de autonomia financeira. Muitas delas, especialmente mulheres negras, enfrentam dificuldade para estudar e conseguir um emprego digno, mesmo tendo vontade e capacidade de aprender. 
 
-Lembre-se de pesquisar e utilizar números que justifiquem por que é importante que tal problema seja resolvido ou que mostrem o impacto do problema na vida das pessoas.
+Os números mostram essa realidade, segundo o IBGE (2022), mais de 40% das famílias chefiadas por mulheres negras e pardas vivem abaixo da linha da pobreza. Ainda assim, o desejo de mudar existe, uma pesquisa feita Instituto Carlos Chagas (2023) revelou que 82,5% das mulheres com ensino básico incompleto sonham em retomar os estudos e buscar qualificação. Isso prova que o problema não é falta de interesse, mas a falta de oportunidade. 
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
-
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+A tecnologia pode ser a chave para mudança, o setor cresce rápido e precisa de profissionais, mas as mulheres em vulnerabilidade raramente têm acesso a essa oportunidade. Até 2025, segundo a Brasscom (2022) o Brasil abrirá mais de 530 mil vagas em TI. 
+ 
+Com cursos digitais gratuitos, o Inova Ela permite que essas mulheres estudem de casa, conciliem com sua rotina e, ao final, encontrem espaço em empresas parceiras. Mais do que formação, o projeto quer oferecer autonomia, inclusão e a chance real de transformar vidas. 
 
 ## Público-Alvo
 
