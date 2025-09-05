@@ -33,12 +33,51 @@ Com cursos digitais gratuitos, o Inova Ela permite que essas mulheres estudem de
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações hierárquicas, etc.
+A plataforma de qualificação tem como público-alvo mulheres em situação de vulnerabilidade social residentes no estado do Rio de Janeiro. Esse grupo inclui mulheres que enfrentam dificuldades econômicas, sociais e educacionais, muitas vezes com acesso restrito a oportunidades de capacitação, emprego e empreendedorismo. 
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
+O objetivo principal da plataforma é promover a inclusão digital e educacional, oferecendo cursos, trilhas de aprendizado e conteúdos interativos que possibilitem o desenvolvimento de habilidades técnicas e comportamentais, contribuindo para a autonomia financeira e a melhoria da qualidade de vida dessas mulheres. 
 
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+
+**Características do Público-Alvo**
+
+•	Mulheres em situação de vulnerabilidade social, econômica ou educacional. 
+
+•	Residentes, prioritariamente, no estado do Rio de Janeiro. 
+
+•	Muitas têm acesso limitado à internet e a dispositivos digitais. 
+
+•	Parte significativa possui baixo nível de escolaridade e pouca experiência com plataformas online. 
+
+•	Buscam oportunidades de capacitação e geração de renda para melhorar sua condição de vida. 
+
+•	Algumas já atuam em pequenos negócios ou no mercado informal e buscam se profissionalizar. 
+
+ 
+**Conhecimento Prévio e Relação com a Tecnologia**
+
+O nível de familiaridade com tecnologia entre essas mulheres é variado: 
+
+•	Uma parte tem pouca ou nenhuma experiência com computadores, celulares e plataformas digitais. 
+
+•	Outra parte utiliza aplicativos básicos (WhatsApp, redes sociais), mas ainda não tem autonomia para estudar online. 
+
+•	A plataforma deve ser intuitiva, acessível e responsiva, permitindo fácil navegação mesmo para quem tem pouco contato com tecnologia. 
+
+•	É essencial disponibilizar recursos inclusivos, como linguagem simples, design amigável e tutoriais para orientar o uso. 
+
+
+**Necessidades do Público-Alvo **
+
+Para atender adequadamente esse grupo, a plataforma deve contemplar os seguintes pontos: 
+
+•	Acesso facilitado a cursos e trilhas de aprendizado em áreas como informática, empreendedorismo, educação financeira, marketing digital, entre outros. 
+
+•	Interface simples e intuitiva, com design acessível e navegação descomplicada. 
+
+•	Recursos multimídia (vídeos, áudios, materiais visuais) para facilitar o aprendizado, considerando diferentes níveis de escolaridade. 
+
+•	Certificação dos cursos, valorizando o aprendizado e aumentando as chances de inserção no mercado de trabalho. 
+
+•	Ferramentas de acompanhamento do progresso individual, motivando a continuidade dos estudos. 
+
+•	Suporte digital para tirar dúvidas e auxiliar mulheres com baixa familiaridade com tecnologia. 
