@@ -66,7 +66,7 @@ O nível de familiaridade com tecnologia entre essas mulheres é variado:
 •	É essencial disponibilizar recursos inclusivos, como linguagem simples, design amigável e tutoriais para orientar o uso. 
 
 
-**Necessidades do Público-Alvo **
+**Necessidades do Público-Alvo**
 
 Para atender adequadamente esse grupo, a plataforma deve contemplar os seguintes pontos: 
 
