@@ -50,7 +50,7 @@ O objetivo principal da plataforma é promover a inclusão digital e educacional
 
 •	Buscam oportunidades de capacitação e geração de renda para melhorar sua condição de vida. 
 
-•	Algumas já atuam em pequenos negócios ou no mercado informal e buscam se profissionalizar. 
+•	Algumas já atuam em pequenos negócios ou no mercado informal e buscam se profissionalizar.  
 
  
 **Conhecimento Prévio e Relação com a Tecnologia**
@@ -63,7 +63,7 @@ O nível de familiaridade com tecnologia entre essas mulheres é variado:
 
 •	A plataforma deve ser intuitiva, acessível e responsiva, permitindo fácil navegação mesmo para quem tem pouco contato com tecnologia. 
 
-•	É essencial disponibilizar recursos inclusivos, como linguagem simples, design amigável e tutoriais para orientar o uso. 
+•	É essencial disponibilizar recursos inclusivos, como linguagem simples, design amigável e tutoriais para orientar o uso.  
 
 
 **Necessidades do Público-Alvo**
