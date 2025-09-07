@@ -1,10 +1,23 @@
 # Especificações do Projeto
 
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
+Visão Geral 
 
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto.
+Na etapa de Especificações do Projeto, buscamos transformar ideias em soluções concretas, traduzindo necessidades reais em funcionalidades e propostas de valor. Para isso, exploramos diferentes caminhos criativos utilizando entrevistas qualitativas, matriz CSD, Mapa de Stakeholders, personas, proposta de valor, brainstorming e brainwriting, mural de possibilidades, histórias de usuários e mapa de priorização de ideias.
 
-Caso deseje atribuir uma imagem a sua persona, utilize o site https://thispersondoesnotexist.com/
+Definição do Problema 
+
+Mulheres em situação de vulnerabilidade social e/ou baixa renda encontram dificuldades para acessar cursos de qualidade, acessíveis e práticos, que permitam sua profissionalização rápida e inserção no mercado de trabalho. Além disso, enfrentam barreiras como falta de apoio familiar, limitações financeiras, pouco tempo disponível e baixo conhecimento tecnológico. 
+
+Ideia de Solução 
+
+Desenvolver uma plataforma de aprendizado em tecnologia, intuitiva e acessível, que ofereça: 
+
+- Trilhas de cursos rápidos e gratuitos. 
+- Mentorias e conteúdos práticos voltados à empregabilidade. 
+- Recursos offline para estudo sem internet. 
+- Banco de talentos interno, conectado a empresas parceiras. 
+- Marketplace de serviços digitais, permitindo que alunas ofertem trabalhos e gerem renda. 
+- Espaço de comunidade para troca de experiências e rede de apoio. 
 
 ## Personas
 
