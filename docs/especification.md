@@ -30,7 +30,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Uma mulher de 40 anos sem muito contato com tecnologia|Uma plataforma fácil de usar e intuitiva|Me realocar no mercado de trabalho utilizado a tecnologia.|
 |Mulher sem muito conhecimento técnico|Um quiz de recomendação de trilhas|Iniciar os cursos no meu nível de conhecimento.|
 
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
+<!-- Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento. -->
 
 
 ## Requisitos
