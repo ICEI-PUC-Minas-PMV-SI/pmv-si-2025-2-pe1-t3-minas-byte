@@ -11,6 +11,7 @@ Este projeto tem como objetivo identificar, dar visibilidade e combater as diver
 ## Integrantes
 
 * Giovana Carolina Ferreira Moser
+* Guilherme dos Santos Guimarães
 * Isabelly Guimaraes Coelho
 * Matheus Henrique Santos Silva
 * Raphaela Luiza Vargas Marcolino
