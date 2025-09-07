@@ -8,19 +8,11 @@ Caso deseje atribuir uma imagem a sua persona, utilize o site https://thisperson
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+Beatriz Santos, 33 anos, é uma mãe solo desempregada, dedicada ao cuidado ao filho, mantendo a vontade de aprender e avançar profissionalmente. Ela busca uma profissão que ofereça estabilidade e flexibilidade, de modo que possa estudar enquanto cumpre suas responsabilidades familiares. Usa seu notebook antigo para ajudar nas tarefas e assistir aulas online. Beatriz quer reconquistar sua autoestima e se sentir confiante ao ingressar no mercado de trabalho. Para isso, precisa de um serviço que lhe ofereça qualificação profissional acessível, que seja empático e respeite seu tempo e situação, com orientação clara, personalizada e acolhedora.
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+Gabriela Almeida, 24 anos, é uma jovem criativa que trabalha informalmente como atendente e busca estabilidade financeira para conquistar independência. Apaixonada por desenho e artesanato, ela deseja transformar seu hobby em fonte de renda, adquirindo novas habilidades em design. Convive com ansiedade pela falta de apoio familiar e de estabilidade profissional. Gabriela precisa de um serviço que a oriente a organizar, divulgar e profissionalizar seus trabalhos, sempre com incentivo e reconhecimento de seu talento, para que desenvolva autoconfiança e cresça no mercado de forma sustentável.
 
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+Julia Souza, 20 anos, trabalha como recepcionista e tem como hobby a leitura, que utiliza como forma de aprendizado. Focada no futuro e no desejo de crescer, ela busca aprender tecnologia de maneira simples e prática, além de desenvolver hábitos de estudo e disciplina. Usa o celular diariamente para estudar e o caderno como ferramenta de apoio para anotações. Julia é determinada, mesmo enfrentando a falta de apoio e os desafios do início de carreira. Seu maior sonho é conquistar estabilidade profissional e independência financeira. Para isso, precisa de um serviço que lhe ofereça orientação clara, prática e voltada para iniciantes, permitindo que ela dê os primeiros passos rumo a uma carreira sólida.
 
 ## Histórias de Usuários
 
