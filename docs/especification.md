@@ -1,7 +1,5 @@
 # Especificações do Projeto
 
-Visão Geral 
-
 Na etapa de Especificações do Projeto, buscamos transformar ideias em soluções concretas, traduzindo necessidades reais em funcionalidades e propostas de valor. Para isso, exploramos diferentes caminhos criativos utilizando entrevistas qualitativas, matriz CSD, Mapa de Stakeholders, personas, proposta de valor, brainstorming/brainwriting, mural de possibilidades, histórias de usuários e mapa de priorização de ideias.
 
 Definição do Problema 
