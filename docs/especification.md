@@ -41,8 +41,17 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade | 
 |------|-----------------------------------------|----| 
-|RF-001| A aplicação deve permitir que o usuário gerencie suas tarefas | ALTA |  
-|RF-002| A aplicação deve permitir a emissão de um relatório de tarefas realizadas no mês   | MÉDIA | 
+|RF-001| Permitir que usuárias se registrem com dados básicos (nome, e-mail, telefone) | ALTA |  
+|RF-002| Garantir que só alunas cadastradas acessem a plataforma   | ALTA | 
+|RF-003| Organizar cursos por áreas (tecnologia, finanças, empreendedorismo etc.).   | ALTA | 
+|RF-004| O sistema deve disponibilizar um quiz inicial para recomendar trilhas de aprendizado personalizadas.   | ALTA | 
+|RF-005| O sistema deve mostrar progresso da usuária (percentual concluído, histórico de cursos, certificados).   | ALTA | 
+|RF-006| O sistema deve gerar certificados digitais para cursos concluídos.   | MÉDIA | 
+|RF-007| O sistema deve permitir que usuárias compartilhem experiências e comentários.   | MÉDIA | 
+|RF-008| O sistema deve disponibilizar um espaço onde empresas parceiras acessem perfis das alunas.   | ALTA | 
+|RF-009| O sistema deve permitir que ex-alunas ofereçam serviços digitais (planilhas, logos, edições). | MÉDIA | 
+|RF-010| O sistema deve gerar medalhas ou conquistas a cada curso ou etapa concluída.   | BAIXA |
+
 
 
 ### Requisitos não Funcionais
@@ -50,22 +59,14 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
 |RNF-001| A aplicação deve ser responsiva | MÉDIA | 
-|RNF-002| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-002| A aplicação deve processar requisições do usuário em no máximo 3s |  MÉDIA | 
+|RNF-003| A interface deve ter visual simples, botões grandes e linguagem acessível. |  ALTA | 
+|RNF-004| O sistema deve proteger dados pessoais conforme a LGPD. |  ALTA | 
+|RNF-005| A plataforma deve funcionar nos principais navegadores (Chrome, Firefox, Edge). |  MÉDIA | 
+|RNF-006| O sistema deve suportar crescimento no número de usuárias sem perda de desempenho. |  MÉDIA | 
+|RNF-007| O sistema deve ser modular para facilitar atualizações futuras (novos cursos, recursos). |  MÉDIA | 
+|RNF-008| Deve haver canal de suporte simples (WhatsApp ou chatbot para dúvidas). |  MÉDIA | 
 
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 ## Restrições
 
