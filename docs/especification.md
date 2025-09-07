@@ -21,13 +21,21 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
 |Mãe solo| Um curso rápido para aprender modos para me profisionalizar mais rapidamente| Não esquecer de fazê-las|
+
 |Mulher em busca da primeira oportunidade|Mentorias|Aprender sobre carreira e mercado de trabalho.|
+
 |Mulher de baixa renda|Uma plataforma que não precise utilizar tanto dinheiro ou nada de dinheiro e mesmo assim tenha qualidade.|Para poder me profissionalizar e possa me sustentar.|
+
 |Aluna em vulnerabilidade social|Conteúdo disponível offline|Conseguir estudar mesmo sem internet|
+
 |Profissional em formação|Banco de talentos interno|Ser encontrada por empresas parceiras|
+
 |Mulher com 2 empregos|Uma plataforma com cursos rápidos.|Procuro me desenvolver profissionalmente mesmo com pouco tempo e pouco poder aquisitivo.|
+
 |Mulher que gera renda|Um marketplace de serviços digitais|Oferecer meus serviços e conquistar clientes|
+
 |Uma mulher de 40 anos sem muito contato com tecnologia|Uma plataforma fácil de usar e intuitiva.|para me realocar no mercado de trabalho utilizado a tecnologia.|
+
 |Mulher sem muito conhecimento técnico|Um quiz de recomendação de trilhas|Para iniciar os cursos no meu nível de conhecimento.|
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
