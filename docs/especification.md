@@ -2,11 +2,11 @@
 
 Na etapa de Especificações do Projeto, buscamos transformar ideias em soluções concretas, traduzindo necessidades reais em funcionalidades e propostas de valor. Para isso, exploramos diferentes caminhos criativos utilizando entrevistas qualitativas, matriz CSD, Mapa de Stakeholders, personas, proposta de valor, brainstorming/brainwriting, mural de possibilidades, histórias de usuários e mapa de priorização de ideias.
 
-Definição do Problema 
+## Definição do Problema 
 
 Mulheres em situação de vulnerabilidade social e/ou baixa renda encontram dificuldades para acessar cursos de qualidade, acessíveis e práticos, que permitam sua profissionalização rápida e inserção no mercado de trabalho. Além disso, enfrentam barreiras como falta de apoio familiar, limitações financeiras, pouco tempo disponível e baixo conhecimento tecnológico. 
 
-Ideia de Solução 
+## Ideia de Solução 
 
 Desenvolver uma plataforma de aprendizado em tecnologia, intuitiva e acessível, que ofereça: 
 
@@ -31,15 +31,15 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Mãe solo| Um curso rápido para aprender modos para me profisionalizar mais rapidamente| Não esquecer de fazê-las.|
-|Mulher em busca da primeira oportunidade|Mentorias|Aprender sobre carreira e mercado de trabalho.|
-|Mulher de baixa renda|Uma plataforma que não precise utilizar tanto dinheiro ou nada de dinheiro e mesmo assim tenha qualidade|Conseguir me profissionalizar e possa me sustentar.|
-|Aluna em vulnerabilidade social|Conteúdo disponível offline|Conseguir estudar mesmo sem internet.|
-|Profissional em formação|Banco de talentos interno|Ser encontrada por empresas parceiras.|
-|Mulher com 2 empregos|Uma plataforma com cursos rápidos|Me desenvolver profissionalmente mesmo com pouco tempo e pouco poder aquisitivo.|
-|Mulher que gera renda|Um marketplace de serviços digitais|Oferecer meus serviços e conquistar clientes.|
-|Uma mulher de 40 anos sem muito contato com tecnologia|Uma plataforma fácil de usar e intuitiva|Me realocar no mercado de trabalho utilizado a tecnologia.|
-|Mulher sem muito conhecimento técnico|Um quiz de recomendação de trilhas|Iniciar os cursos no meu nível de conhecimento.|
+|Mulher em vulnerabilidade| Um curso rápido e objetivo | Aprender novas habilidades rapidamente e me profissionalizar.|
+|Mulher em vulnerabilidade| Mentorias individuais ou em grupo |Aprender sobre carreira e mercado de trabalho.|
+|Mulher em vulnerabilidade| Acesso a uma plataforma de baixo ou nenhum custo| Conseguir estudar sem depender de recursos financeiros.|
+|Mulher em vulnerabilidade| Conteúdo disponível offline| Estudar mesmo com internet limitada ou instável.|
+|Mulher em vulnerabilidade| Banco de talentos interno| Ser encontrada por empresas parceiras e ter oportunidades de trabalho.|
+|Mulher em vulnerabilidade| Cursos curtos e modulares| Me desenvolver profissionalmente mesmo com pouco tempo disponível.|
+|Mulher em vulnerabilidade| Um marketplace de serviços digitais| Oferecer meus serviços e conquistar clientes.|
+|Mulher em vulnerabilidade| Uma plataforma fácil de usar e intuitiva| Conseguir acessar e aprender sem dificuldade tecnológica.|
+|Mulher em vulnerabilidade| Um quiz de recomendação de trilhas| Iniciar os cursos de acordo com meu nível de conhecimento e necessidade.|
 
 <!-- Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento. -->
 
@@ -52,16 +52,19 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade | 
 |------|-----------------------------------------|----| 
-|RF-001| Permitir que usuárias se registrem com dados básicos (nome, e-mail, telefone) | ALTA |  
-|RF-002| Garantir que só alunas cadastradas acessem a plataforma   | ALTA | 
-|RF-003| Organizar cursos por áreas (tecnologia, finanças, empreendedorismo etc.).   | ALTA | 
+|RF-001| O sistema deve permitir que usuárias se registrem com dados básicos (nome, e-mail, telefone) | ALTA |  
+|RF-002| O sistema deve garantir que só alunas cadastradas acessem a plataforma   | ALTA | 
+|RF-003| O sistema deve organizar cursos por áreas (tecnologia, finanças, empreendedorismo etc.).   | ALTA | 
 |RF-004| O sistema deve disponibilizar um quiz inicial para recomendar trilhas de aprendizado personalizadas.   | ALTA | 
-|RF-005| O sistema deve mostrar progresso da usuária (percentual concluído, histórico de cursos, certificados).   | ALTA | 
-|RF-006| O sistema deve gerar certificados digitais para cursos concluídos.   | MÉDIA | 
-|RF-007| O sistema deve permitir que usuárias compartilhem experiências e comentários.   | MÉDIA | 
-|RF-008| O sistema deve disponibilizar um espaço onde empresas parceiras acessem perfis das alunas.   | ALTA | 
-|RF-009| O sistema deve permitir que ex-alunas ofereçam serviços digitais (planilhas, logos, edições). | MÉDIA | 
-|RF-010| O sistema deve gerar medalhas ou conquistas a cada curso ou etapa concluída.   | BAIXA |
+|RF-005| O sistema deve mostrar percentual de conclusão dos cursos de cada aluna. histórico de cursos.   | ALTA | 
+|RF-006| O sistema deve mostrar histórico de cursos concluídos de cada aluna.   | ALTA | 
+|RF-007| O sistema deve gerar certificados digitais para cursos concluídos.   | MÉDIA | 
+|RF-008| O sistema deve permitir que usuárias compartilhem experiências e comentários.   | MÉDIA | 
+|RF-009| O sistema deve disponibilizar um espaço onde empresas parceiras acessem perfis das alunas.   | ALTA | 
+|RF-010| O sistema deve permitir que ex-alunas ofereçam serviços digitais (planilhas, logos, edições). | MÉDIA | 
+|RF-011| O sistema deve gerar medalhas ou conquistas a cada curso ou etapa concluída.   | BAIXA |
+|RF-012| O sistema deve proporcionar um canal de suporte simples as alunas (chatbot para dúvidas). |  MÉDIA |
+|RF-013| O sistema deve proporcionar um laboratório virtual acessível em múltiplos dispositivos para desenvolvimento de habilidades técnicas. |  ALTA |
 
 
 
@@ -69,14 +72,13 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| A aplicação deve ser responsiva | MÉDIA | 
-|RNF-002| A aplicação deve processar requisições do usuário em no máximo 3s |  MÉDIA | 
-|RNF-003| A interface deve ter visual simples, botões grandes e linguagem acessível. |  ALTA | 
+|RNF-001| O sistema deve ser responsiva | MÉDIA | 
+|RNF-002| O sistema deve processar requisições do usuário em no máximo 3s |  MÉDIA | 
+|RNF-003| O sistema deve ter visual simples, botões grandes e linguagem acessível. |  ALTA | 
 |RNF-004| O sistema deve proteger dados pessoais conforme a LGPD. |  ALTA | 
-|RNF-005| A plataforma deve funcionar nos principais navegadores (Chrome, Firefox, Edge). |  MÉDIA | 
+|RNF-005| O sistema deve funcionar nos principais navegadores (Chrome, Firefox, Edge). |  MÉDIA | 
 |RNF-006| O sistema deve suportar crescimento no número de usuárias sem perda de desempenho. |  MÉDIA | 
-|RNF-007| O sistema deve ser modular para facilitar atualizações futuras (novos cursos, recursos). |  MÉDIA | 
-|RNF-008| Deve haver canal de suporte simples (WhatsApp ou chatbot para dúvidas). |  MÉDIA | 
+|RNF-007| O sistema deve ser modular para facilitar atualizações futuras (novos cursos, recursos). |  MÉDIA |  
 
 
 ## Restrições
