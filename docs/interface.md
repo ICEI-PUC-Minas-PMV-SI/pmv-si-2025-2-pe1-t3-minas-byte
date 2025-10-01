@@ -9,7 +9,7 @@ O projeto de interface também foi elaborado de forma a atender os requisitos fu
 
 ## User Flow
 
-![Exemplo de UserFlow](img/userflow.jpg)
+![Exemplo de UserFlow](img/User Flow.jpg)
 
 O fluxo de usuário define os possíveis caminhos dentro da plataforma, desde o primeiro acesso até a realização de ações principais, como buscar oportunidades ou acompanhar o progresso nos cursos.
 
@@ -44,9 +44,9 @@ Esses protótipos serão usados como guia para validar as decisões de design co
 
 ### Exemplo
 
-A tela inicial apresenta um menu lateral com as principais seções do portal, enquanto a navigation bar, ao topo, apresenta informações de envio de imagens ou navegação pela galeria de fotos. A área central apresenta a galeria de fotos na forma de uma grade. Nesta tela, são apresentados os seguintes requisitos
+A tela inicial ajuda as usuárias ao oferecer uma navegação simples e objetiva, destacando de forma clara as opções de cadastro, login e acesso aos cursos. Com isso, facilita o primeiro contato e incentiva a participação ativa na plataforma.
 
-![Exemplo de Wireframe](img/wireframe-example.png)
+![Exemplo de Wireframe](img/Cursos_Page.png)
 
  
 > **Links Úteis**:
