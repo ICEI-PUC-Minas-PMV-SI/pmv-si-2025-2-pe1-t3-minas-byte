@@ -1,36 +1,74 @@
-# Template padrão do site
+# Template Padrão do Site – InovaElas
+## Layout Padrão
 
-Layout padrão do site (HTML e CSS) que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
+O layout segue um estilo clean, moderno e responsivo, voltado para acessibilidade e navegação intuitiva. Todas as páginas utilizam a mesma identidade visual, mantendo consistência entre cores, tipografia e componentes.
 
-Explique as guias de estilo utilizadas no seu projeto.
+Logo: Posicionado no canto superior esquerdo da barra de navegação.
+
+Menu principal: Localizado no canto superior direito, com botões de destaque (“Entrar” e “Cadastrar-se”).
+
+Botões principais: Utilizam bordas arredondadas, cores contrastantes e destaque de CTA (“Saiba Mais”, “Explorar Cursos”, “Cadastre-se”).
+
+Layout responsivo: A página se adapta automaticamente a diferentes dispositivos (desktop, tablet e mobile).
+
+Rodapé: Inclui informações institucionais, contatos e áreas de conhecimento.
 
 ## Design
 
-Detalhe os layouts que serão utilizados. Apresente onde será colocado o logo do sistema. Defina os menus padrões, entre outras coisas.
+O design foi construído para transmitir acolhimento, acessibilidade e confiança.
 
+Cabeçalho: Logo e navegação fixa.
+
+Hero Section (início da página): Título de impacto, subtítulo motivacional e botões de ação.
+
+Sessões intermediárias: Destaque para trilhas de cursos, cards ilustrativos, depoimentos e formulário de contato.
+
+Rodapé: Links úteis, redes de contato e informações institucionais.
 
 ## Cores
 
-Apresente a paleta de cores que será utilizada. Uma ferramenta interessante para a criação de palestas de cores é o *Adobe Color* ([https://color.adobe.com/pt/create/color-wheel](https://color.adobe.com/pt/create/color-wheel)).
+A paleta de cores transmite leveza, acessibilidade e proximidade.
 
+Rosa (#F4A9BA) – Destaques e botões de ação secundários.
+
+Verde claro (#E7F1A8) – Elementos de apoio e fundos sutis.
+
+Branco (#FFFEFA) – Cor base de fundo, garantindo clareza e contraste.
+
+Azul escuro (#364C84) – Títulos, textos de destaque e botões principais.
+
+Azul claro (#95B1EE) – Complementos visuais e destaques suaves.
 
 ## Tipografia
 
-Apresente as fontes que serão utilizadas e sua função no site. As principais funções são: Título de página, Título de Seção, Rótulos de componentes e Corpo de Texto.
+As fontes foram escolhidas para garantir legibilidade, hierarquia e impacto visual.
 
+Lexend: Títulos de página e chamadas principais (Hero Section).
+
+League Spartan: Títulos de seção e subtítulos, reforçando impacto visual.
+
+Inter: Corpo de texto, descrições, formulários e componentes menores.
 
 ## Iconografia
 
-Defina os ícones que serão utilizados e suas respectivas funções.
+Ícones ilustrativos em estilo flat e minimalista, reforçando acessibilidade.
 
-Apresente os estilos CSS criados para cada um dos elementos apresentados.
-Outras seções podem ser adicionadas neste documento para apresentar padrões de componentes, de menus, etc.
+Usados principalmente para representar categorias de cursos, trilhas de conhecimento e navegação.
 
+Funções: facilitar a leitura, reforçar visualmente os conteúdos e melhorar a experiência do usuário.
 
-> **Links Úteis**:
->
-> -  [Como criar um guia de estilo de design da Web](https://edrodrigues.com.br/blog/como-criar-um-guia-de-estilo-de-design-da-web/#)
-> - [CSS Website Layout (W3Schools)](https://www.w3schools.com/css/css_website_layout.asp)
-> - [Website Page Layouts](http://www.cellbiol.com/bioinformatics_web_development/chapter-3-your-first-web-page-learning-html-and-css/website-page-layouts/)
-> - [Perfect Liquid Layout](https://matthewjamestaylor.com/perfect-liquid-layouts)
-> - [How and Why Icons Improve Your Web Design](https://usabilla.com/blog/how-and-why-icons-improve-you-web-design/)
+## Estilos CSS Definidos
+
+Botões:
+
+Arredondados, com destaque em cores da paleta.
+
+Diferentes cores para hierarquia de ação (ex: azul escuro para primários, rosa para secundários).
+
+Títulos (h1, h2, h3): Hierarquia clara, uso de Lexend e League Spartan, cores azul escuro e variações da paleta.
+
+Corpo de texto (p, span, labels): Fonte Inter, cor em tons escuros para contraste.
+
+Cards de cursos: Layout com imagem superior, título, breve descrição, tags e botão de ação.
+
+Seções de fundo: Alternância entre branco e cores suaves da paleta (#E7F1A8, #95B1EE) para segmentar o conteúdo.
