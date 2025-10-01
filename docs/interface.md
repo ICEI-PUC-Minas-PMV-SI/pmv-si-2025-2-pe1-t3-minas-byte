@@ -9,8 +9,6 @@ O projeto de interface também foi elaborado de forma a atender os requisitos fu
 
 ## User Flow
 
-![Exemplo de UserFlow](img/User_flow.jpg)
-
 O fluxo de usuário define os possíveis caminhos dentro da plataforma, desde o primeiro acesso até a realização de ações principais, como buscar oportunidades ou acompanhar o progresso nos cursos.
 
 Esse fluxo foi estruturado para:
