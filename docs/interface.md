@@ -1,25 +1,46 @@
 
 # Projeto de Interface
 
-Visão geral da interação do usuário pelas telas do sistema e protótipo interativo das telas com as funcionalidades que fazem parte do sistema (wireframes).
+O InovaElas é uma plataforma digital voltada para a qualificação de mulheres em situação de vulnerabilidade, possibilitando acesso a cursos em diversas áreas e oportunidades de inserção no mercado de trabalho.
 
- Apresente as principais interfaces da plataforma. Discuta como ela foi elaborada de forma a atender os requisitos funcionais, não funcionais e histórias de usuário abordados nas <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a>.
+A interface foi pensada para ser simples, acessível e inclusiva, considerando o público-alvo que pode ter pouca familiaridade com tecnologia. O design privilegia a clareza, a usabilidade e a navegação intuitiva, de modo a apoiar as usuárias em sua jornada de aprendizado e busca por oportunidades.
+
+O projeto de interface também foi elaborado de forma a atender os requisitos funcionais e não funcionais, bem como as histórias de usuário já levantadas na documentação de especificação, garantindo coerência entre a proposta conceitual e a execução prática.
 
 ## User Flow
 
 ![Exemplo de UserFlow](img/userflow.jpg)
 
-Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
+O fluxo de usuário define os possíveis caminhos dentro da plataforma, desde o primeiro acesso até a realização de ações principais, como buscar oportunidades ou acompanhar o progresso nos cursos.
 
-> **Links Úteis**:
-> - [User Flow: O Quê É e Como Fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
-> - [User Flow vs Site Maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
-> - [Top 25 User Flow Tools & Templates for Smooth](https://www.mockplus.com/blog/post/user-flow-tools)
+Esse fluxo foi estruturado para:
+
+Reduzir a complexidade da navegação;
+
+Facilitar o acesso às funcionalidades centrais;
+
+Evitar sobrecarga cognitiva, garantindo que o público-alvo consiga utilizar o sistema sem dificuldades;
+
+Dar autonomia às usuárias para explorar o conteúdo e alcançar seus objetivos.
+
+A utilização de User Flow garante alinhamento entre equipe de desenvolvimento e design, além de fornecer clareza sobre como cada interação acontece dentro do sistema.
 
 
 ## Wireframes
 
-São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface e é fundamental sempre relacionar cada wireframe com o(s) requisito(s) que ele atende.
+Para representar a estrutura e organização visual da plataforma, foram elaborados wireframes no Figma, que apresentam a disposição dos elementos principais de interface.
+
+Os wireframes servem para:
+
+Demonstrar a hierarquia das informações;
+
+Validar a disposição de menus, botões e áreas de conteúdo;
+
+Relacionar a estrutura visual diretamente com os requisitos levantados;
+
+Permitir protótipos interativos que simulam a navegação antes do desenvolvimento final.
+
+Esses protótipos serão usados como guia para validar as decisões de design com base na experiência da usuária.
 
 ### Exemplo
 
