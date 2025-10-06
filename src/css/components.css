@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lexend', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ===== Cabeçalho ===== */
+header {
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.logo span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2a4d9b;
+}
+
+nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: #2a4d9b;
+  transition: 0.1s;
+}
+
+
+/* ===== Botões ===== */
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: 1px solid #2a4d9b;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.10);
+}
+
+.btn-entrar {
+  background: #fff;
+  color: #364c84;
+}
+
+.btn-entrar:hover {
+  background-color: #364c84;
+  color: white;
+  transition: 0.1s;
+}
+
+.btn-cadastrar {
+  color: #FFFEFA;
+  background-color: #364c84;
+  border: none;
+}
+
+.btn-saibaMais {
+  color: #FFFEFA;
+  background-color: #95B1EE;
+  border: none;
+}
+
+.btn-explorar {
+  color: #FFFEFA;
+  background-color: #f4a9ba;
+  border: none;
+}
+
+.btn-quiz {
+  color: #364c84;
+  background-color: #e7f1a8;
+  border: none;
+  width: 10rem;
+}
+
+/* ===== Rodapé ===== */
+footer {
+  background: #f9f9f9;
+  padding: 40px;
+  margin-top: auto;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-logo {
+  max-width: 250px;
+}
+
+.footer-logo img {
+  height: 55px;
+  margin-bottom: 10px;
+}
+
+.footer-logo p {
+  font-size: 14px;
+  color: #555;
+}
+
+.footer-column h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #000;
+}
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column ul li {
+  margin-bottom: 6px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #555;
+  font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+  color: #2a4d9b;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 13px;
+  color: #555;
+}
+
+.footer-bottom span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
