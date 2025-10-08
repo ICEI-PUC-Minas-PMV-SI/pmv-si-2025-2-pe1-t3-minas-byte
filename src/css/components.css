@@ -111,6 +111,14 @@ nav a:hover {
   width: 10rem;
 }
 
+.btn-inscreva {
+  color: #364c84;
+  background-color: #e7f1a8;
+  border: none;
+  width: 10rem;
+}
+
+
 /* ===== Rodapé ===== */
 footer {
   background: #f9f9f9;
