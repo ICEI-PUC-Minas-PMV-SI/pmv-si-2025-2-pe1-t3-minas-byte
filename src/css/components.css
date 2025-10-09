@@ -119,6 +119,62 @@ nav a:hover {
 }
 
 
+/* === Hero com bolinhas ==*/
+.hero {
+    text-align: center;
+    padding: 100px;
+
+    /* ===== Fundo com bolinhas no Hero ===== */
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-background {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.hero-background span {
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    opacity: 0.35;
+}
+
+/* Bolinha superior esquerda */
+.hero-background span:nth-child(1) {
+    width: 200px;
+    height: 200px;
+    background: #f1849c;
+    top: -60px;
+    left: -60px;
+}
+
+/* Bolinha central à direita */
+.hero-background span:nth-child(2) {
+    width: 150px;
+    height: 150px;
+    background: #364C84;
+    top: 40%;
+    left: 80%;
+}
+
+/* Bolinha inferior */
+.hero-background span:nth-child(3) {
+    width: 250px;
+    height: 250px;
+    background: #e7f1a8;
+    bottom: -100px;
+    right: 20%;
+}
+.hero>*:not(.hero-background) {
+    position: relative;
+    z-index: 1;
+}
+
+
 /* ===== Rodapé ===== */
 footer {
   background: #f9f9f9;
