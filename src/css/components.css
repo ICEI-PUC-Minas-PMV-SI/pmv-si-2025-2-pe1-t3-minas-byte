@@ -63,7 +63,7 @@ nav a:hover {
   gap: 10px;
 }
 
-.btn{
+.btn {
   padding: 8px 16px;
   border-radius: 6px;
   border: 1px solid #2a4d9b;
@@ -75,7 +75,8 @@ nav a:hover {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.10);
 }
 
-.btn-entrar, .btn-mais  {
+.btn-entrar,
+.btn-mais {
   background: #fff;
   color: #364c84;
 }
@@ -86,19 +87,22 @@ nav a:hover {
   transition: 0.1s;
 }
 
-.btn-cadastrar, .btn-apoio {
+.btn-cadastrar,
+.btn-apoio {
   color: #FFFEFA;
   background-color: #364c84;
   border: none;
 }
 
-.btn-saibaMais{
+.btn-saibaMais {
   color: #FFFEFA;
   background-color: #95B1EE;
   border: none;
 }
 
-.btn-explorar, .btn-participar, .btn-grupo {
+.btn-explorar,
+.btn-participar,
+.btn-grupo {
   color: #FFFEFA;
   background-color: #f4a9ba;
   border: none;
@@ -121,57 +125,58 @@ nav a:hover {
 
 /* === Hero com bolinhas ==*/
 .hero {
-    text-align: center;
-    padding: 100px;
+  text-align: center;
+  padding: 100px;
 
-    /* ===== Fundo com bolinhas no Hero ===== */
-    position: relative;
-    overflow: hidden;
+  /* ===== Fundo com bolinhas no Hero ===== */
+  position: relative;
+  overflow: hidden;
 }
 
 .hero-background {
-    position: absolute;
-    inset: 0;
-    z-index: 0;
-    overflow: hidden;
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
 }
 
 .hero-background span {
-    position: absolute;
-    display: block;
-    border-radius: 50%;
-    opacity: 0.35;
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  opacity: 0.35;
 }
 
 /* Bolinha superior esquerda */
 .hero-background span:nth-child(1) {
-    width: 200px;
-    height: 200px;
-    background: #f1849c;
-    top: -60px;
-    left: -60px;
+  width: 200px;
+  height: 200px;
+  background: #f1849c;
+  top: -60px;
+  left: -60px;
 }
 
 /* Bolinha central à direita */
 .hero-background span:nth-child(2) {
-    width: 150px;
-    height: 150px;
-    background: #364C84;
-    top: 40%;
-    left: 80%;
+  width: 150px;
+  height: 150px;
+  background: #364C84;
+  top: 40%;
+  left: 80%;
 }
 
 /* Bolinha inferior */
 .hero-background span:nth-child(3) {
-    width: 250px;
-    height: 250px;
-    background: #e7f1a8;
-    bottom: -100px;
-    right: 20%;
+  width: 250px;
+  height: 250px;
+  background: #e7f1a8;
+  bottom: -100px;
+  right: 20%;
 }
+
 .hero>*:not(.hero-background) {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
 
@@ -246,118 +251,117 @@ footer {
   gap: 5px;
 }
 
-
 /*Filtro - Utilizado em Comunidade, Home */
 
 .filtro {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: #f1f1f1;
-    border-radius: 50px;
-    padding: 0.5rem;
-    width: fit-content;
-    margin: 0 auto 3rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #f1f1f1;
+  border-radius: 50px;
+  padding: 0.5rem;
+  width: fit-content;
+  margin: 0 auto 3rem;
 }
 
 .filtro-btn {
-    border: none;
-    background: transparent;
-    color: #333;
-    font-size: 0.80rem;
-    padding: 0.4rem 1.5rem;
-    border-radius: 30px;
-    cursor: pointer;
+  border: none;
+  background: transparent;
+  color: #333;
+  font-size: 0.80rem;
+  padding: 0.4rem 1.5rem;
+  border-radius: 30px;
+  cursor: pointer;
 }
 
 .filtro-btn.active {
-    background-color: #fff;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
 .filtro-btn:hover,
 .filtro-btn.active {
-    background-color: #dce4ff;
-    color: #3348a5;
-    transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: #dce4ff;
+  color: #3348a5;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Caica de pergunta - Utilizado em Comunidade, Home */
 
 .duvidas {
-    background-color: #FFFEFA;
-    padding: 80px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: #FFFEFA;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .duvidas-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 1100px;
-    width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  width: 90%;
 }
 
 .duvidas-img img {
-    width: 380px;
-    border-radius: 8px;
-    object-fit: cover;
+  width: 380px;
+  border-radius: 8px;
+  object-fit: cover;
 }
 
 .duvidas-form {
-    background-color: #fff;
-    padding: 40px 50px;
-    border-radius: 12px;
-    width: 450px;
+  background-color: #fff;
+  padding: 40px 50px;
+  border-radius: 12px;
+  width: 450px;
 }
 
 .duvidas-form h2 {
-    font-size: 1.5rem;
-    color: #253068;
-    text-align: center;
-    margin-bottom: 30px;
+  font-size: 1.5rem;
+  color: #253068;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .duvidas-form label {
-    font-weight: 600;
-    font-size: 0.9rem;
-    color: #253068;
-    display: block;
-    margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #253068;
+  display: block;
+  margin-bottom: 5px;
 }
 
 .duvidas-form input,
 .duvidas-form select,
 .duvidas-form textarea {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 18px;
-    border: 1px solid #e0e0e0;
-    border-radius: 6px;
-    background-color: #f8f8f8;
-    font-size: 0.95rem;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  background-color: #f8f8f8;
+  font-size: 0.95rem;
 }
 
 .duvidas-form textarea {
-    height: 120px;
-    resize: none;
+  height: 120px;
+  resize: none;
 }
 
 .duvidas-form .btn-enviar {
-    background-color: #f8a8b8;
-    border: none;
-    color: white;
-    font-weight: 600;
-    width: 100%;
-    padding: 12px;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: 0.3s ease;
+  background-color: #f8a8b8;
+  border: none;
+  color: white;
+  font-weight: 600;
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
 .duvidas-form .btn-enviar:hover {
-    background-color: #f1849c;
+  background-color: #f1849c;
 }
