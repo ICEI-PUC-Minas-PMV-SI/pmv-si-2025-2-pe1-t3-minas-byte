@@ -11,14 +11,11 @@ p {
     font-weight: 100;
 }
 
-
-
-/* === Hero ==*/
 .hero {
     text-align: center;
     padding: 100px;
 
-    /* ===== Fundo com bolinhas no Hero ===== */
+ 
     position: relative;
     overflow: hidden;
 }
@@ -37,7 +34,7 @@ p {
     opacity: 0.35;
 }
 
-/* Bolinha superior esquerda */
+
 .hero-background span:nth-child(1) {
     width: 200px;
     height: 200px;
@@ -46,7 +43,7 @@ p {
     left: -60px;
 }
 
-/* Bolinha central à direita */
+
 .hero-background span:nth-child(2) {
     width: 150px;
     height: 150px;
@@ -55,7 +52,7 @@ p {
     left: 80%;
 }
 
-/* Bolinha inferior */
+
 .hero-background span:nth-child(3) {
     width: 250px;
     height: 250px;
@@ -104,7 +101,7 @@ h1 {
 
 
 
-/* === Section - Cursos ==*/
+
 .nossosCursos {
     align-items: center;
     text-align: center;
@@ -223,14 +220,7 @@ h1 {
     width: 24px;
 }
 
-/* 
-.hidden {
-    display: none;
-} */
 
-
-
-/* === Section - Comentários === */
 .comentarios {
     background-color: #FFFEFA;
     padding: 80px 0;
@@ -334,21 +324,17 @@ h2 {
   transform: translateY(-50%) scale(1.1);
 }
 
-/* seta esquerda */
+
 .btn-seta.esque {
   left: 0px;
 }
 
-/* seta direita */
+
 .btn-seta.direi {
   right: 0px;
 }
 
 
-
-
-
-/* === Section - Dúvidas === */
 .duvidas {
     background-color: #FFFEFA;
     padding: 80px 0;
@@ -359,7 +345,6 @@ h2 {
 
 .duvidas-container {
     display: flex;
-    /* gap: 60px; */
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
@@ -429,9 +414,6 @@ h2 {
 }
 
 
-
-
-/* === Responsivo === */
 @media screen and (max-width: 768px) {
     .duvidas-container {
         flex-direction: column;
