@@ -1,4 +1,4 @@
-# Inova Ela
+# InovaElas
 
 `CURSO: Sistemas de Informação`
 
@@ -13,7 +13,6 @@ Este projeto tem como objetivo identificar, dar visibilidade e combater as diver
 * Giovana Carolina Ferreira Moser
 * Guilherme dos Santos Guimarães
 * Isabelly Guimaraes Coelho
-* Matheus Henrique Santos Silva
 * Raphaela Luiza Vargas Marcolino
 * Stanley Wallace Rodrigues Belo
   
