@@ -32,21 +32,14 @@
     margin: 0 auto;
 }
 
-.comunidade-hero h1 {
+.comunidade-hero h2 {
     font-size: 36px;
     color: #151b26af;
     font-weight: 600;
     margin: 0;
 }
 
-.comunidade-hero h2 {
-    font-size: 72px;
-    color: #364C84;
-    font-weight: 600;
-    margin: 0;
-}
-
-.comunidade-hero h3,
+.comunidade-hero h1,
 .ilustracao h2 {
     font-size: 62px;
     background: linear-gradient(90deg, #F4A9BA, #95B1EE, #364C84);
