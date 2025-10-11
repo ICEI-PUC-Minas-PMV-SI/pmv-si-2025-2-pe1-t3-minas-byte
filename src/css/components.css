@@ -124,7 +124,7 @@ nav a:hover {
 
 
 /* === Hero com bolinhas ==*/
-.hero {
+.hero{
   text-align: center;
   padding: 100px;
 
@@ -133,7 +133,7 @@ nav a:hover {
   overflow: hidden;
 }
 
-.hero-background {
+.hero-background{
   position: absolute;
   inset: 0;
   z-index: 0;
