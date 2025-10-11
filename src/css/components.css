@@ -115,7 +115,7 @@ nav a:hover {
   width: 10rem;
 }
 
-.btn-inscreva {
+.btn-inscreva, .btn-participar {
   color: #364c84;
   background-color: #e7f1a8;
   border: none;

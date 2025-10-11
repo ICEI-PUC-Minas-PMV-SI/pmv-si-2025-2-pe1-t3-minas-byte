@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/comunidade.css">
     <link rel="stylesheet" href="components/headerFooter.html">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <style>
+   <style>
         @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
     </style>
     <title>InovaElas_Conecta</title>
@@ -80,25 +79,25 @@
 
                     <div class="comunidade-cards">
                         <div class="cards">
-                            <i class="fa-regular fa-heart" style="font-size: 20px; color: #364c847a;"></i>
+                            <i class="bi bi-heart"></i>
                             <h4>Apoiar</h4>
                             <p>Apoiar mulheres em vulnerabilidade a encontrarem novas oportunidades.</p>
                         </div>
 
                         <div class="cards">
-                            <i class="fa-regular fa-cloud" style="font-size: 20px; color: #364c847a;"></i>
+                            <div class="icone-card"></div>
                             <h4>Desenvolver</h4>
                             <p>Desenvolver habilidades pessoais, profissionais e emocionais.</p>
                         </div>
 
                         <div class="cards">
-                            <i class="fa-regular fa-hand-holding-heart" style="font-size: 20px; color: #364c847a;"></i>
+                            <div class="icone-card"></div>
                             <h4>Incentivar</h4>
                             <p>Incentivar inovação, criatividade e protagonismo.</p>
                         </div>
 
                         <div class="cards">
-                            <i class="fa-solid fa-award" style="font-size: 20px; color: #364c847a;"></i>
+                            <div class="icone-card"></div>
                             <h4>Criar</h4>
                             <p>Criar uma rede de confiança, aprendizado e fortalecimento.</p>
                         </div>
@@ -140,7 +139,7 @@
                 <button class="filtro-btn">Carreira</button>
                 <button class="filtro-btn">Eventos e Encontros</button>
             </div>
-
+        
             <div class="grupo-cards">
                 <div class="cardss">
                     <img src="./img/img_comunidade/img_pg_comun_grup_autoConhecimen.png" alt="Autoestima">
@@ -148,8 +147,12 @@
                     <h3>Autoconhecimento e autoestima</h3>
                     <p>Trabalhar identidade, amor-próprio e reconhecimento de conquistas pessoais.</p>
                     <div class="info">
-                        <span>⭐ +356</span>
-                        <button>Participar</button>
+                        <label class="estrela">
+                            <input type="checkbox" />
+                            <span class="icone">★</span>
+                        </label>
+                        <p class="qtd">+370</p>
+                        <button class="btn-participar">Participar</button>
                     </div>
                 </div>
                 <div class="cardss">
@@ -158,8 +161,12 @@
                     <h3>Cuidando de mim</h3>
                     <p>Cuidados com a saúde, bem-estar emocional, relaxamento e autoconfiança.</p>
                     <div class="info">
-                        <span>⭐ +206</span>
-                        <button>Participar</button>
+                        <label class="estrela">
+                            <input type="checkbox" />
+                            <span class="icone">★</span>
+                        </label>
+                        <p class="qtd">+880</p>
+                        <button class="btn-participar">Participar</button>
                     </div>
                 </div>
                 <div class="cardss">
@@ -168,8 +175,12 @@
                     <h3>Projeto de vida</h3>
                     <p>Incentiva metas pessoais e profissionais, com autoconhecimento.</p>
                     <div class="info">
-                        <span>⭐ +545</span>
-                        <button>Participar</button>
+                        <label class="estrela">
+                            <input type="checkbox" />
+                            <span class="icone">★</span>
+                        </label>
+                        <p class="qtd">+357</p>
+                        <button class="btn-participar">Participar</button>
                     </div>
                 </div>
                 <div class="cardss">
@@ -178,8 +189,12 @@
                     <h3>Rede de apoio</h3>
                     <p>Fortalecimento de laços familiares e apoio emocional.</p>
                     <div class="info">
-                        <span>⭐ +541</span>
-                        <button>Participar</button>
+                        <label class="estrela">
+                            <input type="checkbox" />
+                            <span class="icone">★</span>
+                        </label>
+                        <p class="qtd">+780</p>
+                        <button class="btn-participar">Participar</button>
                     </div>
                 </div>
                 <div class="cardss">
@@ -188,8 +203,12 @@
                     <h3>Cidadania da mulher</h3>
                     <p>Empoderamento e acesso a políticas públicas e direitos sociais.</p>
                     <div class="info">
-                        <span>⭐ +370</span>
-                        <button>Participar</button>
+                        <label class="estrela">
+                            <input type="checkbox" />
+                            <span class="icone">★</span>
+                        </label>
+                        <p class="qtd">+842</p>
+                        <button class="btn-participar">Participar</button>
                     </div>
                 </div>
                 <div class="cardss">
@@ -198,14 +217,19 @@
                     <h3>Autonomia feminina</h3>
                     <p>Educação financeira e independência pessoal.</p>
                     <div class="info">
-                        <span>⭐ +716</span>
-                        <button>Participar</button>
+                        <label class="estrela">
+                            <input type="checkbox" />
+                            <span class="icone">★</span>
+                        </label>
+                        <p class="qtd">+459</p>
+                        <button class="btn-participar">Participar</button>
                     </div>
                 </div>
+                <div class="botao-grupo">
+                    <button class="btn btn-mais">Mostrar Mais</button>
+                    <button class="btn btn-grupo">Criar Grupo</button>
+                </div>
             </div>
-            <div class="botao-grupo">
-                <button class="btn btn-mais">Mostrar Mais</button>
-                <button class="btn btn-grupo">Criar Grupo</button>
             </div>
         </section>
 
