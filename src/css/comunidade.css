@@ -68,11 +68,11 @@
 }
 
 .decoracao-v {
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
     background: #e7f1a8;
-    bottom: -30px;
-    right: -30%;
+    top: 50px;
+    right: 0%;
 }
 
 .decoracao-a {
@@ -95,8 +95,8 @@
     width: 50px;
     height: 50px;
     background: #f1849c;
-    top: 50px;
-    right: -30%;
+    bottom: -10px;
+    right: 10%;
 }
 
 .comunidade-beneficios {
@@ -105,7 +105,7 @@
     background-color: #fffffa;
     border: 2px solid #364c84c6;
     border-radius: 30px;
-    margin: 50px;
+    margin: 10px;
 }
 
 .conteudo {
@@ -331,7 +331,6 @@ h2,
     cursor: pointer;
 }
 
-/* Esconde o checkbox */
 .estrela input {
     display: none;
 }
@@ -394,35 +393,11 @@ button:hover {
 }
 
 .fdecoracao-v {
-    width: 250px;
-    height: 250px;
-    background: #e7f1a8;
-    top: 350px;
-    right: -30%;
-}
-
-.fdecoracao-a {
-    width: 100px;
-    height: 100px;
-    background: #364C84;
-    bottom: 800px;
-    right: 110%;
-}
-
-.fdecoracao-r {
-    width: 250px;
-    height: 250px;
-    background: #f1849c;
-    bottom: 40px;
-    right: 105%;
-}
-
-.fdecoracao-rr {
     width: 50px;
     height: 50px;
-    background: #f1849c;
-    bottom: 400px;
-    right: -30%;
+    background: #e7f1a8;
+    top: 350px;
+    right: 5%;
 }
 
 .post p {
@@ -542,10 +517,11 @@ button:hover {
 }
 
 .ilustracao img {
-    width: 400px;
+    width: 450px;
     max-width: 90%;
     height: auto;
-    border-radius: 600px;
+    border-radius: 30px;
+    margin: 30px;
 }
 
 .botao-grupo {

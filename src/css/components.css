@@ -365,3 +365,160 @@ footer {
 .duvidas-form .btn-enviar:hover {
   background-color: #f1849c;
 }
+
+
+/* Favoritar item em card */
+/*Adpate confome seu codigo*/
+
+.estrela {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.estrela input {
+    display: none;
+}
+
+/* Cor inicial opaca */
+.icone {
+    font-size: 25px;
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+/*Favoritar estrela grupo*/
+.estrela input:checked+.icone {
+    color: #facb10;
+}
+
+
+
+/*Tentativa de menu hamburguer*/
+/* HAMBURGUER - escondido por padrão (desktop) */
+header.logado {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 12px 24px;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+
+.logado .logo img {
+  height: 50px;
+  display: block;
+}
+
+/* NAV padrão (desktop) */
+.logado nav {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.logado nav a {
+  text-decoration: none;
+  color: #364C84;
+  font-weight: 500;
+  padding: 6px 0;
+}
+
+.usuaria-desktop img {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.usuaria-mobile {
+  display: none;
+}
+
+.usuaria-mobile img {
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  width: 40px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: #2e2e2e;
+  border-radius: 3px;
+  transition: transform 0.25s ease, opacity 0.30s ease;
+}
+
+/* Checkbox invisível */
+#menu-checkbox {
+  position: absolute;
+  left: -9999px;
+}
+
+/* ------------Responsividade------------- */
+@media (max-width: 768px) {
+  .menu-toggle { display: flex; }
+
+  .logado {
+    align-items: center;
+    position: relative;
+  }
+
+  .logado nav {
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: #ffffff;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 0;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.35s ease, padding 0.35s ease;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    z-index: 10;
+  }
+
+  .logado nav a {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    color: #364C84;
+    border-top: 1px solid rgba(54,76,132,0.06);
+    text-align: center;
+  }
+
+  .usuaria-desktop {
+    display: none;
+  }
+
+  #menu-checkbox:checked ~ nav {
+    max-height: 420px;
+    padding: 16px 0;
+  }
+
+  #menu-checkbox:checked ~ nav .usuaria-mobile {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+  }
+}
