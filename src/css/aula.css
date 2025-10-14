@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan'
+}
+
+.aula-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.aula-online {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    max-width: 900px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative;
+}
+
+.aula-online h1 {
+    font-size: 26px;
+    color: #364C84;
+    font-weight: 600;
+    margin-top: 60px;
+}
+
+.aula-online h2 {
+    font-size: 36px;
+    color: #364C84;
+    font-weight: 600;
+    margin: 30px;
+}
+
+.capa{
+    position: relative;
+    display: inline-block;
+}
+
+.capa-aula {
+    width: 750px;
+    max-width: 90%;
+    height: auto;
+    margin: 30px;
+}
+
+.botao-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.botao-play:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+}
