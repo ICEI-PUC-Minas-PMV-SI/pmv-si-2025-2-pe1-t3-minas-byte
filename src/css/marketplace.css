@@ -13,48 +13,116 @@ body {
 
 /* ===== HEADER ===== */
 header {
+  width: 100%;
   background: #fff;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
-  padding: 1rem 0;
-}
-
-header .container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
+  border-bottom: 1px solid #ddd;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  gap: .5rem;
+  gap: 8px;
 }
 
-.logo img { width: 30px; height: 30px; }
-.logo span { font-weight: 600; color: #2a4d91; }
+.logo img {
+  height: 50px;
+}
 
-nav ul {
+.logo span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2a4d9b;
+}
+
+nav {
+  flex: 1;
   display: flex;
-  list-style: none;
-  gap: 2rem;
+  justify-content: center;
+  gap: 40px;
 }
 
 nav a {
   text-decoration: none;
-  color: #333;
-  font-size: .95rem;
+  color: #000;
+  font-size: 16px;
 }
 
-nav a:hover { color: #2a4d91; }
-
-.perfil img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+nav a:hover {
+  color: #2a4d9b;
+  transition: 0.1s;
 }
+
+
+/* ===== Botões ===== */
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: 1px solid #2a4d9b;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.10);
+}
+
+.btn-entrar,
+.btn-mais {
+  background: #fff;
+  color: #364c84;
+}
+
+.btn-entrar:hover {
+  background-color: #364c84;
+  color: white;
+  transition: 0.1s;
+}
+
+.btn-cadastrar,
+.btn-apoio {
+  color: #FFFEFA;
+  background-color: #364c84;
+  border: none;
+}
+
+.btn-saibaMais {
+  color: #FFFEFA;
+  background-color: #95B1EE;
+  border: none;
+}
+
+.btn-explorar,
+.btn-participar,
+.btn-grupo {
+  color: #FFFEFA;
+  background-color: #f4a9ba;
+  border: none;
+}
+
+.btn-quiz {
+  color: #364c84;
+  background-color: #e7f1a8;
+  border: none;
+  width: 10rem;
+}
+
+.btn-inscreva, .btn-participar {
+  color: #364c84;
+  background-color: #e7f1a8;
+  border: none;
+  width: 10rem;
+}
+
+
 
 /* ===== HERO ===== */
 .hero {
