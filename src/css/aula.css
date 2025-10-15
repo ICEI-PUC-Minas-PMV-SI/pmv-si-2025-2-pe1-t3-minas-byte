@@ -35,11 +35,12 @@
     margin-top: 60px;
 }
 
-.aula-online h2 {
+.aula-online h2,
+.aulas h2 {
     font-size: 36px;
     color: #364C84;
     font-weight: 600;
-    margin: 30px;
+    margin: 50px;
 }
 
 .capa{
@@ -48,10 +49,10 @@
 }
 
 .capa-aula {
-    width: 750px;
+    width: 500px;
     max-width: 90%;
     height: auto;
-    margin: 30px;
+    margin: 40px;
 }
 
 .botao-play {
@@ -66,4 +67,94 @@
 
 .botao-play:hover {
     transform: translate(-50%, -50%) scale(1.1);
+}
+
+.aulas-conteudo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 30px;
+}
+
+.aula {
+    max-width: 90%;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px 60px; 
+    display: flex;
+    flex-direction: column; 
+    margin: 90px auto; 
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.accordion-item {
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.accordion-header {
+    background: #f2f4f8;
+    color: #364C84;
+    font-weight: 600;
+    padding: 16px 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s;
+}
+
+.accordion-header:hover {
+    background: #FFFFFA;
+}
+
+.accordion-header .seta {
+    font-size: 18px;
+}
+
+.accordion-item input {
+    display: none;
+}
+
+.accordion-content {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    padding: 18px 20px;
+}
+
+.accordion-item input:checked + .accordion-header + .accordion-content {
+    display: flex;
+}
+
+.p-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.aula p{
+    color:#364C84;
+    font-size: 16px;
+}
+
+.p-icons .icone { 
+    font-size: 20px; 
+    cursor: pointer; 
+    transition: transform 0.3s; 
+}
+
+.p-icons .icone:hover { 
+    transform: scale(1.5); 
+    color: #364C84;
 }

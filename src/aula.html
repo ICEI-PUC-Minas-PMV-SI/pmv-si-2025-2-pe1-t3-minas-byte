@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/comunidade.css">
     <link rel="stylesheet" href="components/headerFooter.html">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
     </style>
@@ -16,53 +17,394 @@
 </head>
 
 <body>
-<!---- Header logado ------>
- <header class="logado">
-    <div class="logo">
-      <a href="index.html">
-        <img src="./img/logo.png" alt="InovaElas">
-      </a>
-    </div>
-    <input type="checkbox" id="menu-checkbox">
-    <label for="menu-checkbox" class="menu-toggle">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
-
-    <nav>
-      <div class="usuaria-mobile">
-        <a href="index.html" class="aluna">
-          <img src="img/personas/comentarios/persona_julia_silva.jpeg" alt=" InovaElas">
-        </a>
-      </div>
-
-      <a href="cursos.html">Cursos</a>
-      <a href="comunidade.html">Comunidade</a>
-      <a href="martketplace.html">Marketplace</a>
-      <a href="bancoTalentos.html">Banco de talentos</a>
-      <a href="#">Mentoria</a>
-    </nav>
-    <div class="usuaria-desktop">
-      <a href="index.html" class="aluna">
-        <img src="img/personas/comentarios/persona_julia_silva.jpeg" alt="Foto">
-      </a>
-    </div>
-  </header>
-
-<section id="aula-hero">
-    <div class="aula-online">
-        <span class="decoracao decoracao-v"></span>
-        <span class="decoracao decoracao-a"></span>
-        <span class="decoracao decoracao-r"></span>
-        <span class="decoracao decoracao-rr"></span>
-        <h1>Tudo o que pode fazer em uma sala de aula,
-            você pode fazer com o <span style="color: #F4A9BA; font-weight: bold;">InovaElas</span></h1>
-        <h2>Confira no vídeo como será a sua jornada de aprendizado.</h2>
-
-        <div class="capa">
-            <img class="capa-aula" src="img/img_aula/img_pg_aula_aula.jpg" alt="Capa aula online">
-            <img class="botao-play" src="img/img_aula/img_pg_aula_aula_online.png" alt="Capa aula online">
+    <!---- Header logado ------>
+    <header class="logado">
+        <div class="logo">
+            <a href="index.html">
+                <img src="./img/logo.png" alt="InovaElas">
+            </a>
         </div>
-    </div>
-</section>
+        <input type="checkbox" id="menu-checkbox">
+        <label for="menu-checkbox" class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav>
+            <div class="usuaria-mobile">
+                <a href="index.html" class="aluna">
+                    <img src="img/personas/comentarios/persona_julia_silva.jpeg" alt=" InovaElas">
+                </a>
+            </div>
+
+            <a href="cursos.html">Cursos</a>
+            <a href="comunidade.html">Comunidade</a>
+            <a href="martketplace.html">Marketplace</a>
+            <a href="bancoTalentos.html">Banco de talentos</a>
+            <a href="#">Mentoria</a>
+        </nav>
+        <div class="usuaria-desktop">
+            <a href="index.html" class="aluna">
+                <img src="img/personas/comentarios/persona_julia_silva.jpeg" alt="Foto">
+            </a>
+        </div>
+    </header>
+
+    <!-----Hero apresentação funcionamento curso------->
+    <section id="aula-hero">
+        <div class="aula-online">
+            <span class="decoracao decoracao-v"></span>
+            <span class="decoracao decoracao-a"></span>
+            <span class="decoracao decoracao-r"></span>
+            <span class="decoracao decoracao-rr"></span>
+            <h1>Tudo o que pode fazer em uma sala de aula,
+                você pode fazer com o <span style="color: #F4A9BA; font-weight: bold;">InovaElas</span></h1>
+            <h2>Confira no vídeo como será a sua jornada de aprendizado.</h2>
+
+            <div class="capa">
+                <img class="capa-aula" src="img/img_aula/img_pg_aula_aula.jpg" alt="Capa aula online">
+                <img class="botao-play" src="img/img_aula/img_pg_aula_aula_online.png" alt="Capa aula online">
+            </div>
+        </div>
+    </section>
+<!------------ Seção de conteúdo do curso------------>
+    <section id="aulas-conteudo">
+        <div class="aulas">
+            <h2>Conteúdo do curso: Criação de loja virtual</h2>
+            
+        </div>
+        <div class="aula">
+            <div class="accordion">
+                <div class="accordion-item">
+                    <input type="checkbox" id="item1">
+                    <label class="accordion-header" for="item1">
+                        <span class="titulo-item" >Aula 1: O que você vai conquistar aqui</span> 
+                        <span class="seta">▼</span>
+                    </label>
+                    <div class="accordion-content">
+                        <p>Esta aula apresenta os conceitos iniciais do curso, objetivos e estrutura. Apresentação dos resultados: sua loja online no ar</p>
+                        <div class="p-icons">
+                            <i class=" icone bi bi-download"></i>
+                            <i class="icone bi bi-caret-right-square-fill"></i>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="accordion-item">
+                    <input type="checkbox" id="item2">
+                    <label class="accordion-header" for="item2">
+                        <span class="titulo-item">Aula 2: Antes de começar: recadinhos importantes</span>
+                        <span class="seta">▼</span>
+                    </label>
+                    <div class="accordion-content">
+                        <p>Receba informações essenciais e recomendações para iniciar o curso com clareza e evitar erros comuns.</p>
+                        <div class="p-icons">
+                            <i class=" icone bi bi-download"></i>
+                            <i class="icone bi bi-caret-right-square-fill"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <input type="checkbox" id="item3">
+                    <label class="accordion-header" for="item3">
+                        <span class="titulo-item">Aula 3: Primeiros passos na plataforma</span>
+                        <span class="seta">▼</span>
+                    </label>
+                    <div class="accordion-content">
+                        <p>Aprenda a navegar na plataforma, configurar seu perfil e iniciar a criação da sua loja de forma organizada.</p>
+                        <div class="p-icons">
+                            <i class=" icone bi bi-download"></i>
+                            <i class="icone bi bi-caret-right-square-fill"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <input type="checkbox" id="item4">
+                    <label class="accordion-header" for="item4">
+                        <span class="titulo-item">Aula 4: Criando a identidade da sua loja</span>
+                        <span class="seta">▼</span>
+                    </label>
+                    <div class="accordion-content">
+                        <p>Defina o nome, a marca, cores e estilo visual que representam sua loja, transmitindo profissionalismo e personalidade.</p>
+                        <div class="p-icons">
+                            <i class=" icone bi bi-download"></i>
+                            <i class="icone bi bi-caret-right-square-fill"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <input type="checkbox" id="item5">
+                    <label class="accordion-header" for="item5">
+                        <span class="titulo-item">Aula 5: Criando a identidade da sua loja</span>
+                        <span class="seta">▼</span>
+                    </label>
+                    <div class="accordion-content">
+                        <p>Defina o nome, a marca, cores e estilo visual que representam sua loja, transmitindo profissionalismo e personalidade.</p>
+                        <div class="p-icons">
+                            <i class=" icone bi bi-download"></i>
+                            <i class="icone bi bi-caret-right-square-fill"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <input type="checkbox" id="item6">
+                    <label class="accordion-header" for="item6">
+                        <span class="titulo-item">Aula 6: Deixando a loja do seu jeito</span>
+                        <span class="seta">▼</span>
+                    </label>
+                    <div class="accordion-content">
+                        <p>Personalize layouts, banners e categorias para que sua loja reflita exatamente o estilo que você deseja.</p>
+                        <div class="p-icons">
+                            <i class=" icone bi bi-download"></i>
+                            <i class="icone bi bi-caret-right-square-fill"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <input type="checkbox" id="item7">
+                    <label class="accordion-header" for="item7">
+                        <span class="titulo-item">Aula 7: Como seus clientes vão pagar e receber seu jeito</span>
+                        <span class="seta">▼</span>
+                    </label>
+                    <div class="accordion-content">
+                        <p>Configure métodos de pagamento e entrega, garantindo que as transações sejam seguras e adaptadas ao seu público.</p>
+                        <div class="p-icons">
+                            <i class=" icone bi bi-download"></i>
+                            <i class="icone bi bi-caret-right-square-fill"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <input type="checkbox" id="item8">
+                    <label class="accordion-header" for="item8">
+                        <span class="titulo-item">Aula 8: Seu endereço na internet (domínio)</span>
+                        <span class="seta">▼</span>
+                    </label>
+                    <div class="accordion-content">
+                        <p>Aprenda a registrar e conectar seu domínio, criando um endereço online único e profissional para sua loja.</p>
+                        <div class="p-icons">
+                            <i class=" icone bi bi-download"></i>
+                            <i class="icone bi bi-caret-right-square-fill"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <input type="checkbox" id="item8">
+                    <label class="accordion-header" for="item8">
+                        <span class="titulo-item">Aula 9: Sua loja está pronta, e agora?</span>
+                        <span class="seta">▼</span>
+                    </label>
+                    <div class="accordion-content">
+                        <p>Conheça as etapas finais de revisão e lançamento da loja, preparando-a para receber visitantes e vendas.</p>
+                        <div class="p-icons">
+                            <i class=" icone bi bi-download"></i>
+                            <i class="icone bi bi-caret-right-square-fill"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <input type="checkbox" id="item8">
+                    <label class="accordion-header" for="item8">
+                        <span class="titulo-item">Aula 10: Aprendendo a mexer de forma visual</span>
+                        <span class="seta">▼</span>
+                    </label>
+                    <div class="accordion-content">
+                        <p>Explore ferramentas visuais da plataforma para editar produtos, páginas e menus de maneira intuitiva.</p>
+                        <div class="p-icons">
+                            <i class=" icone bi bi-download"></i>
+                            <i class="icone bi bi-caret-right-square-fill"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <input type="checkbox" id="item8">
+                    <label class="accordion-header" for="item8">
+                        <span class="titulo-item">Aula 11: Últimos toques e próximos passos</span>
+                        <span class="seta">▼</span>
+                    </label>
+                    <div class="accordion-content">
+                        <p>Receba dicas para otimização contínua, marketing e estratégias para crescer seu negócio online de forma sustentável.</p>
+                        <div class="p-icons">
+                            <i class=" icone bi bi-download"></i>
+                            <i class="icone bi bi-caret-right-square-fill"></i>
+                        </div>
+                    </div>
+                </div>
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+            </div>
+        </div>
+    
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!------Rodapé------>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../img/logo.png" alt="InovaElas">
+                <p>Transformando vidas através da educação. Capacitando mulheres para um futuro mais próspero e
+                    independente.
+                </p>
+            </div>
+
+            <div class="footer-column">
+                <h4>Cursos</h4>
+                <ul>
+                    <li><a href="#">Tecnologia</a></li>
+                    <li><a href="#">Finanças</a></li>
+                    <li><a href="#">Liderança</a></li>
+                    <li><a href="#">Carreira</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Suporte</h4>
+                <ul>
+                    <li><a href="#">Central de ajuda</a></li>
+                    <li><a href="#">Como funciona</a></li>
+                    <li><a href="#">Políticas de privacidade</a></li>
+                    <li><a href="#">Termos de uso</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Contato</h4>
+                <ul>
+                    <li>(11) 99999-9999</li>
+                    <li>minas.byte@gmail.com</li>
+                    <li>Rua Dom José Gaspar, 500<br>Belo Horizonte - MG</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© Minas Byte. Direitos reservados</p>
+            <span>Feito com ❤️ para transformar vidas.</span>
+        </div>
+    </footer>
+
+</body>
+
+</html>
