@@ -1,0 +1,452 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background: #fff;
+  color: #2c2c54;
+  line-height: 1.6;
+}
+
+header {
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.logo span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2a4d9b;
+}
+
+nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: #2a4d9b;
+  transition: 0.1s;
+}
+
+
+/* Botão principal */
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: 1px solid #2a4d9b;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.10);
+}
+
+.btn-entrar,
+.btn-mais {
+  background: #fff;
+  color: #364c84;
+}
+
+.btn-entrar:hover {
+  background-color: #364c84;
+  color: white;
+  transition: 0.1s;
+}
+
+.btn-cadastrar,
+.btn-apoio {
+  color: #FFFEFA;
+  background-color: #364c84;
+  border: none;
+}
+
+
+/* ========= SEÇÃO PRINCIPAL ========= */
+main {
+  overflow-x: hidden;
+}
+
+.curso-header {
+  padding: 60px 10%;
+  margin: 40px auto;
+  border-radius: 20px;
+  background: #fff;
+  text-align: center;
+  max-width: 1500px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* Título */
+.curso-header h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #2c2c54;
+  margin-bottom: 15px;
+}
+
+.curso-header h1 span {
+  color: #2d5be3;
+}
+
+/* Texto descritivo */
+.curso-header p {
+  margin-top: 10px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+  color: #3a3a3a;
+  font-size: 1.05rem;
+}
+
+/* Container das tags */
+.tags {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+/* Cada tag */
+.tag {
+  padding: 12px 30px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  border: 1px solid #f0f0f0;
+}
+
+/* Cores iguais à imagem */
+.tag-rosa { 
+  background: #fde6e6; 
+  color: #a64a4a;
+}
+
+.tag-amarela { 
+  background: #fffdd0; 
+  color: #737300;
+}
+
+.tag-azul { 
+  background: #e6ebfd; 
+  color: #2d5be3;
+}
+
+/* ====== DESCRIÇÃO ====== */
+.descricao {
+  padding: 60px 10%;
+}
+
+.descricao h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2c2c54;
+}
+
+.descricao-box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.descricao-box p {
+  margin-bottom: 15px;
+}
+
+.importante {
+  background: #e6ebfd;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 15px 0;
+  font-weight: 600;
+}
+
+/* ====== BENEFÍCIOS ====== */
+.beneficios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.card {
+  flex: 1 1 220px;
+  text-align: center;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.card-rosa { background: #fde6e6; }
+.card-amarela { background: #fffdd0; }
+.card-azul { background: #e6ebfd; }
+.card-verde { background: #e6f9e6; }
+
+/* ====== APRENDIZADO ====== */
+.learning-section {
+  padding: 60px 10%;
+  background: #f9faff;
+}
+
+.learning-section h2 {
+  text-align: center;
+  color: #2c2c54;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.learning-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.learning-grid .card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.learning-grid .card span {
+  display: block;
+  margin-top: 10px;
+  font-weight: 400;
+  color: #555;
+}
+
+/* ====== BENEFÍCIOS DO CURSO ====== */
+.benefits-section {
+  padding: 60px 10%;
+  background-color: #f0f4ff;
+  text-align: center;
+}
+
+.benefits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.benefit {
+  flex: 1 1 250px;
+  padding: 25px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.benefit.blue { background-color: #e7f0ff; color: #2b61e4; }
+.benefit.red { background-color: #ffe6ea; color: #e0253c; }
+.benefit.green { background-color: #eaffea; color: #2c8b32; }
+
+/* ====== MERCADO ====== */
+.market-section {
+  background: linear-gradient(90deg, #5a7ffb, #4c60e0);
+  color: #fff;
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.market-section h2 {
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.market-content p {
+  max-width: 800px;
+  margin: 0 auto 30px;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  list-style: none;
+}
+
+.stats li {
+  font-size: 16px;
+}
+
+.stats li strong {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* ====== COMUNIDADE ====== */
+.community-section {
+  padding: 60px 10%;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.connect, .support {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+.connect h3, .support h3 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #2b61e4;
+}
+
+/* ====== FOOTER ====== */
+footer {
+  background: #f9f9f9;
+  padding: 40px;
+  margin-top: auto;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-logo {
+  max-width: 250px;
+}
+
+.footer-logo img {
+  height: 55px;
+  margin-bottom: 10px;
+}
+
+.footer-logo p {
+  font-size: 14px;
+  color: #555;
+}
+
+.footer-column h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #000;
+}
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column ul li {
+  margin-bottom: 6px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #555;
+  font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+  color: #2a4d9b;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 13px;
+  color: #555;
+}
+
+.footer-bottom span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* ====== RESPONSIVIDADE ====== */
+@media (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px 25px;
+  }
+
+  nav {
+    gap: 15px;
+  }
+
+  .curso-header, .descricao, .learning-section, .benefits-section, .market-section, .community-section {
+    padding: 40px 6%;
+  }
+
+  .curso-header h1 {
+    font-size: 2rem;
+  }
+
+  .benefits {
+    flex-direction: column;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
