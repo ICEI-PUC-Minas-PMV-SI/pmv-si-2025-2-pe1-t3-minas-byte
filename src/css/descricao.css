@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background: #fff;
+  color: #2c2c54;
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  border-bottom: 2px solid #cce0ff;
+}
+
+.logo {
+  font-weight: 700;
+  color: #2d5be3;
+  font-size: 1.3rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #2c2c54;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #2d5be3;
+}
+
+.user-avatar {
+  width: 36px;
+  height: 36px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+/* CURSO HEADER */
+.curso-header {
+  padding: 60px 10%;
+  border: 2px solid #cce0ff;
+  margin: 40px auto;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.curso-header h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #2c2c54;
+}
+
+.curso-header h1 span {
+  color: #2d5be3;
+}
+
+.curso-header p {
+  margin-top: 15px;
+  max-width: 800px;
+}
+
+.tags {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.tag {
+  padding: 8px 20px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.tag-rosa {
+  background: #fde6e6;
+}
+
+.tag-amarela {
+  background: #fffdd0;
+}
+
+.tag-azul {
+  background: #e6ebfd;
+}
+
+/* DESCRIÇÃO */
+.descricao {
+  padding: 60px 10%;
+}
+
+.descricao h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2c2c54;
+}
+
+.descricao-box {
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+}
+
+.descricao-box p {
+  margin-bottom: 15px;
+}
+
+.importante {
+  background: #e6ebfd;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 15px 0;
+  font-weight: 600;
+}
+
+/* BENEFÍCIOS */
+.beneficios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.card {
+  flex: 1 1 200px;
+  min-width: 220px;
+  text-align: center;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.card-rosa { background: #fde6e6; }
+.card-amarela { background: #fffdd0; }
+.card-azul { background: #e6ebfd; }
+.card-verde { background: #e6f9e6; }
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 2px solid #cce0ff;
+  margin-top: 40px;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.cta-button {
+  padding: 15px 30px;
+  background-color: #2b61e4;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+h2 {
+  text-align: center;
+  margin: 40px 0 20px;
+  color: #1a1a1a;
+}
+
+.learning-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  padding: 0 40px 40px;
+}
+
+.card {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+}
+
+.card span {
+  display: block;
+  margin-top: 10px;
+  font-weight: normal;
+  color: #555;
+}
+
+.benefits-section {
+  padding: 40px;
+  background-color: #f0f4ff;
+}
+
+.benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.benefit {
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.benefit.blue {
+  background-color: #e7f0ff;
+  color: #2b61e4;
+}
+
+.benefit.red {
+  background-color: #ffe6ea;
+  color: #e0253c;
+}
+
+.benefit.green {
+  background-color: #eaffea;
+  color: #2c8b32;
+}
+
+.market-section {
+  background: linear-gradient(to right, #5a7ffb, #4c60e0);
+  color: white;
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.market-content p {
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+  margin-top: 20px;
+}
+
+.stats li {
+  font-size: 16px;
+}
+
+.stats li strong {
+  font-size: 24px;
+  display: block;
+}
+
+.community-section {
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background-color: #f9f9f9;
+}
+
+.connect, .support {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+.connect h3, .support h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #2b61e4;
+}
