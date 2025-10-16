@@ -6,7 +6,7 @@
     font-family: 'League Spartan', sans-serif;
 }
 
-.aula-hero {
+#aula-hero {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,7 +51,7 @@
 .capa-aula {
     width: 500px;
     max-width: 90%;
-    height: auto;
+    height: 400px;
     margin: 40px;
 }
 
@@ -157,4 +157,64 @@
 .p-icons .icone:hover {
     transform: scale(1.5);
     color: #364C84;
+}
+#requisitos {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    background-color: #FFFFFA;
+}
+
+.requisitos-necess {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 150px;
+    margin: 50px;
+}
+
+.requisitos-um {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 500px;
+    border: 1px solid #364C84;
+    padding: 10px;
+    background-color: #95b1ee24;
+    border-radius: 20px;
+}
+
+.requisitos-icones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+    text-align: left;
+}
+
+.requisitos-icones {
+
+    color: #364C84;
+    margin-right: 10px;
+}
+
+.requisitos-um h3 {
+    color: #364C84;
+    font-size: 28px;
+    margin: 10px;
+}
+
+.requisitos-um p {
+    color: #364C84;
+    margin: 10px;
+}
+
+.requisitos-img {
+    width: 200px;
+    margin-bottom: 10px;
+    max-width: 90%;
+    height: auto;
 }
