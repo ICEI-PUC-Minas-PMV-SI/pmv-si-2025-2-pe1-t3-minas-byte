@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'League Spartan', sans-serif;
 }
 
 body {
-  font-family: 'Nunito', sans-serif;
   background: #fff;
   color: #2c2c54;
   line-height: 1.6;
@@ -106,7 +108,7 @@ main {
   background: #fff;
   text-align: center;
   max-width: 1500px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
 /* Título */
@@ -147,23 +149,23 @@ main {
   border-radius: 12px;
   font-weight: 700;
   font-size: 0.95rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   border: 1px solid #f0f0f0;
 }
 
 /* Cores iguais à imagem */
-.tag-rosa { 
-  background: #fde6e6; 
+.tag-rosa {
+  background: #fde6e6;
   color: #a64a4a;
 }
 
-.tag-amarela { 
-  background: #fffdd0; 
+.tag-amarela {
+  background: #fffdd0;
   color: #737300;
 }
 
-.tag-azul { 
-  background: #e6ebfd; 
+.tag-azul {
+  background: #e6ebfd;
   color: #2d5be3;
 }
 
@@ -226,10 +228,21 @@ main {
   margin-bottom: 10px;
 }
 
-.card-rosa { background: #fde6e6; }
-.card-amarela { background: #fffdd0; }
-.card-azul { background: #e6ebfd; }
-.card-verde { background: #e6f9e6; }
+.card-rosa {
+  background: #fde6e6;
+}
+
+.card-amarela {
+  background: #fffdd0;
+}
+
+.card-azul {
+  background: #e6ebfd;
+}
+
+.card-verde {
+  background: #e6f9e6;
+}
 
 /* ====== APRENDIZADO ====== */
 .learning-section {
@@ -289,9 +302,20 @@ main {
   line-height: 1.5;
 }
 
-.benefit.blue { background-color: #e7f0ff; color: #2b61e4; }
-.benefit.red { background-color: #ffe6ea; color: #e0253c; }
-.benefit.green { background-color: #eaffea; color: #2c8b32; }
+.benefit.blue {
+  background-color: #e7f0ff;
+  color: #2b61e4;
+}
+
+.benefit.red {
+  background-color: #ffe6ea;
+  color: #e0253c;
+}
+
+.benefit.green {
+  background-color: #eaffea;
+  color: #2c8b32;
+}
 
 /* ====== MERCADO ====== */
 .market-section {
@@ -338,13 +362,15 @@ main {
   gap: 50px;
 }
 
-.connect, .support {
+.connect,
+.support {
   text-align: center;
   max-width: 800px;
   margin: auto;
 }
 
-.connect h3, .support h3 {
+.connect h3,
+.support h3 {
   font-size: 1.6rem;
   margin-bottom: 10px;
   color: #2b61e4;
@@ -433,7 +459,12 @@ footer {
     gap: 15px;
   }
 
-  .curso-header, .descricao, .learning-section, .benefits-section, .market-section, .community-section {
+  .curso-header,
+  .descricao,
+  .learning-section,
+  .benefits-section,
+  .market-section,
+  .community-section {
     padding: 40px 6%;
   }
 

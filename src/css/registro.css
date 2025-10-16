@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family: 'League Spartan', sans-serif;
   text-decoration: none;
 }
 
@@ -32,9 +34,10 @@ body {
      background: url('logo.png') no-repeat center/contain; */
 }
 
-.imagemLogo{
+.imagemLogo {
   height: 63px;
 }
+
 /* Caixa de login */
 .login-box {
   background-color: #ffffff;
@@ -134,14 +137,17 @@ input::placeholder {
   align-items: center;
   justify-content: center;
 }
-.google-icon{
+
+.google-icon {
   margin-right: 12px;
 }
-.divRegister{
+
+.divRegister {
   display: flex;
   width: 100%;
   justify-content: center;
 }
-.register{
+
+.register {
   margin-top: 20px;
 }

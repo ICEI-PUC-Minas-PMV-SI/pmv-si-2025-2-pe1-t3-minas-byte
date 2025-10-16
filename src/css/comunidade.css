@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
-    font-family: 'League Spartan'
+    font-family: 'League Spartan', sans-serif;
 }
 
 .comunidade {
@@ -171,7 +171,7 @@
 
 .cards h3 {
     font-size: 16px;
-    color:  #364c84;
+    color: #364c84;
     margin-bottom: 10px;
     margin-top: 10px;
 }
@@ -314,7 +314,7 @@ h2,
     text-align: start;
 }
 
-.bi{
+.bi {
     color: #364C84;
     font-size: 24px;
 }

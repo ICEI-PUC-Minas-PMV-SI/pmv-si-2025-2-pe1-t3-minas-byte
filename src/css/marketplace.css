@@ -1,9 +1,11 @@
 /* ===== RESET BÁSICO ===== */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'League Spartan', sans-serif;
 }
 
 body {
@@ -115,7 +117,8 @@ nav a:hover {
   width: 10rem;
 }
 
-.btn-inscreva, .btn-participar {
+.btn-inscreva,
+.btn-participar {
   color: #364c84;
   background-color: #e7f1a8;
   border: none;
@@ -146,9 +149,17 @@ nav a:hover {
   margin-bottom: 1rem;
 }
 
-.hero .pink { color: #f36b8c; }
-.hero .blue { color: #3f6ad8; }
-.hero .gray { color: #a9b3d0; }
+.hero .pink {
+  color: #f36b8c;
+}
+
+.hero .blue {
+  color: #3f6ad8;
+}
+
+.hero .gray {
+  color: #a9b3d0;
+}
 
 .hero p {
   font-size: .95rem;
@@ -166,7 +177,9 @@ nav a:hover {
   cursor: pointer;
 }
 
-.hero button:hover { background: #1d2b52; }
+.hero button:hover {
+  background: #1d2b52;
+}
 
 /* ===== CTA INFERIOR ===== */
 .cta-bottom {
@@ -183,7 +196,9 @@ nav a:hover {
   text-decoration: underline;
 }
 
-.cta-bottom a:hover { opacity: .8; }
+.cta-bottom a:hover {
+  opacity: .8;
+}
 
 /* ===== SEÇÃO DE VAGAS ===== */
 .jobs-section {
@@ -203,12 +218,16 @@ nav a:hover {
   border-radius: 8px;
 }
 
-.search-box { margin-bottom: 1.5rem; }
+.search-box {
+  margin-bottom: 1.5rem;
+}
+
 .search-box label {
   display: block;
   font-weight: 500;
   margin-bottom: .5rem;
 }
+
 .search-box input {
   width: 100%;
   padding: .5rem;
@@ -216,15 +235,26 @@ nav a:hover {
   border-radius: 6px;
 }
 
-.categories h3 { margin-bottom: 1rem; }
-.categories ul { list-style: none; }
+.categories h3 {
+  margin-bottom: 1rem;
+}
+
+.categories ul {
+  list-style: none;
+}
+
 .categories li {
   margin-bottom: .5rem;
   font-size: .9rem;
 }
-.categories input { margin-right: .5rem; }
 
-.job-list { flex: 3 1 600px; }
+.categories input {
+  margin-right: .5rem;
+}
+
+.job-list {
+  flex: 3 1 600px;
+}
 
 .job-card {
   background: #fff;
@@ -350,8 +380,19 @@ footer {
 
 /* ===== RESPONSIVO ===== */
 @media (max-width: 768px) {
-  nav ul { display: none; }
-  .hero { padding: 3rem 1rem; }
-  .hero h1 { font-size: 1.4rem; }
-  .hero h2 { font-size: 1.2rem; }
+  nav ul {
+    display: none;
+  }
+
+  .hero {
+    padding: 3rem 1rem;
+  }
+
+  .hero h1 {
+    font-size: 1.4rem;
+  }
+
+  .hero h2 {
+    font-size: 1.2rem;
+  }
 }

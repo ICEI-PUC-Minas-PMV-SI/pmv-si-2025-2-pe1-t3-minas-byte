@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
+
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    font-family: 'Lexend', sans-serif;
-
+    font-family: 'League Spartan', 'Lexend', sans-serif;
 }
 
 p {

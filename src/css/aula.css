@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
-    font-family: 'League Spartan'
+    font-family: 'League Spartan', sans-serif;
 }
 
 .aula-hero {
@@ -43,7 +43,7 @@
     margin: 50px;
 }
 
-.capa{
+.capa {
     position: relative;
     display: inline-block;
 }
@@ -81,10 +81,10 @@
     background: #fff;
     border-radius: 16px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 40px 60px; 
+    padding: 40px 60px;
     display: flex;
-    flex-direction: column; 
-    margin: 90px auto; 
+    flex-direction: column;
+    margin: 90px auto;
 }
 
 .accordion {
@@ -132,7 +132,7 @@
     padding: 18px 20px;
 }
 
-.accordion-item input:checked + .accordion-header + .accordion-content {
+.accordion-item input:checked+.accordion-header+.accordion-content {
     display: flex;
 }
 
@@ -143,18 +143,18 @@
     gap: 20px;
 }
 
-.aula p{
-    color:#364C84;
+.aula p {
+    color: #364C84;
     font-size: 16px;
 }
 
-.p-icons .icone { 
-    font-size: 20px; 
-    cursor: pointer; 
-    transition: transform 0.3s; 
+.p-icons .icone {
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s;
 }
 
-.p-icons .icone:hover { 
-    transform: scale(1.5); 
+.p-icons .icone:hover {
+    transform: scale(1.5);
     color: #364C84;
 }
