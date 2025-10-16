@@ -133,44 +133,48 @@ h1 {
 
 .hero-galeria-item:nth-child(2) {
     grid-row: span 2;
-    border-radius: 12px 4px 12px 12px;
+    border-radius: 10px;
 }
 
 .hero-galeria-item:nth-child(3) {
     grid-column: span 2;
-    border-radius: 4px 12px 12px 12px;
+    border-radius: 10px;
 }
 
 .hero-galeria-item:nth-child(4) {
     grid-row: span 2;
+    border-radius: 10px;
 }
 
 .hero-galeria-item:nth-child(5) {
     grid-column: span 2;
-    border-radius: 12px 12px 4px 12px;
+    border-radius: 10px;
 }
 
 .hero-galeria-item:nth-child(6) {
     grid-column: span 2;
+    border-radius: 10px;
 }
 
 .hero-galeria-item:nth-child(7) {
     grid-row: span 2;
-    border-radius: 12px 12px 12px 4px;
+    border-radius: 10px;
 }
 
 .hero-galeria-item:nth-child(8) {
     grid-column: span 1;
+    border-radius: 10px;
 }
 
 .hero-galeria-item:nth-child(9) {
     grid-column: span 1;
-    border-radius: 25px;
+    border-radius: 10px;
 }
 
 .hero-galeria-item:nth-child(10) {
     grid-column: 3;
     grid-row: 2;
+    border-radius: 10px;
 }
 
 .hero-galeria-item img {
@@ -216,7 +220,7 @@ h1 {
 
 .hero-carousel-item {
     position: relative;
-    width: 300px;
+    width: 400px;
     height: 200px;
     border-radius: 12px;
     overflow: hidden;
