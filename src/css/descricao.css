@@ -319,10 +319,12 @@ main {
 
 /* ====== MERCADO ====== */
 .market-section {
-  background: linear-gradient(90deg, #5a7ffb, #4c60e0);
+  background: linear-gradient(90deg, #95b1ee, #364c84);
   color: #fff;
   padding: 80px 10%;
   text-align: center;
+  margin: 70px;
+  border-radius: 20px;
 }
 
 .market-section h2 {
