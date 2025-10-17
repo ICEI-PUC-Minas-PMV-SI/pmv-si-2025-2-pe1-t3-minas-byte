@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="css/perfil.css">
     <link rel="stylesheet" href="css/components.css">
 
-    <title>Painel | InovaElas</title>
+    <title>Perfil | InovaElas</title>
 </head>
 
 <body>
     <header class="logado">
         <div class="logo">
-            <a href="#">
+            <a href="index.html">
                 <img src="img/logo.png" alt="InovaElas">
             </a>
         </div>
@@ -28,12 +28,12 @@
 
         <nav>
             <div class="usuaria-mobile">
-                <a href="perfil.html" class="aluna">
+                <a href="index.html" class="aluna">
                     <img src="img/personas/comentarios/persona_julia_silva.jpeg" alt=" InovaElas">
                 </a>
             </div>
 
-            <a href="#">Cursos</a>
+            <a href="cursos.html">Cursos</a>
             <a href="comunidade.html">Comunidade</a>
             <a href="martketplace.html">Marketplace</a>
             <a href="bancoTalentos.html">Banco de talentos</a>
@@ -47,42 +47,54 @@
     </header>
 
     <div class="container">
-        <aside class="sidebar">
-            <ul>
-                <li class="active">Perfil</li>
-                <li>Meus Cursos</li>
-                <li>Conquistas</li>
-                <li>Certificados</li>
-            </ul>
-            <hr>
-            <ul>
-                <li>❤ Favoritos</li>
-                <li>👥 Comunidade</li>
-                <hr>
-                <li>❓ Central de Ajuda</li>
-                <li>⚙️ Configurações</li>
-            </ul>
-        </aside>
-
         <main class="content">
-            <h1>Olá Julia Silva!</h1>
-            <p class="subtitulo">Seja bem-vinda à sua jornada de aprendizado!</p>
+            <!-- Cover Photo -->
+            <div class="cover-photo">
+                <div class="cover-overlay"></div>
+            </div>
 
-            <section class="perfil-card">
-                <img class="avatar" src="img/personas/comentarios/persona_julia_silva.jpeg" alt="Foto">
-                <div class="info">
-                    <h2>Julia Silva</h2>
-                    <p class="role">Desenvolvedora Front-end</p>
+            <!-- Profile Header -->
+            <section class="perfil-header">
+                <div class="perfil-info">
+                    <img class="avatar" src="img/personas/comentarios/persona_julia_silva.jpeg" alt="Julia Silva">
+                    <div class="info">
+                        <h1>Julia Silva</h1>
+                        <p class="role">Desenvolvedora Front-end</p>
+                        <p class="location">📍 Rio de Janeiro - RJ</p>
+                        <div class="stats">
+                            <div class="stat">
+                                <span class="number">12</span>
+                                <span class="label">Cursos</span>
+                            </div>
+                            <div class="stat">
+                                <span class="number">8</span>
+                                <span class="label">Certificados</span>
+                            </div>
+                            <div class="stat">
+                                <span class="number">156</span>
+                                <span class="label">Horas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="perfil-actions">
+                    <button class="btn-edit">✏ Editar Perfil</button>
+                    <button class="btn-share">🔗 Compartilhar</button>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section class="about-section">
+                <h3>Sobre</h3>
+                <p>Desenvolvedora apaixonada por tecnologia e inovação. Especializada em React e JavaScript, sempre em busca de novos desafios e oportunidades de crescimento.</p>
+                <div class="skills">
+                    <h4>Habilidades</h4>
                     <div class="tags">
                         <span>JavaScript</span>
                         <span>React</span>
                         <span>UI/UX</span>
-                    </div>
-                    <div class="detalhes">
-                        <div><strong>E-mail:</strong> julia.silva@gmail.com</div>
-                        <div><strong>Telefone:</strong> (21) 99999-9999</div>
-                        <div><strong>Localização:</strong> Rio de Janeiro - RJ</div>
-                        <div><strong>Membro desde:</strong> Outubro de 2025</div>
+                        <span>HTML/CSS</span>
+                        <span>Node.js</span>
                     </div>
                 </div>
             </section>
@@ -103,23 +115,34 @@
                         <strong>Próxima aula:</strong>
                         <p>Sua loja está pronta, e agora?</p>
                     </div>
-                    <a href="aula.html">
-                       <button>▶ Continuar</button>
-                    </a>
+                    <button>▶ Continuar</button>
                 </div>
             </section>
 
-            <section class="explore">
-                <h3>Explore novos cursos</h3>
-                <p>Descubra novos conhecimentos e expanda suas habilidades</p>
-                <button>Explorar Catálogo</button>
+            <!-- Contact Info -->
+            <section class="contact-info">
+                <h3>Informações de Contato</h3>
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <span class="icon">📧</span>
+                        <span>julia.silva@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="icon">📱</span>
+                        <span>(21) 99999-9999</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="icon">📅</span>
+                        <span>Membro desde Outubro 2025</span>
+                    </div>
+                </div>
             </section>
 
             <div class="bottom-sections">
                 <section class="conquistas">
                     <h3>Medalhas e Conquistas</h3>
                     <div class="medalhas">🏅 Primeira Conquista — Complete seu primeiro curso</div>
-                    <div class="medalhas">🎖️ Maratonista — Complete 5 cursos</div>
+                    <div class="medalhas">🎖 Maratonista — Complete 5 cursos</div>
                     <div class="medalhas">💎 Expert em JavaScript — Domine todos os conceitos de JS</div>
                     <div class="medalhas inativas">🔥 Dedicação Total — Estude por 30 dias consecutivos</div>
                 </section>
