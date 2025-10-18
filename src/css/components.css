@@ -396,9 +396,8 @@ footer {
 }
 
 
-
-/*Tentativa de menu hamburguer*/
 /* HAMBURGUER - escondido por padrão (desktop) */
+/* ===== HEADER GERAL ===== */
 header.logado {
   display: flex;
   align-items: center;
@@ -407,7 +406,7 @@ header.logado {
   padding: 12px 24px;
   background-color: #ffffff;
   position: relative;
-  z-index: 1;
+  z-index: 10;
 }
 
 .logado .logo img {
@@ -415,11 +414,20 @@ header.logado {
   display: block;
 }
 
-/* NAV padrão (desktop) */
+/* ===== NAV (DESKTOP) ===== */
 .logado nav {
   display: flex;
-  gap: 24px;
   align-items: center;
+  gap: 24px;
+}
+
+.logado nav ul {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .logado nav a {
@@ -427,8 +435,14 @@ header.logado {
   color: #364C84;
   font-weight: 500;
   padding: 6px 0;
+  transition: color 0.25s ease;
 }
 
+.logado nav a:hover {
+  color: #2a3875;
+}
+
+/* ===== USUÁRIA (DESKTOP) ===== */
 .usuaria-desktop img {
   height: 45px;
   width: 45px;
@@ -436,6 +450,7 @@ header.logado {
   object-fit: cover;
 }
 
+/* ===== USUÁRIA (MOBILE) ===== */
 .usuaria-mobile {
   display: none;
 }
@@ -449,6 +464,7 @@ header.logado {
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
 }
 
+/* ===== MENU HAMBÚRGUER ===== */
 .menu-toggle {
   display: none;
   flex-direction: column;
@@ -465,27 +481,27 @@ header.logado {
   width: 100%;
   background: #2e2e2e;
   border-radius: 3px;
-  transition: transform 0.25s ease, opacity 0.30s ease;
+  transition: transform 0.25s ease, opacity 0.3s ease;
 }
 
-/* Checkbox invisível */
+/* ===== CHECKBOX INVISÍVEL ===== */
 #menu-checkbox {
   position: absolute;
   left: -9999px;
 }
 
-/* ------------Responsividade------------- */
+/* ===== RESPONSIVIDADE ===== */
 @media (max-width: 768px) {
   .menu-toggle {
     display: flex;
   }
 
-  .logado {
+  header.logado {
     align-items: center;
     position: relative;
   }
 
-  .logado nav {
+  nav.menu-principal {
     position: absolute;
     top: 72px;
     left: 0;
@@ -503,10 +519,15 @@ header.logado {
     z-index: 10;
   }
 
-  .logado nav a {
+  nav.menu-principal ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav.menu-principal a {
     display: block;
     width: 100%;
-    padding: 12px 20px;
+    padding: 10px 20px;
     color: #364C84;
     border-top: 1px solid rgba(54, 76, 132, 0.06);
     text-align: center;
@@ -516,14 +537,15 @@ header.logado {
     display: none;
   }
 
-  #menu-checkbox:checked~nav {
+  /* Exibe menu quando checkbox estiver marcado */
+  #menu-checkbox:checked ~ nav.menu-principal {
     max-height: 420px;
     padding: 16px 0;
   }
 
-  #menu-checkbox:checked~nav .usuaria-mobile {
+  #menu-checkbox:checked ~ nav.menu-principal .usuaria-mobile {
     display: flex;
     justify-content: center;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
   }
 }

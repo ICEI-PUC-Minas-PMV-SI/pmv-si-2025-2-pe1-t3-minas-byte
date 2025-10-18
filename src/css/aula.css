@@ -114,7 +114,7 @@
 }
 
 .accordion-header:hover {
-    background: #FFFFFA;
+    background: #95b1ee;
 }
 
 .accordion-header .seta {
@@ -162,8 +162,7 @@
 #requisitos {
     display: flex;
     justify-content: center;
-    margin: 30px;
-    background-color: #FFFFFA;
+    background-color: #fafaef8f;
 }
 
 .requisitos-necess {
@@ -203,13 +202,13 @@
 }
 
 h3 {
-
     color: #364C84;
     font-size: 28px;
     margin: 10px;
 }
 
-p {
+.requisitos-um p,
+.informacoes p {
     color: #707070;
     margin: 10px;
     display: flex;
@@ -266,7 +265,7 @@ p {
     text-align: center;
 }
 
-h4 {
+.informacoes h4 {
     color: #2b2b2b;
     font-size: 16px;
     margin: 10px;
