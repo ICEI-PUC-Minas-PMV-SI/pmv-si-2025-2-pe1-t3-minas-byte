@@ -229,7 +229,7 @@
     margin: 10px;
 }
 
-.comunidade-grupos {
+#comunidade-grupos {
     width: 90%;
     max-width: 1200px;
     margin: 100px auto;
@@ -237,8 +237,7 @@
 }
 
 /* ====== h2 ====== */
-h2,
-.forum h2 {
+.titulo {
     color: #364C84;
     font-size: 52px;
     margin-bottom: 20px;
@@ -246,8 +245,7 @@ h2,
 }
 
 /* ====== p ====== */
-.comunidade-grupos p,
-.forum p {
+.sub {
     color: #757575;
     font-size: 20px;
     margin-bottom: 35px;
@@ -382,8 +380,8 @@ button:hover {
     background-color: #c8f28c;
 }
 
-/*aqui*/
-.forum {
+
+#forum {
     max-width: 900px;
     margin: 40px auto;
     background-color: #fffffa;
