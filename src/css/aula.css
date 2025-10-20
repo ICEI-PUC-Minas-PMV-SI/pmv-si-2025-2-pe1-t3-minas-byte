@@ -41,6 +41,7 @@
     color: #364C84;
     font-weight: 600;
     margin: 50px;
+    text-align: center;
 }
 
 .capa {
@@ -221,6 +222,7 @@ h3 {
     margin-bottom: 10px;
     max-width: 90%;
     height: auto;
+    border-radius: 30px;
 }
 
 #instrutora-conteiner {

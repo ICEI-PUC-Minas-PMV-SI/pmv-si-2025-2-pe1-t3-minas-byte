@@ -68,38 +68,6 @@
     opacity: 0.20;
 }
 
-.decoracao-v {
-    width: 150px;
-    height: 150px;
-    background: #e7f1a8;
-    top: 50px;
-    right: 0%;
-}
-
-.decoracao-a {
-    width: 100px;
-    height: 100px;
-    background: #364C84;
-    bottom: -5px;
-    right: 80%;
-}
-
-.decoracao-r {
-    width: 250px;
-    height: 250px;
-    background: #f1849c;
-    bottom: 100px;
-    right: 95%;
-}
-
-.decoracao-rr {
-    width: 50px;
-    height: 50px;
-    background: #f1849c;
-    bottom: -10px;
-    right: 10%;
-}
-
 .comunidade-beneficios {
     display: flex;
     justify-content: center;

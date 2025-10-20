@@ -17,7 +17,7 @@ body {
 header {
   width: 100%;
   background: #fff;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;  
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -85,7 +85,10 @@ nav a:hover {
 
 .btn-entrar:hover {
   background-color: #364c84;
-  color: white;
+  transition: 0.1s;
+}
+
+.btn:hover {
   transition: 0.1s;
 }
 

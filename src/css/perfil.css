@@ -60,9 +60,9 @@ nav a:hover {
 
 .content {
     width: 100%;
+    height: 100%;
 }
 
-/* Cover Photo */
 .cover-photo {
     height: 200px;
     background: linear-gradient(135deg, #364C84, #95B1EE, #F4A9BA);
@@ -78,7 +78,6 @@ nav a:hover {
     border-radius: 12px 12px 0 0;
 }
 
-/* Profile Header */
 .perfil-header {
     background: white;
     border-radius: 0 0 12px 12px;
@@ -208,7 +207,6 @@ nav a:hover {
     font-weight: 500;
 }
 
-/* Contact Info */
 .contact-info {
     background: white;
     border-radius: 12px;
