@@ -4,41 +4,45 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>InovaElas - header</title>
+  <title>InovaElas - header logado</title>
   <link rel="stylesheet" href="../css/components.css">
 </head>
 
 <body>
   <header class="logado">
     <div class="logo">
-      <a href="index.html">
-        <img src="../img/logo.png" alt="InovaElas">
+      <a href="index.html" aria-label="Página inicial - InovaElas">
+        <img src="../img/logo.png" alt="Logotipo InovaElas">
       </a>
     </div>
-    <input type="checkbox" id="menu-checkbox">
 
-    <label for="menu-checkbox" class="menu-toggle">
+    <input type="checkbox" id="menu-checkbox" class="visually-hidden" aria-label="Abrir menu de navegação">
+
+    <label for="menu-checkbox" class="menu-toggle" aria-label="Alternar menu">
       <span></span>
       <span></span>
       <span></span>
     </label>
 
-    <nav>
+    <nav class="menu-principal" aria-label="Menu principal">
       <div class="usuaria-mobile">
-        <a href="index.html" class="aluna">
-          <img src="../img/personas/comentarios/persona_julia_silva.jpeg" alt=" InovaElas">
+        <a href="perfil.html" class="aluna" aria-label="Perfil da aluna">
+          <img src="../img/personas/comentarios/persona_julia_silva.jpeg" alt="Foto da usuária Julia Silva">
         </a>
       </div>
 
-      <a href="cursos.html">Cursos</a>
-      <a href="comunidade.html">Comunidade</a>
-      <a href="martketplace.html">Marketplace</a>
-      <a href="bancoTalentos.html">Banco de talentos</a>
-      <a href="#">Mentoria</a>
+      <ul>
+        <li><a href="#.html">Cursos</a></li>
+        <li><a href="comunidade.html">Comunidade</a></li>
+        <li><a href="martketplace.html">Marketplace</a></li>
+        <li><a href="bancoTalentos.html">Banco de talentos</a></li>
+        <li><a href="mentoria.html">Mentoria</a></li>
+      </ul>
     </nav>
+
     <div class="usuaria-desktop">
-      <a href="index.html" class="aluna">
-        <img src="../img/personas/comentarios/persona_julia_silva.jpeg" alt="Foto">
+      <a href="perfil.html" class="aluna" aria-label="Perfil da aluna">
+        <img src="../img/personas/comentarios/persona_julia_silva.jpeg" alt="Foto da usuária Julia Silva">
       </a>
     </div>
   </header>

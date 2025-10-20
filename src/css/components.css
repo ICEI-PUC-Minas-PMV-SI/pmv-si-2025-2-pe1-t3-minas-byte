@@ -12,8 +12,8 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
-
-/* ===== Cabeçalho ===== */
+/*
+/* ===== Cabeçalho ===== 
 header {
   width: 100%;
   background: #fff;
@@ -59,7 +59,7 @@ nav a:hover {
 }
 
 
-/* ===== Botões ===== */
+/* ===== Botões ===== 
 .auth-buttons {
   display: flex;
   gap: 10px;
@@ -128,7 +128,7 @@ nav a:hover {
   width: 10rem;
 }
 
-
+*/
 /* === Hero com bolinhas ==*/
 .hero {
   text-align: center;
@@ -398,10 +398,7 @@ footer {
   color: #facb10;
 }
 
-
-
-/*Tentativa de menu hamburguer*/
-/* HAMBURGUER - escondido por padrão (desktop) */
+/* HEADER GERAL(LOGADO) */
 header.logado {
   display: flex;
   align-items: center;
@@ -410,7 +407,7 @@ header.logado {
   padding: 12px 24px;
   background-color: #ffffff;
   position: relative;
-  z-index: 1;
+  z-index: 10;
 }
 
 .logado .logo img {
@@ -418,11 +415,20 @@ header.logado {
   display: block;
 }
 
-/* NAV padrão (desktop) */
+/*  NAV (DESKTOP) */
 .logado nav {
   display: flex;
-  gap: 24px;
   align-items: center;
+  gap: 24px;
+}
+
+.logado nav ul {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .logado nav a {
@@ -430,6 +436,11 @@ header.logado {
   color: #364C84;
   font-weight: 500;
   padding: 6px 0;
+  transition: color 0.25s ease;
+}
+
+.logado nav a:hover {
+  color: #2a3875;
 }
 
 .usuaria-desktop img {
@@ -452,6 +463,7 @@ header.logado {
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
 }
 
+/* MENU HAMBÚRGUER  */
 .menu-toggle {
   display: none;
   flex-direction: column;
@@ -468,27 +480,26 @@ header.logado {
   width: 100%;
   background: #2e2e2e;
   border-radius: 3px;
-  transition: transform 0.25s ease, opacity 0.30s ease;
+  transition: transform 0.25s ease, opacity 0.3s ease;
 }
 
-/* Checkbox invisível */
 #menu-checkbox {
   position: absolute;
   left: -9999px;
 }
 
-/* ------------Responsividade------------- */
+/* RESPONSIVIDADE */
 @media (max-width: 768px) {
   .menu-toggle {
     display: flex;
   }
 
-  .logado {
+  header.logado {
     align-items: center;
     position: relative;
   }
 
-  .logado nav {
+  nav.menu-principal {
     position: absolute;
     top: 72px;
     left: 0;
@@ -506,10 +517,15 @@ header.logado {
     z-index: 10;
   }
 
-  .logado nav a {
+  nav.menu-principal ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav.menu-principal a {
     display: block;
     width: 100%;
-    padding: 12px 20px;
+    padding: 10px 20px;
     color: #364C84;
     border-top: 1px solid rgba(54, 76, 132, 0.06);
     text-align: center;
@@ -519,14 +535,157 @@ header.logado {
     display: none;
   }
 
-  #menu-checkbox:checked~nav {
+  #menu-checkbox:checked~nav.menu-principal {
     max-height: 420px;
     padding: 16px 0;
   }
 
-  #menu-checkbox:checked~nav .usuaria-mobile {
+  #menu-checkbox:checked~nav.menu-principal .usuaria-mobile {
     display: flex;
     justify-content: center;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
+  }
+}
+
+/*  Header responsivo não logado   */
+header {
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 10px 40px;
+  position: relative;
+  z-index: 10;
+  gap: 40px; 
+}
+
+.logo {
+  flex: 1;
+}
+.logo img {
+  height: 50px;
+}
+
+nav {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  transition: color 0.2s ease-in-out;
+}
+
+nav a:hover {
+  color: #2a4d9b;
+}
+
+.auth-buttons {
+  flex: 1; 
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+  gap: 10px;
+}
+
+.btn {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: 1px solid #2a4d9b;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.10);
+  text-align: center;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  color: #364c84;
+  cursor: pointer;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  header {
+    padding: 10px 20px;
+  }
+
+  nav {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    border-top: 1px solid #ddd;
+    display: none;
+    padding: 20px 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .auth-buttons {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .auth-buttons .btn {
+    width: 150px;
+  }
+
+  #menu-toggle:checked + .menu-icon + nav {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+
+@media (max-width: 500px) {
+  nav a {
+    font-size: 15px;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+
+  .auth-buttons .btn {
+    width: 100%;
   }
 }
