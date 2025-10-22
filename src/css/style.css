@@ -1099,8 +1099,8 @@ h2 {
         flex-direction: column;
     }
 
-    .duvidas-img img {
-        width: 300px;
+    .duvidas-img {
+        display: none;
     }
 
     .duvidas-form {
