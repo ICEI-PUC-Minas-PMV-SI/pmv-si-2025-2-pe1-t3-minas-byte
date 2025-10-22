@@ -17,11 +17,12 @@ body {
 header {
   width: 100%;
   background: #fff;
-  border-bottom: 1px solid #ddd;  
+  border-bottom: 1px solid #ddd;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 40px;
+  position: relative;
 }
 
 .logo {
@@ -47,6 +48,18 @@ nav {
   gap: 40px;
 }
 
+nav ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
 nav a {
   text-decoration: none;
   color: #000;
@@ -59,7 +72,32 @@ nav a:hover {
 }
 
 
-/* ===== Botões =====*/
+/* Menu hambúrguer para header principal */
+.menu-toggle-main {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  width: 40px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.menu-toggle-main span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: #2e2e2e;
+  border-radius: 3px;
+  transition: transform 0.25s ease, opacity 0.3s ease;
+}
+
+#menu-main-checkbox {
+  position: absolute;
+  left: -9999px;
+}
+
+/* ===== Botões =====
 .auth-buttons {
   display: flex;
   gap: 10px;
@@ -483,7 +521,89 @@ header.logado {
   left: -9999px;
 }
 
-/* RESPONSIVIDADE */
+/* RESPONSIVIDADE HEADER PRINCIPAL */
+@media (max-width: 768px) {
+  header {
+    padding: 10px 20px;
+  }
+
+  .menu-toggle-main {
+    display: flex;
+  }
+
+  nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: #fff;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    padding: 0;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.35s ease, padding 0.35s ease;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    z-index: 10;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+  }
+
+  nav ul li {
+    width: 100%;
+  }
+
+  nav a {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .auth-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    padding: 20px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  #menu-main-checkbox:checked~nav {
+    max-height: 400px;
+    padding: 20px 0;
+  }
+
+  .logo span {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 8px 15px;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+
+  .logo span {
+    font-size: 16px;
+  }
+}
+
+/* RESPONSIVIDADE HEADER LOGADO */
 @media (max-width: 768px) {
   .menu-toggle {
     display: flex;
