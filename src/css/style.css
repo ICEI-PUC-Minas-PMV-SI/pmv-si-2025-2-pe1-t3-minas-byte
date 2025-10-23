@@ -448,7 +448,7 @@ h1 {
 }
 
 
-.descTrilha {
+#descTrilha {
     background-color: #fffefc;
     padding: 4rem 10%;
     text-align: center;
@@ -890,7 +890,7 @@ h2 {
 }
 
 
-.duvidas {
+#duvidas {
     padding: 80px 0;
     display: flex;
     justify-content: center;

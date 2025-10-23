@@ -21,43 +21,37 @@
 
 <body>
 
- <header class="logado">
-        <div class="logo">
-            <a href="index.html" aria-label="Página inicial - InovaElas">
-                <img src="../src/img/logo.png" alt="Logotipo InovaElas">
-            </a>
-        </div>
+<header>
+  <div class="logo">
+    <a href="index.html">
+      <img src="./img/logo.png" alt="InovaElas">
+    </a>
+  </div>
 
-        <input type="checkbox" id="menu-checkbox" class="visually-hidden" aria-label="Abrir menu de navegação">
+  <input type="checkbox" id="menu-main-checkbox">
+  <label for="menu-main-checkbox" class="menu-toggle-main">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
 
-        <label for="menu-checkbox" class="menu-toggle" aria-label="Alternar menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
+  <nav>
+    <ul>
+      <li><a href="cursos.html">Cursos</a></li>
+      <li><a href="index.html#descTrilha">Sobre</a></li>
+      <li><a href="index.html#duvidas">Contato</a></li>
+    </ul>
+    <div class="nav-auth-buttons">
+      <a href="login.html" class="btn btn-entrar">Entrar</a>
+      <a href="registro.html" class="btn btn-cadastrar">Cadastre-se</a>
+    </div>
+  </nav>
 
-        <nav class="menu-principal" aria-label="Menu principal">
-            <div class="usuaria-mobile">
-                <a href="perfil.html" class="aluna" aria-label="Perfil da aluna">
-                    <img src="img/personas/comentarios/persona_julia_silva.jpeg" alt="Foto da usuária Julia Silva">
-                </a>
-            </div>
-
-            <ul>
-                <li><a href="cursos.html">Cursos</a></li>
-                <li><a href="comunidade.html">Comunidade</a></li>
-                <li><a href="martketplace.html">Marketplace</a></li>
-                <li><a href="bancoTalentos.html">Banco de talentos</a></li>
-                <li><a href="mentoria.html">Mentoria</a></li>
-            </ul>
-        </nav>
-
-        <div class="usuaria-desktop">
-            <a href="perfil.html" class="aluna" aria-label="Perfil da aluna">
-                <img src="img/personas/comentarios/persona_julia_silva.jpeg" alt="Foto da usuária Julia Silva">
-            </a>
-        </div>
-    </header>
+  <div class="auth-buttons">
+    <a href="login.html" class="btn btn-entrar">Entrar</a>
+    <a href="registro.html" class="btn btn-cadastrar">Cadastre-se</a>
+  </div>
+</header>
 
 
   <main>
@@ -91,7 +85,7 @@
           <div class="card-desc">Aprenda a ligar, usar teclado, mouse e organizar seus arquivos com autonomia.</div>
           <div class="card-footer">
             <span class="rating">4.9</span>
-           <a href="descricao.html" class="btn-inscrever">Inscreva-se</a>
+            <button class="btn btn-inscrever">Inscreva-se</button>
           </div>
         </div>
       </div>
@@ -108,7 +102,7 @@
           <div class="card-desc">Descubra como textos, planilhas e apresentações podem transformar sua rotina.</div>
           <div class="card-footer">
             <span class="rating">4.9</span>
-           <a href="descricao.html" class="btn-inscrever">Inscreva-se</a>
+            <button class="btn btn-inscrever">Inscreva-se</button>
           </div>
         </div>
       </div>
@@ -126,7 +120,7 @@
           </div>
           <div class="card-footer">
             <span class="rating">4.8</span>
-           <a href="descricao.html" class="btn-inscrever">Inscreva-se</a>
+           <button class="btn btn-inscrever">Inscreva-se</button>
           </div>
         </div>
       </div>
@@ -150,7 +144,7 @@
             essenciais para o dia a dia.</div>
           <div class="card-footer">
             <span class="rating">4.9</span>
-          <a href="descricao.html" class="btn-inscrever">Inscreva-se</a>
+          <button class="btn btn-inscrever">Inscreva-se</button>
           </div>
         </div>
       </div>
@@ -168,7 +162,7 @@
             online, a privacidade e prevenção de golpes.</div>
           <div class="card-footer">
             <span class="rating">4.9</span>
-           <a href="descricao.html" class="btn-inscrever">Inscreva-se</a>
+           <button class="btn btn-inscrever">Inscreva-se</button>
           </div>
         </div>
       </div>
@@ -186,7 +180,7 @@
             de oportunidades.</div>
           <div class="card-footer">
             <span class="rating">4.8</span>
-           <a href="descricao.html" class="btn-inscrever">Inscreva-se</a>
+           <button class="btn btn-inscrever">Inscreva-se</button>
           </div>
         </div>
       </div>
@@ -210,7 +204,7 @@
             essenciais para o dia a dia.</div>
           <div class="card-footer">
             <span class="rating">4.9</span>
-            <a href="descricao.html" class="btn-inscrever">Inscreva-se</a>
+            <button class="btn btn-inscrever">Inscreva-se</button>
           </div>
         </div>
       </div>
@@ -228,7 +222,7 @@
             online, a privacidade e prevenção de golpes.</div>
           <div class="card-footer">
             <span class="rating">4.9</span>
-           <a href="descricao.html" class="btn-inscrever">Inscreva-se</a>
+           <button class="btn btn-inscrever">Inscreva-se</button>
           </div>
         </div>
       </div>
@@ -246,7 +240,7 @@
             de oportunidades.</div>
           <div class="card-footer">
             <span class="rating">4.8</span>
-           <a href="descricao.html" class="btn-inscrever">Inscreva-se</a>
+           <button class="btn btn-inscrever">Inscreva-se</button>
           </div>
         </div>
       </div>
@@ -271,7 +265,7 @@
           </div>
           <div class="card-footer">
             <span class="rating">4.9</span>
-            <a href="descricao.html" class="btn-inscrever">Inscreva-se</a>
+            <button class="btn btn-inscrever">Inscreva-se</button>
           </div>
         </div>
       </div>
@@ -289,7 +283,7 @@
             online, a privacidade e prevenção de golpes.</div>
           <div class="card-footer">
             <span class="rating">4.9</span>
-           <a href="descricao.html" class="btn-inscrever">Inscreva-se</a>
+           <button class="btn btn-inscrever">Inscreva-se</button>
           </div>
         </div>
       </div>
@@ -307,7 +301,7 @@
           </div>
           <div class="card-footer">
             <span class="rating">4.8</span>
-           <a href="descricao.html" class="btn-inscrever">Inscreva-se</a>
+           <a href="descricao.html" class=" btn btn-inscrever">Inscreva-se</a>
           </div>
         </div>
       </div>
