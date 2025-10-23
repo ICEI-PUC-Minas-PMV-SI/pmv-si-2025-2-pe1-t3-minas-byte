@@ -1095,17 +1095,6 @@ h2 {
         font-size: 1.4rem;
     }
 
-    .duvidas-container {
-        flex-direction: column;
-    }
-
-    .duvidas-img {
-        display: none;
-    }
-
-    .duvidas-form {
-        width: 100%;
-    }
 
     .foto {
         width: 180px;

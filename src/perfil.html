@@ -13,30 +13,30 @@
 </head>
 
 <body>
-   <!---- Header logado ------>
+    <!---- Header logado ------>
     <header class="logado">
-    
+
         <div class="logo">
             <a href="index.html" aria-label="Página inicial - InovaElas">
                 <img src="img/logo.png" alt="Logotipo InovaElas">
             </a>
         </div>
-    
+
         <input type="checkbox" id="menu-checkbox" class="visually-hidden" aria-label="Abrir menu de navegação">
-    
+
         <label for="menu-checkbox" class="menu-toggle" aria-label="Alternar menu">
             <span></span>
             <span></span>
             <span></span>
         </label>
-    
+
         <nav class="menu-principal" aria-label="Menu principal">
             <div class="usuaria-mobile">
                 <a href="perfil.html" class="aluna" aria-label="Perfil da aluna">
                     <img src="img/personas/comentarios/persona_julia_silva.jpeg" alt="Foto da usuária Julia Silva">
                 </a>
             </div>
-    
+
             <ul>
                 <li><a href="cursos.html">Cursos</a></li>
                 <li><a href="comunidade.html">Comunidade</a></li>
@@ -45,7 +45,7 @@
                 <li><a href="mentoria.html">Mentoria</a></li>
             </ul>
         </nav>
-    
+
         <div class="usuaria-desktop">
             <a href="perfil.html" class="aluna" aria-label="Perfil da aluna">
                 <img src="img/personas/comentarios/persona_julia_silva.jpeg" alt="Foto da usuária Julia Silva">
@@ -53,124 +53,141 @@
         </div>
     </header>
 
-    <div class="container">
-        <main class="content">
-            <section class="perfil-header">
-                <div class="perfil-info">
-                    <img class="avatar" src="img/personas/comentarios/persona_julia_silva.jpeg" alt="Julia Silva">
-                    <div class="info">
-                        <h1>Julia Silva</h1>
-                        <p class="role">Desenvolvedora Front-end</p>
-                        <p class="location">📍 Rio de Janeiro - RJ</p>
-                        <div class="stats">
-                            <div class="stat">
-                                <span class="number">12</span>
-                                <span class="label">Cursos</span>
-                            </div>
-                            <div class="stat">
-                                <span class="number">8</span>
-                                <span class="label">Certificados</span>
-                            </div>
-                            <div class="stat">
-                                <span class="number">156</span>
-                                <span class="label">Horas</span>
+    <section class="banco-talentos secao-com-circulos">
+        <!-- Background de bolinhas -->
+        <div class="background-circulos">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="container">
+            <main class="content">
+                <section class="perfil-header">
+                    <div class="perfil-info">
+                        <img class="avatar" src="img/personas/comentarios/persona_julia_silva.jpeg" alt="Julia Silva">
+                        <div class="info">
+                            <h1>Julia Silva</h1>
+                            <p class="role">Desenvolvedora Front-end</p>
+                            <p class="location">📍 Rio de Janeiro - RJ</p>
+                            <div class="stats">
+                                <div class="stat">
+                                    <span class="number">12</span>
+                                    <span class="label">Cursos</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="number">8</span>
+                                    <span class="label">Certificados</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="number">156</span>
+                                    <span class="label">Horas</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="perfil-actions">
-                    <button class="btn-edit">✏ Editar Perfil</button>
-                    <button class="btn-share">🔗 Compartilhar</button>
-                </div>
-            </section>
-
-            <section class="about-section">
-                <h3>Sobre</h3>
-                <p>Desenvolvedora apaixonada por tecnologia e inovação. Especializada em React e JavaScript, sempre em
-                    busca de novos desafios e oportunidades de crescimento.</p>
-                <div class="skills">
-                    <h4>Habilidades</h4>
-                    <div class="tags">
-                        <span>JavaScript</span>
-                        <span>React</span>
-                        <span>UI/UX</span>
-                        <span>HTML/CSS</span>
-                        <span>Node.js</span>
+                    <div class="perfil-actions">
+                        <button class="btn-edit">✏ Editar Perfil</button>
+                        <button class="btn-share">🔗 Compartilhar</button>
                     </div>
-                </div>
-            </section>
-
-            <section class="contact-info">
-                <h3>Informações de Contato</h3>
-                <div class="contact-grid">
-                    <div class="contact-item">
-                        <span class="icon">📧</span>
-                        <span>julia.silva@gmail.com</span>
-                    </div>
-                    <div class="contact-item">
-                        <span class="icon">📱</span>
-                        <span>(21) 99999-9999</span>
-                    </div>
-                    <div class="contact-item">
-                        <span class="icon">📅</span>
-                        <span>Membro desde Outubro 2025</span>
-                    </div>
-                </div>
-            </section>
-
-            <section class="curso-progresso">
-                <div class="header">
-                    <div>
-                        <h3>Criação de Loja Virtual</h3>
-                        <p>8/11 aulas</p>
-                    </div>
-                    <span class="status">Em andamento</span>
-                </div>
-                <div class="progresso-bar">
-                    <div class="progresso" style="width: 80%;"></div>
-                </div>
-                <div class="footer">
-                    <div>
-                        <strong>Próxima aula:</strong>
-                        <p>Sua loja está pronta, e agora?</p>
-                    </div>
-                    <a  href="aula.html" class="btn btn-cadastrar">▶ Continuar</a>
-                </div>
-            </section>
-
-            <section class="explore">
-                <img src="" alt="">
-                <h3>Explorar Cursos</h3>
-                <p>Descubra novos cursos e expanda suas habilidades.</p>
-                <button>Explorar Catálogo</button>
-            </section>
-
-
-            </section>
-
-            <div class="bottom-sections">
-                <section class="conquistas">
-                    <h3>Medalhas e Conquistas</h3>
-                    <div class="medalhas">🏅 Primeira Conquista — Complete seu primeiro curso</div>
-                    <div class="medalhas">🎖 Maratonista — Complete 5 cursos</div>
-                    <div class="medalhas">💎 Expert em JavaScript — Domine todos os conceitos de JS</div>
-                    <div class="medalhas inativas">🔥 Dedicação Total — Estude por 30 dias consecutivos</div>
                 </section>
 
-                <section class="certificados">
-                    <h3>Certificados</h3>
-                    <div class="certificados-card">
-                        <h4>Desenvolvimento Web Completo</h4>
-                        <p>Emitido em: 15 Mar 2024 • Carga horária: 120h</p>
-                        <div class="actions">
-                            <button class="outline">Visualizar</button>
-                            <button class="solid">Download</button>
+                <section class="about-section">
+                    <h3>Sobre</h3>
+                    <p>Desenvolvedora apaixonada por tecnologia e inovação. Especializada em React e JavaScript, sempre
+                        em
+                        busca de novos desafios e oportunidades de crescimento.</p>
+                    <div class="skills">
+                        <h4>Habilidades</h4>
+                        <div class="tags">
+                            <span>JavaScript</span>
+                            <span>React</span>
+                            <span>UI/UX</span>
+                            <span>HTML/CSS</span>
+                            <span>Node.js</span>
                         </div>
                     </div>
                 </section>
-            </div>
-        </main>
-    </div>
+
+                <section class="contact-info">
+                    <h3>Informações de Contato</h3>
+                    <div class="contact-grid">
+                        <div class="contact-item">
+                            <span class="icon">📧</span>
+                            <span>julia.silva@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon">📱</span>
+                            <span>(21) 99999-9999</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon">📅</span>
+                            <span>Membro desde Outubro 2025</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="curso-progresso">
+                    <div class="header">
+                        <div>
+                            <h3>Criação de Loja Virtual</h3>
+                            <p>8/11 aulas</p>
+                        </div>
+                        <span class="status">Em andamento</span>
+                    </div>
+                    <div class="progresso-bar">
+                        <div class="progresso" style="width: 80%;"></div>
+                    </div>
+                    <div class="footer">
+                        <div>
+                            <strong>Próxima aula:</strong>
+                            <p>Sua loja está pronta, e agora?</p>
+                        </div>
+                        <a href="aula.html" class="btn btn-cadastrar">▶ Continuar</a>
+                    </div>
+                </section>
+
+                <section class="explore">
+                    <img src="" alt="">
+                    <h3>Explorar Cursos</h3>
+                    <p>Descubra novos cursos e expanda suas habilidades.</p>
+                    <button>Explorar Catálogo</button>
+                </section>
+
+
+
+                <div class="bottom-sections">
+                    <section class="conquistas">
+                        <h3>Medalhas e Conquistas</h3>
+                        <div class="medalhas">🏅 Primeira Conquista — Complete seu primeiro curso</div>
+                        <div class="medalhas">🎖 Maratonista — Complete 5 cursos</div>
+                        <div class="medalhas">💎 Expert em JavaScript — Domine todos os conceitos de JS</div>
+                        <div class="medalhas inativas">🔥 Dedicação Total — Estude por 30 dias consecutivos</div>
+                    </section>
+
+                    <section class="certificados">
+                        <h3>Certificados</h3>
+                        <div class="certificados-card">
+                            <h4>Desenvolvimento Web Completo</h4>
+                            <p>Emitido em: 15 Mar 2024 • Carga horária: 120h</p>
+                            <div class="actions">
+                                <button class="outline">Visualizar</button>
+                                <button class="solid">Download</button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </section>
+
 </body>
 
 </html>

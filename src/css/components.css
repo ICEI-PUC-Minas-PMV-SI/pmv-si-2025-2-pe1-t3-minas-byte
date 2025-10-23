@@ -340,7 +340,7 @@ footer {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* de pergunta - Utilizado em Comunidade, Home */
+/* Section de pergunta - Utilizado em Comunidade, Home */
 
 .duvidas {
   background-color: #FFFEFA;
@@ -707,5 +707,19 @@ header.logado {
     display: flex;
     justify-content: center;
     margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .duvidas-container {
+    flex-direction: column;
+  }
+
+  .duvidas-img {
+    display: none;
+  }
+
+  .duvidas-form {
+    width: 100%;
   }
 }
