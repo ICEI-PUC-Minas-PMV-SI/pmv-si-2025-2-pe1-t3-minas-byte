@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ===== Fontes e ícones ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="../src/css/components.css">
+  <link rel="stylesheet" href="../src/css/quiz.css">
+  <link rel="stylesheet" href="../src/css/background-circulos.css">
+  <link rel="stylesheet" href="../src/css/cursos.css">
+
+  <title>InovaElas | Resultado Quiz</title>
+</head>
+
+<body>
+
+  <!-- ===== Header logado (do quiz) ===== -->
+   <header class="logado">
+        <div class="logo">
+            <a href="index.html" aria-label="Página inicial - InovaElas">
+                <img src="../src/img/logo.png" alt="Logotipo InovaElas">
+            </a>
+        </div>
+
+        <input type="checkbox" id="menu-checkbox" class="visually-hidden" aria-label="Abrir menu de navegação">
+
+        <label for="menu-checkbox" class="menu-toggle" aria-label="Alternar menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav class="menu-principal" aria-label="Menu principal">
+            <div class="usuaria-mobile">
+                <a href="perfil.html" class="aluna" aria-label="Perfil da aluna">
+                    <img src="img/personas/comentarios/persona_julia_silva.jpeg" alt="Foto da usuária Julia Silva">
+                </a>
+            </div>
+
+            <ul>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="comunidade.html">Comunidade</a></li>
+                <li><a href="martketplace.html">Marketplace</a></li>
+                <li><a href="bancoTalentos.html">Banco de talentos</a></li>
+                <li><a href="mentoria.html">Mentoria</a></li>
+            </ul>
+        </nav>
+
+        <div class="usuaria-desktop">
+            <a href="perfil.html" class="aluna" aria-label="Perfil da aluna">
+                <img src="img/personas/comentarios/persona_julia_silva.jpeg" alt="Foto da usuária Julia Silva">
+            </a>
+        </div>
+    </header>
+
+  <!-- ===== Seção inicial do Quiz ===== -->
+  <main>
+    <section id="quiz" class="secao-com-circulos">
+      <div class="background-circulos padrao-quiz">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="quiz-hero">
+        <h1>Aqui está a sua área ideal na<br>tecnologia</h1>
+        <p>Esse resultado mostra um caminho cheio de oportunidades.</p>
+        <p>Que tal começar a dar os primeiros passos hoje mesmo?</p>
+      </div>
+    <!-- ===== Conteúdo dos cursos (do cursos.html) ===== -->
+    <section id="cursos" class="cursos-container">
+
+      <div class="container">
+
+        <div class="cards">
+          <div class="card">
+            <img src="../src/img/cursos/primeirospassos.png" alt="Primeiros Passos no Computador">
+            <div class="card-content">
+              <div>
+                <span class="tag">Negócios</span>
+                <span class="level">Iniciante</span>
+              </div>
+              <div class="card-title">Primeiros Passos no Computador</div>
+              <div class="card-desc">Aprenda a ligar, usar teclado, mouse e organizar seus arquivos com autonomia.</div>
+              <div class="card-footer">
+                <span class="rating">4.9</span>
+                <a href="descricao.html" class="btn-inscrever">Inscreva-se</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="../src/img/cursos/ferramentasescritorio.png" alt="Ferramentas de Escritório">
+            <div class="card-content">
+              <div>
+                <span class="tag">Tecnologia</span>
+                <span class="level">Iniciante</span>
+              </div>
+              <div class="card-title">Ferramentas de Escritório</div>
+              <div class="card-desc">Descubra como textos, planilhas e apresentações podem transformar sua rotina.</div>
+              <div class="card-footer">
+                <span class="rating">4.9</span>
+                <a href="descricao.html" class="btn-inscrever">Inscreva-se</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="../src/img/cursos/segurancadigital.png" alt="Segurança Digital">
+            <div class="card-content">
+              <div>
+                <span class="tag">Tecnologia</span>
+                <span class="level">Iniciante</span>
+              </div>
+              <div class="card-title">Segurança Digital para Iniciantes</div>
+              <div class="card-desc">Navegue tranquilo(a) aprendendo a se proteger de golpes e cuidar da sua privacidade.</div>
+              <div class="card-footer">
+                <span class="rating">4.8</span>
+                <a href="descricao.html" class="btn-inscrever">Inscreva-se</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="container">
+
+    <div class="cards">
+      <!-- Card 1 -->
+      <div class="card">
+        <img src="../src/img/cursos/logicaprogramacao.png" alt="Lógica de programação básica">
+        <div class="card-content">
+          <div>
+            <span class="tag">Tecnologia</span>
+            <span class="level">Iniciante</span>
+          </div>
+          <div class="card-title">Lógica de programação básica</div>
+          <div class="card-desc">Aprenda os fundamentos da informática, navegação na internet e uso de aplicativos
+            essenciais para o dia a dia.</div>
+          <div class="card-footer">
+            <span class="rating">4.9</span>
+           <a href="descricao.html" class="btn-inscrever">Inscreva-se</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card">
+        <img src="../src/img/cursos/suportetecnico.png" alt="Fundamentos de suporte técnico">
+        <div class="card-content">
+          <div>
+            <span class="tag">Tecnologia</span>
+            <span class="level">Iniciante</span>
+          </div>
+          <div class="card-title">Fundamentos de suporte técnico</div>
+          <div class="card-desc">Desenvolva os primeiros passos no computador, internet e e-mail. Entendo os cuidados
+            online, a privacidade e prevenção de golpes.</div>
+          <div class="card-footer">
+            <span class="rating">4.9</span>
+           <a href="descricao.html" class="btn-inscrever">Inscreva-se</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card">
+        <img src="../src/img/cursos/desenvolvimentoweb.png" alt="Desenvolvimento web">
+        <div class="card-content">
+          <div>
+            <span class="tag">Tecnologia</span>
+            <span class="level">Iniciante</span>
+          </div>
+          <div class="card-title">Desenvolvimento web</div>
+          <div class="card-desc">Entenda como a tecnologia transforma empresas e como você pode começar nessa área cheia
+            de oportunidades.</div>
+          <div class="card-footer">
+            <span class="rating">4.8</span>
+            <a href="descricao.html" class="btn-inscrever">Inscreva-se</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br />
+    </section>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="../src/img/logo.png" alt="InovaElas">
+        <p>Transformando vidas através da educação. Capacitando mulheres para um futuro mais próspero e independente.</p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Cursos</h4>
+        <ul>
+          <li><a href="#">Tecnologia</a></li>
+          <li><a href="#">Finanças</a></li>
+          <li><a href="#">Liderança</a></li>
+          <li><a href="#">Carreira</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Suporte</h4>
+        <ul>
+          <li><a href="#">Central de ajuda</a></li>
+          <li><a href="#">Como funciona</a></li>
+          <li><a href="#">Políticas de privacidade</a></li>
+          <li><a href="#">Termos de uso</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Contato</h4>
+        <ul>
+          <li>(11) 99999-9999</li>
+          <li>minas.byte@gmail.com</li>
+          <li>Rua Dom José Gaspar, 500<br>Belo Horizonte - MG</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© Minas Byte. Direitos reservados</p>
+      <span>Feito com ❤ para transformar vidas.</span>
+    </div>
+  </footer>
+</body>
+
+</html>

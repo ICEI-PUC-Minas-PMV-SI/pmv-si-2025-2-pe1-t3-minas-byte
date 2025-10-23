@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan', sans-serif;
+}
+
+/* ======= SEÇÃO PRINCIPAL ======= */
+.quiz {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.quiz-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    width: 90%;
+    max-width: 900px;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative;
+}
+
+.quiz-hero h2 {
+    font-size: 36px;
+    color: #151b26af;
+    font-weight: 600;
+    margin: 0;
+}
+
+.quiz-hero h1 {
+    font-size: 62px;
+    background: linear-gradient(90deg, #F4A9BA, #95B1EE, #364C84);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-weight: 600;
+    margin: 0;
+}
+
+.quiz-hero p {
+    font-size: 18px;
+    color: #5A607F;
+    max-width: 700px;
+    margin: 10px 0;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.botao-grupo {
+    gap: 50px;
+}
+
+/* ======= BLOCOS E BENEFÍCIOS ======= */
+.quiz-beneficios {
+    display: flex;
+    justify-content: center;
+    background-color: #fffffa;
+    border: 2px solid #364c84c6;
+    border-radius: 30px;
+    margin: 10px;
+}
+
+.quiz-conteudo {
+    background-color: #fffffa;
+    border-radius: 16px;
+    padding: 60px 40px;
+    max-width: 1100px;
+    width: 100%;
+}
+
+/* ======= INFO E TEXTOS ======= */
+.quiz-info h2 {
+    font-size: 40px;
+    color: #364c84;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.quiz-info p {
+    font-size: 18px;
+    color: #757575;
+    text-align: center;
+}
+
+/* ======= CARDS ======= */
+.quiz-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    flex: 1 1 400px;
+    max-width: 500px;
+}
+
+.card-quiz {
+    background-color: #ffffff;
+    border: 2px solid #364c843f;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 25px 20px;
+    text-align: center;
+    flex: 1 1 200px;
+    transition: transform 0.3s ease;
+}
+
+.card-quiz:hover {
+    transform: translateY(-5px);
+}
+
+.card-quiz h3 {
+    font-size: 16px;
+    color: #364c84;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.card-quiz p {
+    font-size: 14px;
+    color: #333;
+    font-weight: 300;
+}
+
+/* ======= BLOCO COLORIDO ======= */
+.quiz-bloco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(90deg, #95b1ee, #364c84);
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.quiz-desc {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.quiz-desc h3 {
+    font-size: 28px;
+    color: #ffffff;
+    margin: 15px;
+}
+
+.quiz-desc p {
+    font-size: 16px;
+    color: #ffffff;
+    max-width: 650px;
+    margin: 15px;
+}
+
+/* ======= DADOS ======= */
+.quiz-dados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin: 30px;
+}
+
+.quiz-dados h3 {
+    font-size: 22px;
+    color: #ffffff;
+    margin: 10px;
+}
+
+.quiz-dados p {
+    font-size: 14px;
+    color: #ffffff;
+    margin: 10px;
+}
+
+/* ======= TÍTULOS ======= */
+.titulo {
+    color: #364C84;
+    font-size: 52px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* ======= SUBTÍTULO ======= */
+.sub {
+    color: #757575;
+    font-size: 20px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+/* ======= ELEMENTOS PADRÃO ======= */
+button {
+    background-color: #facb10;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #e0b90d;
+}
+
+/* Interatividade no hover e clique */
+.btn-inscrever:hover {
+  background-color: #157347; /* tom mais escuro de verde */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn-inscrever:active {
+  background-color: #146c43; /* tom ainda mais escuro ao clicar */
+  transform: translateY(0);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Animação ao passar o mouse */
+.btn-participar:hover {
+  background-color: #5848e4;
+  transform: scale(1.07);
+  box-shadow: 0 6px 14px rgba(108, 99, 255, 0.4);
+}
+
+/* Tornar responsivo */
+@media (max-width: 768px) {
+  .btn-participar {
+    font-size: 1rem;
+    padding: 10px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn-participar {
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+  }
+}
+

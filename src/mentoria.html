@@ -12,34 +12,34 @@
   <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../src/css/mentoria.css">
   <link rel="stylesheet" href="../src/css/components.css">
-  
+  <link rel="stylesheet" href="../src/css/background-circulos.css">
+  <link rel="stylesheet" href="../src/css/quiz.css">
 </head>
 
 <body>
- <!---- Header logado ------>
+    <!---- Header logado ------>
     <header class="logado">
-    
         <div class="logo">
             <a href="index.html" aria-label="Página inicial - InovaElas">
-                <img src="img/logo.png" alt="Logotipo InovaElas">
+                <img src="../src/img/logo.png" alt="Logotipo InovaElas">
             </a>
         </div>
-    
+
         <input type="checkbox" id="menu-checkbox" class="visually-hidden" aria-label="Abrir menu de navegação">
-    
+
         <label for="menu-checkbox" class="menu-toggle" aria-label="Alternar menu">
             <span></span>
             <span></span>
             <span></span>
         </label>
-    
+
         <nav class="menu-principal" aria-label="Menu principal">
             <div class="usuaria-mobile">
                 <a href="perfil.html" class="aluna" aria-label="Perfil da aluna">
                     <img src="img/personas/comentarios/persona_julia_silva.jpeg" alt="Foto da usuária Julia Silva">
                 </a>
             </div>
-    
+
             <ul>
                 <li><a href="cursos.html">Cursos</a></li>
                 <li><a href="comunidade.html">Comunidade</a></li>
@@ -48,31 +48,41 @@
                 <li><a href="mentoria.html">Mentoria</a></li>
             </ul>
         </nav>
-    
+
         <div class="usuaria-desktop">
             <a href="perfil.html" class="aluna" aria-label="Perfil da aluna">
                 <img src="img/personas/comentarios/persona_julia_silva.jpeg" alt="Foto da usuária Julia Silva">
             </a>
         </div>
     </header>
+      <main>
+    <section id="quiz" class="secao-com-circulos">
+      <div class="background-circulos padrao-quiz">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
 
-  <!-- HERO: título, chamada e vídeo abaixo do título -->
-  <section class="hero">
-    <div class="hero-background" aria-hidden="true">
-      <span></span><span></span><span></span>
-    </div>
-
-    <h1>Encontre a mentoria certa para sua carreira</h1>
-    <p class="lead">Se você não sabe o que é mentoria, fizemos um vídeo explicativo com algumas de nossas mentoras, confira!.</p>
-
-    <!-- Vídeo -->
+      <div class="quiz-hero">
+        <h1>Mentorias<br>Encontre a mentoria certa para sua carreira</h1>
+        <p>Se você não sabe o que é mentoria, fizemos um vídeo explicativo com algumas de nossas mentoras, confira!</p>
+            <!-- Vídeo -->
     <div class="video-frame" role="region" aria-label="Vídeo de apresentação">
       <!-- Substitua o src pelo seu vídeo -->
       <video controls preload="metadata" poster="https://via.placeholder.com/1280x720?text=Poster+do+Vídeo">
         <source src="xxxxxxxxxx" type="video/mp4">
       </video>
     </div>
-  </section>
+      </div>
+
 
   <section class="info-card px-3">
     <div class="card">
@@ -96,6 +106,7 @@
       </div>
     </div>
   </section>
+  </section>
 
 <section class="texto-imagem px-3">
   <div class="container">
@@ -116,31 +127,41 @@
   </div>
 </section>
 
-<section class="texto-imagem px-3">
+<!-- Segunda seção (invertida e com fundo diferente) -->
+<section class="texto-imagem invertido px-3">
   <div class="container">
     <div class="row align-items-center g-4">
-      <!-- Coluna de texto (metade esquerda) -->
       <div class="col-md-6 text-column">
         <div class="texto-wrapper">
-          <h3>Aproveite também a Criação de Loja Virtual</h3>
-          <p>Se você quer ter sua loja virtual, precisa conferir a oportunidade de aprender aqui mesmo através do nosso curso de criação de loja virtual</p>
-          <a href="#" class="btn btn-saibaMais mt-3">Saiba mais</a>
+          <h3>Mentoria para Profissionais</h3>
+          <p>Aprenda a criar estratégias personalizadas com a ajuda de especialistas para o seu crescimento profissional.</p>
         </div>
       </div>
-
-      <!-- Coluna de imagem (metade direita) -->
       <div class="col-md-6 text-center image-column">
-        <img src="../src/img/Mentoria/mentoriasintro2.png" alt="Mentora em destaque" class="img-fluid rounded shadow">
+        <img src="../src/img/Mentoria/mentoriasintro2.png" alt="Profissional em mentoria" class="img-fluid rounded shadow">
       </div>
     </div>
   </div>
 </section>
+   <section id="quiz" class="secao-com-circulos">
+      <div class="background-circulos padrao-quiz">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
 
-  <section class="depoimentos px-3">
+      </div>
+
+  <section id="Avaliações" class="section-title px-3">
+    <div class="container text-center">
+      <h3>Avaliações</h3>
     <div class="container">
-      <div class="row g-3">
+<div class="row g-3 avaliacoes-cards">
         <div class="col-12">
-          <h3 class="text-center" id="depoimentos-title">Avaliações</h3>
         </div>
 
         <div class="col-md-3 col-sm-6">
@@ -374,6 +395,7 @@
         </div>
       </div>
     </div>
+  </section>
   </section>
 
   <footer>

@@ -573,3 +573,195 @@ footer {
   justify-content: space-between;
   height: 100%; /* garante que o card ocupe toda a altura da coluna */
 }
+/* ===== Seção texto + imagem ===== */
+.texto-imagem {
+  padding: 60px 0;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.texto-imagem .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.texto-imagem .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.texto-imagem .text-column {
+  flex: 1;
+}
+
+.texto-imagem .image-column {
+  flex: 1;
+  text-align: center;
+}
+
+.texto-imagem .image-column img {
+  max-width: 90%;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.texto-imagem .image-column img:hover {
+  transform: scale(1.03);
+}
+
+.texto-imagem .texto-wrapper h3 {
+  font-size: 1.8rem;
+  color: #1a3b8a;
+  margin-bottom: 1rem;
+}
+
+.texto-imagem .texto-wrapper p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.texto-imagem .btn-saibaMais {
+  background-color: #1a3b8a;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.texto-imagem .btn-saibaMais:hover {
+  background-color: #16306d;
+}
+
+/* ===== Versão invertida ===== */
+.texto-imagem.invertido {
+  background-color: #f5f8ff; /* fundo levemente azulado pra destacar */
+}
+
+.texto-imagem.invertido .row {
+  flex-direction: row-reverse; /* inverte os lados */
+}
+
+.texto-imagem.invertido .texto-wrapper h3 {
+  color: #0f2f6d; /* cor um pouco mais escura pra combinar com o fundo */
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 768px) {
+  .texto-imagem .row,
+  .texto-imagem.invertido .row {
+    flex-direction: column; /* empilha no celular */
+  }
+
+  .texto-imagem .texto-wrapper {
+    text-align: center;
+  }
+
+  .texto-imagem .image-column img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* ===== Ajuste dos cards de avaliações ===== */
+.avaliacoes-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.avaliacoes-cards .col-md-3 {
+  display: flex;
+  justify-content: center;
+  flex: 0 0 22%;
+  max-width: 22%;
+}
+
+/* Torna todos os cards iguais em altura e estilo */
+.avaliacoes-cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.avaliacoes-cards .card:hover {
+  transform: translateY(-5px);
+}
+
+/* Texto interno */
+.avaliacoes-cards .texto {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.avaliacoes-cards .nome {
+  font-weight: 600;
+  color: #1a3b8a;
+}
+
+.avaliacoes-cards .small-muted {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+  .avaliacoes-cards .col-md-3 {
+    flex: 0 0 45%;
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 576px) {
+  .avaliacoes-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .avaliacoes-cards .col-md-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+/* Efeito de hover igual aos outros cards */
+.info-card .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* === Interação suave nos cards de mentoras === */
+.mentor-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer; /* mostra que é interativo */
+}
+
+/* Efeito ao passar o mouse */
+.mentor-card:hover {
+  transform: translateY(-6px); /* sobe levemente */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12); /* sombra suave */
+}
+
+/* Mantém as imagens estáveis (sem distorcer) */
+.mentor-card img {
+  transition: transform 0.3s ease;
+}
+
+/* Zoom leve na imagem ao passar o mouse no card */
+.mentor-card:hover img {
+  transform: scale(1.03);
+}
