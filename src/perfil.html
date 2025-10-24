@@ -11,37 +11,51 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
+    <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/perfil.css">
     <link rel="stylesheet" href="css/background-circulos.css">
 </head>
 
 <body>
-    <header class="header-logado">
+    <header class="logado">
         <div class="logo">
-            <a href="index.html">
+            <a href="index.html" aria-label="InovaElas">
                 <img src="img/logo.png" alt="Logotipo InovaElas">
             </a>
         </div>
 
-        <nav class="menu">
+        <input type="checkbox" id="menu-checkbox" class="menu-toggle-input" />
+        <label for="menu-checkbox" class="menu-toggle" aria-label="Abrir menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav class="menu-principal">
+            <div class="usuaria-mobile">
+                <a href="perfil.html" class="aluna" aria-label="Perfil da aluna">
+                    <img src="img/personas/comentarios/persona_julia_silva.jpeg" alt="Foto da usuária Julia Silva">
+                </a>
+            </div>
+
             <ul>
-                <li><a href="#">Cursos</a></li>
-                <li><a href="#">Comunidade</a></li>
-                <li><a href="#">Marketplace</a></li>
-                <li><a href="#">Banco de Talentos</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="comunidade.html">Comunidade</a></li>
+                <li><a href="martketplace.html">Marketplace</a></li>
+                <li><a href="bancoTalentos.html">Banco de talentos</a></li>
+                <li><a href="mentoria.html">Mentoria</a></li>
             </ul>
         </nav>
 
-        <div class="perfil-mini">
-            <img src="img/personas/comentarios/persona_julia_silva.jpeg" alt="Usuária">
+        <div class="usuaria-desktop">
+            <a href="perfil.html" class="aluna" aria-label="Perfil da aluna">
+                <img src="img/personas/comentarios/persona_julia_silva.jpeg" alt="Foto da usuária Julia Silva">
+            </a>
         </div>
     </header>
 
     <section class="perfil-page secao-com-circulos">
         <div class="background-circulos">
-            <span></span>
-            <span></span>
-            <span></span>
             <span></span>
             <span></span>
             <span></span>
