@@ -61,79 +61,110 @@
             <span></span>
             <span></span>
             <span></span>
-            <span></span>
-            <span></span>
         </div>
 
         <div class="container">
-            <h1 class="boas-vindas">Olá Julia Silva! <br><span>Seja bem-vinda à sua jornada de aprendizado!</span></h1>
-
-            <!-- INFORMAÇÕES PESSOAIS -->
-            <div class="card perfil-card">
-                <img src="img/personas/comentarios/persona_julia_silva.jpeg" alt="Julia Silva" class="foto-perfil">
-                <div class="dados">
-                    <h2>Julia Silva</h2>
-                    <p class="cargo">Desenvolvedora Front-end</p>
-                    <div class="tags">
-                        <span>JavaScript</span>
-                        <span>React</span>
-                        <span>UI/UX</span>
+            <!-- CARD INFORMAÇÕES PESSOAIS -->
+            <div class="card perfil-info">
+                <div class="foto">
+                    <img src="img/personas/comentarios/persona_julia_silva.jpeg" alt="Julia Silva">
+                </div>
+                <div class="info-detalhes">
+                    <div class="topo">
+                        <div>
+                            <h2>Julia Silva</h2>
+                            <p class="cargo">Desenvolvedora Front-end</p>
+                            <div class="tags">
+                                <span>JavaScript</span>
+                                <span>React</span>
+                                <span>UI/UX</span>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="contatos">
-                        <p><i class="fa-solid fa-envelope"></i> julia.silva@gmail.com</p>
-                        <p><i class="fa-solid fa-calendar"></i> Membro desde Outubro de 2025</p>
-                        <p><i class="fa-solid fa-phone"></i> (21) 99999-9999</p>
-                        <p><i class="fa-solid fa-location-dot"></i> Rio de Janeiro - RJ</p>
+                    <div class="dados-contato">
+                        <div class="linha"><i class="fa-solid fa-envelope"></i><span>julia.silva@gmail.com</span></div>
+                        <div class="linha"><i class="fa-solid fa-calendar"></i><span>Membro desde Outubro de 2025</span>
+                        </div>
+                        <div class="linha"><i class="fa-solid fa-phone"></i><span>(21) 99999-9999</span></div>
+                        <div class="linha"><i class="fa-solid fa-location-dot"></i><span>Rio de Janeiro - RJ</span>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- CURSO EM ANDAMENTO -->
+            <!-- CARD CURSO EM ANDAMENTO -->
             <div class="card curso-card">
-                <div class="topo">
+                <div class="curso-header">
                     <h3>Criação de Loja Virtual</h3>
                     <span class="status">Em andamento</span>
                 </div>
                 <p class="aulas">28/30 aulas</p>
 
-                <div class="progress-bar">
-                    <div class="progress" style="width: 80%;"></div>
+                <div class="barra-progresso">
+                    <div class="progresso" style="width: 80%;"></div>
                 </div>
 
                 <div class="proxima-aula">
-                    <p><strong>Próxima aula:</strong> Sua loja está pronta, e agora?</p>
+                    <div>
+                        <p><strong>Próxima aula:</strong> Sua loja está pronta, e agora?</p>
+                    </div>
                     <button class="btn-primario"><i class="fa-solid fa-play"></i> Continuar</button>
                 </div>
             </div>
 
-            <!-- EXPLORAR -->
-            <div class="card explore-card">
-                <i class="fa-regular fa-compass icone-explore"></i>
-                <h3>Explore novos cursos</h3>
-                <p>Descubra novos conhecimentos e expanda suas habilidades.</p>
+            <!-- CARD EXPLORAR -->
+            <div class="card explorar-card">
+                <i class="fa-regular fa-heart icone" style="padding: 5px;"></i>
+                <h4 style="padding: 5px;">Explore novos cursos</h4>
+                <p style="padding: 5px;">Descubra novos conhecimentos e expanda suas habilidades</p>
                 <button class="btn-outline">Explorar Catálogo</button>
             </div>
 
-            <!-- CONQUISTAS + CERTIFICADOS -->
+            <!-- CONQUISTAS E CERTIFICADOS -->
             <div class="linha-cards">
-                <div class="card conquistas-card">
+                <div class="card conquistas">
                     <h3>Medalhas e Conquistas</h3>
-                    <div class="medalha comum"><i class="fa-solid fa-medal"></i> Primeira Conquista — Complete seu
-                        primeiro curso</div>
-                    <div class="medalha rara"><i class="fa-solid fa-trophy"></i> Maratonista — Complete 5 cursos</div>
-                    <div class="medalha epica"><i class="fa-solid fa-gem"></i> Expert em JavaScript — Domine todos os
-                        conceitos de JS</div>
-                    <div class="medalha inativa"><i class="fa-solid fa-fire"></i> Dedicação Total — Estude por 30 dias
-                        consecutivos</div>
+                    <div class="medalha comum">
+                        <i class="fa-solid fa-medal"></i>
+                        <div>
+                            <p class="titulo">Primeira Conquista</p>
+                            <p class="descricao">Complete seu primeiro curso</p>
+                            <p class="data">Conquistada em 20 de Outubro de 2025</p>
+                        </div>
+                    </div>
+                    <div class="medalha rara">
+                        <i class="fa-solid fa-trophy"></i>
+                        <div>
+                            <p class="titulo">Maratonista</p>
+                            <p class="descricao">Complete 5 cursos</p>
+                            <p class="data">Conquistada em 30 de Novembro de 2025</p>
+                        </div>
+                    </div>
+                    <div class="medalha epica">
+                        <i class="fa-solid fa-gem"></i>
+                        <div>
+                            <p class="titulo">Expert em JavaScript</p>
+                            <p class="descricao">Domine todos os conceitos de JS</p>
+                            <p class="data">Conquistada em 20 de Outubro de 2025</p>
+                        </div>
+                    </div>
+                    <div class="medalha lendaria">
+                        <i class="fa-solid fa-fire"></i>
+                        <div>
+                            <p class="titulo">Dedicação Total</p>
+                            <p class="descricao">Estude por 30 dias consecutivos</p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="card certificados-card">
+                <div class="card certificados">
                     <h3>Certificados</h3>
                     <div class="certificado">
-                        <h4>Desenvolvimento Web Completo</h4>
-                        <p>Emitido em: 15 Mar 2024 • Carga horária: 120h</p>
-                        <div class="acoes">
+                        <p class="titulo">Desenvolvimento Web Completo</p>
+                        <p class="descricao">Emitido em: 15 Mar 2024</p>
+                        <p class="descricao">Carga horária: 120h</p>
+                        <div class="botoes">
                             <button class="btn-outline"><i class="fa-regular fa-eye"></i> Visualizar</button>
                             <button class="btn-primario"><i class="fa-solid fa-download"></i> Download</button>
                         </div>
