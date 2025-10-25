@@ -52,8 +52,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 | Conteúdo       | Texto             | Conteúdo da notícia                       | Sistemas de Informação da PUC Minas é eleito o melhor curso do Brasil                            |
 | Id do usuário  | Numero (Inteiro)  | Identificador do usuário autor da notícia | 1                                              |
 ## Usuária
-| **Nome**       | **Tipo**         | **Descrição**                         | **Exemplo**                                           |
-| -------------- | ---------------- | ------------------------------------- | ----------------------------------------------------- |
+| **Nome**  | **Tipo**         | **Descrição**                          | **Exemplo**                 |
+| --------- | ---------------- | -------------------------------------- | --------------------------- |
 | Id | Número (Inteiro) | Identificador único da aluna.| 1 |
 | Nome | Texto | Nome completo da aluna. | Julia Silva |
 | E-mail | Texto | Endereço de e-mail da aluna. | julia.silva@gmail.com |
@@ -64,8 +64,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 | Foto de perfil | Texto (URL) | Caminho da imagem da usuária. | img/personas/comentarios/persona_julia_silva.jpeg |
 
 ## Curso em andamento
-| **Nome**         | **Tipo**             | **Descrição**                       | **Exemplo**                      |
-| ---------------- | -------------------- | ----------------------------------- | -------------------------------- |
+| **Nome**  | **Tipo**         | **Descrição**                          | **Exemplo**                 |
+| --------- | ---------------- | -------------------------------------- | --------------------------- |
 | Id do curso | Número (Inteiro) | Identificador do curso atual. | 3 |
 | Título | Texto | Nome do curso em andamento. | Criação de Loja Virtual |
 | Aulas concluídas | Número (Inteiro) | Quantas aulas a aluna já fez. | 28 |
@@ -74,8 +74,18 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 | Próxima aula | Texto | Título da próxima aula. | “Sua loja está pronta, e agora?” |
 
 ## Curso concluído
-| **Nome**          | **Tipo**         | **Descrição**                     | **Exemplo**                  |
-| ----------------- | ---------------- | --------------------------------- | ---------------------------- |
+| **Nome**  | **Tipo**         | **Descrição**                          | **Exemplo**                 |
+| --------- | ---------------- | -------------------------------------- | --------------------------- |
 | Id do curso | Número (Inteiro) | Identificador do curso concluído. | 5 |
 | Título | Texto | Nome do curso finalizado. | Desenvolvimento Web Completo |
 | Data de conclusão | Data | Quando o curso foi finalizado. | 20/10/2025 |
+
+## Conquista
+| **Nome**  | **Tipo**         | **Descrição**                          | **Exemplo**                 |
+| --------- | ---------------- | -------------------------------------- | --------------------------- |
+| Id | Número (Inteiro) | Identificador da conquista. | 1 |
+| Título | Texto | Nome da conquista. | Primeira Conquista |
+| Descrição | Texto | O que foi feito para conquistar | Complete seu primeiro curso |
+| Tipo | Texto | Nível da conquista (comum, rara etc.). | Rara |
+| Data | Data | Quando foi conquistada. | 20/10/2025 |
+
