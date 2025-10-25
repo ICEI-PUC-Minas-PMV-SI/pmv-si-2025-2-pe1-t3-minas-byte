@@ -27,7 +27,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 
 |ID    | Descrição do Requisito | Responsável | Artefato Criado |
 |------|------------------------|------------|-----------------|
-|RF-001| O sistema deve permitir que usuárias se registrem com dados básicos (nome, e-mail, telefone). | Stanley | cadastro.html |
+|RF-001| O sistema deve permitir que usuárias se registrem com dados básicos (nome, e-mail, telefone). | Stanley | registro.html |
 |RF-002| O sistema deve garantir que só alunas cadastradas acessem a plataforma. | Giovana | index.html |
 |RF-003| O sistema deve organizar cursos por áreas (tecnologia, finanças, empreendedorismo etc.). | Guilherme | cursos.html |
 |RF-004| O sistema deve disponibilizar um quiz inicial para recomendar trilhas de aprendizado personalizadas.  | Isabelly | quizPerguntas.html |
