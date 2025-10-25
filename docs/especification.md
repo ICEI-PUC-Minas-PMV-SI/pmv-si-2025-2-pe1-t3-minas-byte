@@ -58,13 +58,14 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-004| O sistema deve disponibilizar um quiz inicial para recomendar trilhas de aprendizado personalizadas.   | ALTA | 
 |RF-005| O sistema deve mostrar percentual de conclusão dos cursos de cada aluna. histórico de cursos.   | ALTA | 
 |RF-006| O sistema deve mostrar histórico de cursos concluídos de cada aluna.   | ALTA | 
-|RF-007| O sistema deve gerar certificados digitais para cursos concluídos.   | MÉDIA | 
-|RF-008| O sistema deve permitir que usuárias compartilhem experiências e comentários.   | MÉDIA | 
-|RF-009| O sistema deve disponibilizar um espaço onde empresas parceiras acessem perfis das alunas.   | ALTA | 
-|RF-010| O sistema deve permitir que ex-alunas ofereçam serviços digitais (planilhas, logos, edições). | MÉDIA | 
+|RF-007| O sistema deve proporcionar um ambiente para as usuárias assistirem as aulas. |  ALTA |
+|RF-008| O sistema deve disponibilizar um espaço onde empresas parceiras acessem perfis das alunas.   | ALTA |  
+|RF-009| O sistema deve gerar certificados digitais para cursos concluídos.   | MÉDIA | 
+|RF-010| O sistema deve permitir que ex-alunas ofereçam serviços digitais (planilhas, logos, edições), Marketplace. | MÉDIA | 
 |RF-011| O sistema deve gerar medalhas ou conquistas a cada curso ou etapa concluída.   | BAIXA |
-|RF-012| O sistema deve proporcionar um canal de suporte simples as alunas (chatbot para dúvidas). |  MÉDIA |
-|RF-013| O sistema deve proporcionar um laboratório virtual acessível em múltiplos dispositivos para desenvolvimento de habilidades técnicas. |  ALTA |
+|RF-012| O sistema deve proporcionar um canal de suporte simples as alunas (formulário). |  MÉDIA |
+|RF-013| O sistema deve permitir que usuárias compartilhem experiências e comentários.   | MÉDIA |
+|RF-014| O sistema deve permitir que usuárias tirem dúvidas sobre temas de cursos com outras usuárias. | MÉDIA |
 
 
 
