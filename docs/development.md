@@ -51,4 +51,19 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 | Título         | Texto             | Título da notícia                         | Sistemas de Informação PUC Minas é o melhor                                   |
 | Conteúdo       | Texto             | Conteúdo da notícia                       | Sistemas de Informação da PUC Minas é eleito o melhor curso do Brasil                            |
 | Id do usuário  | Numero (Inteiro)  | Identificador do usuário autor da notícia | 1                                              |
+## Usuária
+| **Nome**       | **Tipo**         | **Descrição**                         | **Exemplo**                                           |
+| -------------- | ---------------- | ------------------------------------- | ----------------------------------------------------- |
+| Id | Número (Inteiro) | Identificador único da aluna.| 1 |
+| Nome | Texto | Nome completo da aluna. | Julia Silva |
+| E-mail | Texto | Endereço de e-mail da aluna. | julia.silva@gmail.com |
+| Telefone | Texto | Telefone para contato. | (21) 99999-9999 |
+| Cidade | Texto | Localização da aluna. | Rio de Janeiro - RJ |
+| Cargo | Texto | Área ou função profissional. | Desenvolvedora Front-end |
+| Competências | Texto | Habilidades ou tecnologias dominadas. | JavaScript, React, UI/UX |
+| Foto de perfil | Texto (URL) | Caminho da imagem da usuária. | img/personas/comentarios/persona_julia_silva.jpeg |
+
+
+
+
 
