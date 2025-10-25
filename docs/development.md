@@ -63,7 +63,19 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 | Competências | Texto | Habilidades ou tecnologias dominadas. | JavaScript, React, UI/UX |
 | Foto de perfil | Texto (URL) | Caminho da imagem da usuária. | img/personas/comentarios/persona_julia_silva.jpeg |
 
+## Curso em andamento
+| **Nome**         | **Tipo**             | **Descrição**                       | **Exemplo**                      |
+| ---------------- | -------------------- | ----------------------------------- | -------------------------------- |
+| Id do curso | Número (Inteiro) | Identificador do curso atual. | 3 |
+| Título | Texto | Nome do curso em andamento. | Criação de Loja Virtual |
+| Aulas concluídas | Número (Inteiro) | Quantas aulas a aluna já fez. | 28 |
+| Total de aulas | Número (Inteiro) | Quantidade total de aulas do curso. | 30 |
+| Progresso | Número (Porcentagem) | Percentual de conclusão. | 80% |
+| Próxima aula | Texto | Título da próxima aula. | “Sua loja está pronta, e agora?” |
 
-
-
-
+## Curso concluído
+| **Nome**          | **Tipo**         | **Descrição**                     | **Exemplo**                  |
+| ----------------- | ---------------- | --------------------------------- | ---------------------------- |
+| Id do curso | Número (Inteiro) | Identificador do curso concluído. | 5 |
+| Título | Texto | Nome do curso finalizado. | Desenvolvimento Web Completo |
+| Data de conclusão | Data | Quando o curso foi finalizado. | 20/10/2025 |
