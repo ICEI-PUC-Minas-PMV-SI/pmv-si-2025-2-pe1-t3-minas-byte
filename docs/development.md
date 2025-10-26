@@ -44,13 +44,6 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 
 ## Descrição das estruturas:
 
-## Notícia
-|  **Nome**      | **Tipo**          | **Descrição**                             | **Exemplo**                                    |
-|:--------------:|-------------------|-------------------------------------------|------------------------------------------------|
-| Id             | Numero (Inteiro)  | Identificador único da notícia            | 1                                              |
-| Título         | Texto             | Título da notícia                         | Sistemas de Informação PUC Minas é o melhor                                   |
-| Conteúdo       | Texto             | Conteúdo da notícia                       | Sistemas de Informação da PUC Minas é eleito o melhor curso do Brasil                            |
-| Id do usuário  | Numero (Inteiro)  | Identificador do usuário autor da notícia | 1                                              |
 ## Usuária
 | **Nome**  | **Tipo**         | **Descrição**                          | **Exemplo**                 |
 | --------- | ---------------- | -------------------------------------- | --------------------------- |
@@ -63,6 +56,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 | Competências | Texto | Habilidades ou tecnologias dominadas. | JavaScript, React, UI/UX |
 | Foto de perfil | Texto (URL) | Caminho da imagem da usuária. | img/personas/comentarios/persona_julia_silva.jpeg |
 
+
 ## Curso em andamento
 | **Nome**  | **Tipo**         | **Descrição**                          | **Exemplo**                 |
 | --------- | ---------------- | -------------------------------------- | --------------------------- |
@@ -73,12 +67,14 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 | Progresso | Número (Porcentagem) | Percentual de conclusão. | 80% |
 | Próxima aula | Texto | Título da próxima aula. | “Sua loja está pronta, e agora?” |
 
+
 ## Curso concluído
 | **Nome**  | **Tipo**         | **Descrição**                          | **Exemplo**                 |
 | --------- | ---------------- | -------------------------------------- | --------------------------- |
 | Id do curso | Número (Inteiro) | Identificador do curso concluído. | 5 |
 | Título | Texto | Nome do curso finalizado. | Desenvolvimento Web Completo |
 | Data de conclusão | Data | Quando o curso foi finalizado. | 20/10/2025 |
+
 
 ## Conquista
 | **Nome**  | **Tipo**         | **Descrição**                          | **Exemplo**                 |
@@ -89,3 +85,10 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 | Tipo | Texto | Nível da conquista (comum, rara etc.). | Rara |
 | Data | Data | Quando foi conquistada. | 20/10/2025 |
 
+## Certificado
+| **Nome**        | **Tipo**         | **Descrição**                 | **Exemplo**                  |
+| --------------- | ---------------- | ----------------------------- | ---------------------------- |
+| Id | Número (Inteiro) | Identificador do certificado. | 1 |
+| Título | Texto | Nome do curso certificado. | Desenvolvimento Web Completo |
+| Data de emissão | Data | Quando foi emitido. | 15/03/2024 |
+| Carga horária | Texto | Duração total do curso. | 120h |
