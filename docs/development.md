@@ -28,6 +28,7 @@ As tabelas que se seguem apresentam os requisitos funcionais que relacionam o es
 |RF-013| O sistema deve permitir usuárias solicitarem mentoria. | Guilherme | mentoria.html | 
 |RF-014| O sistema deve indicar cursos com base no quiz | Guilherme | quizresultado.html | 
 |RF-015| O sistema deve permitir que usuárias façam login com seu perfil cadastrado. | Stanley | cadastro.html |
+|RF-016| O sistema deve permitir que usuárias acessem os detalhes sobre o curso.  | Isabelly | descricao.html |
 
 
 
