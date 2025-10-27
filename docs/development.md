@@ -82,3 +82,11 @@ As tabelas que se seguem apresentam os requisitos funcionais que relacionam o es
 | Título | Texto | Nome do curso certificado. | Desenvolvimento Web Completo |
 | Data de emissão | Data | Quando foi emitido. | 15/03/2024 |
 | Carga horária | Texto | Duração total do curso. | 120h |
+
+## Autenticação
+| **Nome**        | **Tipo**         | **Descrição**                 | **Exemplo**                  |
+| --------------- | ---------------- | ----------------------------- | ---------------------------- |
+| Id | Número (Inteiro) | Identificador único do usuário. | 1 |
+| Nome completo | Texto | Nome completo informado no momento do cadastro. | João Souza |
+| E-mail | Texto | Endereço de e-mail utilizado para autenticação e comunicação. | joao.souza@gmail.com |
+| Senha | Texto | Código secreto utilizado para login e validação de acesso. | ******** |
