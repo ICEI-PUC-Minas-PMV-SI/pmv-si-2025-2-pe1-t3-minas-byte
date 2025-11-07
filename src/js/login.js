@@ -19,9 +19,8 @@ document.getElementById("formLogin").addEventListener("submit", (e) => {
   );
 
   if (usuariaEncontrada) {
-    alert(`Bem-vinda, ${usuariaEncontrada.nome}!`);
     localStorage.setItem("usuariaLogada", JSON.stringify(usuariaEncontrada));
-    window.location.href = "home.html"; // redireciona para página principal
+    window.location.href = "index.html"; // redireciona para página principal
   } else {
     alert("E-mail ou senha incorretos. Tente novamente.");
   }
