@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
+    <link rel="stylesheet" href="css/design-system.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/perfil.css">
     <link rel="stylesheet" href="css/background-circulos.css">
@@ -65,74 +66,72 @@
 
         <div class="container">
             <!-- CARD INFORMAÇÕES PESSOAIS -->
-            <div class="card perfil-info">
+            <div class="card-base perfil-info">
                 <div class="foto">
                     <img src="img/personas/comentarios/persona_julia_silva.jpeg" alt="Julia Silva">
                 </div>
                 <div class="info-detalhes">
                     <div class="topo">
                         <div>
-                            <h2>Julia Silva</h2>
-                            <p class="cargo">Desenvolvedora Front-end</p>
-                            <div class="tags">
-                                <span>JavaScript</span>
-                                <span>React</span>
-                                <span>UI/UX</span>
+                            <h2 class="heading-md">Julia Silva</h2>
+                            <p class="text-base cargo">Desenvolvedora Front-end</p>
+                            <div class="tags spacing-sm">
+                                <span class="badge-primary">JavaScript</span>
+                                <span class="badge-primary">React</span>
+                                <span class="badge-primary">UI/UX</span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="dados-contato">
-                        <div class="linha"><i class="fa-solid fa-envelope"></i><span>julia.silva@gmail.com</span></div>
-                        <div class="linha"><i class="fa-solid fa-calendar"></i><span>Membro desde Outubro de 2025</span>
-                        </div>
-                        <div class="linha"><i class="fa-solid fa-phone"></i><span>(21) 99999-9999</span></div>
-                        <div class="linha"><i class="fa-solid fa-location-dot"></i><span>Rio de Janeiro - RJ</span>
-                        </div>
+                    <div class="dados-contato grid-2">
+                        <div class="linha flex-start spacing-sm"><i class="fa-solid fa-envelope icon-sm"></i><span class="text-sm">julia.silva@gmail.com</span></div>
+                        <div class="linha flex-start spacing-sm"><i class="fa-solid fa-calendar icon-sm"></i><span class="text-sm">Membro desde Outubro de 2025</span></div>
+                        <div class="linha flex-start spacing-sm"><i class="fa-solid fa-phone icon-sm"></i><span class="text-sm">(21) 99999-9999</span></div>
+                        <div class="linha flex-start spacing-sm"><i class="fa-solid fa-location-dot icon-sm"></i><span class="text-sm">Rio de Janeiro - RJ</span></div>
                     </div>
                 </div>
             </div>
 
             <!-- CARD CURSO EM ANDAMENTO -->
-            <div class="card curso-card">
-                <div class="curso-header">
-                    <h3>Criação de Loja Virtual</h3>
-                    <span class="status">Em andamento</span>
+            <div class="card-base curso-card">
+                <div class="card-header">
+                    <h3 class="card-title">Criação de Loja Virtual</h3>
+                    <span class="badge-base status-active">Em andamento</span>
                 </div>
-                <p class="aulas">28/30 aulas</p>
+                <p class="text-sm aulas">28/30 aulas</p>
 
                 <div class="barra-progresso">
                     <div class="progresso" style="width: 80%;"></div>
                 </div>
 
-                <div class="proxima-aula">
+                <div class="proxima-aula flex-between">
                     <div>
-                        <p><strong>Próxima aula:</strong> Sua loja está pronta, e agora?</p>
+                        <p class="text-sm"><strong>Próxima aula:</strong> Sua loja está pronta, e agora?</p>
                     </div>
                     <a href="aula.html">
-                        <button class="btn-primario"><i class="fa-solid fa-play"></i> Continuar</button>
+                        <button class="btn-base btn-primary"><i class="fa-solid fa-play icon-sm"></i> Continuar</button>
                     </a>
                 </div>
             </div>
 
             <!-- CARD EXPLORAR -->
-            <div class="card explorar-card">
-                <i class="fa-regular fa-heart icone" style="padding: 5px;"></i>
-                <h4 style="padding: 5px;">Explore novos cursos</h4>
-                <p style="padding: 5px;">Descubra novos conhecimentos e expanda suas habilidades</p>
-                <button class="btn-outline">Explorar Catálogo</button>
+            <div class="card-base explorar-card flex-col flex-center">
+                <i class="fa-regular fa-compass icon-xl" style="color: var(--primary-blue); margin-bottom: 12px;"></i>
+                <h4 class="heading-sm">Explore novos cursos</h4>
+                <p class="text-sm card-content">Descubra novos conhecimentos e expanda suas habilidades</p>
+                <button class="btn-base btn-outline">Explorar Catálogo</button>
             </div>
 
             <!-- CONQUISTAS E CERTIFICADOS -->
             <div class="linha-cards">
-                <div class="card conquistas">
-                    <h3>Medalhas e Conquistas</h3>
-                    <div class="medalha comum">
-                        <i class="fa-solid fa-medal"></i>
+                <div class="card-base conquistas">
+                    <h3 class="card-title">Medalhas e Conquistas</h3>
+                    <div class="medalha comum flex-start spacing-md">
+                        <i class="fa-solid fa-medal icon-lg" style="color: #fbbf24;"></i>
                         <div>
-                            <p class="titulo">Primeira Conquista</p>
-                            <p class="descricao">Complete seu primeiro curso</p>
-                            <p class="data">Conquistada em 20 de Outubro de 2025</p>
+                            <p class="titulo text-base font-weight-600">Primeira Conquista</p>
+                            <p class="descricao text-sm">Complete seu primeiro curso</p>
+                            <p class="data text-xs">Conquistada em 20 de Outubro de 2025</p>
                         </div>
                     </div>
                     <div class="medalha rara">
@@ -160,21 +159,34 @@
                     </div>
                 </div>
 
-                <div class="card certificados">
-                    <h3>Certificados</h3>
+                <div class="card-base certificados">
+                    <h3 class="card-title">Certificados</h3>
                     <div class="certificado">
-                        <p class="titulo">Desenvolvimento Web Completo</p>
-                        <p class="descricao">Emitido em: 15 Mar 2024</p>
-                        <p class="descricao">Carga horária: 120h</p>
-                        <div class="botoes">
-                            <button class="btn-outline"><i class="fa-regular fa-eye"></i> Visualizar</button>
-                            <button class="btn-primario"><i class="fa-solid fa-download"></i> Download</button>
+                        <p class="titulo heading-sm">Desenvolvimento Web Completo</p>
+                        <p class="descricao text-sm">Emitido em: 15 Mar 2025</p>
+                        <p class="descricao text-sm">Carga horária: 70h</p>
+                        <div class="botoes flex-start spacing-md">
+                            <button class="btn-base btn-outline" onclick="visualizarCertificado()"><i class="fa-regular fa-eye icon-sm"></i> Visualizar</button>
+                            <button class="btn-base btn-primary" onclick="baixarCertificado()"><i class="fa-solid fa-download icon-sm"></i> Download</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <script>
+        
+        function visualizarCertificado() {
+            window.open('certificados/certificado_desenvolvimento_Julia_Silva.pdf', '_blank');
+        }
+        
+        function baixarCertificado() {
+            const link = document.createElement('a');
+            link.href = 'certificados/certificado_desenvolvimento_Julia_Silva.pdf';
+            link.download = 'certificado_desenvolvimento_Julia_Silva.pdf';
+            link.click();
+        }
+    </script>
 </body>
 
 </html>
