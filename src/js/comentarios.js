@@ -1,22 +1,9 @@
-let currentIndex = 0;
-const cardsPerView = 3;
+let pos = 0;
 
-function moveCarousel(direction) {
-    const container = document.getElementById('comentariosContainer');
-    const cards = container.children;
-    const totalCards = cards.length;
-    const maxIndex = totalCards - cardsPerView;
-    
-    currentIndex += direction;
-    
-    if (currentIndex < 0) {
-        currentIndex = 0;
-    } else if (currentIndex > maxIndex) {
-        currentIndex = maxIndex;
-    }
-    
-    const cardWidth = cards[0].offsetWidth + 24; // largura do card + gap
-    const translateX = -currentIndex * cardWidth;
-    
-    container.style.transform = translateX(${translateX}px);
+function moveCarousel(dir) {
+    pos += dir;
+    if (pos > 2) pos = 0;
+    if (pos < 0) pos = 2;
+
+    document.getElementById('comentariosContainer').style.transform = 'translateX(' + (-pos * 424) + 'px)';
 }
