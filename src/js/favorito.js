@@ -1,12 +1,11 @@
-function toggleFavorito(cursoId) {
-    const btn = document.querySelector(button[onclick = "toggleFavorito(${cursoId})"]);
+function toggleFavorito(btn) {
     const coracao = btn.querySelector('.coracao');
 
-    if (coracao.textContent === '♡') {
-        coracao.textContent = '♥';
-        coracao.style.color = '#ef4444';
+    btn.classList.toggle('favorito');
+
+    if (btn.classList.contains('favorito')) {
+        coracao.src = 'img/icons/coracao.png';
     } else {
-        coracao.textContent = '♡';
-        coracao.style.color = '';
+        coracao.src = 'img/icons/coracao_blank.png';
     }
 }
