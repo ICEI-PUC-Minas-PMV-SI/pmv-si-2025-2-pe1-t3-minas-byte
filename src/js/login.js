@@ -1,27 +1,55 @@
-document.getElementById("formLogin").addEventListener("submit", (e) => {
-  e.preventDefault();
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("formLogin") || document.getElementById("loginForm");
+  if (!form) return;
 
-  const email = document.getElementById("email").value.trim();
-  const senha = document.getElementById("senha").value.trim();
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
 
-  // Verifica se os campos estão preenchidos
-  if (!email || !senha) {
-    alert("Por favor, preencha todos os campos.");
-    return;
-  }
+    const email = (document.getElementById("email")).value.trim().toLowerCase();
+    const senha = (document.getElementById("senha")).value.trim();
 
-  // Busca usuárias cadastradas no localStorage
-  const usuarias = JSON.parse(localStorage.getItem("usuarias")) || [];
+    if (!email || !senha) {
+      alert("Preencha todos os campos.");
+      return;
+    }
 
-  // Procura usuária com email e senha correspondentes
-  const usuariaEncontrada = usuarias.find(
-    (u) => u.email === email && u.senha === senha
-  );
+    // Tenta JSON Server
+    try {
+      const res = await fetch(`http://localhost:3000/usuarios?email=${encodeURIComponent(email)}&senha=${encodeURIComponent(senha)}`);
+      if (res.ok) {
+        const usuarios = await res.json();
+        if (usuarios.length === 1) {
+          // login OK
+          const usuaria = usuarios[0];
+          localStorage.setItem("usuariaLogada", JSON.stringify(usuaria));
+          //alert(`Bem-vinda, ${usuaria.nome}! (via JSON Server)`);
+          window.location.href = "index.html";
+          return;
+        } else {
+          alert("E-mail ou senha incorretos.");
+          return;
+        }
+      } else {
+        console.warn("JSON Server GET retornou status:", res.status);
+      }
+    } catch (err) {
+      console.warn("Não foi possível conectar ao JSON Server — tentando localStorage. Erro:", err.message);
+    }
 
-  if (usuariaEncontrada) {
-    localStorage.setItem("usuariaLogada", JSON.stringify(usuariaEncontrada));
-    window.location.href = "index.html"; // redireciona para página principal
-  } else {
-    alert("E-mail ou senha incorretos. Tente novamente.");
-  }
+    // Fallback: checar localStorage
+    try {
+      const usuarias = JSON.parse(localStorage.getItem("usuarias")) || [];
+      const usuaria = usuarias.find(u => u.email === email && u.senha === senha);
+      if (usuaria) {
+        localStorage.setItem("usuariaLogada", JSON.stringify(usuaria));
+        alert(`Bem-vinda, ${usuaria.nome}! (local)`);
+        window.location.href = "home.html";
+      } else {
+        alert("E-mail ou senha incorretos.");
+      }
+    } catch (err) {
+      console.error("Erro ao verificar localStorage:", err);
+      alert("Erro ao realizar login. Veja console.");
+    }
+  });
 });
