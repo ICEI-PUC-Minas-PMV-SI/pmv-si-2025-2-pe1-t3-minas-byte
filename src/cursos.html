@@ -8,6 +8,7 @@
   <!-- ===== Fontes e ícones ===== -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
   <!-- ===== Estilos das duas páginas (quiz + cursos) ===== -->
@@ -20,44 +21,8 @@
 </head>
 
 <body>
-   <header class="logado">
-        <div class="logo">
-            <a href="index.html" aria-label="Página inicial - InovaElas">
-                <img src="img/logo.png" alt="Logotipo InovaElas">
-            </a>
-        </div>
-    
-        <input type="checkbox" id="menu-checkbox" class="visually-hidden" aria-label="Abrir menu de navegação">
-    
-        <label for="menu-checkbox" class="menu-toggle" aria-label="Alternar menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-    
-        <nav class="menu-principal" aria-label="Menu principal">
-            <div class="usuaria-mobile">
-                <a href="perfil.html" class="aluna" aria-label="Perfil da aluna">
-                    <img src="img/personas/comentarios/persona_julia_silva.jpeg" alt="Foto da usuária Julia Silva">
-                </a>
-            </div>
-    
-            <ul>
-                <li><a href="cursos.html">Cursos</a></li>
-                <li><a href="comunidade.html">Comunidade</a></li>
-                <li><a href="martketplace.html">Marketplace</a></li>
-                <li><a href="bancoTalentos.html">Banco de talentos</a></li>
-                <li><a href="mentoria.html">Mentoria</a></li>
-            </ul>
-        </nav>
-    
-        <div class="usuaria-desktop">
-            <a href="perfil.html" class="aluna" aria-label="Perfil da aluna">
-                <img src="img/personas/comentarios/persona_julia_silva.jpeg" alt="Foto da usuária Julia Silva">
-            </a>
-        </div>
-    </header>
-
+  
+  <div id="menu-container"></div>
 
   <main>
     <section id="quiz" class="secao-com-circulos">
@@ -361,5 +326,6 @@
   </footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/header.js"></script>
 
 </html>

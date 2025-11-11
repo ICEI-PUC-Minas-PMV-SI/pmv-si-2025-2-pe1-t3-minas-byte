@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (usuaria) {
         localStorage.setItem("usuariaLogada", JSON.stringify(usuaria));
         alert(`Bem-vinda, ${usuaria.nome}! (local)`);
-        window.location.href = "home.html";
+        window.location.href = "index.html";
       } else {
         alert("E-mail ou senha incorretos.");
       }
