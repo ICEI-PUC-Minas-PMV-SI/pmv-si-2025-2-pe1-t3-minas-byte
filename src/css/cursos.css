@@ -252,3 +252,26 @@ body {
   transform: translateY(-5px);       /* eleva o card levemente */
   box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* adiciona sombra */
 }
+.quiz-btn {
+  background-color: #2c2e7b;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Ao passar o mouse */
+.quiz-btn:hover {
+  background-color: #3a3db0;
+  transform: scale(1.05);
+}
+
+/* Ao clicar */
+.quiz-btn:active {
+  background-color: #1f2060;
+  transform: scale(0.97);
+}
+

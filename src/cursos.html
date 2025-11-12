@@ -33,6 +33,20 @@
         <span></span>
         <span></span>
       </div>
+     <div class="quiz-section">
+    <h1>Não sabe por onde começar?</h1>
+    <p>Acesse o nosso quiz e descubra qual a trilha ideal para você!</p>
+    <button class="quiz-btn" onclick="window.location.href='quizinicio.html'">QUIZ</button>
+    <small>* Faça o quiz novamente apenas após o término do curso anterior</small>
+  </div>
+    <section id="quiz" class="secao-com-circulos">
+      <div class="background-circulos padrao-quiz">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
 
       <div class="quiz-hero">
         <h1>Cursos e trilhas<br></h1>
@@ -44,7 +58,7 @@
 
     <div class="cards">
       <!-- Card 1 -->
-      <div class="card">
+      <div class="card" data-link="descricao.html">
         <img src="../src/img/cursos/primeirospassos.png" alt="Primeiros Passos no Computador">
         <div class="card-content">
           <div>
@@ -61,7 +75,7 @@
       </div>
 
       <!-- Card 2 -->
-      <div class="card">
+      <div class="card" data-link="descricao.html">
         <img src="../src/img/cursos/ferramentasescritorio.png" alt="Ferramentas de Escritório">
         <div class="card-content">
           <div>
@@ -78,7 +92,7 @@
       </div>
 
       <!-- Card 3 -->
-      <div class="card">
+      <div class="card" data-link="descricao.html">
         <img src="../src/img/cursos/segurancadigital.png" alt="Segurança Digital">
         <div class="card-content">
           <div>
@@ -102,7 +116,7 @@
 
     <div class="cards">
       <!-- Card 1 -->
-      <div class="card">
+      <div class="card" data-link="descricao.html">
         <img src="../src/img/cursos/informaticabasica.png" alt="Informática básica">
         <div class="card-content">
           <div>
@@ -120,7 +134,7 @@
       </div>
 
       <!-- Card 2 -->
-      <div class="card">
+      <div class="card" data-link="descricao.html">
         <img src="../src/img/cursos/pacoteoffice.png" alt="Pacote Office">
         <div class="card-content">
           <div>
@@ -138,7 +152,7 @@
       </div>
 
       <!-- Card 3 -->
-      <div class="card">
+      <div class="card" data-link="descricao.html">
         <img src="../src/img/cursos/digitacaoarquivos.png" alt="Digitação, arquivos, uso de nuvem">
         <div class="card-content">
           <div>
@@ -162,7 +176,7 @@
 
     <div class="cards">
       <!-- Card 1 -->
-      <div class="card">
+      <div class="card" data-link="descricao.html">
         <img src="../src/img/cursos/logicaprogramacao.png" alt="Lógica de programação básica">
         <div class="card-content">
           <div>
@@ -180,7 +194,7 @@
       </div>
 
       <!-- Card 2 -->
-      <div class="card">
+      <div class="card" data-link="descricao.html">
         <img src="../src/img/cursos/suportetecnico.png" alt="Fundamentos de suporte técnico">
         <div class="card-content">
           <div>
@@ -198,7 +212,7 @@
       </div>
 
       <!-- Card 3 -->
-      <div class="card">
+      <div class="card" data-link="descricao.html">
         <img src="../src/img/cursos/desenvolvimentoweb.png" alt="Desenvolvimento web">
         <div class="card-content">
           <div>
@@ -222,7 +236,7 @@
 
     <div class="cards">
       <!-- Card 1 -->
-      <div class="card">
+      <div class="card" data-link="descricao.html">
         <img src="../src/img/cursos/ecommerce.png" alt="E-commerce e marketplaces">
         <div class="card-content">
           <div>
@@ -241,7 +255,7 @@
       </div>
 
       <!-- Card 2 -->
-      <div class="card">
+      <div class="card" data-link="descricao.html">
         <img src="../src/img/cursos/gestaoestoque.png" alt="Gestão de estoque básica">
         <div class="card-content">
           <div>
@@ -259,7 +273,7 @@
       </div>
 
       <!-- Card 3 -->
-      <div class="card">
+      <div class="card" data-link="descricao.html">
         <img src="../src/img/cursos/criacaoloja.png" alt="Criação de loja online">
         <div class="card-content">
           <div>
@@ -271,7 +285,7 @@
           </div>
           <div class="card-footer">
             <span class="rating">4.8</span>
-           <a href="descricao.html" class=" btn btn-inscrever">Inscreva-se</a>
+            <button class="btn btn-inscrever">Inscreva-se</button>
           </div>
         </div>
       </div>
@@ -327,5 +341,104 @@
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/header.js"></script>
+ <script>
+    document.querySelectorAll('.btn-inscrever').forEach(btn => {
+      btn.addEventListener('click', () => {
+        btn.textContent = '✅ Inscrita';
+        btn.classList.add('btn-success');
+        btn.disabled = true;
+
+        // Criar popup de parabéns
+        const popup = document.createElement('div');
+        popup.textContent = '🎉 Parabéns! Você se inscreveu com sucesso!';
+        popup.style.position = 'fixed';
+        popup.style.top = '50%';
+        popup.style.left = '50%';
+        popup.style.transform = 'translate(-50%, -50%)';
+        popup.style.background = '#fff';
+        popup.style.border = '2px solid #4CAF50';
+        popup.style.padding = '20px 40px';
+        popup.style.borderRadius = '12px';
+        popup.style.boxShadow = '0 0 15px rgba(0,0,0,0.3)';
+        popup.style.zIndex = '9999';
+        popup.style.fontWeight = 'bold';
+        popup.style.fontSize = '1.2rem';
+        document.body.appendChild(popup);
+
+        setTimeout(() => popup.remove(), 2500);
+      });
+    });
+  </script>
+  <script>
+  // Redirecionar ao clicar no card inteiro
+  document.querySelectorAll('.card').forEach(card => {
+    card.style.cursor = 'pointer';
+    card.addEventListener('click', (e) => {
+      // Evita conflito com o botão de inscrição
+      if (!e.target.classList.contains('btn-inscrever')) {
+        window.location.href = 'descricao.html'; // 🔁 Página de destino
+      }
+    });
+  });
+</script>
+<script>
+  // Redirecionar ao clicar no card inteiro
+  document.querySelectorAll('.card').forEach(card => {
+    card.style.cursor = 'pointer';
+    card.addEventListener('click', (e) => {
+      // Evita conflito com o botão de inscrição
+      if (!e.target.classList.contains('btn-inscrever')) {
+        window.location.href = 'descricao.html'; // 🔁 Página de destino
+      }
+    });
+  });
+</script>
+<script>
+  // ====== Redireciona o card inteiro, exceto o botão ======
+  document.querySelectorAll('.card').forEach(card => {
+    card.style.cursor = 'pointer';
+    card.addEventListener('click', (e) => {
+      // Evita clique no botão "Inscreva-se"
+      if (!e.target.classList.contains('btn-inscrever')) {
+        const destino = card.getAttribute('data-link');
+        if (destino) window.location.href = destino;
+      }
+    });
+  });
+
+  // ====== Efeito do botão "Inscreva-se" ======
+  document.querySelectorAll('.btn-inscrever').forEach(btn => {
+    btn.addEventListener('click', (event) => {
+      event.stopPropagation(); // Impede que o clique no botão acione o redirecionamento do card
+
+      btn.textContent = '✅ Inscrita';
+      btn.classList.add('btn-success');
+      btn.disabled = true;
+
+      // Popup de parabéns
+      const popup = document.createElement('div');
+      popup.textContent = '🎉 Parabéns! Você se inscreveu com sucesso!';
+      Object.assign(popup.style, {
+        position: 'fixed',
+        top: '50%',
+        left: '50%',
+        transform: 'translate(-50%, -50%)',
+        background: '#fff',
+        border: '2px solid #4CAF50',
+        padding: '20px 40px',
+        borderRadius: '12px',
+        boxShadow: '0 0 15px rgba(0,0,0,0.3)',
+        zIndex: '9999',
+        fontWeight: 'bold',
+        fontSize: '1.2rem'
+      });
+      document.body.appendChild(popup);
+
+      setTimeout(() => popup.remove(), 2500);
+    });
+  });
+</script>
+
+
 
 </html>
