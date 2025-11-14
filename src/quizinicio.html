@@ -1,127 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-
-    <link rel="stylesheet" href="../src/css/components.css">
-    <link rel="stylesheet" href="../src/css/quizinicio.css">
-    <link rel="stylesheet" href="../src/css/background-circulos.css">
-    <link rel="stylesheet" href="../src/components/headerFooter.html">
-
-    <title>InovaElas | Quiz</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/quizinicio.css">
+  <title>Quiz InovaElas</title>
 </head>
-
 <body>
-    <!---- Header logado ------>
-    <header class="logado">
-        <div class="logo">
-            <a href="index.html" aria-label="Página inicial - InovaElas">
-                <img src="../src/img/logo.png" alt="Logotipo InovaElas">
-            </a>
-        </div>
+  
 
-        <input type="checkbox" id="menu-checkbox" class="visually-hidden" aria-label="Abrir menu de navegação">
+  <main class="quiz-hero">
+    <h1>Descubra sua área ideal na tecnologia</h1>
+    <p>Responda poucas perguntas e receba recomendações personalizadas.</p>
 
-        <label for="menu-checkbox" class="menu-toggle" aria-label="Alternar menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
+    <button id="btn-iniciar" class="btn-principal">Iniciar Quiz</button>
+  </main>
 
-        <nav class="menu-principal" aria-label="Menu principal">
-            <div class="usuaria-mobile">
-                <a href="perfil.html" class="aluna" aria-label="Perfil da aluna">
-                    <img src="img/personas/comentarios/persona_julia_silva.jpeg" alt="Foto da usuária Julia Silva">
-                </a>
-            </div>
+  <script>
+    document.getElementById("btn-iniciar").onclick = () =>
+      window.location.href = "quizPerguntas.html";
+  </script>
 
-            <ul>
-                <li><a href="cursos.html">Cursos</a></li>
-                <li><a href="comunidade.html">Comunidade</a></li>
-                <li><a href="martketplace.html">Marketplace</a></li>
-                <li><a href="bancoTalentos.html">Banco de talentos</a></li>
-                <li><a href="mentoria.html">Mentoria</a></li>
-            </ul>
-        </nav>
-
-        <div class="usuaria-desktop">
-            <a href="perfil.html" class="aluna" aria-label="Perfil da aluna">
-                <img src="img/personas/comentarios/persona_julia_silva.jpeg" alt="Foto da usuária Julia Silva">
-            </a>
-        </div>
-    </header>
-
-
-    <!---- Conteúdo principal/inicial da página ------>
-    <main>
-        <section id="quiz" class="secao-com-circulos">
-            <div class="background-circulos padrao-quiz">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-
-            <div class="quiz-hero">
-                <h1>InovaElas<br>Quiz</h1>
-                <h2>Vamos começar?</h2>
-                <p>Este quiz vai nos ajudar a entender seu nível de conhecimento em informática e indicar a trilha de estudos que mais combina com você. Não existe resposta certa ou errada — responda com sinceridade!</p>
-                <p>Ao final, suas respostas indicarão a trilha de estudo ideal!</p>
-                <div class="botao-grupo">
-                    <a href="../src/quizPerguntas.html" class="btn btn-participar">Iniciar Quiz</a>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="footer-container">
-            <div class="footer-logo">
-                <img src="../src/img/logo.png" alt="InovaElas">
-                <p>Transformando vidas através da educação. Capacitando mulheres para um futuro mais próspero e independente.</p>
-            </div>
-
-            <div class="footer-column">
-                <h4>Cursos</h4>
-                <ul>
-                    <li><a href="#">Tecnologia</a></li>
-                    <li><a href="#">Finanças</a></li>
-                    <li><a href="#">Liderança</a></li>
-                    <li><a href="#">Carreira</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-column">
-                <h4>Suporte</h4>
-                <ul>
-                    <li><a href="#">Central de ajuda</a></li>
-                    <li><a href="#">Como funciona</a></li>
-                    <li><a href="#">Políticas de privacidade</a></li>
-                    <li><a href="#">Termos de uso</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-column">
-                <h4>Contato</h4>
-                <ul>
-                    <li>(11) 99999-9999</li>
-                    <li>minas.byte@gmail.com</li>
-                    <li>Rua Dom José Gaspar, 500<br>Belo Horizonte - MG</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>© Minas Byte. Direitos reservados</p>
-            <span>Feito com ❤ para transformar vidas.</span>
-        </div>
-    </footer>
+  <!-- Script do header -->
+  <script src="js/header.js"></script>
 </body>
 </html>
+
+

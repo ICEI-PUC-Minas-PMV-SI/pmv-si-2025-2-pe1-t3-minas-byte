@@ -2,142 +2,90 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quiz de Tecnologia</title>
   <link rel="stylesheet" href="css/quizPerguntas.css">
-  <link rel="stylesheet" href="css/components.css">
+  <title>Quiz</title>
 </head>
 <body>
-
-  <div id="menu-container"></div>
-
-  <!-- ===== CONTEÚDO DO QUIZ ===== -->
   <main>
-    <div class="pergunta">
-      <h3>1. Qual é o seu principal objetivo hoje?</h3>
-      <label class="opcao"><input type="radio" name="p1"> Aprender informática para conseguir um emprego.</label>
-      <label class="opcao"><input type="radio" name="p1"> Usar o computador para meus estudos pessoais ou da família.</label>
-      <label class="opcao"><input type="radio" name="p1"> Montar meu próprio negócio ou oferecer serviços digitais.</label>
-      <label class="opcao"><input type="radio" name="p1"> Só quero aprender o básico pra não ficar perdida.</label>
-    </div>
+    <form id="form-quiz">
 
-    <div class="pergunta">
-      <h3>2. Como você se sente quando precisa mexer no computador ou celular para algo novo?</h3>
-      <label class="opcao"><input type="radio" name="p2"> Fico confusa e preciso de ajuda.</label>
-      <label class="opcao"><input type="radio" name="p2"> Consigo, mas às vezes demoro pra entender.</label>
-      <label class="opcao"><input type="radio" name="p2"> Me viro bem e gosto de descobrir coisas novas.</label>
-    </div>
+      <!-- Perguntas (1 a 10) -->
+      <div class="pergunta">
+        <h3>1. Qual é o seu principal objetivo hoje?</h3>
+        <label class="opcao"><input type="radio" name="p1" value="emprego"> Aprender informática para conseguir um emprego.</label>
+        <label class="opcao"><input type="radio" name="p1" value="estudos"> Usar o computador para meus estudos pessoais ou da família.</label>
+        <label class="opcao"><input type="radio" name="p1" value="negocios"> Montar meu próprio negócio ou oferecer serviços digitais.</label>
+        <label class="opcao"><input type="radio" name="p1" value="basico"> Só quero aprender o básico pra não ficar perdida.</label>
+      </div>
 
-    <div class="pergunta">
-      <h3>3. Até onde você estudou na escola?</h3>
-      <label class="opcao"><input type="radio" name="p3"> Ensino Fundamental incompleto.</label>
-      <label class="opcao"><input type="radio" name="p3"> Ensino Fundamental completo.</label>
-      <label class="opcao"><input type="radio" name="p3"> Ensino Médio completo.</label>
-      <label class="opcao"><input type="radio" name="p3"> Já comecei ou terminei faculdade.</label>
-    </div>
+      <div class="pergunta">
+        <h3>2. Como você se sente quando precisa mexer no computador ou celular para algo novo?</h3>
+        <label class="opcao"><input type="radio" name="p2" value="confusa"> Fico confusa e preciso de ajuda.</label>
+        <label class="opcao"><input type="radio" name="p2" value="devagar"> Consigo, mas às vezes demoro pra entender.</label>
+        <label class="opcao"><input type="radio" name="p2" value="descubro"> Me viro bem e gosto de descobrir coisas novas.</label>
+      </div>
 
-    <div class="pergunta">
-      <h3>4. Você já fez algum curso online (mesmo que rápido, pelo celular)?</h3>
-      <label class="opcao"><input type="radio" name="p4"> Nunca.</label>
-      <label class="opcao"><input type="radio" name="p4"> Sim, mas não terminei.</label>
-      <label class="opcao"><input type="radio" name="p4"> Sim, e consegui terminar!</label>
-    </div>
+      <div class="pergunta">
+        <h3>3. Até onde você estudou na escola?</h3>
+        <label class="opcao"><input type="radio" name="p3" value="fund_incompleto"> Ensino Fundamental incompleto.</label>
+        <label class="opcao"><input type="radio" name="p3" value="fund_completo"> Ensino Fundamental completo.</label>
+        <label class="opcao"><input type="radio" name="p3" value="medio"> Ensino Médio completo.</label>
+        <label class="opcao"><input type="radio" name="p3" value="faculdade"> Já comecei ou terminei faculdade.</label>
+      </div>
 
-    <div class="pergunta">
-      <h3>5. Quando ouve falar em "informática", o que vem na sua cabeça primeiro?</h3>
-      <label class="opcao"><input type="radio" name="p55"> Aprender a mexer no computador (word, digitação, internet).</label>
-      <label class="opcao"><input type="radio" name="p5"> Criar coisas digitais (sites, artesm videos).</label>
-      <label class="opcao"><input type="radio" name="p5"> Trabalhar com tecnologia (programação, banco de dados, nuvem).</label>
-    </div>
+      <div class="pergunta">
+        <h3>4. Você já fez algum curso online (mesmo que rápido, pelo celular)?</h3>
+        <label class="opcao"><input type="radio" name="p4" value="nunca"> Nunca.</label>
+        <label class="opcao"><input type="radio" name="p4" value="nao_terminei"> Sim, mas não terminei.</label>
+        <label class="opcao"><input type="radio" name="p4" value="terminei"> Sim, e consegui terminar!</label>
+      </div>
 
-    <div class="pergunta">
-      <h3>6. Se um computador não ligar, o que você faria primeiro?</h3>
-      <label class="opcao"><input type="radio" name="p6"> Chamaria alguém para consertar.</label>
-      <label class="opcao"><input type="radio" name="p6"> Confereria se está na tomada ou se o cabo está conectado.</label>
-      <label class="opcao"><input type="radio" name="p6"> Tentaria procurar na internet o que poder ser o problema.</label>
-    </div>
+      <div class="pergunta">
+        <h3>5. Quando ouve falar em "informática", o que vem na sua cabeça primeiro?</h3>
+        <label class="opcao"><input type="radio" name="p5" value="basico"> Aprender a mexer no computador (word, digitação, internet).</label>
+        <label class="opcao"><input type="radio" name="p5" value="criacao"> Criar coisas digitais (sites, artes, vídeos).</label>
+        <label class="opcao"><input type="radio" name="p5" value="tecnologia"> Trabalhar com tecnologia (programação, banco de dados, nuvem).</label>
+      </div>
 
-    <div class="pergunta">
-      <h3>7. Você já usou algum programa de edição (exemplo: Canva, Powerpoint ou outro) para criar algo?</h3>
-      <label class="opcao"><input type="radio" name="p7"> Nunca.</label>
-      <label class="opcao"><input type="radio" name="p7"> Já brinquei um pouco, mas não sei mexer muito bem.</label>
-      <label class="opcao"><input type="radio" name="p7"> Sim, já usei para criar trabalhos, posts ou apresentações, </label>
-    </div>
+      <div class="pergunta">
+        <h3>6. Se um computador não ligar, o que você faria primeiro?</h3>
+        <label class="opcao"><input type="radio" name="p6" value="chamar"> Chamaria alguém para consertar.</label>
+        <label class="opcao"><input type="radio" name="p6" value="conferir"> Conferiria se está na tomada ou se o cabo está conectado.</label>
+        <label class="opcao"><input type="radio" name="p6" value="procurar"> Tentaria procurar na internet o que pode ser o problema.</label>
+      </div>
 
-    <div class="pergunta">
-      <h3>6. Sobre internet: você sabe diferenciar um link confiável de um perigoso (vírus e golpes)?</h3>
-      <label class="opcao"><input type="radio" name="p8"> Não sei diferenciar.</label>
-      <label class="opcao"><input type="radio" name="p8"> Tenho uma ideia, mas as vezes me confundo.</label>
-      <label class="opcao"><input type="radio" name="p8"> Sim, sei avaliar melhor os sites e links.</label>
-    </div>
+      <div class="pergunta">
+        <h3>7. Você já usou algum programa de edição (exemplo: Canva, PowerPoint ou outro) para criar algo?</h3>
+        <label class="opcao"><input type="radio" name="p7" value="nunca"> Nunca.</label>
+        <label class="opcao"><input type="radio" name="p7" value="pouco"> Já brinquei um pouco, mas não sei mexer muito bem.</label>
+        <label class="opcao"><input type="radio" name="p7" value="sim"> Sim, já usei para criar trabalhos, posts ou apresentações.</label>
+      </div>
 
-    <div class="pergunta">
-      <h3>9. Se tivesse que escolher um tipo de trabalho digital para começar, qual mais combina com você? </h3>
-      <label class="opcao"><input type="radio" name="p9"> Atender clientes, ajudar em tarefas de escritório (digitar e organizar).</label>
-      <label class="opcao"><input type="radio" name="p9"> Criar conteútos visuais ou mexer com redes sociais.</label>
-      <label class="opcao"><input type="radio" name="p9"> Resolver problemas de computador, tecnologia ou aprender programação. </label>
-    </div>
+      <div class="pergunta">
+        <h3>8. Sobre internet: você sabe diferenciar um link confiável de um perigoso (vírus e golpes)?</h3>
+        <label class="opcao"><input type="radio" name="p8" value="nao"> Não sei diferenciar.</label>
+        <label class="opcao"><input type="radio" name="p8" value="mais_ou_menos"> Tenho uma ideia, mas às vezes me confundo.</label>
+        <label class="opcao"><input type="radio" name="p8" value="sim"> Sim, sei avaliar melhor os sites e links.</label>
+      </div>
 
-    <div class="pergunta">
-      <h3>10. Hoje, quanto tempo você poderia dedicar por semana para estudar?</h3>
-      <label class="opcao"><input type="radio" name="p10"> Menos de 3 horas por semana.</label>
-      <label class="opcao"><input type="radio" name="p10"> De 3 a 6 horas por semana.</label>
-      <label class="opcao"><input type="radio" name="p10"> Mais de 6 horas por semana. </label>
-    </div>
+      <div class="pergunta">
+        <h3>9. Se tivesse que escolher um tipo de trabalho digital para começar, qual mais combina com você?</h3>
+        <label class="opcao"><input type="radio" name="p9" value="escritorio"> Atender clientes, ajudar em tarefas de escritório.</label>
+        <label class="opcao"><input type="radio" name="p9" value="criativo"> Criar conteúdos visuais ou mexer com redes sociais.</label>
+        <label class="opcao"><input type="radio" name="p9" value="tecnologia"> Resolver problemas de tecnologia ou aprender programação.</label>
+      </div>
 
-    <div class="final">
-      <p class="agradecimento">Obrigada por participar!</p>
-      <p class="mensagem">Suas respostas nos ajudam a te direcionar para as melhores oportunidades.</p>
-      <p class="futuro">Pronta para seguir para o futuro digital?</p>
-      <a href="quizresultado.html" class="btn btn-final">Ver resultado</a>
-    </div>
+      <div class="pergunta">
+        <h3>10. Hoje, quanto tempo você poderia dedicar por semana para estudar?</h3>
+        <label class="opcao"><input type="radio" name="p10" value="baixo"> Menos de 3 horas por semana.</label>
+        <label class="opcao"><input type="radio" name="p10" value="medio"> De 3 a 6 horas por semana.</label>
+        <label class="opcao"><input type="radio" name="p10" value="alto"> Mais de 6 horas por semana.</label>
+      </div>
+
+      <button class="btn-final" type="submit">Finalizar Quiz</button>
+    </form>
   </main>
 
-  <footer>
-    <div class="footer-container">
-      <div class="footer-logo">
-        <img src="img/logo.png" alt="InovaElas">
-        <p>Transformando vidas através da educação. Capacitando mulheres para um futuro mais próspero e independente.
-        </p>
-      </div>
-
-      <div class="footer-column">
-        <h4>Cursos</h4>
-        <ul>
-          <li><a href="#">Tecnologia</a></li>
-          <li><a href="#">Finanças</a></li>
-          <li><a href="#">Liderança</a></li>
-          <li><a href="#">Carreira</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-column">
-        <h4>Suporte</h4>
-        <ul>
-          <li><a href="#">Central de ajuda</a></li>
-          <li><a href="#">Como funciona</a></li>
-          <li><a href="#">Políticas de privacidade</a></li>
-          <li><a href="#">Termos de uso</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-column">
-        <h4>Contato</h4>
-        <ul>
-          <li>(11) 99999-9999</li>
-          <li>minas.byte@gmail.com</li>
-          <li>Rua Dom José Gaspar, 500<br>Belo Horizonte - MG</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <p>© Minas Byte. Direitos reservados</p>
-      <span>Feito com ❤️ para transformar vidas.</span>
-    </div>
-  </footer>
-
-  <script src="js/header.js"></script>
-
+  <script src="js/quiz.js"></script>
 </body>
 </html>

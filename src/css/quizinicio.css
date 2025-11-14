@@ -5,6 +5,144 @@
     padding: 0;
     font-family: 'League Spartan', sans-serif;
 }
+/* ============================================================
+   HEADER LOGADO REFORMULADO
+============================================================ */
+.logado {
+  width: 100%;
+  background: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 60px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logado:hover {
+  background: #f9f9ff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo img {
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
+}
+
+/* Menu principal */
+.menu-principal ul {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+}
+
+.menu-principal a {
+  text-decoration: none;
+  color: #2f2f7b;
+  font-weight: 600;
+  font-size: 16px;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.menu-principal a::after {
+  content: '';
+  display: block;
+  width: 0%;
+  height: 2px;
+  background: #f36b8c;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+
+.menu-principal a:hover {
+  color: #f36b8c;
+}
+
+.menu-principal a:hover::after {
+  width: 100%;
+}
+
+/* Usuária (avatar) */
+.usuaria-desktop img {
+  border-radius: 50%;
+  height: 405px;
+  width: 405px;
+  object-fit: cover;
+  border: 2px solid #f36b8c;
+  transition: transform 0.3s ease;
+}
+
+.usuaria-desktop img:hover {
+  transform: scale(1.1);
+}
+
+/* Menu hamburguer */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background: #2f2f7b;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Mobile Responsividade */
+@media (max-width: 900px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .menu-principal ul {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  }
+
+  #menu-checkbox:checked ~ nav ul {
+    display: flex;
+  }
+
+  .menu-principal a {
+    padding: 10px;
+    text-align: center;
+    display: block;
+  }
+
+  .usuaria-desktop {
+    display: none;
+  }
+}
 
 /* ======= SEÇÃO PRINCIPAL ======= */
 .quiz {

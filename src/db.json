@@ -1,10 +1,50 @@
 {
-  [
+  "usuarios": [
     {
       "id": "a412",
       "nome": "fernanda",
       "email": "fer@email.com",
       "senha": "123456"
+    }
+  ],
+
+  "cursos": [
+    {
+      "id": 1,
+      "titulo": "Primeiros Passos no Computador",
+      "descricao": "Aprenda o essencial para usar computadores.",
+      "categoria": "iniciante",
+      "imagem": "img/cursos/primeirospassos.png"
+    },
+    {
+      "id": 2,
+      "titulo": "Ferramentas de Escritório",
+      "descricao": "Word, Excel e apresentações.",
+      "categoria": "iniciante"
+    },
+    {
+      "id": 3,
+      "titulo": "Segurança Digital",
+      "descricao": "Aprenda a evitar golpes e navegar com segurança.",
+      "categoria": "iniciante"
+    },
+    {
+      "id": 4,
+      "titulo": "Lógica de Programação",
+      "descricao": "Primeiros passos no mundo da tecnologia.",
+      "categoria": "tecnologia"
+    },
+    {
+      "id": 5,
+      "titulo": "Suporte Técnico",
+      "descricao": "Resolva problemas e aprenda manutenção básica.",
+      "categoria": "tecnologia"
+    },
+    {
+      "id": 6,
+      "titulo": "Desenvolvimento Web",
+      "descricao": "Crie sites do zero.",
+      "categoria": "criativo"
     }
   ]
 }
