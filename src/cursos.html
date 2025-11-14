@@ -338,107 +338,11 @@
       <span>Feito com ❤ para transformar vidas.</span>
     </div>
   </footer>
-</body>
+  
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/header.js"></script>
- <script>
-    document.querySelectorAll('.btn-inscrever').forEach(btn => {
-      btn.addEventListener('click', () => {
-        btn.textContent = '✅ Inscrita';
-        btn.classList.add('btn-success');
-        btn.disabled = true;
+<script src="js/inscricao.js"></script>
 
-        // Criar popup de parabéns
-        const popup = document.createElement('div');
-        popup.textContent = '🎉 Parabéns! Você se inscreveu com sucesso!';
-        popup.style.position = 'fixed';
-        popup.style.top = '50%';
-        popup.style.left = '50%';
-        popup.style.transform = 'translate(-50%, -50%)';
-        popup.style.background = '#fff';
-        popup.style.border = '2px solid #4CAF50';
-        popup.style.padding = '20px 40px';
-        popup.style.borderRadius = '12px';
-        popup.style.boxShadow = '0 0 15px rgba(0,0,0,0.3)';
-        popup.style.zIndex = '9999';
-        popup.style.fontWeight = 'bold';
-        popup.style.fontSize = '1.2rem';
-        document.body.appendChild(popup);
-
-        setTimeout(() => popup.remove(), 2500);
-      });
-    });
-  </script>
-  <script>
-  // Redirecionar ao clicar no card inteiro
-  document.querySelectorAll('.card').forEach(card => {
-    card.style.cursor = 'pointer';
-    card.addEventListener('click', (e) => {
-      // Evita conflito com o botão de inscrição
-      if (!e.target.classList.contains('btn-inscrever')) {
-        window.location.href = 'descricao.html'; // 🔁 Página de destino
-      }
-    });
-  });
-</script>
-<script>
-  // Redirecionar ao clicar no card inteiro
-  document.querySelectorAll('.card').forEach(card => {
-    card.style.cursor = 'pointer';
-    card.addEventListener('click', (e) => {
-      // Evita conflito com o botão de inscrição
-      if (!e.target.classList.contains('btn-inscrever')) {
-        window.location.href = 'descricao.html'; // 🔁 Página de destino
-      }
-    });
-  });
-</script>
-<script>
-  // ====== Redireciona o card inteiro, exceto o botão ======
-  document.querySelectorAll('.card').forEach(card => {
-    card.style.cursor = 'pointer';
-    card.addEventListener('click', (e) => {
-      // Evita clique no botão "Inscreva-se"
-      if (!e.target.classList.contains('btn-inscrever')) {
-        const destino = card.getAttribute('data-link');
-        if (destino) window.location.href = destino;
-      }
-    });
-  });
-
-  // ====== Efeito do botão "Inscreva-se" ======
-  document.querySelectorAll('.btn-inscrever').forEach(btn => {
-    btn.addEventListener('click', (event) => {
-      event.stopPropagation(); // Impede que o clique no botão acione o redirecionamento do card
-
-      btn.textContent = '✅ Inscrita';
-      btn.classList.add('btn-success');
-      btn.disabled = true;
-
-      // Popup de parabéns
-      const popup = document.createElement('div');
-      popup.textContent = '🎉 Parabéns! Você se inscreveu com sucesso!';
-      Object.assign(popup.style, {
-        position: 'fixed',
-        top: '50%',
-        left: '50%',
-        transform: 'translate(-50%, -50%)',
-        background: '#fff',
-        border: '2px solid #4CAF50',
-        padding: '20px 40px',
-        borderRadius: '12px',
-        boxShadow: '0 0 15px rgba(0,0,0,0.3)',
-        zIndex: '9999',
-        fontWeight: 'bold',
-        fontSize: '1.2rem'
-      });
-      document.body.appendChild(popup);
-
-      setTimeout(() => popup.remove(), 2500);
-    });
-  });
-</script>
-
-
+</body>
 
 </html>
