@@ -3,8 +3,8 @@
 body {
     margin: 0;
     font-family: 'League Spartan', sans-serif;
-    background: #fafaf9;
-    color: #1e293b;
+    background: #f8fafc;
+    color: #334155;
 }
 
 /* CONTAINER */
@@ -19,13 +19,12 @@ body {
 }
 
 .card-base {
-    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
-    border-radius: 20px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
     padding: 28px;
-    margin-bottom: 28px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
+    margin-bottom: 20px;
+    border: 1px solid #f1f5f9;
 }
 
 /* PERFIL INFO */
@@ -111,16 +110,16 @@ body {
 }
 
 .barra-progresso {
-    background: #e2e8f0;
-    height: 10px;
-    border-radius: 6px;
+    background: #f1f5f9;
+    height: 8px;
+    border-radius: 8px;
     margin-bottom: 20px;
 }
 
 .progresso {
-    background: linear-gradient(90deg, #3b82f6, #1e3a8a);
-    height: 10px;
-    border-radius: 6px;
+    background: linear-gradient(90deg, #364c84, #2a3875);
+    height: 8px;
+    border-radius: 8px;
 }
 
 .proxima-aula {
@@ -130,33 +129,30 @@ body {
 }
 
 .btn-base {
-    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
-    color: var(--white);
-    border: none;
-    border-radius: 12px;
-    padding: 12px 20px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: 1px solid #364c84;
+    font-weight: bold;
+    font-size: 14px;
     cursor: pointer;
-    font-weight: 600;
-    box-shadow: 0 4px 16px rgba(54, 76, 132, 0.3);
-    transition: all 0.3s ease;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
-}
-
-.btn-base:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(54, 76, 132, 0.4);
-    background: linear-gradient(135deg, var(--secondary-blue) 0%, var(--primary-blue) 100%);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.10);
+    transition: all 0.3s ease;
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+    color: #FFFEFA;
+    background-color: #364c84;
+    border: none;
 }
 
 .btn-primary:hover {
-    background: linear-gradient(135deg, var(--secondary-blue) 0%, var(--primary-blue) 100%);
+    background-color: #2a3875;
+    transform: translateY(-1px);
 }
 
 /* EXPLORAR CARD */
@@ -172,14 +168,15 @@ body {
 }
 
 .btn-outline {
-    border: 2px solid var(--primary-blue);
-    color: var(--primary-blue);
-    background: linear-gradient(135deg, var(--white) 0%, var(--background) 100%);
-    padding: 10px 18px;
-    border-radius: 12px;
+    background: #fff;
+    color: #364c84;
+    border: 1px solid #364c84;
+    padding: 8px 16px;
+    border-radius: 6px;
     cursor: pointer;
-    font-weight: 600;
-    box-shadow: 0 4px 16px rgba(54, 76, 132, 0.1);
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.10);
     transition: all 0.3s ease;
     text-decoration: none;
     display: inline-flex;
@@ -188,10 +185,9 @@ body {
 }
 
 .btn-outline:hover {
-    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
-    color: var(--white);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(54, 76, 132, 0.3);
+    background-color: #364c84;
+    color: #FFFEFA;
+    transform: translateY(-1px);
 }
 
 /* CONQUISTAS + CERTIFICADOS */
@@ -202,7 +198,7 @@ body {
 }
 
 .conquistas {
-    flex: 2;
+    flex: 1;
 }
 
 .certificados {
@@ -213,12 +209,11 @@ body {
     display: flex;
     align-items: flex-start;
     gap: 12px;
-    background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
-    padding: 16px;
-    border-radius: 16px;
+    background: #f8fafc;
+    padding: 18px;
+    border-radius: 12px;
     margin-bottom: 12px;
-    border: 1px solid rgba(148, 163, 184, 0.1);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f1f5f9;
 }
 
 .medalha i {
@@ -258,11 +253,15 @@ body {
 }
 
 .certificado {
-    background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
-    border: 1px solid rgba(148, 163, 184, 0.2);
-    border-radius: 16px;
-    padding: 20px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    background: #f8fafc;
+    border: 1px solid #f1f5f9;
+    border-radius: 12px;
+    padding: 22px;
+    margin-bottom: 16px;
+}
+
+.certificado:last-child {
+    margin-bottom: 0;
 }
 
 .certificado .titulo {
@@ -301,30 +300,77 @@ body {
 .curso-favorito {
     display: flex;
     align-items: center;
-    gap: 12px;
+    justify-content: space-between;
+    gap: 16px;
     background: #f8fafc;
-    padding: 12px;
-    border-radius: 10px;
-    margin-bottom: 8px;
+    padding: 18px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #f1f5f9;
+    transition: all 0.3s ease;
 }
 
-.curso-favorito img {
+.curso-favorito:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    background: #ffffff;
+}
+
+.curso-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 1;
+}
+
+.curso-thumb {
     width: 60px;
     height: 40px;
-    border-radius: 6px;
+    border-radius: 8px;
     object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.curso-favorito .info h4 {
-    margin: 0;
+.curso-detalhes {
+    flex: 1;
+}
+
+.curso-titulo {
+    margin: 0 0 4px 0;
     font-size: 0.95rem;
+    font-weight: 600;
     color: #1e293b;
 }
 
-.curso-favorito .categoria {
+.curso-descricao {
+    margin: 0 0 8px 0;
     font-size: 0.85rem;
     color: #64748b;
+    line-height: 1.4;
+}
+
+.curso-meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.badge-outline {
+    background: transparent;
+    border: 1px solid #cbd5e1;
+    color: #64748b;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 500;
     text-transform: capitalize;
+}
+
+.btn-sm {
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 6px;
+    white-space: nowrap;
 }
 
 .sem-favoritos {
@@ -342,6 +388,25 @@ body {
     margin: 20px 0;
 }
 
+/* SELETOR DE PERFIS */
+.seletor-perfis {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.perfis-opcoes {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* ESPAÇAMENTO TÍTULOS */
+.conquistas .card-title,
+.certificados .card-title {
+    margin-bottom: 18px;
+}
+
 /* RESPONSIVO */
 @media (max-width: 1200px) {
     .container {
@@ -351,24 +416,32 @@ body {
 }
 
 @media (max-width: 992px) {
-    .linha-cards {
-        flex-direction: column;
+    .container {
+        padding: 0 16px;
     }
 
-    .conquistas,
-    .certificados {
-        flex: 1;
+    .card-base {
+        padding: 24px;
+    }
+
+    .perfil-info {
+        gap: 20px;
+    }
+
+    .linha-cards {
+        flex-direction: column;
+        gap: 20px;
     }
 }
 
 @media (max-width: 768px) {
     .container {
-        margin: 20px auto;
+        margin: 16px auto;
         padding: 0 12px;
     }
 
-    .card {
-        padding: 16px;
+    .card-base {
+        padding: 20px;
         margin-bottom: 16px;
     }
 
@@ -383,13 +456,10 @@ body {
         height: 100px;
     }
 
-    .info-detalhes h2 {
-        font-size: 1.2rem;
-    }
-
     .dados-contato {
         grid-template-columns: 1fr;
-        gap: 6px;
+        gap: 8px;
+        text-align: left;
     }
 
     .proxima-aula {
@@ -399,67 +469,78 @@ body {
     }
 
     .curso-favorito {
-        flex-direction: column;
-        text-align: center;
-        gap: 8px;
-    }
-
-    .curso-favorito img {
-        width: 80px;
-        height: 50px;
-        align-self: center;
-    }
-
-    .medalha {
-        flex-direction: column;
-        text-align: center;
-        gap: 8px;
+        padding: 16px;
     }
 
     .certificado .botoes {
-        flex-direction: column;
+        flex-wrap: wrap;
         gap: 8px;
     }
 
-    .btn-primario,
-    .btn-outline {
-        width: 100%;
-        justify-content: center;
+    .certificado .botoes .btn-base {
+        flex: 1;
+        min-width: 120px;
     }
 }
 
 @media (max-width: 480px) {
     .container {
+        margin: 12px auto;
         padding: 0 8px;
     }
 
-    .card {
-        padding: 12px;
+    .card-base {
+        padding: 16px;
+        margin-bottom: 12px;
+    }
+
+    .perfil-info img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .info-detalhes h2 {
+        font-size: 1.1rem;
     }
 
     .tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 4px;
         justify-content: center;
+        gap: 4px;
     }
 
     .tags span {
-        font-size: 0.8rem;
-        padding: 4px 8px;
+        font-size: 0.75rem;
+        padding: 3px 8px;
     }
 
     .dados-contato .linha {
-        font-size: 0.85rem;
+        font-size: 0.8rem;
     }
 
-    .curso-header {
+    .curso-favorito {
         flex-direction: column;
-        gap: 8px;
+        gap: 12px;
         text-align: center;
     }
 
-    .status {
-        align-self: center;
+    .curso-info {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .medalha {
+        padding: 14px;
+    }
+
+    .certificado {
+        padding: 16px;
+    }
+
+    .certificado .botoes {
+        flex-direction: column;
+    }
+
+    .certificado .botoes .btn-base {
+        width: 100%;
     }
 }

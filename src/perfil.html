@@ -31,6 +31,18 @@
         </div>
 
         <div class="container">
+            <!-- SELETOR DE PERFIS (DEMO) -->
+            <div class="seletor-perfis">
+                <div class="perfis-opcoes">
+                    <button class="btn-base btn-outline" onclick="trocarPerfil('p001')">
+                        Maria Fernanda
+                    </button>
+                    <button class="btn-base btn-outline" onclick="trocarPerfil('p002')">
+                        Julia Silva
+                    </button>
+                </div>
+            </div>
+
             <!-- CARD INFORMAÇÕES PESSOAIS -->
             <div class="card-base perfil-info">
                 <div class="foto">
@@ -145,19 +157,7 @@
             </div>
         </div>
     </section>
-    <script>
-        
-        function visualizarCertificado() {
-            window.open('certificados/certificado_desenvolvimento_Julia_Silva.pdf', '_blank');
-        }
-        
-        function baixarCertificado() {
-            const link = document.createElement('a');
-            link.href = 'certificados/certificado_desenvolvimento_Julia_Silva.pdf';
-            link.download = 'certificado_desenvolvimento_Julia_Silva.pdf';
-            link.click();
-        }
-    </script>
+    <script src="js/perfil.js"></script>
     <script src="js/header.js"></script>
 
 </body>
