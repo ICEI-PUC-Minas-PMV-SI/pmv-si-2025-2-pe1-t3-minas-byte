@@ -2,9 +2,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const usuaria = JSON.parse(localStorage.getItem("usuariaLogada"));
   const todosOsCards = document.querySelectorAll(".card, .curso");
 
-  // Redireciona para pg descrição
+  // Redireciona ao clicar no card
   todosOsCards.forEach(card => {
     card.style.cursor = "pointer";
+
     card.addEventListener("click", (e) => {
       if (
         e.target.closest(".btn-inscreva") ||
@@ -16,18 +17,16 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       const destino = card.getAttribute("data-link");
-      if (destino) {
-        window.location.href = destino;
-      }
+      if (destino) window.location.href = destino;
     });
   });
 
   // Inscrição
   document.querySelectorAll(".btn-inscrever, .btn-inscreva").forEach(btn => {
+
     btn.addEventListener("click", (event) => {
       event.stopPropagation();
 
-      // Pega o estado atual da inscrição da usuaria
       const inscricaoAtual = JSON.parse(localStorage.getItem("cursoInscrito"));
       const card = btn.closest(".card") || btn.closest(".curso");
       if (!card) return;
@@ -38,12 +37,15 @@ document.addEventListener("DOMContentLoaded", () => {
         "Curso";
 
       if (!usuaria) {
-        alert("Faça login para realizar a inscrição!!");
+        alert("Faça login para se inscrever!");
         return;
       }
 
-      // Verifica se utiliza a versão atualizada do localStorage
-      if (inscricaoAtual && inscricaoAtual.email === usuaria.email && inscricaoAtual.curso !== nomeCurso) {
+      if (
+        inscricaoAtual &&
+        inscricaoAtual.email === usuaria.email &&
+        inscricaoAtual.curso !== nomeCurso
+      ) {
         alert(`Você já está inscrita no curso "${inscricaoAtual.curso}". Só é possível realizar um curso por vez.`);
         return;
       }
@@ -55,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
       btn.classList.add("btn-success");
       btn.disabled = true;
 
-      //Msg de inscrição
+      // Popup
       const popup = document.createElement("div");
       popup.classList.add("popup-inscricao");
       popup.innerHTML = `
@@ -69,7 +71,14 @@ document.addEventListener("DOMContentLoaded", () => {
       document.body.appendChild(popup);
 
       document.getElementById("btnOk").onclick = () => popup.remove();
+
       document.getElementById("btnIrSala").onclick = () => {
+        const idCurso = card.getAttribute("data-id");
+
+        if (idCurso) {
+          localStorage.setItem("cursoSelecionado", idCurso);
+        }
+
         window.location.href = "aula.html";
       };
     });

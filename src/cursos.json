@@ -1,0 +1,675 @@
+{
+  "cursos": [
+    {
+      "id": 1,
+      "titulo": "Primeiros Passos no Computador",
+      "aulas": [
+        {
+          "titulo": "Boas-vindas e objetivos do curso",
+          "descricao": "Conheça o que você vai aprender e como dominar o computador pode transformar o seu dia a dia."
+        },
+        {
+          "titulo": "O computador e seus componentes",
+          "descricao": "Entenda o que é CPU, monitor, teclado e mouse, e como cada parte funciona."
+        },
+        {
+          "titulo": "Ligando e desligando corretamente o computador",
+          "descricao": "Aprenda o passo a passo para iniciar e encerrar suas atividades de forma segura."
+        },
+        {
+          "titulo": "Conhecendo o sistema operacional",
+          "descricao": "Descubra o que é o Windows e como navegar por suas principais janelas e pastas."
+        },
+        {
+          "titulo": "Primeiros cliques com o mouse e teclado",
+          "descricao": "Exercite coordenação e pratique as funções básicas desses dois periféricos."
+        },
+        {
+          "titulo": "Organizando pastas e arquivos",
+          "descricao": "Aprenda a criar, renomear, mover e excluir arquivos para manter tudo em ordem."
+        },
+        {
+          "titulo": "Como usar pen drives e dispositivos externos",
+          "descricao": "Veja como conectar e transferir arquivos de forma prática."
+        },
+        {
+          "titulo": "Personalizando o computador",
+          "descricao": "Troque plano de fundo, ajuste volume, brilho e outras configurações."
+        },
+        {
+          "titulo": "Cuidados com o computador",
+          "descricao": "Dicas para evitar vírus, quedas de energia e lentidão no sistema."
+        },
+        {
+          "titulo": "Atalhos úteis do teclado",
+          "descricao": "Descubra comandos que facilitam a navegação no dia a dia."
+        },
+        {
+          "titulo": "Revisão e próximos passos",
+          "descricao": "Reforce o que aprendeu e veja como continuar evoluindo no uso do computador."
+        }
+      ],
+      "requisitos": [
+        "Não é necessário ter experiência prévia com computador.",
+        "Não é preciso saber digitar ou usar mouse com habilidade."
+      ],
+      "instrutora": {
+        "nome": "Roberta Rodrigues",
+        "descricao": "Instrutora do curso Primeiros Passos no Computador",
+        "biografia": "Roberta Rodrigues é educadora e especialista em inclusão digital, com mais de 8 anos de experiência ensinando tecnologia para iniciantes. Apaixonada por tornar o mundo digital acessível, já ajudou centenas de mulheres a darem seus primeiros passos no uso do computador. Didática, paciente e motivadora, Roberta acredita que a tecnologia é uma porta para novas oportunidades e dedica sua carreira a capacitar pessoas que desejam aprender sem complicação.",
+        "imagem": "img/img_aula/1.png"
+    }
+  },
+
+    {
+      "id": 2,
+      "titulo": "Ferramentas de Escritório",
+      "aulas": [
+        {
+          "titulo": "Introdução ao curso",
+          "descricao": "Saiba o que são as ferramentas de escritório e como elas ajudam no trabalho e nos estudos."
+        },
+        {
+          "titulo": "Conhecendo o Microsoft Word",
+          "descricao": "Explore o editor de textos mais usado no mundo."
+        },
+        {
+          "titulo": "Criando e formatando documentos",
+          "descricao": "Aprenda a deixar seu texto bonito, organizado e profissional."
+        },
+        {
+          "titulo": "Inserindo imagens e tabelas",
+          "descricao": "Veja como enriquecer seus documentos com elementos visuais."
+        },
+        {
+          "titulo": "Introdução ao Excel",
+          "descricao": "Descubra como planilhas ajudam a organizar informações e cálculos."
+        },
+        {
+          "titulo": "Fórmulas básicas e gráficos no Excel",
+          "descricao": "Faça contas automáticas e visualize dados com facilidade."
+        },
+        {
+          "titulo": "Apresentações no PowerPoint",
+          "descricao": "Crie slides atrativos e aprenda a configurar transições e efeitos."
+        },
+        {
+          "titulo": "Trabalhando com o Google Docs e Sheets",
+          "descricao": "Aprenda a usar ferramentas online gratuitas e colaborativas."
+        },
+        {
+          "titulo": "Compartilhando e salvando documentos na nuvem",
+          "descricao": "Mantenha seus arquivos seguros e acessíveis em qualquer lugar."
+        },
+        {
+          "titulo": "Dicas de produtividade e organização digital",
+          "descricao": "Otimize seu tempo com boas práticas no uso das ferramentas."
+        },
+        {
+          "titulo": "Revisão e conclusão",
+          "descricao": "Recapitule o aprendizado e veja como aplicar no seu dia a dia."
+        }
+      ],
+      "requisitos": [
+        "Não é necessário ter conhecimento prévio de Word ou Excel.",
+        "Não é preciso saber formatação ou fórmulas avançadas."
+      ],
+      "instrutora": {
+        "nome": "Ana Beatriz Silva",
+        "descricao": "Instrutora do curso Ferramentas de Escritório",
+        "biografia": "Ana Beatriz Silva é especialista em produtividade digital e atua há mais de 7 anos ensinando uso prático de ferramentas de escritório. Sua didática simples e acessível ajuda iniciantes a dominarem Word, Excel e PowerPoint sem complicação.",
+        "imagem": "img/img_aula/2.png"
+      }
+    },
+
+    {
+      "id": 3,
+      "titulo": "Segurança Digital para Iniciantes",
+      "aulas": [
+        {
+          "titulo": "Boas-vindas à segurança digital",
+          "descricao": "Entenda o que é segurança digital e por que ela é essencial hoje."
+        },
+        {
+          "titulo": "Reconhecendo ameaças na internet",
+          "descricao": "Golpes, vírus, phishing e como se proteger deles."
+        },
+        {
+          "titulo": "Senhas seguras e autenticação",
+          "descricao": "Crie senhas fortes e aprenda o que é autenticação em dois fatores."
+        },
+        {
+          "titulo": "Cuidados com e-mails e links suspeitos",
+          "descricao": "Saiba identificar mensagens falsas e perigosas."
+        },
+        {
+          "titulo": "Privacidade nas redes sociais",
+          "descricao": "Configure suas contas para proteger suas informações pessoais."
+        },
+        {
+          "titulo": "Uso seguro de aplicativos e downloads",
+          "descricao": "Evite riscos ao instalar programas e apps no celular ou computador."
+        },
+        {
+          "titulo": "Backup: garantindo que nada se perca",
+          "descricao": "Aprenda a salvar seus dados de forma segura."
+        },
+        {
+          "titulo": "Protegendo dispositivos móveis",
+          "descricao": "Configure bloqueios, antivírus e localização remota."
+        },
+        {
+          "titulo": "Cuidados com compras e bancos online",
+          "descricao": "Boas práticas para evitar golpes financeiros."
+        },
+        {
+          "titulo": "Segurança no trabalho e em casa",
+          "descricao": "Dicas para manter seus dados e de outros em segurança."
+        },
+        {
+          "titulo": "Revisão e plano de segurança pessoal",
+          "descricao": "Monte seu próprio plano de boas práticas digitais."
+        }
+      ],
+      "requisitos": [
+        "Não é necessário conhecimento técnico sobre segurança.",
+        "Não é preciso entender antivírus ou configurações avançadas."
+      ],
+      "instrutura": {
+        "nome": "Camila Mendonça",
+        "descricao": "Instrutora do curso Segurança Digital",
+        "biografia": "Camila Mendonça é especialista em segurança da informação e trabalha há 10 anos orientando usuários comuns a protegerem seus dados. Reconhecida pela linguagem simples e direta.",
+        "imagem": "img/img_aula/3.png"
+      }
+    },
+
+    {
+      "id": 4,
+      "titulo": "Informática Básica",
+      "aulas": [
+        {
+          "titulo": "Introdução à informática",
+          "descricao": "Entenda o que é informática e como ela faz parte da sua vida."
+        },
+        {
+          "titulo": "Componentes do computador",
+          "descricao": "Conheça hardware, software e periféricos."
+        },
+        {
+          "titulo": "O sistema operacional Windows",
+          "descricao": "Descubra como navegar, criar pastas e organizar arquivos."
+        },
+        {
+          "titulo": "Aplicativos básicos do dia a dia",
+          "descricao": "Bloco de notas, calculadora, navegador e outros."
+        },
+        {
+          "titulo": "Introdução à internet",
+          "descricao": "Entenda como funciona a rede e como navegar com segurança."
+        },
+        {
+          "titulo": "E-mails: criação e uso prático",
+          "descricao": "Aprenda a enviar, anexar e organizar mensagens."
+        },
+        {
+          "titulo": "Ferramentas online úteis",
+          "descricao": "Descubra sites e serviços gratuitos para o cotidiano."
+        },
+        {
+          "titulo": "Armazenamento na nuvem",
+          "descricao": "Entenda o que é e como usar Google Drive e OneDrive."
+        },
+        {
+          "titulo": "Segurança digital básica",
+          "descricao": "Cuidados com senhas e proteção contra vírus."
+        },
+        {
+          "titulo": "Personalização e manutenção",
+          "descricao": "Dicas para deixar o computador rápido e funcional."
+        },
+        {
+          "titulo": "Revisão e certificação do aprendizado",
+          "descricao": "Reforce seu conhecimento e celebre o progresso."
+        }
+      ],
+      "requisitos": [
+        "Ideal para quem tem pouco ou nenhum conhecimento sobre informática.",
+        "Necessário apenas acesso a um computador."
+      ],
+      "instrutor": {
+        "nome": "Lucas Andrade",
+        "descricao": "Instrutor do curso Informática Básica",
+        "biografia": "Lucas Andrade é comunicador digital com foco em ensinar pessoas a navegar pela internet de forma segura e independente. Trabalha há anos com inclusão digital e simplifica conceitos para quem está começando.",
+        "imagem": "img/img_aula/4.jpg"
+      }
+    },
+    
+    {
+      "id": 5,
+      "titulo": "Pacote Office",
+      "aulas": [
+        {
+          "titulo": "Introdução ao Pacote Office",
+          "descricao": "O que é, para que serve e como ele pode ajudar na rotina."
+        },
+        {
+          "titulo": "Conhecendo o Word",
+          "descricao": "Estrutura, menus e principais funções."
+        },
+        {
+          "titulo": "Formatando documentos no Word",
+          "descricao": "Fontes, parágrafos, margens e estilos."
+        },
+        {
+          "titulo": "Inserindo imagens e tabelas",
+          "descricao": "Deixe seus textos mais completos."
+        },
+        {
+          "titulo": "Introdução ao Excel",
+          "descricao": "Entenda células, linhas, colunas e fórmulas básicas."
+        },
+        {
+          "titulo": "Funções e gráficos essenciais",
+          "descricao": "Visualize dados e resultados rapidamente."
+        },
+        {
+          "titulo": "Apresentações no PowerPoint",
+          "descricao": "Estrutura de slides e design."
+        },
+        {
+          "titulo": "Transições e animações",
+          "descricao": "Dê vida às suas apresentações."
+        },
+        {
+          "titulo": "Integração entre Word, Excel e PowerPoint",
+          "descricao": "Trabalhe com os três juntos de forma eficiente."
+        },
+        {
+          "titulo": "Salvando e compartilhando na nuvem",
+          "descricao": "Use o OneDrive e colabore em tempo real."
+        },
+        {
+          "titulo": "Conclusão e prática final",
+          "descricao": "Crie um mini-projeto integrando as ferramentas."
+        }
+      ],
+      "requisitos": [
+        "Recomendado conhecimento básico de informática.",
+        "É útil ter o Microsoft Office instalado para acompanhar."
+      ],
+      "instrutora": {
+        "nome": "Fernanda Reis",
+        "descricao": "Instrutora do curso Pacote Office",
+        "biografia": "Fernanda Reis ministra treinamentos corporativos de Office há mais de 9 anos.",
+        "imagem": "img/img_aula/5.png"
+      }
+    },
+
+    {
+      "id": 6,
+      "titulo": "Digitação, Arquivos e Uso de Nuvem",
+      "aulas": [
+        {
+          "titulo": "Boas-vindas",
+          "descricao": "Entenda como dominar a digitação e organizar seus arquivos."
+        },
+        {
+          "titulo": "Postura e ergonomia ao digitar",
+          "descricao": "Cuide da saúde enquanto pratica."
+        },
+        {
+          "titulo": "Praticando a digitação",
+          "descricao": "Exercícios para melhorar velocidade e precisão."
+        },
+        {
+          "titulo": "Criando e salvando arquivos",
+          "descricao": "Entenda tipos de arquivo e extensões."
+        },
+        {
+          "titulo": "Organizando pastas",
+          "descricao": "Técnicas para manter tudo acessível."
+        },
+        {
+          "titulo": "Compartilhamento seguro de arquivos",
+          "descricao": "Evite perdas e confusões."
+        },
+        {
+          "titulo": "Introdução à nuvem",
+          "descricao": "O que é e como ela facilita sua vida."
+        },
+        {
+          "titulo": "Usando Google Drive e OneDrive",
+          "descricao": "Upload, download e organização."
+        },
+        {
+          "titulo": "Sincronização automática",
+          "descricao": "Acesse seus arquivos em qualquer dispositivo."
+        },
+        {
+          "titulo": "Boas práticas de armazenamento",
+          "descricao": "Nomeação, versões e backups."
+        },
+        {
+          "titulo": "Revisão geral e desafios práticos",
+          "descricao": "Exercícios para fixar o aprendizado."
+        }
+      ],
+      "requisitos": [
+        "Não é necessário saber digitar rapidamente.",
+        "É recomendado ter acesso à internet para uso da nuvem."
+      ],
+      "instrutora": {
+        "nome": "Mariana Lopes",
+        "descricao": "Instrutora especializada em organização digital e habilidades essenciais.",
+        "biografia": "Mariana Lopes atua há mais de 8 anos ensinando informática para adultos e idosos, com foco em aprendizagem acessível.",
+        "imagem": "img/img_aula/6.png"
+      }
+    },
+
+    {
+      "id": 7,
+      "titulo": "Lógica de Programação Básica",
+      "aulas": [
+        {
+          "titulo": "Introdução à lógica de programação",
+          "descricao": "O que é lógica e como pensar como programador."
+        },
+        {
+          "titulo": "Conceitos fundamentais",
+          "descricao": "Variáveis, constantes e operadores."
+        },
+        {
+          "titulo": "Fluxo de controle",
+          "descricao": "Estruturas condicionais e loops."
+        },
+        {
+          "titulo": "Algoritmos e pseudocódigo",
+          "descricao": "Representando soluções antes de programar."
+        },
+        {
+          "titulo": "Pensamento lógico e resolução de problemas",
+          "descricao": "Estratégias para pensar em etapas."
+        },
+        {
+          "titulo": "Introdução a linguagens de programação",
+          "descricao": "Exemplos simples em Python e JavaScript."
+        },
+        {
+          "titulo": "Entrada e saída de dados",
+          "descricao": "Como o programa interage com o usuário."
+        },
+        {
+          "titulo": "Funções e modularização",
+          "descricao": "Reutilizando código e organizando programas."
+        },
+        {
+          "titulo": "Erros comuns e depuração",
+          "descricao": "Como identificar e corrigir falhas."
+        },
+        {
+          "titulo": "Projetinho prático",
+          "descricao": "Montando um algoritmo simples do início ao fim."
+        },
+        {
+          "titulo": "Encerramento e próximos passos",
+          "descricao": "Caminhos para evoluir na programação."
+        }
+      ],
+        "requisitos": [
+          "Não é necessário saber programar.",
+          "Recomendado ter interesse em raciocínio lógico."
+        ],
+        "instrutora": {
+          "nome": "Diego Ferreira",
+          "descricao": "Especialista em lógica e fundamentos da programação.",
+          "biografia": "Diego Ferreira é desenvolvedor e educador há mais de 7 anos, focado em introdução à programação.",
+          "imagem": "img/img_aula/7.png"
+        }
+      },
+
+    {
+      "id": 8,
+      "titulo": "Fundamentos de Suporte Técnico",
+      "aulas": [
+        {
+          "titulo": "Apresentação do curso",
+          "descricao": "Entenda o papel do suporte técnico no mundo digital."
+        },
+        {
+          "titulo": "Conceitos básicos de hardware e software",
+          "descricao": "Diferença, tipos e exemplos."
+        },
+        {
+          "titulo": "Identificando falhas comuns",
+          "descricao": "Como diagnosticar e resolver pequenos problemas."
+        },
+        {
+          "titulo": "Manutenção preventiva",
+          "descricao": "Cuidados para evitar danos no computador."
+        },
+        {
+          "titulo": "Instalação e remoção de programas",
+          "descricao": "Práticas seguras e eficientes."
+        },
+        {
+          "titulo": "Atualizações e drivers",
+          "descricao": "Como manter o sistema funcionando bem."
+        },
+        {
+          "titulo": "Configuração de rede e internet",
+          "descricao": "Noções básicas de conectividade."
+        },
+        {
+          "titulo": "Backup e restauração",
+          "descricao": "Evite perdas com boas práticas."
+        },
+        {
+          "titulo": "Antivírus e segurança de dados",
+          "descricao": "Protegendo informações pessoais e corporativas."
+        },
+        {
+          "titulo": "Atendimento ao usuário",
+          "descricao": "Comunicação e empatia no suporte técnico."
+        },
+        {
+          "titulo": "Conclusão e caminhos da carreira",
+          "descricao": "Como seguir evoluindo na área."
+        }
+      ],
+      "requisitos": [
+        "Não precisa experiência com manutenção.",
+        "É útil ter um computador para praticar alguns conceitos."
+      ],
+      "instrutora": {
+        "nome": "Rafael Monteiro",
+        "descricao": "Especialista em suporte técnico e ambientes de TI.",
+        "biografia": "Rafael Monteiro trabalha com tecnologia educacional há mais de 10 anos, auxiliando pessoas a dominarem ferramentas digitais.",
+        "imagem": "img/img_aula/8.jpg"
+      }
+    },
+
+    {
+      "id": 9,
+      "titulo": "Desenvolvimento Web",
+      "aulas": [
+        {
+          "titulo": "Introdução ao desenvolvimento web",
+          "descricao": "O que é front-end, back-end e full stack."
+        },
+        {
+          "titulo": "Como funciona a internet",
+          "descricao": "Servidores, domínios e hospedagem."
+        },
+        {
+          "titulo": "HTML básico",
+          "descricao": "Estrutura de uma página e principais tags."
+        },
+        {
+          "titulo": "CSS básico",
+          "descricao": "Estilos, cores e layout."
+        },
+        {
+          "titulo": "Introdução ao JavaScript",
+          "descricao": "Tornando páginas interativas."
+        },
+        {
+          "titulo": "Boas práticas de código",
+          "descricao": "Organização e comentários."
+        },
+        {
+          "titulo": "Publicando sua primeira página",
+          "descricao": "Colocando o site no ar."
+        },
+        {
+          "titulo": "Ferramentas e editores de código",
+          "descricao": "Visual Studio Code e alternativas."
+        },
+        {
+          "titulo": "Design responsivo",
+          "descricao": "Sites que se adaptam ao celular."
+        },
+        {
+          "titulo": "Mini-projeto prático",
+          "descricao": "Criando um site simples do zero."
+        },
+        {
+          "titulo": "Próximos passos",
+          "descricao": "Onde continuar estudando e se especializando."
+        }
+      ],
+        "requisitos": [
+          "Não é necessário saber programar.",
+          "Recomendado ter um computador para acompanhar códigos."
+        ],
+        "instrutora": {
+          "nome": "Ana Ribeiro",
+          "descricao": "Desenvolvedora front-end e instrutora de HTML, CSS e JavaScript.",
+          "biografia": "Ana Ribeiro atua em desenvolvimento web há 6 anos, ensinando iniciantes a criarem suas primeiras páginas.",
+          "imagem": "img/img_aula/9.png"
+        }
+    },
+
+    {
+      "id": 10,
+      "titulo": "E-commerce e Marketplaces",
+      "aulas": [
+        {
+          "titulo": "Boas-vindas ao e-commerce",
+          "descricao": "Entenda o universo das vendas online."
+        },
+        {
+          "titulo": "Modelos de loja virtual",
+          "descricao": "Loja própria, marketplaces e redes sociais."
+        },
+        {
+          "titulo": "Planejando o seu negócio online",
+          "descricao": "Público-alvo e diferenciais."
+        },
+        {
+          "titulo": "Escolhendo a plataforma certa",
+          "descricao": "Wix, Shopify, Nuvemshop e outras."
+        },
+        {
+          "titulo": "Cadastrando produtos e categorias",
+          "descricao": "Organização e boas descrições."
+        },
+        {
+          "titulo": "Imagens que vendem",
+          "descricao": "Dicas de fotografia e edição."
+        },
+        {
+          "titulo": "Pagamentos e envios",
+          "descricao": "Configuração de frete e métodos de pagamento."
+        },
+        {
+          "titulo": "Atendimento ao cliente",
+          "descricao": "Boas práticas de comunicação digital."
+        },
+        {
+          "titulo": "Marketing digital básico",
+          "descricao": "SEO, redes sociais e promoções."
+        },
+        {
+          "titulo": "Análise de resultados",
+          "descricao": "Acompanhe visitas e vendas."
+        },
+        {
+          "titulo": "Expansão e fidelização",
+          "descricao": "Como crescer e manter clientes fiéis."
+        }
+      ],
+      "requisitos": [
+        "Não é necessário ter experiência com vendas.",
+        "Não é preciso entender de marketing digital ou design."
+      ],
+      "instrutora": {
+        "nome": "Diego Ferreira",
+        "descricao": "Especialista em negócios digitais e plataformas de e-commerce.",
+        "biografia": "Diego Ferreira é desenvolvedor e educador há mais de 7 anos, com experiência em lojas virtuais e marketplaces.",
+        "imagem":"img/img_aula/10.jpg"
+      }
+    },
+
+    {
+      "id": 11,
+      "titulo": "Gestão de Estoque Básica",
+      "aulas": [
+        {
+          "titulo": "Introdução à gestão de estoque",
+          "descricao": "Entenda a importância do controle de produtos."
+        },
+        {
+          "titulo": "Conceitos fundamentais",
+          "descricao": "Tipos de estoque e terminologia básica."
+        },
+        {
+          "titulo": "Organização do espaço físico",
+          "descricao": "Como dispor produtos de forma eficiente."
+        },
+        {
+          "titulo": "Cadastro de produtos e códigos",
+          "descricao": "Boas práticas de identificação."
+        },
+        {
+          "titulo": "Controle de entradas e saídas",
+          "descricao": "Como registrar movimentações."
+        },
+        {
+          "titulo": "Inventário e contagem",
+          "descricao": "Evitando perdas e diferenças."
+        },
+        {
+          "titulo": "Uso de planilhas no controle de estoque",
+          "descricao": "Modelos simples e úteis."
+        },
+        {
+          "titulo": "Indicadores de desempenho",
+          "descricao": "Giro de estoque e tempo médio de reposição."
+        },
+        {
+          "titulo": "Gestão de fornecedores",
+          "descricao": "Compras, prazos e relacionamento."
+        },
+        {
+          "titulo": "Prevenção de desperdícios",
+          "descricao": "Boas práticas e sustentabilidade."
+        },
+        {
+          "titulo": "Revisão e automação de processos",
+          "descricao": "Caminhos para modernizar a gestão."
+        }
+      ], 
+        "requisitos": [
+          "Não precisa experiência prévia com estoque.",
+          "Recomendado saber usar planilhas simples."
+        ],
+        "instrutora": {
+          "nome": "Carla Menezes",
+          "descricao": "Especialista em organização e controle de estoque.",
+          "biografia": "Carla Menezes é analista de segurança da informação e atua com educação digital preventiva.",
+          "imagem": "img/img_aula/1"
+        }
+
+    }
+  ]
+}
