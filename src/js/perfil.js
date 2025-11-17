@@ -3,7 +3,7 @@ let dados = {};
 async function init() {
     const response = await fetch('./db.json');
     dados = await response.json();
-    trocarPerfil('p001');
+    trocarPerfil('AL001');
 }
 
 function trocarPerfil(id) {
