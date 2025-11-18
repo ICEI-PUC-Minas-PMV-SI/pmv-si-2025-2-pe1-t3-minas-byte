@@ -1,6 +1,5 @@
-document.addEventListener('DOMContentLoaded', function () {
+function inicializarFiltros() {
     const filtros = document.querySelectorAll('.filtro-btn');
-    const cursos = document.querySelectorAll('.curso');
 
     filtros.forEach(filtro => {
         filtro.addEventListener('click', function () {
@@ -10,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
             this.classList.add('active');
 
             const categoria = this.getAttribute('data-filter');
+            const cursos = document.querySelectorAll('.curso');
 
             cursos.forEach(curso => {
                 if (categoria === 'all' || curso.getAttribute('data-category') === categoria) {
@@ -20,4 +20,6 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
     });
-});
+}
+
+document.addEventListener('DOMContentLoaded', inicializarFiltros);
