@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 function baixarConteudoAula() {
     const link = document.createElement('a');
-    link.href = 'conteudoAulaPdf/conteudoAula.pdf';
+    link.href = 'conteudoAula/conteudoAula.pdf';
     link.download = 'conteudoAula.pdf';
     link.click();
 }
