@@ -9,7 +9,7 @@
   ],
   "perfis": [
     {
-      "id": "p001",
+      "id": "AL001",
       "nome": "Maria Fernanda",
       "cargo": "Analista de Sistemas",
       "email": "maria.fernanda@email.com",
@@ -51,7 +51,7 @@
       ]
     },
     {
-      "id": "p002",
+      "id": "AL002",
       "nome": "Julia Silva",
       "cargo": "Desenvolvedora Front-end",
       "email": "julia.silva@gmail.com",
@@ -98,62 +98,6 @@
           "cargaHoraria": "70h"
         }
       ]
-    }
-  ],
-  "cursos": [
-    {
-      "id": 1,
-      "titulo": "Primeiros Passos no Computador",
-      "descricao": "Aprenda o essencial para usar computadores.",
-      "categoria": "iniciante",
-      "imagem": "img/cursos/primeirospassos.png",
-      "cargaHoraria": "20h",
-      "nivel": "Iniciante"
-    },
-    {
-      "id": 2,
-      "titulo": "Ferramentas de Escritório",
-      "descricao": "Word, Excel e apresentações.",
-      "categoria": "iniciante",
-      "imagem": "img/cursos/ferramentasescritorio.png",
-      "cargaHoraria": "30h",
-      "nivel": "Iniciante"
-    },
-    {
-      "id": 3,
-      "titulo": "Segurança Digital",
-      "descricao": "Aprenda a evitar golpes e navegar com segurança.",
-      "categoria": "iniciante",
-      "imagem": "img/cursos/segurancadigital.png",
-      "cargaHoraria": "15h",
-      "nivel": "Iniciante"
-    },
-    {
-      "id": 4,
-      "titulo": "Lógica de Programação",
-      "descricao": "Primeiros passos no mundo da tecnologia.",
-      "categoria": "tecnologia",
-      "imagem": "img/cursos/logicaprogramacao.png",
-      "cargaHoraria": "40h",
-      "nivel": "Intermediário"
-    },
-    {
-      "id": 5,
-      "titulo": "Suporte Técnico",
-      "descricao": "Resolva problemas e aprenda manutenção básica.",
-      "categoria": "tecnologia",
-      "imagem": "img/cursos/suportetecnico.png",
-      "cargaHoraria": "35h",
-      "nivel": "Intermediário"
-    },
-    {
-      "id": 6,
-      "titulo": "Desenvolvimento Web",
-      "descricao": "Crie sites do zero.",
-      "categoria": "criativo",
-      "imagem": "img/cursos/desenvolvimentoweb.png",
-      "cargaHoraria": "60h",
-      "nivel": "Avançado"
     }
   ]
 }
