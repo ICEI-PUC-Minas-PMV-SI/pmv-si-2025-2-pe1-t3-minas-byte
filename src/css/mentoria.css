@@ -1,767 +1,338 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
+/* ====== TITULO E SUBTITULO CENTRALIZADOS ====== */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'League Spartan', sans-serif;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  background-color: #FFFEFA;
-}
-
-/* ===== HEADER ===== */
-header.logado {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 12px 24px;
-  background-color: #ffffff;
-  border-bottom: 1px solid #ddd;
-  position: relative;
-  z-index: 1;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.logo img {
-  height: 50px;
-}
-
-.logo span {
-  font-size: 20px;
-  font-weight: bold;
-  color: #2a4d9b;
-}
-
-nav {
-  display: flex;
-  gap: 24px;
-  align-items: center;
-}
-
-nav a {
-  text-decoration: none;
-  color: #364C84;
-  font-weight: 500;
-  padding: 6px 0;
-}
-
-nav a:hover {
-  color: #95B1EE;
-  transition: 0.2s;
-}
-
-.usuaria-desktop img {
-  height: 45px;
-  width: 45px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.usuaria-mobile {
-  display: none;
-}
-
-.menu-toggle {
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  gap: 4px;
-  width: 40px;
-  height: 32px;
-  cursor: pointer;
-}
-
-.menu-toggle span {
-  display: block;
-  height: 3px;
-  width: 100%;
-  background: #2e2e2e;
-  border-radius: 3px;
-  transition: transform 0.25s ease, opacity 0.30s ease;
-}
-
-#menu-checkbox {
-  position: absolute;
-  left: -9999px;
-}
-
-/* ===== INTRODUÇÃO COM VÍDEO ===== */
-.intro-video {
-  padding: 100px 20px;
+.mentorias-header {
   text-align: center;
-  background: #f7f8fa;
+  margin-top: 60px;
+  margin-bottom: 40px;
 }
 
-.intro-video h2 {
-  color: #364C84;
+.mentorias-header h1 {
   font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.intro-video p {
-  color: #555;
-  font-size: 1.2rem;
-  line-height: 1.8;
-  max-width: 800px;
-  margin: 0 auto 40px;
-}
-
-.intro-video-container video {
-  width: 90%;
-  max-width: 900px;
-  aspect-ratio: 16/9; /* quadro perfeito */
-  border-radius: 20px; /* borda arredondada */
-  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-}
-
-/* ===== FOOTER ===== */
-footer {
-  background: #f9f9f9;
-  padding: 60px 100px;
-  margin-top: auto;
-}
-
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 40px;
-}
-
-.footer-logo img {
-  height: 55px;
-  margin-bottom: 10px;
-}
-
-.footer-logo p {
-  font-size: 14px;
-  color: #555;
-}
-
-.footer-column h4 {
-  margin-bottom: 10px;
-  font-size: 16px;
-  color: #000;
-}
-
-.footer-column ul {
-  list-style: none;
-}
-
-.footer-column ul li {
-  margin-bottom: 6px;
-}
-
-.footer-column ul li a {
-  text-decoration: none;
-  color: #555;
-  font-size: 14px;
-}
-
-.footer-column ul li a:hover {
-  color: #2a4d9b;
-}
-
-.footer-bottom {
-  margin-top: 20px;
-  border-top: 1px solid #ddd;
-  padding-top: 15px;
-  display: flex;
-  justify-content: center;
-  font-size: 13px;
-  color: #555;
-}
-
-/* ===== RESPONSIVIDADE ===== */
-@media (max-width: 768px) {
-  nav {
-    position: absolute;
-    top: 72px;
-    left: 0;
-    right: 0;
-    width: 100%;
-    background: #ffffff;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-    padding: 0;
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.35s ease, padding 0.35s ease;
-  }
-
-  #menu-checkbox:checked~nav {
-    max-height: 420px;
-    padding: 16px 0;
-  }
-
-  .menu-toggle {
-    display: flex;
-  }
-
-  .usuaria-desktop {
-    display: none;
-  }
-
-  .usuaria-mobile {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 12px;
-  }
-
-  .intro-video h2 {
-    font-size: 2rem;
-  }
-
-  .intro-video p {
-    font-size: 1rem;
-  }
-
-  .intro-video-container video {
-    width: 100%;
-  }
-
-  footer {
-    padding: 40px 20px;
-  }
-
-  .footer-container {
-    flex-direction: column;
-    gap: 20px;
-  }
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'League Spartan', sans-serif;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  background: #FFFEFA;
-  color: #222;
-}
-
-/* Header */
-header {
-  width: 100%;
-  background: #fff;
-  border-bottom: 1px solid #ddd;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 12px 32px;
-  position: sticky;
-  top: 0;
-  z-index: 1040;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.logo img { height: 46px; }
-.logo span {
-  font-size: 20px;
-  font-weight: bold;
-  color: #2a4d9b;
-}
-
-nav {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  gap: 28px;
-  align-items: center;
-}
-
-nav a {
-  text-decoration: none;
+  font-weight: 700;
   color: #364C84;
-  font-size: 16px;
-  font-weight: 600;
+  /* mesma cor do primeiro título da página INDEX */
 }
 
-nav a:hover { color: #2a4d9b; transition: 0.12s; }
+.mentorias-header p {
+  font-size: 1.2rem;
+  color: #253068;
+  margin-top: 10px;
+}
 
-.auth-buttons { display: flex; gap: 8px; align-items: center; }
 
-.btn {
-  padding: 8px 14px;
+
+/* ====== VIDEO CENTRALIZADO ====== */
+
+.video-frame {
+  width: 100%;
+  height: 35rem;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 50px 0;
+}
+
+.video-frame video {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  max-width: 900px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+
+
+/* ====== RETÂNGULO DE DESCRIÇÃO DAS MENTORIAS ====== */
+
+.descricao-mentorias-box {
+  width: 80%;
+  max-width: 1000px;
+  background: #ffffff;
+  border: 2px solid #364C84;
+  border-radius: 12px;
+  padding: 30px 40px;
+  margin: 5rem auto 60px auto;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.10);
+}
+
+.descricao-mentorias-box p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #364C84;
+  text-align: center;
+}
+
+
+/* ===== SEÇÃO NOSSAS MENTORIAS ===== */
+.nossasMentorias {
+  align-items: center;
+  text-align: center;
+  margin: 3rem;
+}
+
+/* ===== FILTRO DE MENTORIAS ===== */
+
+/* Mantido igual, sem alterações */
+
+/* ===== BOTÕES DE INSCRIÇÃO ===== */
+.btn-inscreva-mentorias {
+  color: #364c84;
+  background-color: #e7f1a8;
+  border: none;
+  width: 10rem;
+  padding: 8px 16px;
   border-radius: 6px;
-  border: 1px solid #2a4d9b;
   font-weight: bold;
   font-size: 14px;
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.10);
+  transition: transform 0.3s ease;
 }
 
-.btn-cadastrar {
-  color: #FFFEFA;
-  background-color: #364c84;
-  border: none;
+.btn-inscreva-mentorias:hover {
+  transform: translateY(-3px) scale(1.05);
 }
 
-/* Hero */
-.hero {
-  text-align: center;
-  padding: 80px 16px 48px;
-  position: relative;
-  overflow: hidden;
+/* ===== MENTORIAS GRID ===== */
+.mentorias {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 5rem 5rem;
 }
 
-.hero-background { position: absolute; inset: 0; z-index: 0; overflow: hidden; }
-.hero-background span { position: absolute; display:block; border-radius:50%; opacity:0.35; }
-
-.hero-background span:nth-child(1){ width:200px;height:200px;background:#f1849c; top:-60px; left:-60px; }
-.hero-background span:nth-child(2){ width:150px;height:150px;background:#364C84; top:40%; left:80%; }
-.hero-background span:nth-child(3){ width:250px;height:250px;background:#e7f1a8; bottom:-100px; right:20%; }
-
-.hero > *:not(.hero-background){ position: relative; z-index: 1; }
-
-.hero h1 {
-  color: #253068;
-  font-size: 2.2rem;
-  margin-bottom: 12px;
+@media (max-width: 1200px) {
+  .mentorias {
+    margin: 5rem 5rem;
+  }
 }
 
-.hero p.lead {
-  color: #364C84;
-  font-size: 1.05rem;
-  max-width: 900px;
-  margin: 0 auto 24px;
+@media (max-width: 992px) {
+  .mentorias {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin: 3rem 0;
+  }
 }
 
-/* Vídeo: maior, arredondado e "quadro perfeito" */
-.video-frame {
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
+@media (max-width: 768px) {
+  .mentorias {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+}
+
+/* ===== CARD DE MENTORIA ===== */
+.mentoria {
+  background-color: #FFFEFA;
   border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
-  background: #000;
+  transition: transform 0.3s;
+  text-align: left;
+  position: relative;
 }
 
-.video-frame video {
-  display: block;
+.mentoria:hover {
+  transform: translateY(-3px);
+}
+
+.mentoria img {
   width: 100%;
-  height: auto;
-  aspect-ratio: 16/9;
+  height: 180px;
   object-fit: cover;
 }
 
-/* Card retangular com info sobre mentorias */
-.info-card {
-  max-width: 1100px;
-  margin: 36px auto;
-}
-.info-card .card {
-  border-radius: 12px;
-  padding: 22px;
-  box-shadow: 0 6px 22px rgba(0,0,0,0.06);
-}
-.info-card h3 { color:#253068; margin-bottom: 8px; }
-.mentoria-list { list-style: none; padding-left: 0; display:flex; flex-wrap:wrap; gap: 10px; margin-top:12px; }
-.mentoria-list li {
-  background:#f7f8fa;
-  color:#364C84;
-  padding:8px 12px;
-  border-radius: 999px;
-  font-weight:600;
-  border:1px solid rgba(54,76,132,0.06);
-}
-
-.depoimentos .nome { font-weight:700; color:#253068; margin-top:10px; }
-.depoimentos .texto { color:#444; font-size:0.95rem; }
-
-/* Título do menu de mentorias e filtro estilo "filtro" do CSS base */
-.section-title { max-width:1100px; margin: 30px auto 12px; padding: 0 16px; }
-.section-title h3 { color:#253068; }
-
-.filtro {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  background-color: #f1f1f1;
-  border-radius: 50px;
-  padding: 0.4rem;
-  width: fit-content;
-  margin: 14px auto 28px;
-}
-.filtro-btn {
+/* ===== BOTÃO FAVORITO ===== */
+.btn-favorito {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(255, 255, 255, 0.9);
   border: none;
-  background: transparent;
-  color: #333;
-  font-size: 0.92rem;
-  padding: 0.5rem 1.3rem;
-  border-radius: 30px;
-  cursor: pointer;
-  font-weight:700;
-}
-.filtro-btn.active { background-color: #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.12); }
-.filtro-btn:hover, .filtro-btn.active { background-color: #dce4ff; color: #3348a5; transition: background-color 0.2s, color 0.2s; }
-
-/* Carousel das mentoras */
-.mentoras-carousel .card {
-  border-radius: 12px;
-  overflow: hidden;
-}
-.mentor-img {
-  width:100%;
-  height:190px;
-  object-fit:cover;
-  display:block;
-}
-.mentor-body { padding: 14px; }
-.mentor-role { background:#f4a9ba; color:#fff; display:inline-block; padding:6px 10px; border-radius:22px; font-weight:700; margin-bottom:8px; }
-.stars { color:#facb10; font-size: 1rem; margin-bottom:8px; }
-.btn-inscrever { background:#e7f1a8; color:#364C84; border:none; font-weight:700; padding:10px 14px; border-radius:8px; }
-
-/* Grid filtrável (para funcionar com filtro) */
-.mentoras-grid { max-width:1100px; margin: 28px auto 60px; }
-.mentor-card { border-radius:12px; padding:12px; box-shadow: 0 6px 18px rgba(0,0,0,0.06); background:#fff; }
-
-/* Footer (base) */
-footer {
-  background: #f9f9f9;
-  padding: 36px 20px;
-  margin-top: auto;
-}
-.footer-container { display:flex; justify-content:space-between; flex-wrap:wrap; gap:24px; max-width:1200px; margin:0 auto; }
-.footer-logo img { height:55px; margin-bottom:8px; }
-.footer-column h4 { margin-bottom:8px; font-size:16px; color:#000; }
-.footer-column ul { list-style:none; padding-left:0; }
-.footer-column ul li { margin-bottom:6px; }
-.footer-column a { text-decoration:none; color:#555; }
-.footer-bottom { margin-top:20px; border-top:1px solid #ddd; padding-top:12px; text-align:center; color:#555; }
-
-/* Responsividade */
-@media (max-width: 991px) {
-  .hero h1 { font-size:1.9rem; }
-  .video-frame { max-width: 860px; }
-}
-@media (max-width: 768px) {
-  header { padding:10px 14px; }
-  nav { display:none; } /* simplificação para mobile; poderia ser menu hamburguer */
-  .hero { padding: 40px 12px; }
-  .video-frame { width:100%; border-radius: 14px; }
-  .depoimentos .col-md-3 { margin-bottom:16px; }
-  .filtro { margin-bottom: 18px; }
-  .mentor-img { height:160px; }
-}
-
-/* Pequenas melhorias visuais */
-.small-muted { color:#777; font-size:0.95rem; }
-
-/* === Estilo específico para a seção texto-imagem === */
-.texto-imagem {
-  padding: 60px 0; /* ajuste se quiser mais/menos espaço na seção */
-  background-color: #f9fafb; /* opcional */
-}
-
-/* Força altura mínima da linha para que o centramento vertical fique evidente.
-   Ajuste o valor conforme seu design; use 420px como ponto de partida. */
-.texto-imagem .row {
-  min-height: 420px;
-}
-
-/* Coluna de texto: uso de flex para centralizar conteúdo */
-.texto-imagem .text-column {
-  display: flex;
-  align-items: center;      /* centra verticalmente */
-  justify-content: center;  /* centra horizontalmente o wrapper */
-  padding: 15px;            /* espaço interno, opcional */
-}
-
-/* Limita a largura do bloco de texto e centraliza o texto dentro dele */
-.texto-imagem .texto-wrapper {
-  max-width: 460px;   /* largura máxima do bloco de texto (ajuste se necessário) */
-  width: 100%;
-  text-align: center; /* centra o texto horizontalmente dentro do bloco */
-}
-
-/* Ajustes tipográficos dentro do wrapper */
-.texto-imagem .texto-wrapper h3 {
-  margin-bottom: 16px;
-  font-size: 1.6rem;
-  line-height: 1.2;
-}
-
-.texto-imagem .texto-wrapper p {
-  margin-bottom: 18px;
-  color: #555;
-  font-size: 1rem;
-  line-height: 1.6;
-}
-
-/* Botão */
-.texto-imagem .btn-saibaMais {
-  background-color: #e65c00;
-  color: #fff;
-  border: none;
-  padding: 10px 22px;
-  border-radius: 28px;
-}
-
-/* Coluna de imagem: garante centralização vertical e sizing adequado */
-.texto-imagem .image-column {
-  display: flex;
-  align-items: center;     /* centraliza verticalmente a imagem */
-  justify-content: center; /* centraliza horizontalmente a imagem */
-  padding: 15px;
-}
-
-/* Mantém a imagem responsiva e com limite de largura para não invadir a coluna */
-.texto-imagem .image-column img {
-  max-width: 100%;
-  height: auto;
-  width: 100%;
-  object-fit: cover;
-  max-width: 520px; /* garante que não cresça demais em telas grandes */
-}
-
-/* === RESPONSIVIDADE: em telas pequenas (mobile) ajustamos min-height e alinhamentos === */
-@media (max-width: 768px) {
-  .texto-imagem .row {
-    min-height: 0; /* permitir altura natural do conteúdo no mobile */
-  }
-  .texto-imagem .texto-wrapper {
-    max-width: 100%;   /* ocupar espaço disponível no mobile */
-    padding: 0 10px;
-    text-align: center;
-  }
-  .texto-imagem .image-column img {
-    max-width: 90%;
-  }
-}
-/* === Seção de Depoimentos === */
-.depoimentos .row {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch; /* faz as colunas esticarem igualmente */
-}
-
-/* Cada coluna */
-.depoimentos .col-md-3,
-.depoimentos .col-sm-6 {
-  display: flex;
-}
-
-/* Cada card */
-.depoimentos .card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%; /* garante que o card ocupe toda a altura da coluna */
-}
-/* ===== Seção texto + imagem ===== */
-.texto-imagem {
-  padding: 60px 0;
-  background-color: #fff;
-  transition: background-color 0.3s ease;
-}
-
-.texto-imagem .container {
-  display: flex;
-  flex-direction: column;
-}
-
-.texto-imagem .row {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-}
-
-.texto-imagem .text-column {
-  flex: 1;
-}
-
-.texto-imagem .image-column {
-  flex: 1;
-  text-align: center;
-}
-
-.texto-imagem .image-column img {
-  max-width: 90%;
-  border-radius: 16px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-}
-
-.texto-imagem .image-column img:hover {
-  transform: scale(1.03);
-}
-
-.texto-imagem .texto-wrapper h3 {
-  font-size: 1.8rem;
-  color: #1a3b8a;
-  margin-bottom: 1rem;
-}
-
-.texto-imagem .texto-wrapper p {
-  font-size: 1rem;
-  color: #333;
-  line-height: 1.6;
-}
-
-.texto-imagem .btn-saibaMais {
-  background-color: #1a3b8a;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.texto-imagem .btn-saibaMais:hover {
-  background-color: #16306d;
-}
-
-/* ===== Versão invertida ===== */
-.texto-imagem.invertido {
-  background-color: #f5f8ff; /* fundo levemente azulado pra destacar */
-}
-
-.texto-imagem.invertido .row {
-  flex-direction: row-reverse; /* inverte os lados */
-}
-
-.texto-imagem.invertido .texto-wrapper h3 {
-  color: #0f2f6d; /* cor um pouco mais escura pra combinar com o fundo */
-}
-
-/* ===== Responsividade ===== */
-@media (max-width: 768px) {
-  .texto-imagem .row,
-  .texto-imagem.invertido .row {
-    flex-direction: column; /* empilha no celular */
-  }
-
-  .texto-imagem .texto-wrapper {
-    text-align: center;
-  }
-
-  .texto-imagem .image-column img {
-    max-width: 100%;
-    height: auto;
-  }
-}
-
-/* ===== Ajuste dos cards de avaliações ===== */
-.avaliacoes-cards {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 2;
+  backdrop-filter: blur(10px);
 }
 
-.avaliacoes-cards .col-md-3 {
-  display: flex;
-  justify-content: center;
-  flex: 0 0 22%;
-  max-width: 22%;
+.btn-favorito:hover {
+  background: rgba(255, 255, 255, 1);
+  transform: scale(1.1);
 }
 
-/* Torna todos os cards iguais em altura e estilo */
-.avaliacoes-cards .card {
+.btn-favorito .coracao {
+  width: 16px;
+  height: 16px;
+  transition: all 0.3s ease;
+  filter: grayscale(1);
+}
+
+.btn-favorito.favorito .coracao {
+  filter: none;
+  animation: heartBeat 0.6s ease;
+}
+
+/* ===== CONTEÚDO DA MENTORIA ===== */
+.mentoria-content {
+  padding: 1rem 1.2rem 1.5rem;
+}
+
+.mentoria-topo {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  height: 100%;
-  background: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-  transition: transform 0.3s ease;
+  margin-bottom: 0.5rem;
 }
 
-.avaliacoes-cards .card:hover {
-  transform: translateY(-5px);
+.mentoria-categoria {
+  font-size: 0.8rem;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  color: #444;
 }
 
-/* Texto interno */
-.avaliacoes-cards .texto {
-  font-size: 1rem;
-  color: #333;
-  margin-bottom: 1rem;
+.mentoria-nivel {
+  font-size: 0.8rem;
+  border: 1px solid #364C84;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  color: #444;
 }
 
-.avaliacoes-cards .nome {
-  font-weight: 600;
-  color: #1a3b8a;
+.mentoria h3 {
+  font-size: 1.1rem;
+  margin: 1.2rem 0;
+  color: #1a2a6c;
 }
 
-.avaliacoes-cards .small-muted {
+.mentoria p {
   font-size: 0.9rem;
-  color: #777;
+  color: #555;
+  padding: 0 0;
 }
 
-/* Responsividade */
-@media (max-width: 992px) {
-  .avaliacoes-cards .col-md-3 {
-    flex: 0 0 45%;
-    max-width: 45%;
+/* ===== RODAPÉ DA MENTORIA ===== */
+.mentoria-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.2rem 1rem 1.2rem;
+}
+
+.classificacao {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.star-icon {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+.rating {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #364C84;
+  display: flex;
+  align-items: center;
+}
+
+.mentoria-classificacao {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.mentoria-footer img {
+  height: 24px;
+  width: 24px;
+}
+
+/* ===== RESPONSIVIDADE DAS MENTORIAS ===== */
+@media screen and (max-width: 480px) {
+  .mentoria {
+    margin: 0 auto;
+    max-width: 300px;
   }
 }
+/* ======= SECTION DIVIDIDA EM 2 LADOS ======= */
 
-@media (max-width: 576px) {
-  .avaliacoes-cards {
+.section-dupla {
+    width: 100%;
+    display: flex;
+    padding: 60px 5%;
+    min-height: 500px;
+    box-sizing: border-box;
+}
+
+/* LADO ESQUERDO — TEXTO CENTRALIZADO */
+.section-dupla .lado-esquerdo {
+    flex: 1;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* mantém alinhado à esquerda */
+    text-align: left;
+    padding-right: 40px;
+}
+
+.section-dupla .lado-esquerdo h2 {
+    font-size: 2.8rem;
+    color: #364C84;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+.section-dupla .lado-esquerdo p {
+    font-size: 1.2rem;
+    color: #253068;
+    line-height: 1.6;
+}
+
+/* LADO DIREITO — IMAGEM CENTRALIZADA */
+.section-dupla .lado-direito {
+    flex: 1;
+    display: flex;
+    justify-content: center;
     align-items: center;
-  }
-
-  .avaliacoes-cards .col-md-3 {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-}
-/* Efeito de hover igual aos outros cards */
-.info-card .card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.info-card .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+.section-dupla .lado-direito img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.15);
 }
 
-/* === Interação suave nos cards de mentoras === */
-.mentor-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer; /* mostra que é interativo */
-}
+/* ======= RESPONSIVO (CELULAR) ======= */
+@media (max-width: 900px) {
+    .section-dupla {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 5%;
+    }
 
-/* Efeito ao passar o mouse */
-.mentor-card:hover {
-  transform: translateY(-6px); /* sobe levemente */
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12); /* sombra suave */
-}
+    .section-dupla .lado-esquerdo {
+        align-items: center;
+        padding-right: 0;
+    }
 
-/* Mantém as imagens estáveis (sem distorcer) */
-.mentor-card img {
-  transition: transform 0.3s ease;
-}
-
-/* Zoom leve na imagem ao passar o mouse no card */
-.mentor-card:hover img {
-  transform: scale(1.03);
+    .section-dupla .lado-direito img {
+        max-width: 350px;
+        margin-top: 30px;
+    }
 }

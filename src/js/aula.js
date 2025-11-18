@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const cursoId = localStorage.getItem("cursoSelecionado");
     if (!cursoId) return;
 
-    const response = await fetch("cursos.json");
+    const response = await fetch("json/cursos.json");
     const data = await response.json();
 
     const curso = data.cursos.find(c => c.id == cursoId);
