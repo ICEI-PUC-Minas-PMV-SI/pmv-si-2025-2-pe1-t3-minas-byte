@@ -1,8 +1,13 @@
 let dados = {};
 
 async function init() {
-    const response = await fetch('./db.json');
-    dados = await response.json();
+    const [perfisResponse, cursosResponse] = await Promise.all([
+        fetch('json/perfis.json'),
+        fetch('json/cursos.json')
+    ]);
+    const perfisData = await perfisResponse.json();
+    const cursosData = await cursosResponse.json();
+    dados = { ...perfisData, cursos: cursosData.cursos };
     trocarPerfil('AL001');
 }
 
@@ -17,8 +22,9 @@ function trocarPerfil(id) {
 
     // Habilidades
     const tags = document.querySelector('.tags');
-    // CORREÇÃO 1: Deve usar template literal (crase `) para interpolação (span...)
-    tags.innerHTML = perfil.habilidades.map(h => `<span class="badge-primary">${h}</span>`).join('');
+    if (perfil.habilidades && perfil.habilidades.length > 0) {
+        tags.innerHTML = perfil.habilidades.map(h => <span class="badge-primary">${h}</span>).join('');
+    }
 
     // Contato
     const contato = document.querySelector('.dados-contato');
@@ -32,17 +38,14 @@ function trocarPerfil(id) {
     // Curso atual
     if (perfil.cursoAtual) {
         document.querySelector('.card-title').textContent = perfil.cursoAtual.titulo;
-        // CORREÇÃO 2: Deve usar template literal (crase `) para a string inteira
-        document.querySelector('.aulas').textContent = `${perfil.cursoAtual.aulasCompletas}/${perfil.cursoAtual.totalAulas} aulas`;
-        // CORREÇÃO 3: Deve usar template literal (crase `) para a string inteira
-        document.querySelector('.progresso').style.width = `${perfil.cursoAtual.progresso}%`;
-        // CORREÇÃO 4: Deve usar template literal (crase `) para a string inteira
-        document.querySelector('.proxima-aula p').innerHTML = `<strong>Próxima aula:</strong> ${perfil.cursoAtual.proximaAula}`;
+        document.querySelector('.aulas').textContent = `${ perfil.cursoAtual.aulasCompletas }/${perfil.cursoAtual.totalAulas} aulas`;
+        document.querySelector('.progresso').style.width = `${ perfil.cursoAtual.progresso }%`;
+        document.querySelector('.proxima-aula p').innerHTML = `<strong>Próxima aula:</strong> ${ perfil.cursoAtual.proximaAula }`;
     }
 
     // Favoritos
     const favoritos = document.getElementById('cursosFavoritos');
-    if (perfil.cursosFavoritos && perfil.cursosFavoritos.length > 0) {
+    if (perfil.cursosFavoritos && perfil.cursosFavoritos.length > 0 && dados.cursos) {
         const cursosFav = perfil.cursosFavoritos.map(id => dados.cursos.find(c => c.id === id)).filter(c => c);
         favoritos.innerHTML = cursosFav.map(curso => `
             <div class="curso-favorito">
@@ -64,7 +67,7 @@ function trocarPerfil(id) {
 
     // Medalhas
     const medalhas = document.querySelector('.conquistas');
-    if (perfil.medalhas) {
+    if (perfil.medalhas && perfil.medalhas.length > 0) {
         medalhas.innerHTML = '<h3 class="card-title">Medalhas e Conquistas</h3>' +
             perfil.medalhas.map(m => `
             <div class="medalha ${m.tipo} flex-start spacing-md">
@@ -80,7 +83,7 @@ function trocarPerfil(id) {
 
     // Certificados
     const certificados = document.querySelector('.certificados');
-    if (perfil.certificados) {
+    if (perfil.certificados && perfil.certificados.length > 0) {
         certificados.innerHTML = '<h3 class="card-title">Certificados</h3>' +
             perfil.certificados.map(c => `
             <div class="certificado">

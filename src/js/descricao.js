@@ -31,7 +31,7 @@ class DescricaoCurso {
     }
 
     async carregarCurso(id) {
-        const response = await fetch('./db.json');
+        const response = await fetch('json/cursos.json');
         const data = await response.json();
         // O id em data.cursos deve ser do mesmo tipo. Se for string em db.json, use String(id). 
         // Assumindo que o ID no JSON é Number (que é o que getCursoId retorna):
