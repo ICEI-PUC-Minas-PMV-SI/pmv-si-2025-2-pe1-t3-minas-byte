@@ -5,7 +5,7 @@
       "titulo": "Primeiros Passos no Computador",
       "descricao": "Aprenda o essencial para usar computadores.",
       "categoria": "basico",
-      "imagem": "img/cursos/primeirospassos.png",
+      "imagem": "img/cursos/informaticabasica.png",
       "cargaHoraria": "20h",
       "nivel": "Iniciante",
       "aulas": [
@@ -70,7 +70,7 @@
       "titulo": "Ferramentas de Escritório",
       "descricao": "Word, Excel e apresentações.",
       "categoria": "basico",
-      "imagem": "img/cursos/ferramentasescritorio.png",
+      "imagem": "img/cursos/pacote_office.webp",
       "cargaHoraria": "30h",
       "nivel": "Iniciante",
       "aulas": [
@@ -200,7 +200,7 @@
       "titulo": "Digitação, Arquivos e Uso de Nuvem",
       "descricao": "Aprenda a digitar com eficiência e organizar arquivos na nuvem",
       "categoria": "basico",
-      "imagem": "img/cursos/digitacao.png",
+      "imagem": "img/cursos/digitacaoarquivos.png",
       "cargaHoraria": "25h",
       "nivel": "Básico",
       "aulas": [
@@ -265,7 +265,7 @@
       "titulo": "Lógica de Programação",
       "descricao": "Primeiros passos no mundo da tecnologia.",
       "categoria": "programacao",
-      "imagem": "img/cursos/logicaprogramacao.png",
+      "imagem": "img/cursos/logica_de_programacao.webp",
       "cargaHoraria": "40h",
       "nivel": "Básico",
       "aulas": [
@@ -395,7 +395,7 @@
       "titulo": "Desenvolvimento Web",
       "descricao": "Crie sites do zero.",
       "categoria": "programacao",
-      "imagem": "img/cursos/desenvolvimentoweb.png",
+      "imagem": "img/cursos/desenvolvimento-web-html-css-javascript.webp",
       "cargaHoraria": "60h",
       "nivel": "Intermediário",
       "aulas": [
@@ -460,7 +460,7 @@
       "titulo": "Gestão de Estoque Básica",
       "descricao": "Organize e controle seu estoque de forma eficiente",
       "categoria": "gestao",
-      "imagem": "img/cursos/estoque.png",
+      "imagem": "img/cursos/gestaoestoque.png",
       "cargaHoraria": "25h",
       "nivel": "Básico",
       "aulas": [
@@ -525,7 +525,7 @@
       "titulo": "Criação de Loja Online",
       "descricao": "Monte sua própria loja virtual do zero e aprenda a vender seus produtos na internet",
       "categoria": "gestao",
-      "imagem": "img/cursos/criacaoloja.png",
+      "imagem": "img/cursos/ecommerce.png",
       "cargaHoraria": "35h",
       "nivel": "Intermediário",
       "aulas": [
@@ -643,7 +643,7 @@
       "titulo": "Empreendedorismo Digital Feminino",
       "descricao": "Transforme suas habilidades em fonte de renda online",
       "categoria": "gestao",
-      "imagem": "img/cursos/empreendedorismo.png",
+      "imagem": "img/cursos/empreendedorismo.jpeg",
       "cargaHoraria": "25h",
       "nivel": "Básico",
       "aulas": [
@@ -749,7 +749,7 @@
       "titulo": "Comunicação Digital e Redes Sociais",
       "descricao": "Desenvolva sua presença online e habilidades de comunicação",
       "categoria": "design",
-      "imagem": "img/cursos/comunicacao.png",
+      "imagem": "img/cursos/comunicacao_lideranca.jpg",
       "cargaHoraria": "25h",
       "nivel": "Básico",
       "aulas": [
@@ -802,7 +802,7 @@
       "titulo": "Análise de Dados com Excel",
       "descricao": "Transforme dados em insights usando Excel e ferramentas de análise",
       "categoria": "dados",
-      "imagem": "img/cursos/analise-dados.png",
+      "imagem": "img/cursos/analise_sql_powerbi.jpg",
       "cargaHoraria": "35h",
       "nivel": "Intermediário",
       "aulas": [
@@ -855,7 +855,7 @@
       "titulo": "Python para Iniciantes",
       "descricao": "Aprenda programação Python do zero e automatize tarefas",
       "categoria": "programacao",
-      "imagem": "img/cursos/python.png",
+      "imagem": "img/cursos/linguagem-python.jpg",
       "cargaHoraria": "45h",
       "nivel": "Intermediário",
       "aulas": [
@@ -912,7 +912,7 @@
       "titulo": "Design Gráfico com Canva e Figma",
       "descricao": "Crie designs profissionais usando ferramentas gratuitas e acessíveis",
       "categoria": "design",
-      "imagem": "img/cursos/design-grafico.png",
+      "imagem": "img/cursos/design_e_ferramentas_visuais.webp",
       "cargaHoraria": "30h",
       "nivel": "Básico",
       "aulas": [

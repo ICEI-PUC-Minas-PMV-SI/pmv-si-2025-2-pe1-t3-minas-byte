@@ -1,10 +1,8 @@
-// Carrega cursos dinamicamente do JSON
 async function carregarCursos() {
     try {
         const response = await fetch('json/cursos.json');
         const data = await response.json();
         renderizarCursos(data.cursos);
-        // Reinicializa filtros após carregar cursos
         if (typeof inicializarFiltros === 'function') {
             inicializarFiltros();
         }
@@ -17,31 +15,29 @@ function renderizarCursos(cursos) {
     const container = document.querySelector('.cursos');
     if (!container) return;
 
-    // Mapear categorias para nomes de exibição
+
     const categorias = {
         'basico': 'Digital Básico',
-        'programacao': 'Programação', 
+        'programacao': 'Programação',
         'dados': 'Dados',
         'design': 'Design',
         'gestao': 'Gestão'
     };
 
-    // Mapear níveis
     const niveis = {
         'basico': 'Iniciante',
         'programacao': 'Intermediário',
-        'dados': 'Iniciante', 
+        'dados': 'Iniciante',
         'design': 'Iniciante',
         'gestao': 'Iniciante'
     };
 
-    // Selecionar cursos de cada categoria
     const cursosCategoria = {
-        'basico': cursos.filter(c => c.categoria === 'basico').slice(0, 2),
-        'programacao': cursos.filter(c => c.categoria === 'programacao').slice(0, 3),
+        'basico': cursos.filter(c => c.categoria === 'basico').slice(0, 1),
+        'programacao': cursos.filter(c => c.categoria === 'programacao').slice(0, 1),
         'dados': cursos.filter(c => c.categoria === 'dados').slice(0, 1),
-        'design': cursos.filter(c => c.categoria === 'design').slice(0, 2),
-        'gestao': cursos.filter(c => c.categoria === 'gestao').slice(0, 3)
+        'design': cursos.filter(c => c.categoria === 'design').slice(0, 1),
+        'gestao': cursos.filter(c => c.categoria === 'gestao').slice(0, 1)
     };
 
     const cursosParaExibir = [
@@ -77,5 +73,4 @@ function renderizarCursos(cursos) {
     `).join('');
 }
 
-// Inicializar quando a página carregar
 document.addEventListener('DOMContentLoaded', carregarCursos);
