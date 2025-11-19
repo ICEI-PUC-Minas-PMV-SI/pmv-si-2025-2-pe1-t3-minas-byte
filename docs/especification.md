@@ -52,7 +52,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade | 
 |------|-----------------------------------------|----| 
-|RF-001| O sistema deve permitir que usuárias se registrem com dados básicos (nome, e-mail, telefone) | ALTA |  
+|RF-001| O sistema deve permitir que usuárias se registrem com dados básicos (nome, e-mail e senha) | ALTA |  
 |RF-002| O sistema deve garantir que só alunas cadastradas acessem a plataforma   | ALTA | 
 |RF-003| O sistema deve organizar cursos por áreas (tecnologia, finanças, empreendedorismo etc.).   | ALTA | 
 |RF-004| O sistema deve disponibilizar um quiz inicial para recomendar trilhas de aprendizado personalizadas.   | ALTA | 
