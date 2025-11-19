@@ -348,6 +348,18 @@ button:hover {
     background-color: #c8f28c;
 }
 
+.btn-participar {
+    background: #ffd335;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn-participar.entrar {
+    background: #364c84;
+    color: #fff;
+}
 
 #forum {
     max-width: 900px;
@@ -404,6 +416,12 @@ button:hover {
     padding: 8px 18px;
     cursor: pointer;
     transition: background 0.3s;
+}
+
+.enviar-comentario {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
 }
 
 .box-comentario button:hover {

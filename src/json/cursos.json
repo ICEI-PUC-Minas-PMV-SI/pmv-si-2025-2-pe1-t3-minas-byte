@@ -508,18 +508,6 @@
           "titulo": "Revisão e automação de processos",
           "descricao": "Caminhos para modernizar a gestão."
         }
-<<<<<<< HEAD:src/cursos.json
-      ], 
-        "requisitos": [
-          "Não precisa experiência prévia com estoque.",
-          "Recomendado saber usar planilhas simples."
-        ],
-        "instrutora": {
-          "nome": "Carla Menezes",
-          "descricao": "Especialista em organização e controle de estoque.",
-          "biografia": "Carla Menezes é analista de segurança da informação e atua com educação digital preventiva.",
-          "imagem": "img/img_aula/1.png"
-=======
       ],
       "requisitos": [
         "Não precisa experiência prévia com estoque.",
@@ -584,7 +572,6 @@
         {
           "titulo": "Análise de resultados e crescimento",
           "descricao": "Métricas importantes e estratégias de expansão."
->>>>>>> 2c06f8cde959bc4aef4f9b1773ebdcc9d64aaabe:src/json/cursos.json
         }
       ],
       "requisitos": [

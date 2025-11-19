@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
   <link rel="stylesheet" href="css/quizinicio.css">
   <link rel="stylesheet" href="css/components.css">
   <title>Quiz InovaElas</title>
@@ -10,19 +12,27 @@
 
   <div id="menu-container"></div>
   
-  <main class="quiz-hero">
+  <main>
+
+  <section class="quiz-hero">
+
     <h1>Descubra sua área ideal na tecnologia</h1>
     <p>Responda poucas perguntas e receba recomendações personalizadas.</p>
 
     <button id="btn-iniciar" class="btn-principal">Iniciar Quiz</button>
+
+  </section>
+
   </main>
-    <div id="footer"></div>
+    
+  <div id="footer"></div>
+
+  
   <script>
     document.getElementById("btn-iniciar").onclick = () =>
       window.location.href = "quizPerguntas.html";
   </script>
 
-  <!-- Script do header -->
   <script src="js/header.js"></script>
   <script src="js/footer.js"></script>
 </body>
