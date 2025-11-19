@@ -154,63 +154,76 @@ body {
     flex-direction: column;
   }
 }
-/* ===== Equalizar altura dos cards e alinhar rodapé ===== */
+
+/* ===== Cards com tamanho padronizado ===== */
 .cards {
-  display: flex;              /* mantém layout atual (flex) */
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
-  align-items: stretch;      /* força os filhos (.card) a terem a mesma altura na linha */
+  align-items: stretch;
 }
 
-/* Cada card ocupa espaço flexível e fica com coluna interna */
 .card {
-  flex: 1 1 300px;           /* cresce/encolhe e tem largura base */
-  min-width: 260px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  height: 480px;
   background: #fff;
+  border: 1px solid #e0e0e0;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   overflow: hidden;
   transition: transform 0.25s ease;
 }
 
-/* Garantir altura consistente de imagem e que ela não "puxe" o layout */
 .card img {
   width: 100%;
-  height: 180px;            /* mesmo tamanho para todas as imagens */
-  object-fit: cover;        /* preenche mantendo foco */
+  height: 200px;
+  object-fit: cover;
   display: block;
+  flex-shrink: 0;
 }
 
-/* Conteúdo interno com flex para empurrar o rodapé pra baixo */
 .card-content {
   display: flex;
   flex-direction: column;
-  flex: 1 1 auto;           /* ocupa o restante do espaço do card */
+  flex: 1;
   padding: 16px;
   box-sizing: border-box;
 }
 
-/* descrição cresce para ocupar espaço e empurra o rodapé */
-.card-desc {
-  flex: 1 1 auto;
-  margin-bottom: 12px;
-  color: #555;
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+  min-height: 50px;
+  display: flex;
+  align-items: flex-start;
+  line-height: 1.3;
 }
 
-/* Rodapé fixo ao final do card */
+.card-desc {
+  flex: 1;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  line-height: 1.4;
+}
+
 .card-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 10px;
-  margin-top: auto;         /* garante que fique na base */
+  margin-top: auto;
   padding-top: 8px;
+  border-top: 1px solid #eee;
 }
 
-/* Rating + estrela */
 .rating {
   display: flex;
   align-items: center;
@@ -219,28 +232,47 @@ body {
   font-weight: 700;
 }
 
-/* Botão inscrição */
 .btn-inscrever {
-  color: #fff;
+  background-color: #c7f464;
+  color: #333;
   border: none;
   padding: 8px 14px;
   border-radius: 8px;
   cursor: pointer;
   font-weight: 700;
+  font-size: 14px;
 }
 
-.btn-inscrever:hover { background-color: #E7F1A8; }
+.btn-inscrever:hover {
+  background-color: #b8e555;
+  transform: scale(1.05);
+}
 
-/* Responsividade: cards viram coluna em telas pequenas */
-@media (max-width: 820px) {
+/* Responsividade */
+@media (max-width: 1200px) {
   .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr;
     gap: 1rem;
   }
+
   .card {
-    flex: 1 1 100%;
+    height: 450px;
   }
+}
+
+@media (max-width: 480px) {
+  .card {
+    height: 420px;
+  }
+
   .card img {
-    height: 200px;
+    height: 180px;
   }
 }
 
@@ -249,9 +281,10 @@ body {
 }
 
 .card:hover {
-  transform: translateY(-5px);       /* eleva o card levemente */
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* adiciona sombra */
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+
 .quiz-btn {
   background-color: #2c2e7b;
   color: white;
@@ -274,4 +307,3 @@ body {
   background-color: #1f2060;
   transform: scale(0.97);
 }
-

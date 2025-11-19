@@ -23,7 +23,8 @@
         "Data Analysis"
       ],
       "cursoAtual": {
-        "titulo": "Análise de Dados com Python",
+        "id": 14,
+        "titulo": "Análise de Dados com Excel",
         "aulasCompletas": 15,
         "totalAulas": 25,
         "progresso": 60,
@@ -31,6 +32,7 @@
       },
       "cursosFavoritos": [
         4,
+        5,
         6
       ],
       "medalhas": [
@@ -65,15 +67,17 @@
         "UI/UX"
       ],
       "cursoAtual": {
-        "titulo": "Criação de Loja Virtual",
+        "id": 9,
+        "titulo": "Criação de Loja Online",
         "aulasCompletas": 28,
         "totalAulas": 30,
         "progresso": 80,
         "proximaAula": "Sua loja está pronta, e agora?"
       },
       "cursosFavoritos": [
-        6,
-        1
+        1,
+        5,
+        6
       ],
       "medalhas": [
         {

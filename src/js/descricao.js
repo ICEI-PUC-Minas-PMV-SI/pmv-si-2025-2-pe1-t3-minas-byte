@@ -20,13 +20,17 @@ class DescricaoCurso {
     getCursoId() {
         const params = new URLSearchParams(window.location.search);
         const idString = params.get('id');
-        // Usar Number() e checar se é um número válido (não-NaN)
-        const id = Number(idString);
-        
-        // Retorna o ID numérico se for um número inteiro maior que zero, senão retorna null.
-        if (isNaN(id) || id <= 0 || !Number.isInteger(id)) {
+
+        if (!idString) {
             return null;
         }
+
+        const id = parseInt(idString);
+
+        if (isNaN(id) || id <= 0) {
+            return null;
+        }
+
         return id;
     }
 
@@ -35,7 +39,7 @@ class DescricaoCurso {
         const data = await response.json();
         // O id em data.cursos deve ser do mesmo tipo. Se for string em db.json, use String(id). 
         // Assumindo que o ID no JSON é Number (que é o que getCursoId retorna):
-        this.curso = data.cursos.find(c => c.id === id); 
+        this.curso = data.cursos.find(c => c.id === id);
     }
 
     renderizar() {
@@ -45,7 +49,7 @@ class DescricaoCurso {
         }
 
         // CORREÇÃO 1: Deve usar template literal (crase `) para interpolação na atribuição do título
-        document.title = `${this.curso.titulo} | InovaElas`;
+        document.title = `${ this.curso.titulo } | InovaElas`;
 
         // Atualizar elementos da página
         this.atualizarTitulo();
@@ -56,8 +60,8 @@ class DescricaoCurso {
     }
 
     atualizarTitulo() {
-        const titulo = document.querySelector('.curso-titulo, h1');
-        if (titulo) titulo.textContent = this.curso.titulo;
+        const titulo = document.querySelector('.curso-titulo');
+        if (titulo) titulo.innerHTML = this.curso.titulo;
     }
 
     atualizarImagem() {
@@ -71,9 +75,6 @@ class DescricaoCurso {
     atualizarDescricao() {
         const descricaoHeader = document.querySelector('.curso-descricao');
         if (descricaoHeader) descricaoHeader.textContent = this.curso.descricao;
-
-        const descricaoCompleta = document.querySelector('.descricao-completa');
-        if (descricaoCompleta) descricaoCompleta.textContent = this.curso.descricaoCompleta || this.curso.descricao;
     }
 
     atualizarDetalhes() {
@@ -85,6 +86,53 @@ class DescricaoCurso {
 
         const categoria = document.querySelector('.categoria');
         if (categoria) categoria.textContent = this.curso.categoria;
+
+        // Aulas
+        this.renderizarAulas();
+
+        // Requisitos
+        this.renderizarRequisitos();
+
+        // Instrutora
+        this.renderizarInstrutora();
+    }
+
+    renderizarAulas() {
+        const aulasContainer = document.querySelector('.aulas-lista, .curso-aulas');
+        if (aulasContainer && this.curso.aulas) {
+            aulasContainer.innerHTML = this.curso.aulas.map((aula, index) => `
+                <div class="aula-item">
+                    <div class="aula-numero">${index + 1}</div>
+                    <div class="aula-conteudo">
+                        <h4 class="aula-titulo">${aula.titulo}</h4>
+                        <p class="aula-descricao">${aula.descricao}</p>
+                    </div>
+                </div>
+            `).join('');
+        }
+    }
+
+    renderizarRequisitos() {
+        const requisitosContainer = document.querySelector('.requisitos-lista, .curso-requisitos');
+        if (requisitosContainer && this.curso.requisitos) {
+            requisitosContainer.innerHTML = this.curso.requisitos.map(req => `
+                <li class="requisito-item">${req}</li>
+            `).join('');
+        }
+    }
+
+    renderizarInstrutora() {
+        const instrutora = document.querySelector('.instrutora-info');
+        if (instrutora && this.curso.instrutora) {
+            instrutora.innerHTML = `
+                <img src="${this.curso.instrutora.imagem}" alt="${this.curso.instrutora.nome}" class="instrutora-foto">
+                <div class="instrutora-detalhes">
+                    <h3 class="instrutora-nome">${this.curso.instrutora.nome}</h3>
+                    <p class="instrutora-descricao">${this.curso.instrutora.descricao}</p>
+                    <p class="instrutora-biografia">${this.curso.instrutora.biografia}</p>
+                </div>
+            `;
+        }
     }
 
     atualizarBotaoInscricao() {

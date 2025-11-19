@@ -19,53 +19,64 @@ function renderizarCursos(cursos) {
         'dados': { titulo: 'Análise de Dados', cursos: [] }
     };
 
-    // Agrupar cursos por categoria
     cursos.forEach(curso => {
         if (categorias[curso.categoria]) {
             categorias[curso.categoria].cursos.push(curso);
         }
     });
 
-    // Renderizar cada categoria
     const container = document.querySelector('.quiz-hero').parentNode;
 
-    // Limpar conteúdo existente após o hero
     const existingContainers = container.querySelectorAll('.container');
     existingContainers.forEach(cont => cont.remove());
 
     Object.keys(categorias).forEach(catKey => {
         const categoria = categorias[catKey];
         if (categoria.cursos.length > 0) {
-            const categoriaHTML = `
-                <div class="container">
-                    <h3 class="category-title">${categoria.titulo}</h3>
-                    <div class="cards">
-                        ${categoria.cursos.map(curso => `
-                            <div class="card" data-link="descricao.html" data-id="${curso.id.toString().trim()}">
-                                <img src="${curso.imagem}" alt="${curso.titulo}">
-                                <div class="card-content">
-                                    <div>
-                                        <span class="tag">${curso.categoria}</span>
-                                        <span class="level">${curso.nivel}</span>
-                                    </div>
-                                    <div class="card-title">${curso.titulo}</div>
-                                    <div class="card-desc">${curso.descricao}</div>
-                                    <div class="card-footer">
-                                        <span class="rating">4.9</span>
-                                        <button class="btn btn-inscrever">Inscreva-se</button>
-                                    </div>
-                                </div>
-                            </div>
-                        `).join('')}
+
+            const containerDiv = document.createElement('div');
+            containerDiv.className = 'container';
+
+            const title = document.createElement('h3');
+            title.className = 'category-title';
+            title.textContent = categoria.titulo;
+            containerDiv.appendChild(title);
+
+            const cardsDiv = document.createElement('div');
+            cardsDiv.className = 'cards';
+
+            categoria.cursos.forEach(curso => {
+                const cardDiv = document.createElement('div');
+                cardDiv.className = 'card';
+                cardDiv.setAttribute('data-id', curso.id);
+
+                cardDiv.innerHTML = `
+                    <img src="${curso.imagem}" alt="${curso.titulo}">
+                    <div class="card-content">
+                        <div>
+                            <span class="tag">${curso.categoria}</span>
+                            <span class="level">${curso.nivel}</span>
+                        </div>
+                        <div class="card-title">${curso.titulo}</div>
+                        <div class="card-desc">${curso.descricao}</div>
+                        <div class="card-footer">
+                            <span class="rating">4.9</span>
+                            <button class="btn btn-inscrever">Inscreva-se</button>
+                        </div>
                     </div>
-                </div>
-                <br/>
-            `;
-            container.insertAdjacentHTML('beforeend', categoriaHTML);
+                `;
+
+                cardsDiv.appendChild(cardDiv);
+            });
+
+            containerDiv.appendChild(cardsDiv);
+            container.appendChild(containerDiv);
+
+            const br = document.createElement('br');
+            container.appendChild(br);
         }
     });
 
-    // Reativar eventos após renderização
     ativarEventos();
 }
 
@@ -82,10 +93,9 @@ function ativarEventos() {
                 e.stopPropagation();
                 return;
             }
-
             const idCurso = card.getAttribute("data-id");
             if (idCurso) {
-                window.location.href = `descricao.html ? id = ${ idCurso.trim() }`;
+                window.location.href = "descricao.html?id=" + idCurso;
             }
         });
     });

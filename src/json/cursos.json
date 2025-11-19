@@ -188,7 +188,7 @@
         "Não é necessário conhecimento técnico sobre segurança.",
         "Não é preciso entender antivírus ou configurações avançadas."
       ],
-      "instrutura": {
+      "instrutora": {
         "nome": "Camila Mendonça",
         "descricao": "Instrutora do curso Segurança Digital",
         "biografia": "Camila Mendonça é especialista em segurança da informação e trabalha há 10 anos orientando usuários comuns a protegerem seus dados. Reconhecida pela linguagem simples e direta.",
@@ -388,136 +388,6 @@
         "descricao": "Especialista em suporte técnico e ambientes de TI.",
         "biografia": "Rafael Monteiro trabalha com tecnologia educacional há mais de 10 anos, auxiliando pessoas a dominarem ferramentas digitais.",
         "imagem": "img/img_aula/8.jpg"
-      }
-    },
-    {
-      "id": 7,
-      "titulo": "Desenvolvimento Web",
-      "descricao": "Crie sites do zero.",
-      "categoria": "programacao",
-      "imagem": "img/cursos/desenvolvimento-web-html-css-javascript.webp",
-      "cargaHoraria": "60h",
-      "nivel": "Intermediário",
-      "aulas": [
-        {
-          "titulo": "Introdução ao desenvolvimento web",
-          "descricao": "O que é front-end, back-end e full stack."
-        },
-        {
-          "titulo": "Como funciona a internet",
-          "descricao": "Servidores, domínios e hospedagem."
-        },
-        {
-          "titulo": "HTML básico",
-          "descricao": "Estrutura de uma página e principais tags."
-        },
-        {
-          "titulo": "CSS básico",
-          "descricao": "Estilos, cores e layout."
-        },
-        {
-          "titulo": "Introdução ao JavaScript",
-          "descricao": "Tornando páginas interativas."
-        },
-        {
-          "titulo": "Boas práticas de código",
-          "descricao": "Organização e comentários."
-        },
-        {
-          "titulo": "Publicando sua primeira página",
-          "descricao": "Colocando o site no ar."
-        },
-        {
-          "titulo": "Ferramentas e editores de código",
-          "descricao": "Visual Studio Code e alternativas."
-        },
-        {
-          "titulo": "Design responsivo",
-          "descricao": "Sites que se adaptam ao celular."
-        },
-        {
-          "titulo": "Mini-projeto prático",
-          "descricao": "Criando um site simples do zero."
-        },
-        {
-          "titulo": "Próximos passos",
-          "descricao": "Onde continuar estudando e se especializando."
-        }
-      ],
-      "requisitos": [
-        "Não é necessário saber programar.",
-        "Recomendado ter um computador para acompanhar códigos."
-      ],
-      "instrutora": {
-        "nome": "Ana Ribeiro",
-        "descricao": "Desenvolvedora front-end e instrutora de HTML, CSS e JavaScript.",
-        "biografia": "Ana Ribeiro atua em desenvolvimento web há 6 anos, ensinando iniciantes a criarem suas primeiras páginas.",
-        "imagem": "img/img_aula/9.png"
-      }
-    },
-    {
-      "id": 8,
-      "titulo": "Gestão de Estoque Básica",
-      "descricao": "Organize e controle seu estoque de forma eficiente",
-      "categoria": "gestao",
-      "imagem": "img/cursos/gestaoestoque.png",
-      "cargaHoraria": "25h",
-      "nivel": "Básico",
-      "aulas": [
-        {
-          "titulo": "Introdução à gestão de estoque",
-          "descricao": "Entenda a importância do controle de produtos."
-        },
-        {
-          "titulo": "Conceitos fundamentais",
-          "descricao": "Tipos de estoque e terminologia básica."
-        },
-        {
-          "titulo": "Organização do espaço físico",
-          "descricao": "Como dispor produtos de forma eficiente."
-        },
-        {
-          "titulo": "Cadastro de produtos e códigos",
-          "descricao": "Boas práticas de identificação."
-        },
-        {
-          "titulo": "Controle de entradas e saídas",
-          "descricao": "Como registrar movimentações."
-        },
-        {
-          "titulo": "Inventário e contagem",
-          "descricao": "Evitando perdas e diferenças."
-        },
-        {
-          "titulo": "Uso de planilhas no controle de estoque",
-          "descricao": "Modelos simples e úteis."
-        },
-        {
-          "titulo": "Indicadores de desempenho",
-          "descricao": "Giro de estoque e tempo médio de reposição."
-        },
-        {
-          "titulo": "Gestão de fornecedores",
-          "descricao": "Compras, prazos e relacionamento."
-        },
-        {
-          "titulo": "Prevenção de desperdícios",
-          "descricao": "Boas práticas e sustentabilidade."
-        },
-        {
-          "titulo": "Revisão e automação de processos",
-          "descricao": "Caminhos para modernizar a gestão."
-        }
-      ],
-      "requisitos": [
-        "Não precisa experiência prévia com estoque.",
-        "Recomendado saber usar planilhas simples."
-      ],
-      "instrutora": {
-        "nome": "Carla Menezes",
-        "descricao": "Especialista em organização e controle de estoque.",
-        "biografia": "Carla Menezes é analista de segurança da informação e atua com educação digital preventiva.",
-        "imagem": "img/img_aula/11.jpg"
       }
     },
     {
@@ -958,6 +828,191 @@
         "descricao": "Designer gráfica e especialista em ferramentas digitais.",
         "biografia": "Isabela Rocha é designer há mais de 6 anos, focada em ensinar design acessível para empreendedoras.",
         "imagem": "img/img_aula/16.jpg"
+      }
+    },
+    {
+      "id": 17,
+      "titulo": "Informática básica",
+      "descricao": "Aprenda os fundamentos da informática, navegação na internet e uso de aplicativos essenciais para o dia a dia.",
+      "categoria": "basico",
+      "imagem": "img/cursos/informaticabasica.png",
+      "cargaHoraria": "25h",
+      "nivel": "Iniciante",
+      "aulas": [
+        {
+          "titulo": "Introdução à informática",
+          "descricao": "Conceitos básicos de computação e tecnologia."
+        },
+        {
+          "titulo": "Navegação na internet",
+          "descricao": "Como usar navegadores e pesquisar informações."
+        },
+        {
+          "titulo": "Aplicativos essenciais",
+          "descricao": "Ferramentas básicas para o dia a dia."
+        }
+      ],
+      "requisitos": [
+        "Não é necessário conhecimento prévio."
+      ],
+      "instrutora": {
+        "nome": "Maria Santos",
+        "descricao": "Especialista em informática básica.",
+        "biografia": "Professora com experiência em ensino de informática para iniciantes.",
+        "imagem": "img/img_aula/1.png"
+      }
+    },
+    {
+      "id": 21,
+      "titulo": "Desenvolvimento web",
+      "descricao": "Entenda como a tecnologia transforma empresas e como você pode começar nessa área cheia de oportunidades.",
+      "categoria": "programacao",
+      "imagem": "img/cursos/desenvolvimentoweb.png",
+      "cargaHoraria": "60h",
+      "nivel": "Iniciante",
+      "aulas": [
+        {
+          "titulo": "HTML básico",
+          "descricao": "Estrutura de páginas web."
+        },
+        {
+          "titulo": "CSS básico",
+          "descricao": "Estilização de páginas web."
+        }
+      ],
+      "requisitos": [
+        "Conhecimento básico de informática."
+      ],
+      "instrutora": {
+        "nome": "Julia Ferreira",
+        "descricao": "Desenvolvedora web.",
+        "biografia": "Especialista em desenvolvimento front-end.",
+        "imagem": "img/img_aula/9.png"
+      }
+    },
+    {
+      "id": 22,
+      "titulo": "E-commerce e marketplaces",
+      "descricao": "Aprenda os fundamentos da informática, navegação na internet e uso de aplicativos essenciais para o dia a dia.",
+      "categoria": "gestao",
+      "imagem": "img/cursos/ecommerce.png",
+      "cargaHoraria": "30h",
+      "nivel": "Iniciante",
+      "aulas": [
+        {
+          "titulo": "Introdução ao e-commerce",
+          "descricao": "Conceitos básicos de comércio eletrônico."
+        },
+        {
+          "titulo": "Marketplaces",
+          "descricao": "Como vender em plataformas online."
+        }
+      ],
+      "requisitos": [
+        "Conhecimento básico de internet."
+      ],
+      "instrutora": {
+        "nome": "Fernanda Lima",
+        "descricao": "Especialista em e-commerce.",
+        "biografia": "Consultora em vendas online e marketplaces.",
+        "imagem": "img/img_aula/12.jpg"
+      }
+    },
+    {
+      "id": 23,
+      "titulo": "Gestão de estoque básica",
+      "descricao": "Desenvolva os primeiros passos no computador, internet e e-mail. Entenda os cuidados online, a privacidade e prevenção de golpes.",
+      "categoria": "gestao",
+      "imagem": "img/cursos/gestaoestoque.png",
+      "cargaHoraria": "25h",
+      "nivel": "Iniciante",
+      "aulas": [
+        {
+          "titulo": "Conceitos de estoque",
+          "descricao": "Fundamentos da gestão de estoque."
+        },
+        {
+          "titulo": "Controle de inventário",
+          "descricao": "Técnicas de controle e organização."
+        }
+      ],
+      "requisitos": [
+        "Não é necessário conhecimento prévio."
+      ],
+      "instrutora": {
+        "nome": "Roberto Santos",
+        "descricao": "Especialista em logística.",
+        "biografia": "Consultor em gestão de estoque e logística.",
+        "imagem": "img/img_aula/11.jpg"
+      }
+    },
+    {
+      "id": 24,
+      "titulo": "Criação de loja online",
+      "descricao": "Monte sua própria loja virtual do zero e aprenda a vender seus produtos na internet.",
+      "categoria": "gestao",
+      "imagem": "img/cursos/criacaoloja.png",
+      "cargaHoraria": "35h",
+      "nivel": "Iniciante",
+      "aulas": [
+        {
+          "titulo": "Planejamento da loja",
+          "descricao": "Como planejar sua loja virtual."
+        },
+        {
+          "titulo": "Criação da loja",
+          "descricao": "Passo a passo para criar sua loja."
+        }
+      ],
+      "requisitos": [
+        "Conhecimento básico de internet."
+      ],
+      "instrutora": {
+        "nome": "Mariana Costa",
+        "descricao": "Especialista em e-commerce.",
+        "biografia": "Empreendedora digital e consultora em lojas virtuais.",
+        "imagem": "img/img_aula/12.jpg"
+      }
+    },
+    {
+      "id": 26,
+      "titulo": "SQL para Análise de Dados",
+      "descricao": "Aprenda a consultar e manipular bancos de dados para extrair insights valiosos",
+      "categoria": "dados",
+      "imagem": "img/cursos/analise_sql_powerbi.jpg",
+      "cargaHoraria": "40h",
+      "nivel": "Intermediário",
+      "aulas": [
+        {
+          "titulo": "Introdução ao SQL",
+          "descricao": "Conceitos básicos de bancos de dados relacionais."
+        },
+        {
+          "titulo": "Consultas básicas",
+          "descricao": "SELECT, WHERE, ORDER BY e GROUP BY."
+        },
+        {
+          "titulo": "Joins e relacionamentos",
+          "descricao": "Conectando tabelas para análises complexas."
+        },
+        {
+          "titulo": "Funções agregadas",
+          "descricao": "COUNT, SUM, AVG e outras funções estatísticas."
+        },
+        {
+          "titulo": "Análise de dados avançada",
+          "descricao": "Window functions e CTEs para insights profundos."
+        }
+      ],
+      "requisitos": [
+        "Conhecimento básico de planilhas.",
+        "Lógica de programação básica."
+      ],
+      "instrutora": {
+        "nome": "Ricardo Mendes",
+        "descricao": "Especialista em SQL e análise de dados.",
+        "biografia": "Ricardo Mendes é analista de dados sênior há mais de 8 anos, especializado em SQL e Business Intelligence.",
+        "imagem": "img/img_aula/15.jpg"
       }
     }
   ]

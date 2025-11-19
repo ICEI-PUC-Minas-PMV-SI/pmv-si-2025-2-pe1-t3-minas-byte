@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const usuaria = JSON.parse(localStorage.getItem("usuariaLogada"));
   const todosOsCards = document.querySelectorAll(".card, .curso");
 
-  // Redireciona ao clicar no card
   todosOsCards.forEach(card => {
     card.style.cursor = "pointer";
 
@@ -17,7 +16,10 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       const destino = card.getAttribute("data-link");
-      if (destino) window.location.href = destino;
+      const idCurso = card.getAttribute("data-id");
+      if (destino && idCurso) {
+        window.location.href = `${ destino }?id = ${ idCurso }` ;
+      }
     });
   });
 
@@ -46,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
         inscricaoAtual.email === usuaria.email &&
         inscricaoAtual.curso !== nomeCurso
       ) {
-        alert(`Você já está inscrita no curso "${inscricaoAtual.curso}". Só é possível realizar um curso por vez.`);
+        alert(`Você já está inscrita no curso "${inscricaoAtual.curso}".Só é possível realizar um curso por vez.`);
         return;
       }
 

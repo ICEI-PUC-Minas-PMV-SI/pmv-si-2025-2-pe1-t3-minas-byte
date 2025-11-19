@@ -1,16 +1,31 @@
 document.addEventListener("DOMContentLoaded", async () => {
-    const cursoId = localStorage.getItem("cursoSelecionado");
-    if (!cursoId) return;
+    // Verificar se veio do perfil
+    const cursoAtual = JSON.parse(localStorage.getItem('cursoAtual'));
+    let cursoId = localStorage.getItem("cursoSelecionado");
 
+    // Carregar dados dos cursos uma única vez
     const response = await fetch("json/cursos.json");
     const data = await response.json();
 
-    const curso = data.cursos.find(c => c.id == cursoId);
+    // Se veio do perfil, usar dados do curso atual
+    if (cursoAtual && !cursoId) {
+        const curso = data.cursos.find(c => c.titulo === cursoAtual.titulo);
+        if (curso) {
+            cursoId = curso.id;
+            localStorage.setItem("cursoSelecionado", cursoId);
+        }
+    }
+
+    if (!cursoId) return;
+
+    const curso = data.cursos.find(c => c.id === parseInt(cursoId));
     if (!curso) return;
 
 
     document.querySelector(".titulo-curso").textContent =
-        `Conteúdo do curso: ${curso.titulo}`;
+        `Conteúdo do curso: ${ curso.titulo }`;
+
+
 
 
     const itens = document.querySelectorAll(".accordion-item");
