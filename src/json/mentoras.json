@@ -1,0 +1,139 @@
+{
+    "mentoras": [
+        {
+            "id": 1,
+            "nome": "Dra. Fernanda Silva",
+            "cargo": "Diretora Financeira",
+            "empresa": "FinanceCorps",
+            "imagem": "img/Mentoria/mentora7.jpg",
+            "categoria": "Finanças",
+            "rating": 4.9,
+            "bio": "15 anos de experiência em tecnologia, especialista em transformação digital e liderança feminina no setor financeiro.",
+            "especialidades": [
+                "Liderança Financeira",
+                "Planejamento",
+                "Investimentos"
+            ]
+        },
+        {
+            "id": 2,
+            "nome": "Carla Mendonça",
+            "cargo": "Career Coach",
+            "empresa": "TransitionPro",
+            "imagem": "img/Mentoria/mentora3.jpg",
+            "categoria": "Carreira",
+            "rating": 4.8,
+            "bio": "Empreendedora serial, fundou 3 startups de sucesso. Especialista em inovação e desenvolvimento de negócios.",
+            "especialidades": [
+                "Transição de Carreira",
+                "Coaching",
+                "Liderança"
+            ]
+        },
+        {
+            "id": 3,
+            "nome": "Luciana Rocha",
+            "cargo": "Founder & CEO",
+            "empresa": "InovaTech",
+            "imagem": "img/Mentoria/mentora9.jpg",
+            "categoria": "Empreendedorismo",
+            "rating": 4.7,
+            "bio": "Cardiologista com PhD em pesquisa médica. Mentora em desenvolvimento de carreira na área da saúde.",
+            "especialidades": [
+                "E-commerce",
+                "Startups",
+                "Captação de Recursos"
+            ]
+        },
+        {
+            "id": 4,
+            "nome": "Patrícia Alves",
+            "cargo": "Diretora de Liderança",
+            "empresa": "LeadershipPro",
+            "imagem": "img/Mentoria/mentora12.png",
+            "categoria": "Liderança",
+            "rating": 4.9,
+            "bio": "Direcionamento para desenvolver habilidades de liderança com firmeza e confiança em qualquer situação.",
+            "especialidades": [
+                "Liderança",
+                "Gestão de Equipes",
+                "Comunicação"
+            ]
+        },
+        {
+            "id": 5,
+            "nome": "Renata Oliveira",
+            "cargo": "Tech Lead",
+            "empresa": "TechCorp",
+            "imagem": "img/Mentoria/mentora8.jpg",
+            "categoria": "Tecnologia",
+            "rating": 4.9,
+            "bio": "Especialista em desenvolvimento web e liderança técnica com mais de 12 anos de experiência.",
+            "especialidades": [
+                "Dev Web",
+                "Liderança Técnica",
+                "Arquitetura"
+            ]
+        },
+        {
+            "id": 6,
+            "nome": "Mariana Teixeira",
+            "cargo": "Recrutadora Sênior",
+            "empresa": "TalentHub",
+            "imagem": "img/Mentoria/mentora5.jpg",
+            "categoria": "Carreira",
+            "rating": 4.8,
+            "bio": "Recrutadora sênior e orientadora profissional com expertise em transição de carreira.",
+            "especialidades": [
+                "Recrutamento",
+                "Orientação Profissional",
+                "Networking"
+            ]
+        },
+        {
+            "id": 7,
+            "nome": "Bianca Couto",
+            "cargo": "Empreendedora",
+            "empresa": "StartupHub",
+            "imagem": "img/Mentoria/Mentora1.jpg",
+            "categoria": "Empreendedorismo",
+            "rating": 4.9,
+            "bio": "Especialista em impulsionar produtos e ampliar seu público para alcançar o sucesso com sua empresa.",
+            "especialidades": [
+                "Marketing Digital",
+                "Crescimento",
+                "Vendas"
+            ]
+        },
+        {
+            "id": 8,
+            "nome": "Juliana Soares",
+            "cargo": "Especialista em Segurança",
+            "empresa": "CyberSec",
+            "imagem": "img/Mentoria/mentora11.png",
+            "categoria": "Tecnologia",
+            "rating": 4.7,
+            "bio": "Especialista em banco de dados e cyber segurança pronta para te ajudar a otimizar suas habilidades.",
+            "especialidades": [
+                "Banco de Dados",
+                "Cyber Segurança",
+                "DevOps"
+            ]
+        },
+        {
+            "id": 9,
+            "nome": "Simone Aguiar",
+            "cargo": "Consultora Financeira",
+            "empresa": "FinanceExpert",
+            "imagem": "img/Mentoria/mentora4.jpg",
+            "categoria": "Finanças",
+            "rating": 4.7,
+            "bio": "Especialista com mais de 20 anos de experiência na área, desenvolva e amplie suas habilidades para otimizar suas finanças.",
+            "especialidades": [
+                "Consultoria Financeira",
+                "Investimentos",
+                "Planejamento"
+            ]
+        }
+    ]
+}

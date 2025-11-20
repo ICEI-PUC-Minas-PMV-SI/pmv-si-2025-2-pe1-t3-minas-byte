@@ -70,269 +70,682 @@
   margin: 3rem;
 }
 
-/* ===== FILTRO DE MENTORIAS ===== */
 
-/* Mantido igual, sem alterações */
+/* ======= SECTION DIVIDIDA EM 2 LADOS ======= */
 
-/* ===== BOTÕES DE INSCRIÇÃO ===== */
-.btn-inscreva-mentorias {
+.section-dupla {
+  width: 100%;
+  display: flex;
+  padding: 60px 5%;
+  min-height: 500px;
+  box-sizing: border-box;
+}
+
+/* LADO ESQUERDO — TEXTO CENTRALIZADO */
+.section-dupla .lado-esquerdo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  /* mantém alinhado à esquerda */
+  text-align: left;
+  padding-right: 40px;
+}
+
+.section-dupla .lado-esquerdo h2 {
+  font-size: 2.8rem;
+  color: #364C84;
+  margin-bottom: 20px;
+  margin-left: 50px;
+}
+
+.section-dupla .lado-esquerdo p {
+  font-size: 1.2rem;
+  color: #253068;
+  line-height: 1.6;
+}
+
+/* LADO DIREITO — IMAGEM CENTRALIZADA */
+.section-dupla .lado-direito {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-dupla .lado-direito img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* ======= RESPONSIVO (CELULAR) ======= */
+@media (max-width: 900px) {
+  .section-dupla {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 5%;
+  }
+
+  .section-dupla .lado-esquerdo {
+    align-items: center;
+    padding-right: 0;
+  }
+
+  .section-dupla .lado-direito img {
+    max-width: 350px;
+    margin-top: 30px;
+  }
+}
+
+/* ===== NOVOS ESTILOS PARA MENTORAS ===== */
+.mentoras-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.mentoras-header h2 {
   color: #364c84;
-  background-color: #e7f1a8;
-  border: none;
-  width: 10rem;
-  padding: 8px 16px;
-  border-radius: 6px;
-  font-weight: bold;
-  font-size: 14px;
-  cursor: pointer;
-  text-decoration: none;
-  display: inline-block;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.10);
-  transition: transform 0.3s ease;
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
-.btn-inscreva-mentorias:hover {
-  transform: translateY(-3px) scale(1.05);
+.mentoras-header p {
+  color: #6b7280;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
 }
 
-/* ===== MENTORIAS GRID ===== */
-.mentorias {
+.mentoras-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin: 5rem 5rem;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  justify-content: center;
 }
 
-@media (max-width: 1200px) {
-  .mentorias {
-    margin: 5rem 5rem;
-  }
-}
-
-@media (max-width: 992px) {
-  .mentorias {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-    margin: 3rem 0;
-  }
-}
-
-@media (max-width: 768px) {
-  .mentorias {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    margin: 2rem 0;
-  }
-}
-
-/* ===== CARD DE MENTORIA ===== */
-.mentoria {
-  background-color: #FFFEFA;
-  border-radius: 20px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+.mentora-card {
+  background: white;
+  border-radius: 24px;
   overflow: hidden;
-  transition: transform 0.3s;
-  text-align: left;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
   position: relative;
+  border: 2px solid transparent;
+  height: 580px;
+  display: flex;
+  flex-direction: column;
 }
 
-.mentoria:hover {
-  transform: translateY(-3px);
+.mentora-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+  border-color: rgba(149, 177, 238, 0.2);
 }
 
-.mentoria img {
+.mentora-image {
+  position: relative;
   width: 100%;
-  height: 180px;
-  object-fit: cover;
+  height: 280px;
+  overflow: hidden;
+  background: #f8f9fa;
 }
 
-/* ===== BOTÃO FAVORITO ===== */
-.btn-favorito {
+.mentora-image img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+.mentora-card:hover .mentora-image img {
+  transform: scale(1.05);
+}
+
+.mentora-badge {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  background: rgba(255, 255, 255, 0.9);
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.mentora-badge.financas {
+  background: #95b1ee;
+  color: white;
+}
+
+.mentora-badge.carreira {
+  background: #f4a9ba;
+  color: white;
+}
+
+.mentora-badge.empreendedorismo {
+  background: #e7f1a8;
+  color: #364c84;
+}
+
+.mentora-badge.lideranca {
+  background: #95b1ee;
+  color: white;
+}
+
+.mentora-badge.tecnologia {
+  background: #364c84;
+  color: white;
+}
+
+.mentora-badge .badge-icon {
+  width: 14px;
+  height: 14px;
+}
+
+.mentora-content {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.mentora-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.mentora-header h3 {
+  color: #364c84;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.mentora-rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.mentora-rating .star-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.mentora-rating span {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #364c84;
+}
+
+.mentora-role {
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.mentora-bio {
+  color: #6b7280;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  flex: 1;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.mentora-specialties {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.specialty-tag {
+  background: #f1f5f9;
+  color: #475569;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.mentora-actions {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  margin-top: auto;
+}
+
+.btn-mentora {
+  flex: 1;
+  padding: 10px 16px;
+  background: linear-gradient(135deg, #95b1ee, #364c84);
+  color: white;
   border: none;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-mentora:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(149, 177, 238, 0.3);
+}
+
+.btn-conversa {
+  width: 40px;
+  height: 40px;
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   transition: all 0.3s ease;
-  z-index: 2;
-  backdrop-filter: blur(10px);
 }
 
-.btn-favorito:hover {
-  background: rgba(255, 255, 255, 1);
-  transform: scale(1.1);
+.btn-conversa:hover {
+  background: #e2e8f0;
+  transform: translateY(-2px);
 }
 
-.btn-favorito .coracao {
-  width: 16px;
-  height: 16px;
-  transition: all 0.3s ease;
-  filter: grayscale(1);
+.icone-conversa {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) saturate(100%) invert(25%) sepia(15%) saturate(1500%) hue-rotate(200deg) brightness(95%) contrast(85%);
 }
 
-.btn-favorito.favorito .coracao {
-  filter: none;
-  animation: heartBeat 0.6s ease;
+.mentoras-cta {
+  text-align: center;
+  margin-top: 2rem;
 }
 
-/* ===== CONTEÚDO DA MENTORIA ===== */
-.mentoria-content {
-  padding: 1rem 1.2rem 1.5rem;
+/* Responsividade para mentoras */
+@media (max-width: 1200px) {
+  .mentoras-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
 }
 
-.mentoria-topo {
+@media (max-width: 900px) {
+  .mentoras-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nossasMentorias {
+    padding: 3rem 3%;
+  }
+
+  .mentoras-header h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .mentoras-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .mentora-card {
+    margin: 0 auto;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mentora-card {
+    max-width: 100%;
+  }
+
+  .mentora-content {
+    padding: 1.5rem;
+  }
+
+  .mentoras-header h2 {
+    font-size: 2rem;
+  }
+}
+
+/* ===== CONVERSA SIMULADA ===== */
+.conversa-janela {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 350px;
+  height: 500px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+}
+
+.conversa-janela.ativa {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 0.5rem;
 }
 
-.mentoria-categoria {
-  font-size: 0.8rem;
-  background-color: #f1f1f1;
-  border-radius: 5px;
-  display: inline-block;
-  padding: 0.2rem 0.6rem;
-  color: #444;
-}
-
-.mentoria-nivel {
-  font-size: 0.8rem;
-  border: 1px solid #364C84;
-  border-radius: 5px;
-  display: inline-block;
-  padding: 0.2rem 0.6rem;
-  color: #444;
-}
-
-.mentoria h3 {
-  font-size: 1.1rem;
-  margin: 1.2rem 0;
-  color: #1a2a6c;
-}
-
-.mentoria p {
-  font-size: 0.9rem;
-  color: #555;
-  padding: 0 0;
-}
-
-/* ===== RODAPÉ DA MENTORIA ===== */
-.mentoria-footer {
+.conversa-cabecalho {
+  background: linear-gradient(135deg, #95b1ee, #364c84);
+  color: white;
+  padding: 1rem;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 0 1.2rem 1rem 1.2rem;
+  justify-content: space-between;
 }
 
-.classificacao {
+.mentora-info {
   display: flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: 0.75rem;
 }
 
-.star-icon {
-  width: 18px;
-  height: 18px;
-  display: block;
+.mentora-foto {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-.rating {
-  font-size: 0.9rem;
+.mentora-nome {
   font-weight: 600;
-  color: #364C84;
-  display: flex;
-  align-items: center;
+  font-size: 0.9rem;
 }
 
-.mentoria-classificacao {
+.fechar-conversa {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.fechar-conversa:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.area-mensagens {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  background: #f8f9fa;
+}
+
+.mensagem {
+  margin-bottom: 1rem;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 0.5rem;
 }
 
-.mentoria-footer img {
-  height: 24px;
-  width: 24px;
+.mensagem.usuario {
+  flex-direction: row-reverse;
 }
 
-/* ===== RESPONSIVIDADE DAS MENTORIAS ===== */
-@media screen and (max-width: 480px) {
-  .mentoria {
-    margin: 0 auto;
-    max-width: 300px;
+.conteudo-mensagem {
+  max-width: 70%;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.mensagem.mentora .conteudo-mensagem {
+  background: white;
+  color: #374151;
+  border-bottom-left-radius: 4px;
+}
+
+.mensagem.usuario .conteudo-mensagem {
+  background: #364c84;
+  color: white;
+  border-bottom-right-radius: 4px;
+}
+
+.area-digitacao {
+  padding: 1rem;
+  border-top: 1px solid #e2e8f0;
+  background: white;
+}
+
+.container-entrada {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.entrada-texto {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.entrada-texto:focus {
+  border-color: #95b1ee;
+}
+
+.botao-enviar {
+  background: #364c84;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.botao-enviar:hover {
+  background: #253068;
+}
+
+@media (max-width: 480px) {
+  .conversa-janela {
+    width: calc(100vw - 40px);
+    height: 400px;
+    bottom: 10px;
+    right: 20px;
+    left: 20px;
   }
 }
-/* ======= SECTION DIVIDIDA EM 2 LADOS ======= */
 
-.section-dupla {
-    width: 100%;
-    display: flex;
-    padding: 60px 5%;
-    min-height: 500px;
-    box-sizing: border-box;
+/* ===== MODAL DE AGENDAMENTO ===== */
+.modal-agendamento {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
 }
 
-/* LADO ESQUERDO — TEXTO CENTRALIZADO */
-.section-dupla .lado-esquerdo {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start; /* mantém alinhado à esquerda */
-    text-align: left;
-    padding-right: 40px;
+.modal-agendamento.ativo {
+  display: flex;
 }
 
-.section-dupla .lado-esquerdo h2 {
-    font-size: 2.8rem;
-    color: #364C84;
-    margin-bottom: 20px;
-    margin-left: 50px;
+.conteudo-modal {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
-.section-dupla .lado-esquerdo p {
-    font-size: 1.2rem;
-    color: #253068;
-    line-height: 1.6;
+.cabecalho-modal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
 }
 
-/* LADO DIREITO — IMAGEM CENTRALIZADA */
-.section-dupla .lado-direito {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.cabecalho-modal h3 {
+  color: #364c84;
+  font-size: 1.5rem;
+  margin: 0;
 }
 
-.section-dupla .lado-direito img {
-    width: 100%;
-    max-width: 500px;
-    border-radius: 12px;
-    box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+.fechar-modal {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #6b7280;
+  cursor: pointer;
+  padding: 4px;
 }
 
-/* ======= RESPONSIVO (CELULAR) ======= */
-@media (max-width: 900px) {
-    .section-dupla {
-        flex-direction: column;
-        text-align: center;
-        padding: 40px 5%;
-    }
+.etapa-agendamento {
+  display: none;
+}
 
-    .section-dupla .lado-esquerdo {
-        align-items: center;
-        padding-right: 0;
-    }
+.etapa-agendamento.ativa {
+  display: block;
+}
 
-    .section-dupla .lado-direito img {
-        max-width: 350px;
-        margin-top: 30px;
-    }
+.campo-agendamento {
+  margin-bottom: 1.5rem;
+}
+
+.campo-agendamento label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #364c84;
+  font-weight: 600;
+}
+
+.campo-agendamento input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.campo-agendamento input:focus {
+  border-color: #95b1ee;
+}
+
+.horarios-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+}
+
+.horario-opcao {
+  padding: 0.75rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.horario-opcao:hover {
+  border-color: #95b1ee;
+  background: #f8f9ff;
+}
+
+.horario-opcao.selecionado {
+  border-color: #364c84;
+  background: #364c84;
+  color: white;
+}
+
+.botoes-modal {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  margin-top: 2rem;
+}
+
+.btn-modal {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-cancelar {
+  background: #f1f5f9;
+  color: #6b7280;
+}
+
+.btn-cancelar:hover {
+  background: #e2e8f0;
+}
+
+.btn-continuar {
+  background: #364c84;
+  color: white;
+}
+
+.btn-continuar:hover {
+  background: #253068;
+}
+
+.aviso-sucesso {
+  text-align: center;
+  padding: 2rem;
+}
+
+.aviso-sucesso h3 {
+  color: #10b981;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.aviso-sucesso p {
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+@media (max-width: 480px) {
+  .conteudo-modal {
+    width: 95%;
+    padding: 1.5rem;
+  }
+
+  .horarios-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
