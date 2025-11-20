@@ -202,6 +202,11 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 |Requisito Associado | RF-008 - O sistema deve disponibilizar um espaço onde empresas parceiras acessem perfis das alunas.|
 |Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/personal/1592155_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IQBCXQzso9B-T63J6xLcpL35AWbpteHfFyrnoxJJuJcPD0c&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=DtxtGB | 
 
+|*Caso de Teste*                                 |*CT09*                                        |
+|---|---|
+|Requisito Associado | RF-009 - O sistema deve gerar certificados digitais para cursos concluídos.|
+|Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/personal/1592155_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IQBVMlm9t5aATKNJTSvEWwilAa798o9v0E6lmXnSVtJ8EuU&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=10IazC | 
+
 |*Caso de Teste*                                 |*CT11*                                        |
 |---|---|
 |Requisito Associado | RF-011 - O sistema deve proporcionar um canal de suporte simples as alunas (formulário).|
