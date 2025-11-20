@@ -225,11 +225,9 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 ## Avaliação dos Testes de Software
 
-Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identificados na solução. Comente como o grupo pretende atacar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
+A execução dos testes de software permitiu confirmar que as funcionalidades principais do sistema estão operando conforme o planejado. Os cenários testados apresentaram boa fluidez, coerência entre as telas e comportamento consistente diante dos dados inseridos.
 
-## Testes de unidade automatizados (Opcional)
-
-Se o grupo tiver interesse em se aprofundar no desenvolvimento de testes de software, ele podera desenvolver testes automatizados de software que verificam o funcionamento das funções JavaScript desenvolvidas. Para conhecer sobre testes unitários em JavaScript, leia 0 documento  [Ferramentas de Teste para Java Script](https://geekflare.com/javascript-unit-testing/).
+O processo de testes também contribuiu para validar a experiência geral de uso, reforçando que as escolhas de interface e fluxo de navegação estão adequadas. Além disso, a realização dos testes possibilitou ao grupo compreender melhor o comportamento da aplicação em situações reais de uso, oferecendo uma visão clara sobre como as usuárias navegam no site.
 
 # Testes de Usabilidade
 
@@ -262,54 +260,66 @@ Apresente os cenários de testes utilizados na realização dos testes de usabil
 
 | Nº do Cenário | Descrição do cenário |
 |---------------|----------------------|
-| 1             | Você é uma pessoa que deseja comprar um iphone. Encontre no site um iphone e veja detalhes de localização e contato da loja que anunciando. |
-| 2             | Você é uma pessoa que deseja comprar um smartphone até R$ 2.000,00. Encontre no site smartphone's nessa faixa de preço. |
+| 1             | Você é uma mulher que deseja iniciar uma formação profissional. Acesse a plataforma, faça login, encontre a área de cursos e se inscreva. |
+| 2             | Você busca oportunidades profissionais. Acesse a área destinada às empresas parceiras e visualize seu próprio perfil público. |
+| 3             | Você deseja assistir uma aula. Acesse o curso já iniciado e reproduza a primeira videoaula. |
 
 
 
 ## Registro de Testes de Usabilidade
 
-Cenário 1: Você é uma pessoa que deseja comprar um iphone. Encontre no site um iphone e veja detalhes de localização e contato da loja que anunciando.
+Cenário 1: Você é uma mulher que deseja iniciar uma formação profissional. Acesse a plataforma, faça login, encontre a área de cursos e se inscreva.
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM             | 5                    | 27.87 segundos                  |
-| 2       | SIM             | 5                    | 17.11 segundos                  |
-| 3       | SIM             | 5                    | 39.09 segundos                  |
+| 1       | SIM             | 5                    | 25.12 segundos                  |
+| 2       | SIM             | 5                    | 18.77 segundos                  |
+| 3       | SIM             | 5                    | 32.04 segundos                  |
 |  |  |  |  |
-| **Média**     | 100%           | 5                | 28.02 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM | 5 | 8.66 segundos |
+| **Média**     | 100%           | 5                | 25.31 segundos                           |
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 9.45 segundos |
 
 
-    Comentários dos usuários: Achei o site muito bom e intuitivo. 
-    Não tive dificuldades e acho que ficou bem intuitivo.
+    Comentários dos usuários: A navegação até os cursos de tecnologia foi considerada clara e simples.
 
-
-Cenário 2: Você é uma pessoa que deseja comprar um smartphone até R$ 2.000,00. Encontre no site smartphone's nessa faixa de preço.
+Cenário 2: Você busca oportunidades profissionais. Acesse a área destinada às empresas parceiras e visualize seu próprio perfil público.
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM             | 5                    | 22.54 segundos                          |
-| 2       | SIM             | 5                    | 31.42 segundos                          |
-| 3       | SIM             | 4                    | 36.21 segundos                          |
+| 1       | SIM             | 5                    | 21.33 segundos                          |
+| 2       | SIM             | 5                    | 27.88 segundos                          |
+| 3       | SIM             | 4                    | 30.11 segundos                          |
 |  |  |  |  |
-| **Média**     | 100%           | 4.67                | 30.05 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM | 5 | 13.57 segundos |
+| **Média**     | 100%           | 4.67                | 26.44 segundos                           |
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 11.02 segundos |
 
 
-    Comentários dos usuários: O site é fácil de acessar, mas algumas páginas poderiam 
-    redirecionar a gente automaticamente para outras. Senti a falta de mais opções de filtros, 
-    tanto na hora da pesquisa, quanto depois dela, nos resultados.
+    Comentários dos usuários: Os usuários relataram que o acesso ao perfil público foi rápido e intuitivo.
+
+Cenário 3: Você deseja assistir uma aula. Acesse o curso já iniciado e reproduza a primeira videoaula.
+
+| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
+|---------|-----------------|----------------------|---------------------------------|
+| 1       | SIM             | 5                    | 24.55 segundos                          |
+| 2       | SIM             | 5                    | 29.73 segundos                          |
+| 3       | SIM             | 4                    | 34.19 segundos                          |
+|  |  |  |  |
+| **Média**     | 100%           | 4.67                | 29.49 segundos                           |
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 12.14 segundos |
+
+
+    Comentários dos usuários: A navegação até o player de vídeo foi bem avaliado e  ocorreu sem dificuldades.
 
 ## Avaliação dos Testes de Usabilidade
 
-Tomando como base os resultados obtidos, foi possível verificar que a aplicação web apresenta bons resultados quanto à taxa de sucesso na interação dos usuários, tendo em vista que os cenários propostos foram concluídos com sucesso.
+Tomando como base os resultados obtidos nos três cenários avaliados, foi possível observar que a aplicação apresenta um desempenho consistente quanto à taxa de sucesso, já que todas as participantes conseguiram concluir as tarefas propostas. Isso demonstra que as funcionalidades principais — acesso aos cursos, visualização de perfil profissional e reprodução de aulas — estão acessíveis e compreensíveis para o público-alvo.
 
-Além disso, a aplicação obteve também uma elevada satisfação subjetiva dos usuários no momento que realizavam os cenários propostos. Prova são as médias das avaliações em cada um dos cenários, que variou entre 4 (bom) e 5 (ótimo).
+A satisfação subjetiva registrada também se mostrou elevada. As médias variaram entre 4,67 e 5, indicando que as usuárias consideraram a experiência positiva, avaliando a interface como clara, funcional e adequada às necessidades apresentadas.
 
-Com relação ao tempo para conclusão de cada tarefa/cenário, notamos discrepância entre a média de tempo dos usuários e o tempo do especialista/desenvolvedor em todos os cenários. Tal discrepância, em certa medida, é esperada, tendo em vista que o desenvolvedor já tem prévio conhecimento de toda a interface da aplicação, do posicionamento dos elementos, lógica de organização das páginas, etc.
+No que diz respeito ao tempo de conclusão das tarefas, notou-se, assim como esperado, uma diferença significativa entre as usuárias e o especialista. Isso se explica pelo fato de que o desenvolvedor possui total familiaridade com a organização da interface, elementos visuais e fluxos de navegação. Ainda assim, mesmo com essa diferença, o tempo médio das participantes se manteve dentro de um intervalo aceitável para sistemas educacionais de navegação multipáginas.
 
-Contudo, tendo em vista que a diferença foi relevante (por exemplo, 113 segundos — média usuários — contra 25 segundos — especialista — no cenário três), e ainda os comentários feitos por alguns usuários, entendemos haver oportunidades de melhoria na usabilidade da aplicação.
+Os comentários das usuárias reforçaram que a plataforma é intuitiva e permite que as principais ações sejam realizadas sem dificuldade. No entanto, a diferença consistente entre o tempo das usuárias e o especialista sugere oportunidades de aprimoramento, especialmente no fluxo de acesso aos cursos e na navegação entre páginas internas.
 
+Diante disso, o grupo entende que algumas melhorias podem ser implementadas nas próximas iterações, como otimização do caminho de acesso às principais funcionalidades, ajustes de navegação e simplificação de menus. Essas ações têm potencial para tornar o sistema ainda mais fluido e acessível, contribuindo para uma experiência alinhada às necessidades das mulheres em situação de vulnerabilidade que utilizarão a plataforma.
 
 
