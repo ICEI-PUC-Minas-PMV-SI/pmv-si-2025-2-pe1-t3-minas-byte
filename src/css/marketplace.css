@@ -58,8 +58,7 @@ nav a:hover {
   transition: 0.1s;
 }
 
-
-/* ===== Botões ===== */
+/* ===== BOTÕES ===== */
 .auth-buttons {
   display: flex;
   gap: 10px;
@@ -96,36 +95,31 @@ nav a:hover {
   border: none;
 }
 
-.btn-saibaMais {
-  color: #FFFEFA;
-  background-color: #95B1EE;
-  border: none;
+/* ===== CATEGORIAS COMO CARDS ===== */
+.category-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 10px;
+  margin-bottom: 1rem;
 }
 
-.btn-explorar,
-.btn-participar,
-.btn-grupo {
-  color: #FFFEFA;
-  background-color: #f4a9ba;
-  border: none;
+.category-card {
+  padding: 0.8rem 1.2rem;
+  background: #fff;
+  border: 1px solid #a0b3d9; /* borda sólida */
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  text-align: center;
+  transition: all 0.2s ease;
 }
 
-.btn-quiz {
-  color: #364c84;
-  background-color: #e7f1a8;
-  border: none;
-  width: 10rem;
+.category-card:hover,
+.category-card.active {
+  background: #3f6ad8;
+  color: #fff;
+  border-color: #3f6ad8;
 }
-
-.btn-inscreva,
-.btn-participar {
-  color: #364c84;
-  background-color: #e7f1a8;
-  border: none;
-  width: 10rem;
-}
-
-
 
 /* ===== HERO ===== */
 .hero {
@@ -133,14 +127,18 @@ nav a:hover {
   background: #fff;
   border-radius: 8px;
   padding: 5rem 2rem 3rem;
-  margin: 2rem auto;
-  max-width: 800px;
+  max-width: 10000px;
 }
 
 .hero h1 {
-  font-size: 1.6rem;
+  font-size: 62px;
   font-weight: 600;
-  margin-bottom: .5rem;
+  margin: 0;
+  background: linear-gradient(90deg, #F4A9BA, #95B1EE, #364C84);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 .hero h2 {
@@ -203,18 +201,18 @@ nav a:hover {
 /* ===== SEÇÃO DE VAGAS ===== */
 .jobs-section {
   display: flex;
-  flex-wrap: wrap;
   gap: 2rem;
   width: 90%;
   max-width: 1200px;
   margin: 3rem auto;
+  flex-wrap: wrap;
 }
 
 .sidebar {
   flex: 1 1 250px;
   background: #fff;
   padding: 1rem;
-  border: 1px dashed #a0b3d9;
+  border: 1px solid #a0b3d9; /* borda sólida */
   border-radius: 8px;
 }
 
@@ -235,33 +233,23 @@ nav a:hover {
   border-radius: 6px;
 }
 
-.categories h3 {
-  margin-bottom: 1rem;
-}
-
-.categories ul {
-  list-style: none;
-}
-
-.categories li {
-  margin-bottom: .5rem;
-  font-size: .9rem;
-}
-
-.categories input {
-  margin-right: .5rem;
-}
-
+/* ===== JOB-CARDS EM GRID ===== */
 .job-list {
   flex: 3 1 600px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
 }
 
 .job-card {
   background: #fff;
-  border: 1px dashed #a0b3d9;
+  border: 1px solid #a0b3d9; /* borda sólida */
   border-radius: 8px;
   padding: 1rem;
-  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s ease;
 }
 
 .job-card h4 {
@@ -273,7 +261,8 @@ nav a:hover {
 .job-card p {
   font-size: .9rem;
   color: #444;
-  margin-bottom: .5rem;
+  margin-bottom: 0.8rem;
+  flex-grow: 1;
 }
 
 .tags {
@@ -288,32 +277,17 @@ nav a:hover {
   color: #555;
 }
 
-.pagination {
-  text-align: center;
-  margin-top: 1rem;
-}
-
-.pagination button {
-  border: 1px solid #ccc;
-  background: #fff;
-  padding: .4rem .8rem;
-  border-radius: 6px;
-  margin: 0 .2rem;
-  cursor: pointer;
-}
-
-.pagination button:hover {
-  background: #2a3f71;
-  color: #fff;
+.job-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
 }
 
 /* ===== FOOTER ===== */
 footer {
   background: #f9f9f9;
-  padding: 40px;
+  padding: 40px 100px;
   margin-top: auto;
-  padding-left: 100px;
-  padding-right: 100px;
 }
 
 .footer-container {
@@ -394,5 +368,22 @@ footer {
 
   .hero h2 {
     font-size: 1.2rem;
+  }
+
+  .jobs-section {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    flex: 1 1 100%;
+  }
+
+  .job-list {
+    flex: 1 1 100%;
+    grid-template-columns: 1fr;
+  }
+
+  .category-cards {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   }
 }

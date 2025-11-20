@@ -19,17 +19,19 @@
 
   <main>
     <section class="hero">
-      <h1>Você precisa contratar online?</h1>
-      <h2>É <span class="pink">fácil</span>, <span class="blue">rápido</span> e <span class="gray">seguro</span></h2>
-      <p>A plataforma que valoriza o talento feminino e aproxima você da solução certa.</p>
-      <button>Encontre um freelancer</button>
-    </section>
+  <div class="hero-background">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 
-    <div class="cta-bottom">
-      <p>Você quer encontrar vagas? <a href="#">Cadastre-se aqui</a></p>
-    </div>
+  <h1 class="gradient-text">Você precisa contratar online?</h1>
+<h2 class="gradient-text">É fácil, rápido e seguro</h2>
 
 
+  <p>A plataforma que valoriza o talento feminino e aproxima você da solução certa.</p>
+  <button>Encontre um freelancer</button>
+</section>
     <section class="jobs-section">
       <aside class="sidebar">
         <div class="search-box">
@@ -37,17 +39,15 @@
           <input type="text" id="search" placeholder="Buscar vagas...">
         </div>
 
-        <div class="categories">
-          <h3>Categorias</h3>
-          <ul>
-            <li><input type="checkbox" id="todas" checked><label for="todas">Todas as categorias</label></li>
-            <li><input type="checkbox" id="tecnologia"><label for="tecnologia">Tecnologia</label></li>
-            <li><input type="checkbox" id="design"><label for="design">Design</label></li>
-            <li><input type="checkbox" id="negocios"><label for="negocios">Negócios</label></li>
-            <li><input type="checkbox" id="marketing"><label for="marketing">Marketing</label></li>
-            <li><input type="checkbox" id="lideranca"><label for="lideranca">Liderança</label></li>
-          </ul>
-        </div>
+        <div class="category-cards">
+  <div class="category-card active" data-category="todas">Todas</div>
+  <div class="category-card" data-category="tecnologia">Tecnologia</div>
+  <div class="category-card" data-category="design">Design</div>
+  <div class="category-card" data-category="negocios">Negócios</div>
+  <div class="category-card" data-category="marketing">Marketing</div>
+  <div class="category-card" data-category="lideranca">Liderança</div>
+</div>
+
       </aside>
 
       <div class="job-list">
@@ -107,14 +107,7 @@
           <span class="company">WebMaster</span>
         </div>
 
-        <div class="pagination">
-          <button>1</button>
-          <button>2</button>
-          <button>3</button>
-          <button>4</button>
-          <button>...</button>
-        </div>
-      </div>
+    
     </section>
   </main>
 
@@ -122,6 +115,9 @@
 
   <script src="js/header.js"></script>
   <script src="js/footer.js"></script>
+  <script src="js/marketplace.js"></script>
+</body>
+
   
 </body>
 
