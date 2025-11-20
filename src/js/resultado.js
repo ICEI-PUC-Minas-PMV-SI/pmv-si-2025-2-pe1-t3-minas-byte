@@ -6,31 +6,56 @@ class Resultado {
   }
 
   async init() {
-    // Pega cursos do quiz ou do JSON
-    const resultado = JSON.parse(localStorage.getItem("quizResultado"));
+    // Carrega todos os cursos do JSON
+    await this.carregarCursosDoJSON();
+    const todosOsCursos = [...this.cursos];
 
-    if (resultado?.cursosSelecionados?.length > 0) {
-      this.cursos = resultado.cursosSelecionados;
-    } else {
-      await this.carregarCursosDoJSON();
+    // Pega resultado salvo do quiz
+    let resultadoQuiz = null;
+
+    try {
+      resultadoQuiz = JSON.parse(localStorage.getItem("quizResultado"));
+    } catch (err) {
+      console.warn("quizResultado inválido no localStorage:", err);
     }
 
-    // Garante que cada curso tenha um ID consistente
-    this.cursos = this.cursos.map((curso, index) => ({
-      id: curso.id !== undefined ? curso.id : index + 1,
-      ...curso
-    }));
+    // Se existirem cursos selecionados no quiz, filtra
+    if (resultadoQuiz?.cursosSelecionados?.length > 0) {
+      const idsQuiz = resultadoQuiz.cursosSelecionados.map(c => Number(c.id));
+
+      this.cursos = todosOsCursos.filter(curso =>
+        idsQuiz.includes(Number(curso.id))
+      );
+    }
+
+    // Caso não haja cursos filtrados, mostra alguns padrão
+    if (!this.cursos || this.cursos.length === 0) {
+      console.warn("Nenhum curso filtrado — exibindo cursos padrão.");
+      this.cursos = todosOsCursos.slice(0, 3);
+    }
 
     this.renderizarCursos();
   }
 
   async carregarCursosDoJSON() {
     try {
-      const response = await fetch('json/cursos.json');
+      const response = await fetch("json/cursos.json");
+
+      if (!response.ok) {
+        throw new Error(`Erro HTTP ${response.status}`);
+      }
+
       const data = await response.json();
+
+      if (!data?.cursos) {
+        throw new Error("JSON sem propriedade 'cursos'");
+      }
+
       this.cursos = data.cursos;
     } catch (error) {
       console.error("Erro ao carregar cursos do JSON:", error);
+
+      // fallback caso falhe
       this.cursos = [
         {
           id: 1,
@@ -46,59 +71,23 @@ class Resultado {
   }
 
   renderizarCursos() {
-    if (!this.container) return;
-    this.container.innerHTML = '';
+    if (!this.container) {
+      console.error("Container não encontrado!");
+      return;
+    }
 
-    this.cursos.forEach(curso => {
-      const card = document.createElement("div");
-      card.classList.add("card");
+    this.container.innerHTML = this.cursos
+      .map(curso => criarCursoHTML(curso))
+      .join("");
 
-      card.innerHTML = `
-        <img src="${curso.imagem || 'img/default.png'}" alt="${curso.titulo}" class="curso-imagem" />
-        <div class="card-content">
-          <div class="tags">
-            <span class="tag">${curso.categoria || curso.tag || ''}</span>
-            <span class="tag level">${curso.nivel || curso.level || ''}</span>
-          </div>
-          <h3 class="card-title">${curso.titulo}</h3>
-          <p class="card-desc">${curso.descricao || ''}</p>
-          <div class="card-footer">
-            <div class="rating">${curso.rating || ''}</div>
-            <button class="btn-inscrever">Inscreva-se</button>
-          </div>
-        </div>
-      `;
-
-      // Clique na imagem abre descricao.html e salva curso completo no localStorage
-      const img = card.querySelector(".curso-imagem");
-      img.style.cursor = "pointer";
-      img.addEventListener("click", async () => {
-        try {
-          const response = await fetch('json/cursos.json');
-          const data = await response.json();
-
-          // Pega o curso completo pelo ID
-          const cursoCompleto = data.cursos.find(c => c.id === curso.id);
-          if (!cursoCompleto) throw new Error("Curso não encontrado");
-
-          // Salva no localStorage
-          localStorage.setItem("cursoSelecionado", JSON.stringify(cursoCompleto));
-
-          // Redireciona para a página de descrição
-          window.location.href = "descricao.html";
-        } catch (err) {
-          console.error(err);
-          alert("Erro ao carregar o curso. Tente novamente.");
-        }
-      });
-
-      this.container.appendChild(card);
-    });
+    if (typeof ativarEventos === "function") {
+      ativarEventos();
+    } else {
+      console.warn("Função ativarEventos() não encontrada.");
+    }
   }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
   new Resultado("lista-cursos");
 });
-
-
