@@ -48,7 +48,8 @@
         {
           "titulo": "Lógica de Programação",
           "dataEmissao": "2024-03-10",
-          "cargaHoraria": "40h"
+          "cargaHoraria": "40h",
+          "arquivo": "certificado_desenvolvimento_Julia_Silva.pdf"
         }
       ]
     },
@@ -99,7 +100,8 @@
         {
           "titulo": "Desenvolvimento Web Completo",
           "dataEmissao": "2025-03-15",
-          "cargaHoraria": "70h"
+          "cargaHoraria": "70h",
+          "arquivo": "certificado_desenvolvimento_Julia_Silva.pdf"
         }
       ]
     }

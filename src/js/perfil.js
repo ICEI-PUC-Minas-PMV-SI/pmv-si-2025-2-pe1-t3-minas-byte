@@ -1,130 +1,159 @@
-document.addEventListener("DOMContentLoaded", async () => {
+let dados = {};
+
+async function init() {
     try {
-        const response = await fetch('json/cursos.json');
-        const data = await response.json();
+        const [perfisResponse, cursosResponse] = await Promise.all([
+            fetch('./json/perfis.json'),
+            fetch('./json/cursos.json')
+        ]);
 
-        renderizarCursos(data.cursos);
+        const perfisData = await perfisResponse.json();
+        const cursosData = await cursosResponse.json();
+
+        dados = {
+            perfis: perfisData.perfis,
+            cursos: cursosData.cursos
+        };
+
+        trocarPerfil('AL001');
     } catch (error) {
-        console.error('Erro ao carregar cursos:', error);
+        console.error('Erro ao carregar dados:', error);
     }
-});
+}
 
-function renderizarCursos(cursos) {
-    // Categorizar cursos
-    const categorias = {
-        'basico': { titulo: 'Inclusão Digital', cursos: [] },
-        'programacao': { titulo: 'Tecnologia da informação', cursos: [] },
-        'gestao': { titulo: 'E-commerce, logística e operações', cursos: [] },
-        'design': { titulo: 'Design e Comunicação', cursos: [] },
-        'dados': { titulo: 'Análise de Dados', cursos: [] }
-    };
+function trocarPerfil(id) {
+    const perfil = dados.perfis.find(p => p.id === id);
+    if (!perfil) return;
 
-    // Agrupar cursos por categoria
-    cursos.forEach(curso => {
-        if (categorias[curso.categoria]) {
-            categorias[curso.categoria].cursos.push(curso);
+    // Foto e nome
+    document.querySelector('.foto img').src = perfil.foto;
+    document.querySelector('h2').textContent = perfil.nome;
+    document.querySelector('.cargo').textContent = perfil.cargo;
+
+    // Habilidades
+    const tags = document.querySelector('.tags');
+    tags.innerHTML = perfil.habilidades
+        .map(h => `<span class="badge-primary">${h}</span>`)
+        .join('');
+
+    // Contato
+    const contato = document.querySelector('.dados-contato');
+    contato.innerHTML = `
+        <div class="linha flex-start spacing-sm"><i class="fa-solid fa-envelope icon-sm"></i><span class="text-sm">${perfil.email}</span></div>
+        <div class="linha flex-start spacing-sm"><i class="fa-solid fa-calendar icon-sm"></i><span class="text-sm">Membro desde ${perfil.membroDesde}</span></div>
+        <div class="linha flex-start spacing-sm"><i class="fa-solid fa-phone icon-sm"></i><span class="text-sm">${perfil.telefone}</span></div>
+        <div class="linha flex-start spacing-sm"><i class="fa-solid fa-location-dot icon-sm"></i><span class="text-sm">${perfil.localizacao}</span></div>
+    `;
+
+    // Curso atual
+    if (perfil.cursoAtual) {
+        const cardTitle = document.querySelector('.curso-card .card-title');
+        if (cardTitle) {
+            cardTitle.textContent = perfil.cursoAtual.titulo;
         }
-    });
 
-    // Renderizar cada categoria
-    const container = document.querySelector('.quiz-hero').parentNode;
+        const aulas = document.querySelector('.aulas');
+        if (aulas) {
+            aulas.textContent = `${perfil.cursoAtual.aulasCompletas}/${perfil.cursoAtual.totalAulas} aulas`;
+        }
 
-    // Limpar conteúdo existente após o hero
-    const existingContainers = container.querySelectorAll('.container');
-    existingContainers.forEach(cont => cont.remove());
+        const progresso = document.querySelector('.progresso');
+        if (progresso) {
+            progresso.style.width = `${perfil.cursoAtual.progresso}%`;
+        }
 
-    Object.keys(categorias).forEach(catKey => {
-        const categoria = categorias[catKey];
-        if (categoria.cursos.length > 0) {
-            const categoriaHTML = `
-                <div class="container">
-                    <h3 class="category-title">${categoria.titulo}</h3>
-                    <div class="cards">
-                        ${categoria.cursos.map(curso => `
-                            <div class="card" data-link="descricao.html" data-id="${curso.id.toString().trim()}">
-                                <img src="${curso.imagem}" alt="${curso.titulo}">
-                                <div class="card-content">
-                                    <div>
-                                        <span class="tag">${curso.categoria}</span>
-                                        <span class="level">${curso.nivel}</span>
-                                    </div>
-                                    <div class="card-title">${curso.titulo}</div>
-                                    <div class="card-desc">${curso.descricao}</div>
-                                    <div class="card-footer">
-                                        <span class="rating">4.9</span>
-                                        <button class="btn btn-inscrever">Inscreva-se</button>
-                                    </div>
-                                </div>
-                            </div>
-                        `).join('')}
+        const proximaAula = document.querySelector('.proxima-aula p');
+        if (proximaAula) {
+            proximaAula.innerHTML = `<strong>Próxima aula:</strong> ${perfil.cursoAtual.proximaAula}`;
+        }
+
+        // Atualizar link do botão continuar
+        const linkContinuar = document.querySelector('.proxima-aula a');
+        if (linkContinuar) {
+            linkContinuar.href = `aula.html?id=${perfil.cursoAtual.id}`;
+        }
+    }
+
+    // Favoritos
+    const favoritos = document.getElementById('cursosFavoritos');
+    if (perfil.cursosFavoritos && perfil.cursosFavoritos.length > 0) {
+        const cursosFav = perfil.cursosFavoritos
+            .map(id => dados.cursos.find(c => c.id === id))
+            .filter(c => c);
+
+        favoritos.innerHTML = cursosFav.map(curso => `
+            <div class="curso-favorito">
+                <div class="curso-info">
+                    <img src="${curso.imagem}" alt="${curso.titulo}" class="curso-thumb">
+                    <div class="curso-detalhes">
+                        <h4 class="curso-titulo">${curso.titulo}</h4>
+                        <p class="curso-descricao">${curso.descricao}</p>
+                        <div class="curso-meta">
+                            <span class="badge-outline">${curso.categoria}</span>
+                            <span class="text-xs">${curso.cargaHoraria}</span>
+                        </div>
                     </div>
                 </div>
-                <br/>
-            `;
-            container.insertAdjacentHTML('beforeend', categoriaHTML);
-        }
-    });
+                <button class="btn-base btn-primary btn-sm" onclick="window.location.href='descricao.html?id=${curso.id}'">Ver Curso</button>
+            </div>
+        `).join('');
+    }
 
-    // Reativar eventos após renderização
-    ativarEventos();
+    // Medalhas
+    const medalhas = document.querySelector('.conquistas');
+    if (perfil.medalhas) {
+        medalhas.innerHTML = '<h3 class="card-title">Medalhas e Conquistas</h3>' +
+            perfil.medalhas.map(m => `
+            <div class="medalha ${m.tipo} flex-start spacing-md">
+                <i class="fa-solid ${m.icone} icon-lg" style="color: ${getCor(m.tipo)};"></i>
+                <div>
+                    <p class="titulo text-base font-weight-600">${m.titulo}</p>
+                    <p class="descricao text-sm">${m.descricao}</p>
+                    <p class="data text-xs">Conquistada em ${formatData(m.dataConquista)}</p>
+                </div>
+            </div>
+        `).join('');
+    }
+
+    // Certificados
+    const certificados = document.querySelector('.certificados');
+    if (perfil.certificados) {
+        certificados.innerHTML = '<h3 class="card-title">Certificados</h3>' +
+            perfil.certificados.map(c => `
+            <div class="certificado">
+                <p class="titulo heading-sm">${c.titulo}</p>
+                <p class="descricao text-sm">Emitido em: ${formatData(c.dataEmissao)}</p>
+                <p class="descricao text-sm">Carga horária: ${c.cargaHoraria}</p>
+                <div class="botoes flex-start spacing-md">
+                    <button class="btn-base btn-outline" onclick="visualizarCertificado('${c.arquivo}')"><i class="fa-regular fa-eye icon-sm"></i> Visualizar</button>
+                    <button class="btn-base btn-primary" onclick="baixarCertificado('${c.arquivo}', '${c.titulo}')"><i class="fa-solid fa-download icon-sm"></i> Download</button>
+                </div>
+            </div>
+        `).join('');
+    }
 }
 
-function ativarEventos() {
-    const usuaria = JSON.parse(localStorage.getItem("usuariaLogada"));
-    const todosOsCards = document.querySelectorAll(".card");
-
-    // Redireciona ao clicar no card
-    todosOsCards.forEach(card => {
-        card.style.cursor = "pointer";
-
-        card.addEventListener("click", (e) => {
-            if (e.target.closest(".btn-inscrever")) {
-                e.stopPropagation();
-                return;
-            }
-
-            const idCurso = card.getAttribute("data-id");
-            if (idCurso) {
-                window.location.href = `descricao.html ? id = ${ idCurso.trim() }`;
-            }
-        });
-    });
-
-    // Inscrição
-    document.querySelectorAll(".btn-inscrever").forEach(btn => {
-        btn.addEventListener("click", (event) => {
-            event.stopPropagation();
-
-            const card = btn.closest(".card");
-            if (!card) return;
-
-            const nomeCurso = card.querySelector(".card-title")?.textContent?.trim();
-            const idCurso = card.getAttribute("data-id");
-
-            if (!usuaria) {
-                alert("Faça login para se inscrever!");
-                return;
-            }
-
-            const inscricaoAtual = JSON.parse(localStorage.getItem("cursoInscrito"));
-
-            if (inscricaoAtual && inscricaoAtual.curso !== nomeCurso) {
-                alert(`Você já está inscrita no curso "${inscricaoAtual.curso}".`);
-                return;
-            }
-
-            localStorage.setItem("cursoInscrito", JSON.stringify({
-                email: usuaria.email,
-                curso: nomeCurso
-            }));
-
-            localStorage.setItem("cursoSelecionado", idCurso);
-
-            btn.textContent = "Inscrita";
-            btn.classList.add("btn-success");
-            btn.disabled = true;
-
-            alert(`Parabéns! Você está inscrita no curso "${nomeCurso}".`);
-        });
-    });
+function getCor(tipo) {
+    const cores = { comum: '#fbbf24', rara: '#8b5cf6', epica: '#f59e0b', lendaria: '#ef4444' };
+    return cores[tipo] || '#6b7280';
 }
+
+function formatData(data) {
+    return new Date(data).toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' });
+}
+
+function visualizarCertificado(arquivo = 'certificado_desenvolvimento_Julia_Silva.pdf') {
+    window.open(`./certificados/${arquivo}`, '_blank');
+}
+
+function baixarCertificado(arquivo = 'certificado_desenvolvimento_Julia_Silva.pdf', titulo = 'Certificado') {
+    const link = document.createElement('a');
+    link.href = `./certificados/${arquivo}`;
+    link.download = `${titulo.replace(/\s+/g, '_')}_Certificado.pdf`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    console.log(`Download do certificado ${titulo} iniciado!`);
+}
+
+document.addEventListener('DOMContentLoaded', init);

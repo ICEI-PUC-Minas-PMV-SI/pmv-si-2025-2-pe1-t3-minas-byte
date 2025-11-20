@@ -19,27 +19,31 @@
 </head>
 
 <body>
-    
+
     <div id="menu-container"></div>
 
     <section id="aula-hero">
         <div class="aula-online">
-                <div class="background-circulos padrao-comunidade">
+            <div class="background-circulos padrao-comunidade">
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
-            </div> 
+            </div>
             <h1>Tudo o que pode fazer em uma sala de aula,
                 você pode fazer com o <span style="color: #F4A9BA; font-weight: bold;">InovaElas</span></h1>
             <h2>Confira no vídeo como será a sua jornada de aprendizado.</h2>
 
-            <div class="capa">
-                <img class="capa-aula" src="img/img_aula/img_pg_aula_aula.jpg" alt="Capa aula online">
-                <img class="botao-play" src="img/img_aula/img_pg_aula_aula_online.png" alt="Capa aula online">
+            <div class="video-frame" role="region" aria-label="Vídeo de apresentação">
+                <video controls preload="metadata"
+                    poster="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg">
+                    <source
+                        src="https://player.vimeo.com/external/396844652.sd.mp4?s=5a8e15a69f8f299ec52ffb4058a52c57d20593d2&profile_id=164&oauth2_token_id=57447761"
+                        type="video/mp4">
+                    Seu navegador não suporta vídeos HTML5.
+                </video>
             </div>
-        </div>
     </section>
 
     <section id="aulas-conteudo">
@@ -49,238 +53,58 @@
         </div>
         <div class="aula">
             <div class="accordion">
-                <div class="accordion-item">
-                    <input type="checkbox" id="item1">
-                    <label class="accordion-header" for="item1">
-                        <span class="titulo-item">Aula 1: O que você vai conquistar aqui</span>
-                        <span class="seta">▼</span>
-                    </label>
-                    <div class="accordion-content">
-                        <p class="descricao-curso">Esta aula apresenta os conceitos iniciais do curso, objetivos e estrutura. Apresentação dos
-                            resultados: sua loja online no ar</p>
-                        <div class="p-icons">
-                            <i class=" icone bi bi-download" onclick="baixarConteudoAula()"></i>
-                            <i class="icone bi bi-caret-right-square-fill" onclick="abrirModal()"></i>
-                        </div>
-                    </div>
-                </div>
+                <!-- As aulas serão carregadas dinamicamente via JavaScript -->
+            </div>
+        </div>
+        <!-- Modal -->
+        <div id="modalVideo" class="modal">
+            <div class="modal-conteudo">
+                <button class="btn-fechar" onclick="fecharModal()">✖</button>
+                <h2>Aula</h2>
+                <video width="600" height="400" controls poster="capa.jpg"></video>
+            </div>
+        </div>
+    </section>
 
-                <div class="accordion-item">
-                    <input type="checkbox" id="item2">
-                    <label class="accordion-header" for="item2">
-                        <span class="titulo-item">Aula 2: Antes de começar: recadinhos importantes</span>
-                        <span class="seta">▼</span>
-                    </label>
-                    <div class="accordion-content">
-                        <p class="descricao-curso">Receba informações essenciais e recomendações para iniciar o curso com clareza e evitar erros
-                            comuns.</p>
-                        <div class="p-icons">
-                            <i class=" icone bi bi-download" onclick="baixarConteudoAula()"></i>
-                            <i class="icone bi bi-caret-right-square-fill" onclick="abrirModal()"></i>
-                        </div>
-                    </div>
-                </div>
+    <section id="requisitos">
+        <div class="requisitos-necess">
+            <div class="requisitos-um">
+                <!-- Os requisitos serão carregados dinamicamente via JavaScript -->
+            </div>
+            <img class="requisitos-img" src="img/img_aula/img_pg_aula_requisitos.png" alt="Desenho mulher com troféu">
+        </div>
+    </section>
 
-                <div class="accordion-item">
-                    <input type="checkbox" id="item3">
-                    <label class="accordion-header" for="item3">
-                        <span class="titulo-item">Aula 3: Primeiros passos na plataforma</span>
-                        <span class="seta">▼</span>
-                    </label>
-                    <div class="accordion-content">
-                        <p class="descricao-curso">Aprenda a navegar na plataforma, configurar seu perfil e iniciar a criação da sua loja de
-                            forma organizada.</p>
-                        <div class="p-icons">
-                            <i class=" icone bi bi-download" onclick="baixarConteudoAula()"></i>
-                            <i class="icone bi bi-caret-right-square-fill" onclick="abrirModal()"></i>
-                        </div>
+    <section id="instrutora-conteiner">
+        <div class="instrutora-info">
+            <h3>Instrutora</h3>
+            <div class="info-bloco">
+                <div class="informacoes">
+                    <img class="img-instrutora" src="img/img_aula/img_pg_aula_prof_manoela.png" alt="Instrutora">
+                    <div class="info-instr">
+                        <h4>Manoela Mendes</h4>
+                        <p>Instrutora do curso Criação de Loja Virtual</p>
                     </div>
                 </div>
-
-                <div class="accordion-item">
-                    <input type="checkbox" id="item4">
-                    <label class="accordion-header" for="item4">
-                        <span class="titulo-item">Aula 4: Criando a identidade da sua loja</span>
-                        <span class="seta">▼</span>
-                    </label>
-                    <div class="accordion-content">
-                        <p class="descricao-curso">Defina o nome, a marca, cores e estilo visual que representam sua loja, transmitindo
-                            profissionalismo e personalidade.</p>
-                        <div class="p-icons">
-                            <i class=" icone bi bi-download" onclick="baixarConteudoAula()"></i>
-                            <i class="icone bi bi-caret-right-square-fill" onclick="abrirModal()"></i>
-                        </div>
-                    </div>
+                <div class="desc-intr">
+                    <p>Professora de TI, pós-graduada, apaixonada por tecnologia e por transformar vidas através do
+                        ensino.
+                        Atua em faculdade e também no projeto InovaElas, levando qualificação profissional para mulheres
+                        em
+                        situação de vulnerabilidade. Criativa, divertida e engajada, acredita que conhecimento é a chave
+                        para abrir novos caminhos.
+                    </p>
                 </div>
-
-                <div class="accordion-item">
-                    <input type="checkbox" id="item5">
-                    <label class="accordion-header" for="item5">
-                        <span class="titulo-item">Aula 5: Criando a identidade da sua loja</span>
-                        <span class="seta">▼</span>
-                    </label>
-                    <div class="accordion-content">
-                        <p class="descricao-curso">Defina o nome, a marca, cores e estilo visual que representam sua loja, transmitindo
-                            profissionalismo e personalidade.</p>
-                        <div class="p-icons">
-                            <i class=" icone bi bi-download" onclick="baixarConteudoAula()"></i>
-                            <i class="icone bi bi-caret-right-square-fill" onclick="abrirModal()"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <input type="checkbox" id="item6">
-                    <label class="accordion-header" for="item6">
-                        <span class="titulo-item">Aula 6: Deixando a loja do seu jeito</span>
-                        <span class="seta">▼</span>
-                    </label>
-                    <div class="accordion-content">
-                        <p class="descricao-curso">Personalize layouts, banners e categorias para que sua loja reflita exatamente o estilo que
-                            você deseja.</p>
-                        <div class="p-icons">
-                            <i class=" icone bi bi-download" onclick="baixarConteudoAula()"></i>
-                            <i class="icone bi bi-caret-right-square-fill" onclick="abrirModal()"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <input type="checkbox" id="item7">
-                    <label class="accordion-header" for="item7">
-                        <span class="titulo-item">Aula 7: Como seus clientes vão pagar e receber seu jeito</span>
-                        <span class="seta">▼</span>
-                    </label>
-                    <div class="accordion-content">
-                        <p class="descricao-curso">Configure métodos de pagamento e entrega, garantindo que as transações sejam seguras e
-                            adaptadas ao seu público.</p>
-                        <div class="p-icons">
-                            <i class=" icone bi bi-download" onclick="baixarConteudoAula()"></i>
-                            <i class="icone bi bi-caret-right-square-fill" onclick="abrirModal()"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <input type="checkbox" id="item8">
-                    <label class="accordion-header" for="item8">
-                        <span class="titulo-item">Aula 8: Seu endereço na internet (domínio)</span>
-                        <span class="seta">▼</span>
-                    </label>
-                    <div class="accordion-content">
-                        <p class="descricao-curso">Aprenda a registrar e conectar seu domínio, criando um endereço online único e profissional
-                            para sua loja.</p>
-                        <div class="p-icons">
-                            <i class=" icone bi bi-download" onclick="baixarConteudoAula()"></i>
-                            <i class="icone bi bi-caret-right-square-fill" onclick="abrirModal()"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <input type="checkbox" id="item9">
-                    <label class="accordion-header" for="item9">
-                        <span class="titulo-item">Aula 9: Sua loja está pronta, e agora?</span>
-                        <span class="seta">▼</span>
-                    </label>
-                    <div class="accordion-content">
-                        <p class="descricao-curso">Conheça as etapas finais de revisão e lançamento da loja, preparando-a para receber
-                            visitantes e vendas.</p>
-                        <div class="p-icons">
-                            <i class=" icone bi bi-download" onclick="baixarConteudoAula()"></i>
-                            <i class="icone bi bi-caret-right-square-fill" onclick="abrirModal()"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <input type="checkbox" id="item10">
-                    <label class="accordion-header" for="item10">
-                        <span class="titulo-item">Aula 10: Aprendendo a mexer de forma visual</span>
-                        <span class="seta">▼</span>
-                    </label>
-                    <div class="accordion-content">
-                        <p class="descricao-curso">Explore ferramentas visuais da plataforma para editar produtos, páginas e menus de maneira
-                            intuitiva.</p>
-                        <div class="p-icons">
-                            <i class=" icone bi bi-download" onclick="baixarConteudoAula()"></i>
-                            <i class="icone bi bi-caret-right-square-fill" onclick="abrirModal()"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <input type="checkbox" id="item11">
-                    <label class="accordion-header" for="item11">
-                        <span class="titulo-item">Aula 11: Últimos toques e próximos passos</span>
-                        <span class="seta">▼</span>
-                    </label>
-                    <div class="accordion-content">
-                        <p class="descricao-curso">Receba dicas para otimização contínua, marketing e estratégias para crescer seu negócio
-                            online de forma sustentável.</p>
-                        <div class="p-icons">
-                            <i class=" icone bi bi-download" onclick="baixarConteudoAula()"></i>
-                            <i class="icone bi bi-caret-right-square-fill" onclick="abrirModal()"></i>
-                        </div>
-                    </div>
-                     </div>
-                      </div>
-                </div>
-                <!-- Modal -->
-                <div id="modalVideo" class="modal">
-                    <div class="modal-conteudo">
-                            <button class="btn-fechar" onclick="fecharModal()">✖</button>
-                             <h2>Aula</h2>         
-                         <video width="600" height="400" controls poster="capa.jpg"></video>
-                     </div>
-                </div>
-                </section>
-
-                <section id="requisitos">
-                    <div class="requisitos-necess">
-                        <div class="requisitos-um">
-                            <h3>Requisitos</h3>
-                            <div class="requisitos-icones">
-                                <i class="bi bi-check2-circle"></i>
-                                <p>Não é necessário entender de programação, marketing digital ou design.</p>
-                            </div>
-                            <div class="requisitos-icones">
-                                <i class="bi bi-check2-circle"></i>
-                                <p>Não é necessário ter habilidades anteriores com e-commerce.</p>
-                            </div>
-                        </div>
-                        <img class="requisitos-img" src="img/img_aula/img_pg_aula_requisitos.png" alt="Desenho mulher com troféu">
-                    </div>
-                </section>
-                
-                <section id="instrutora-conteiner">
-                    <div class="instrutora-info">
-                        <h3>Instrutora</h3>
-                        <div class="info-bloco">
-                            <div class="informacoes">
-                                <img class="img-instrutora" src="img/img_aula/img_pg_aula_prof_manoela.png" alt="Instrutora">
-                                <div class="info-instr">
-                                    <h4>Manoela Mendes</h4>
-                                    <p>Instrutora do curso Criação de Loja Virtual</p>
-                                </div>
-                            </div>
-                            <div class="desc-intr">
-                                <p>Professora de TI, pós-graduada, apaixonada por tecnologia e por transformar vidas através do ensino.
-                                    Atua em faculdade e também no projeto InovaElas, levando qualificação profissional para mulheres em
-                                    situação de vulnerabilidade. Criativa, divertida e engajada, acredita que conhecimento é a chave
-                                    para abrir novos caminhos.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+            </div>
+        </div>
+    </section>
 
     <div id="footer"></div>
 
     <script src="js/footer.js"></script>
     <script src="js/header.js"></script>
     <script src="js/aula.js"></script>
-    
-    </body>
-    
-    </html>
+
+</body>
+
+</html>
