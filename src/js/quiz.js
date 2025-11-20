@@ -2,9 +2,21 @@ document.getElementById("form-quiz").addEventListener("submit", function (e) {
   e.preventDefault();
 
   const respostas = {};
+  let todasRespondidas = true; // <-- controle
+
   for (let i = 1; i <= 10; i++) {
     const selecao = document.querySelector(`input[name="p${i}"]:checked`);
     respostas[`p${i}`] = selecao ? selecao.value : null;
+
+    if (!selecao) {
+      todasRespondidas = false; // <-- marca que faltou resposta
+    }
+  }
+
+  // ⛔ Se faltou alguma resposta, mostra aviso e não segue adiante
+  if (!todasRespondidas) {
+    alert("Por favor, responda todas as perguntas antes de finalizar o quiz.");
+    return; // <-- impede o restante do código
   }
 
   const cursosDisponiveis = [
@@ -37,5 +49,9 @@ document.getElementById("form-quiz").addEventListener("submit", function (e) {
 
   window.location.href = "resultado.html";
 });
+
+
+
+
 
 

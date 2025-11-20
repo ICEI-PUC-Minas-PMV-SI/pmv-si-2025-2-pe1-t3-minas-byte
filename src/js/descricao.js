@@ -7,7 +7,6 @@ class DescricaoCurso {
 
     async init() {
         const cursoId = this.getCursoId();
-        // A função getCursoId agora retorna null se não encontrar ou se for inválido.
         if (cursoId === null) {
             this.mostrarErro('O ID do curso é inválido ou não foi fornecido.');
             return;
@@ -37,8 +36,6 @@ class DescricaoCurso {
     async carregarCurso(id) {
         const response = await fetch('json/cursos.json');
         const data = await response.json();
-        // O id em data.cursos deve ser do mesmo tipo. Se for string em db.json, use String(id). 
-        // Assumindo que o ID no JSON é Number (que é o que getCursoId retorna):
         this.curso = data.cursos.find(c => c.id === id);
     }
 
@@ -48,14 +45,20 @@ class DescricaoCurso {
             return;
         }
 
-        // CORREÇÃO 1: Deve usar template literal (crase `) para interpolação na atribuição do título
         document.title = `${ this.curso.titulo } | InovaElas`;
 
-        // Atualizar elementos da página
         this.atualizarTitulo();
         this.atualizarImagem();
         this.atualizarDescricao();
         this.atualizarDetalhes();
+
+        // 🔥 ADIÇÕES NOVAS (DINÂMICAS)
+        this.renderizarDescricaoCompleta();
+        this.renderizarOQueVaiAprender();
+        this.renderizarBeneficios();
+        this.renderizarMercado();
+        this.renderizarEstatisticas();
+
         this.atualizarBotaoInscricao();
     }
 
@@ -87,16 +90,76 @@ class DescricaoCurso {
         const categoria = document.querySelector('.categoria');
         if (categoria) categoria.textContent = this.curso.categoria;
 
-        // Aulas
         this.renderizarAulas();
-
-        // Requisitos
         this.renderizarRequisitos();
-
-        // Instrutora
         this.renderizarInstrutora();
     }
 
+    /* --------------------------
+       NOVO: DESCRIÇÃO COMPLETA
+    -------------------------- */
+    renderizarDescricaoCompleta() {
+        const box = document.getElementById('descricao-completa');
+        if (box && this.curso.descricaoCompleta) {
+            box.innerHTML = this.curso.descricaoCompleta
+                .map(paragrafo => `<p>${paragrafo}</p>`)
+                .join('');
+        }
+    }
+
+    /* -------------------------------
+       NOVO: O QUE VOCÊ VAI APRENDER
+    -------------------------------- */
+    renderizarOQueVaiAprender() {
+        const lista = document.getElementById('o-que-vai-aprender');
+        if (lista && this.curso.oQueVaiAprender) {
+            lista.innerHTML = this.curso.oQueVaiAprender
+                .map(item => `<li>${item}</li>`)
+                .join('');
+        }
+    }
+
+    /* --------------------------
+       NOVO: BENEFÍCIOS
+    -------------------------- */
+    renderizarBeneficios() {
+        const container = document.getElementById('beneficios-curso');
+        if (container && this.curso.beneficios) {
+            container.innerHTML = this.curso.beneficios
+                .map(benef => `<li>${benef}</li>`)
+                .join('');
+        }
+    }
+
+    /* ------------------------------------
+       NOVO: MERCADO & OPORTUNIDADES
+    ------------------------------------- */
+    renderizarMercado() {
+        const box = document.getElementById('mercado-texto');
+        if (box && this.curso.mercado) {
+            box.textContent = this.curso.mercado;
+        }
+    }
+
+    /* --------------------------
+       NOVO: ESTATÍSTICAS
+    -------------------------- */
+    renderizarEstatisticas() {
+        const lista = document.getElementById('stats-lista');
+        if (lista && this.curso.estatisticas) {
+            lista.innerHTML = this.curso.estatisticas
+                .map(stat => `
+                    <li>
+                        <strong>${stat.valor}</strong><br>${stat.descricao}
+                    </li>
+                `)
+                .join('');
+        }
+    }
+
+    /* --------------------------
+       JÁ EXISTIA
+    -------------------------- */
     renderizarAulas() {
         const aulasContainer = document.querySelector('.aulas-lista, .curso-aulas');
         if (aulasContainer && this.curso.aulas) {
@@ -147,7 +210,6 @@ class DescricaoCurso {
         const inscricaoAtual = JSON.parse(localStorage.getItem("cursoInscrito"));
 
         if (inscricaoAtual && inscricaoAtual.curso !== this.curso.titulo) {
-            // CORREÇÃO 2: Deve usar template literal (crase `) para a mensagem de alerta
             alert(`Você já está inscrita no curso "${inscricaoAtual.curso}".`);
             return;
         }
@@ -157,7 +219,6 @@ class DescricaoCurso {
             curso: this.curso.titulo
         }));
 
-        // CORREÇÃO 3: Deve usar template literal (crase `) para a mensagem de alerta
         alert(`Parabéns! Você está inscrita no curso "${this.curso.titulo}".`);
         window.location.href = "aula.html";
     }

@@ -8,6 +8,33 @@
       "imagem": "img/cursos/informaticabasica.png",
       "cargaHoraria": "20h",
       "nivel": "Iniciante",
+      "descricaoCompleta": [
+        "Se você está começando agora no mundo da informática, este curso vai te guiar pelos conceitos fundamentais do computador.",
+        "Você aprenderá a ligar e desligar o computador corretamente, usar o mouse, o teclado, navegar no Windows e organizar seus arquivos.",
+        "É o curso ideal para quem nunca mexeu em computador ou tem pouca experiência, pois ensina tudo passo a passo."
+      ],
+      "oQueVaiAprender": [
+        "Entender o computador e seus componentes.",
+        "Navegar pelo sistema Windows.",
+        "Organizar arquivos, pastas e documentos.",
+        "Usar teclado e mouse com segurança.",
+        "Personalizar configurações básicas.",
+        "Usar pen drives e dispositivos externos."
+      ],
+       "beneficios": [
+        "Adquira confiança para usar o computador no dia a dia.",
+        "Aprenda habilidades essenciais para o mercado de trabalho.",
+        "Ganhe autonomia e independência digital.",
+        "Prepare-se para cursos mais avançados de tecnologia."
+      ],
+      "mercado": "A informática básica é um pré-requisito para praticamente todas as áreas profissionais. Saber usar um computador aumenta suas chances no mercado de trabalho, melhora sua produtividade e abre portas para cursos e oportunidades. Além disso, facilita tarefas pessoais e do dia a dia, como acessar serviços digitais, bancos e documentos online.",
+
+      "estatisticas": [
+        { "valor": "78%", "descricao": "Das vagas exigem conhecimento básico em informática" },
+        { "valor": "95%", "descricao": "Das empresas utilizam sistemas digitais diariamente" },
+        { "valor": "3x", "descricao": "Mais chances de inserção profissional para quem domina o computador" }
+      ],
+
       "aulas": [
         {
           "titulo": "Boas-vindas e objetivos do curso",
@@ -73,6 +100,35 @@
       "imagem": "img/cursos/pacote_office.webp",
       "cargaHoraria": "30h",
       "nivel": "Iniciante",
+      "descricaoCompleta": [
+    "Se você quer dominar as principais ferramentas usadas em empresas, esse curso é ideal para você.",
+    "Vamos explorar Word, Excel e PowerPoint para que você consiga criar documentos profissionais, planilhas completas e apresentações impactantes.",
+    "Um curso 100% prático, feito para quem deseja se destacar no mercado de trabalho e aumentar suas possibilidades de contratação."
+  ],
+
+  "oQueVaiAprender": [
+    "Criar e formatar documentos profissionais no Word.",
+    "Montar planilhas funcionais no Excel.",
+    "Utilizar fórmulas básicas e intermediárias.",
+    "Criar gráficos e tabelas dinâmicas simples.",
+    "Fazer apresentações visuais e estruturadas no PowerPoint.",
+    "Organizar arquivos e trabalhar com produtividade digital."
+  ],
+
+  "beneficios": [
+    "Aumente suas chances de conquistar uma vaga de emprego.",
+    "Aprenda ferramentas usadas em 90% das empresas.",
+    "Ganhe produtividade e organização no seu dia a dia.",
+    "Aprenda do zero, mesmo que nunca tenha usado o pacote Office."
+  ],
+
+  "mercado": "As ferramentas de escritório como Word, Excel e PowerPoint são exigidas em praticamente todas as vagas administrativas, operacionais e até de atendimento. Saber utilizá-las coloca você à frente de grande parte das candidatas e aumenta diretamente suas chances de contratação.",
+
+  "estatisticas": [
+    { "valor": "90%", "descricao": "Das empresas exigem conhecimento em Word e Excel" },
+    { "valor": "3x", "descricao": "Mais chances de contratação com domínio do pacote Office" },
+    { "valor": "70%", "descricao": "Dos profissionais usam Excel todos os dias" }
+  ],
       "aulas": [
         {
           "titulo": "Introdução ao curso",
@@ -138,6 +194,37 @@
       "imagem": "img/cursos/segurancadigital.png",
       "cargaHoraria": "15h",
       "nivel": "Iniciante",
+        "descricaoCompleta": [
+    "O ambiente digital pode ser um lugar perigoso quando não sabemos identificar riscos. Golpes, invasões, links falsos e roubo de dados acontecem todos os dias.",
+    "Este curso foi criado para que você navegue com segurança, proteja suas contas, seu dinheiro e suas informações pessoais.",
+    "Aprenda a identificar ameaças, usar senhas fortes, ativar proteções essenciais e reconhecer comportamentos suspeitos na internet e em aplicativos."
+  ],
+
+  "oQueVaiAprender": [
+    "Identificar golpes digitais comuns (phishing, links falsos e mensagens suspeitas).",
+    "Criar senhas fortes e gerenciá-las com segurança.",
+    "Ativar autenticação de dois fatores (2FA).",
+    "Reconhecer sites e aplicativos confiáveis.",
+    "Navegar com segurança em redes públicas.",
+    "Evitar vazamento de dados pessoais.",
+    "Configurar privacidade em redes sociais.",
+    "Manter o celular e computador protegidos."
+  ],
+
+  "beneficios": [
+    "Maior proteção contra golpes e invasões.",
+    "Confiança para usar internet banking e compras online.",
+    "Aprendizado essencial para qualquer pessoa que usa celular ou computador.",
+    "Redução do risco de ter contas roubadas ou clonadas."
+  ],
+
+  "mercado": "A segurança digital deixou de ser opcional. Empresas, escolas e usuários comuns precisam proteger dados e evitar ataques. Profissionais que entendem conceitos básicos de cibersegurança são muito valorizados, e mesmo no uso pessoal esse conhecimento é essencial para evitar perdas financeiras e exposição de dados.",
+
+  "estatisticas": [
+    { "valor": "4,1 bilhões", "descricao": "De tentativas de golpes registrados no Brasil por ano" },
+    { "valor": "65%", "descricao": "Das pessoas já receberam um golpe digital pelo menos uma vez" },
+    { "valor": "90%", "descricao": "Dos ataques começam com mensagens falsas" }
+  ],
       "aulas": [
         {
           "titulo": "Boas-vindas à segurança digital",
@@ -203,6 +290,37 @@
       "imagem": "img/cursos/digitacaoarquivos.png",
       "cargaHoraria": "25h",
       "nivel": "Básico",
+      "descricaoCompleta": [
+    "A digitação eficiente e a organização digital são habilidades essenciais para qualquer pessoa que usa computador, seja para estudar, trabalhar ou empreender.",
+    "Neste curso, você aprenderá técnicas práticas de digitação, organização de arquivos e uso de serviços de armazenamento em nuvem como Google Drive e OneDrive.",
+    "Ao final, você será capaz de manter seus documentos acessíveis, seguros e bem organizados, além de ganhar velocidade e precisão na digitação."
+  ],
+
+  "oQueVaiAprender": [
+    "Posicionamento correto das mãos no teclado.",
+    "Técnicas para aumentar a velocidade e precisão da digitação.",
+    "Criar, mover, renomear e organizar arquivos e pastas.",
+    "Usar Google Drive, OneDrive e outras nuvens.",
+    "Compartilhar arquivos e controlar permissões de acesso.",
+    "Sincronizar arquivos entre computador e celular.",
+    "Fazer backup e evitar perda de documentos."
+  ],
+
+  "beneficios": [
+    "Maior produtividade e agilidade no computador.",
+    "Arquivos sempre organizados e fáceis de encontrar.",
+    "Documentos acessíveis em qualquer dispositivo.",
+    "Preparação para trabalhos administrativos, estudos e projetos pessoais.",
+    "Zero risco de perder arquivos importantes por falta de backup."
+  ],
+
+  "mercado": "A organização digital e o domínio da nuvem são cada vez mais exigidos em vagas administrativas, atendimento, suporte, áreas educacionais e até no empreendedorismo. Empresas buscam pessoas capazes de manter documentos organizados e trabalhar com sistemas digitais de forma eficiente.",
+
+  "estatisticas": [
+    { "valor": "85%", "descricao": "Das empresas utilizam sistemas baseados na nuvem" },
+    { "valor": "50%", "descricao": "Dos profissionais perdem tempo procurando arquivos desorganizados" },
+    { "valor": "70%", "descricao": "Dos documentos corporativos já são digitais" }
+  ],
       "aulas": [
         {
           "titulo": "Boas-vindas",
@@ -268,6 +386,38 @@
       "imagem": "img/cursos/logica_de_programacao.webp",
       "cargaHoraria": "40h",
       "nivel": "Básico",
+       "descricaoCompleta": [
+    "Este curso é voltado para quem deseja iniciar no mundo da programação, mesmo sem experiência prévia.",
+    "Você vai aprender a pensar de forma lógica, resolver problemas e construir pequenos programas utilizando conceitos fundamentais de programação.",
+    "Ao final, terá uma base sólida para avançar em qualquer linguagem de programação e desenvolver suas próprias soluções digitais."
+  ],
+
+  "oQueVaiAprender": [
+    "Pensamento lógico aplicado à programação.",
+    "Estruturas de controle: if, else, switch.",
+    "Loops: for, while e do while.",
+    "Variáveis e tipos de dados.",
+    "Funções e procedimentos.",
+    "Organização de algoritmos e fluxogramas.",
+    "Como decompor problemas complexos em passos menores.",
+    "Boas práticas de programação e lógica estruturada."
+  ],
+
+  "beneficios": [
+    "Capacidade de resolver problemas de forma estruturada.",
+    "Base sólida para aprender qualquer linguagem de programação.",
+    "Desenvolvimento de raciocínio lógico e analítico.",
+    "Preparação para cursos mais avançados de desenvolvimento web, mobile ou sistemas."
+  ],
+
+  "mercado": "O mercado de tecnologia está em constante crescimento. Profissionais com raciocínio lógico e habilidades de programação são altamente demandados em startups, empresas de software, áreas de TI e inovação. Mesmo habilidades básicas de programação podem aumentar oportunidades de emprego e empreendedorismo digital.",
+
+  "estatisticas": [
+    { "valor": "8 milhões", "descricao": "De vagas em TI previstas para o Brasil até 2025" },
+    { "valor": "75%", "descricao": "Das empresas procuram profissionais com raciocínio lógico" },
+    { "valor": "90%", "descricao": "Dos aplicativos e softwares exigem conhecimento básico de lógica" }
+  ],
+
       "aulas": [
         {
           "titulo": "Introdução à lógica de programação",
@@ -333,6 +483,38 @@
       "imagem": "img/cursos/suportetecnico.png",
       "cargaHoraria": "35h",
       "nivel": "Intermediário",
+      "descricaoCompleta": [
+    "O suporte técnico é uma das áreas mais importantes da tecnologia, ajudando pessoas e empresas a resolver problemas de hardware e software.",
+    "Neste curso, você aprenderá manutenção básica, identificação de falhas e técnicas para resolver problemas de computadores e dispositivos digitais.",
+    "Ao concluir, você estará apta a oferecer suporte confiável, auxiliar usuários e contribuir para o bom funcionamento de sistemas e redes."
+  ],
+
+  "oQueVaiAprender": [
+    "Identificação de problemas em hardware e software.",
+    "Manutenção preventiva e corretiva de computadores e periféricos.",
+    "Instalação e configuração de sistemas operacionais.",
+    "Atualização e configuração de drivers e aplicativos.",
+    "Redes básicas: configuração e resolução de problemas.",
+    "Suporte a impressoras, scanners e outros dispositivos.",
+    "Segurança básica: antivírus, backups e proteção de dados.",
+    "Boas práticas para atendimento e suporte ao usuário."
+  ],
+
+  "beneficios": [
+    "Capacidade de resolver problemas técnicos do dia a dia.",
+    "Conhecimento em manutenção básica de computadores e dispositivos.",
+    "Preparação para atuar em empresas de TI ou como freelancer.",
+    "Aumento de empregabilidade em áreas de suporte técnico e administração de redes."
+  ],
+
+  "mercado": "O mercado de suporte técnico está em crescimento constante, especialmente em pequenas e médias empresas, escolas e home offices. Profissionais que entendem de manutenção de hardware e software são essenciais e cada vez mais valorizados, mesmo para quem deseja atuar como freelancer ou empreender prestando serviços de TI.",
+
+  "estatisticas": [
+    { "valor": "65%", "descricao": "Das empresas sofrem com problemas de computadores sem suporte interno" },
+    { "valor": "80%", "descricao": "Das pequenas empresas contratam serviços de suporte técnico terceirizado" },
+    { "valor": "95%", "descricao": "Dos problemas comuns podem ser resolvidos com manutenção preventiva" }
+  ],
+
       "aulas": [
         {
           "titulo": "Apresentação do curso",
@@ -398,6 +580,37 @@
       "imagem": "img/cursos/ecommerce.png",
       "cargaHoraria": "35h",
       "nivel": "Intermediário",
+       "descricaoCompleta": [
+    "Este curso ensina como criar uma loja virtual do zero, sem necessidade de conhecimentos avançados em programação ou design.",
+    "Você aprenderá a configurar sua loja, gerenciar produtos, organizar páginas e facilitar a experiência de compra para seus clientes.",
+    "Ao final, estará apta a vender produtos físicos online e administrar sua própria loja com autonomia."
+  ],
+
+  "oQueVaiAprender": [
+    "Instalação e configuração do WordPress e WooCommerce.",
+    "Criação e personalização de páginas e produtos.",
+    "Organização de menus e melhoria da experiência do usuário.",
+    "Estratégias básicas de vendas online.",
+    "Atendimento e suporte ao cliente.",
+    "Gestão de pedidos e estoque.",
+    "Integração de métodos de pagamento seguros."
+  ],
+
+  "beneficios": [
+    "Criar sua própria loja online e começar a vender rapidamente.",
+    "Economizar com desenvolvedores e ganhar autonomia.",
+    "Transformar seus produtos em renda extra ou negócio principal.",
+    "Aprender práticas reais aplicáveis ao e-commerce."
+  ],
+
+  "mercado": "O e-commerce cresce continuamente e se tornou um setor promissor no Brasil. Profissionais que sabem criar e gerenciar lojas virtuais são altamente demandados, tanto para empreender quanto para trabalhar em empresas digitais que buscam inovadoras como você.",
+
+  "estatisticas": [
+    { "valor": "21%", "descricao": "Crescimento anual do e-commerce no Brasil" },
+    { "valor": "88%", "descricao": "Dos consumidores preferem comprar online" },
+    { "valor": "10,5%", "descricao": "Participação do Brasil no comércio eletrônico global" }
+  ],
+
       "aulas": [
         {
           "titulo": "Introdução ao comércio eletrônico",
@@ -463,6 +676,37 @@
       "imagem": "img/cursos/marketingdigital.png",
       "cargaHoraria": "30h",
       "nivel": "Básico",
+       "descricaoCompleta": [
+    "Este curso foi desenvolvido para quem deseja divulgar seu negócio online e entender os principais conceitos de marketing digital.",
+    "Você aprenderá estratégias práticas para redes sociais, anúncios, e-mail marketing e criação de conteúdo que engaja seu público.",
+    "Ao final, estará apta a aplicar ações de marketing digital para aumentar a visibilidade e vendas do seu negócio."
+  ],
+
+  "oQueVaiAprender": [
+    "Conceitos básicos de marketing digital.",
+    "Como criar campanhas eficazes em redes sociais.",
+    "Produção de conteúdo para engajar clientes.",
+    "Introdução a anúncios pagos e segmentação.",
+    "Uso de ferramentas de e-mail marketing.",
+    "Como analisar métricas e resultados.",
+    "Estratégias de branding e posicionamento digital.",
+    "Boas práticas para promover negócios online."
+  ],
+
+  "beneficios": [
+    "Aprender estratégias práticas de marketing digital.",
+    "Aumentar a visibilidade do seu negócio na internet.",
+    "Criar campanhas online eficientes sem depender de terceiros.",
+    "Desenvolver habilidades para crescer sua marca e vendas online."
+  ],
+
+  "mercado": "O marketing digital está em constante crescimento e é essencial para qualquer negócio que deseja se destacar online. Profissionais com habilidades em redes sociais, anúncios e estratégias digitais têm alta demanda, e mesmo pequenas empreendedoras podem alavancar suas vendas aplicando as técnicas aprendidas neste curso.",
+
+  "estatisticas": [
+    { "valor": "90%", "descricao": "Dos pequenos negócios usam redes sociais para divulgar produtos" },
+    { "valor": "70%", "descricao": "Aumento médio de vendas com estratégias de marketing digital" },
+    { "valor": "60%", "descricao": "Das empresas investem em anúncios online regularmente" }
+  ],
       "aulas": [
         {
           "titulo": "Introdução ao marketing digital",
@@ -516,6 +760,38 @@
       "imagem": "img/cursos/empreendedorismo.jpeg",
       "cargaHoraria": "25h",
       "nivel": "Básico",
+      "descricaoCompleta": [
+    "Este curso foi criado para mulheres que desejam empreender no mundo digital e transformar suas habilidades em um negócio online.",
+    "Você aprenderá a identificar oportunidades, planejar, estruturar e lançar seu empreendimento digital com segurança.",
+    "Ao final, estará pronta para gerenciar seu negócio online e gerar renda de forma independente."
+  ],
+
+  "oQueVaiAprender": [
+    "Como identificar oportunidades de negócio no mundo digital.",
+    "Planejamento e organização do empreendimento online.",
+    "Criação de produtos ou serviços digitais.",
+    "Estratégias de vendas e marketing para o público-alvo.",
+    "Gestão financeira e fluxo de caixa para pequenas empreendedoras.",
+    "Ferramentas digitais essenciais para gerenciar seu negócio.",
+    "Boas práticas de atendimento ao cliente e fidelização.",
+    "Autonomia e mindset empreendedor."
+  ],
+
+  "beneficios": [
+    "Aprender a estruturar um negócio digital do zero.",
+    "Desenvolver habilidades empreendedoras e digitais.",
+    "Criar autonomia financeira e profissional.",
+    "Participar de uma comunidade de mulheres inovadoras e motivadas."
+  ],
+
+  "mercado": "O empreendedorismo digital feminino cresce rapidamente, com cada vez mais mulheres abrindo negócios online. Profissionais que combinam habilidades digitais com visão empreendedora têm grande potencial de sucesso, alcançando independência financeira e impacto positivo em suas comunidades.",
+
+  "estatisticas": [
+    { "valor": "60%", "descricao": "Dos novos empreendimentos digitais são liderados por mulheres" },
+    { "valor": "75%", "descricao": "Das empreendedoras online relatam aumento de renda após cursos de capacitação" },
+    { "valor": "85%", "descricao": "Preferem aprender através de cursos online práticos e aplicáveis" }
+  ],
+
       "aulas": [
         {
           "titulo": "Descobrindo seu potencial empreendedor",
@@ -569,6 +845,37 @@
       "imagem": "img/cursos/financas.png",
       "cargaHoraria": "20h",
       "nivel": "Básico",
+       "descricaoCompleta": [
+    "Este curso é ideal para quem deseja organizar as finanças pessoais de forma prática e eficiente usando ferramentas digitais.",
+    "Você aprenderá a controlar gastos, planejar o orçamento e tomar decisões financeiras conscientes para melhorar sua vida financeira.",
+    "Ao final do curso, será capaz de usar planilhas, aplicativos e estratégias digitais para gerenciar seu dinheiro com autonomia."
+  ],
+
+  "oQueVaiAprender": [
+    "Como criar um orçamento pessoal digital.",
+    "Controlar receitas e despesas de forma prática.",
+    "Organizar contas, dívidas e investimentos.",
+    "Uso de aplicativos e planilhas financeiras.",
+    "Definir metas e prioridades financeiras.",
+    "Análise de gastos e planejamento de economia.",
+    "Estratégias para aumentar a poupança e evitar endividamento.",
+    "Boas práticas para decisões financeiras conscientes."
+  ],
+
+  "beneficios": [
+    "Organizar suas finanças pessoais de forma digital e prática.",
+    "Aumentar o controle sobre gastos e receitas.",
+    "Planejar objetivos financeiros e poupança.",
+    "Reduzir erros e desperdícios financeiros do dia a dia."
+  ],
+
+  "mercado": "O conhecimento em gestão financeira pessoal é cada vez mais valorizado, especialmente para quem deseja independência financeira e organização. Saber controlar finanças digitais é uma habilidade essencial para mulheres empreendedoras, estudantes e profissionais que querem tomar decisões financeiras conscientes.",
+
+  "estatisticas": [
+    { "valor": "70%", "descricao": "Das pessoas não mantêm controle adequado das finanças pessoais" },
+    { "valor": "65%", "descricao": "Preferem utilizar aplicativos ou planilhas para controle financeiro" },
+    { "valor": "50%", "descricao": "Conseguem economizar mensalmente após planejamento financeiro" }
+  ],
       "aulas": [
         {
           "titulo": "Introdução à educação financeira",
@@ -622,6 +929,38 @@
       "imagem": "img/cursos/comunicacao_lideranca.jpg",
       "cargaHoraria": "25h",
       "nivel": "Básico",
+       "descricaoCompleta": [
+    "Este curso ensina como construir e gerenciar sua presença digital com foco em comunicação eficaz e redes sociais.",
+    "Você aprenderá a criar conteúdo estratégico, se comunicar de forma clara e aumentar o engajamento com seu público.",
+    "Ao final, estará apta a gerenciar perfis digitais e aplicar técnicas de comunicação profissional online."
+  ],
+
+  "oQueVaiAprender": [
+    "Fundamentos da comunicação digital.",
+    "Estratégias de presença online.",
+    "Produção de conteúdo para redes sociais.",
+    "Gestão de perfis em diferentes plataformas.",
+    "Técnicas de engajamento com o público.",
+    "Boas práticas de branding pessoal ou de negócio.",
+    "Ferramentas digitais para monitoramento de redes.",
+    "Planejamento e análise de métricas."
+  ],
+
+  "beneficios": [
+    "Melhorar sua comunicação digital e pessoal online.",
+    "Aprender a gerenciar redes sociais de forma estratégica.",
+    "Aumentar visibilidade e engajamento com seu público.",
+    "Desenvolver habilidades essenciais para o mercado digital."
+  ],
+
+  "mercado": "Profissionais com habilidades em comunicação digital e redes sociais estão em alta demanda. Empresas, empreendedores e influenciadores buscam pessoas capazes de criar conteúdo relevante, interagir com o público e fortalecer a presença online de marcas ou negócios.",
+
+  "estatisticas": [
+    { "valor": "80%", "descricao": "Das empresas valorizam profissionais com habilidades em redes sociais" },
+    { "valor": "70%", "descricao": "Dos empreendedores utilizam redes sociais como principal canal de marketing" },
+    { "valor": "60%", "descricao": "Dos usuários online interagem com marcas através das redes sociais" }
+  ],
+
       "aulas": [
         {
           "titulo": "Fundamentos da comunicação digital",
@@ -675,6 +1014,38 @@
       "imagem": "img/cursos/analise_sql_powerbi.jpg",
       "cargaHoraria": "35h",
       "nivel": "Intermediário",
+      "descricaoCompleta": [
+    "Este curso ensina como analisar dados de forma prática usando Excel, planilhas e ferramentas de análise para gerar insights.",
+    "Você aprenderá a organizar, interpretar e visualizar dados para apoiar decisões estratégicas no trabalho ou projetos pessoais.",
+    "Ao final, será capaz de usar funções, gráficos e tabelas dinâmicas do Excel para transformar informações em resultados concretos."
+  ],
+
+  "oQueVaiAprender": [
+    "Fundamentos de análise de dados.",
+    "Organização e limpeza de dados em planilhas.",
+    "Uso de funções e fórmulas avançadas do Excel.",
+    "Criação de gráficos e dashboards.",
+    "Tabelas dinâmicas para análise resumida.",
+    "Interpretação e visualização de dados.",
+    "Automatização de processos no Excel.",
+    "Boas práticas para tomada de decisão baseada em dados."
+  ],
+
+  "beneficios": [
+    "Aprender a transformar dados em insights acionáveis.",
+    "Melhorar a capacidade de análise e tomada de decisão.",
+    "Desenvolver habilidades avançadas em Excel.",
+    "Aumentar competitividade no mercado de trabalho."
+  ],
+
+  "mercado": "A análise de dados é uma habilidade cada vez mais valorizada em empresas de todos os setores. Profissionais capazes de interpretar informações e gerar insights estratégicos são altamente demandados, especialmente para decisões de negócios e planejamento de projetos.",
+
+  "estatisticas": [
+    { "valor": "75%", "descricao": "Das empresas usam Excel ou ferramentas de análise de dados regularmente" },
+    { "valor": "68%", "descricao": "Profissionais buscam aprimorar habilidades em análise de dados" },
+    { "valor": "60%", "descricao": "Das decisões estratégicas são baseadas em dados e relatórios" }
+  ],
+
       "aulas": [
         {
           "titulo": "Introdução à análise de dados",
@@ -728,6 +1099,38 @@
       "imagem": "img/cursos/linguagem-python.jpg",
       "cargaHoraria": "45h",
       "nivel": "Intermediário",
+       "descricaoCompleta": [
+    "Este curso ensina a linguagem de programação Python do zero, permitindo criar scripts, automatizar tarefas e desenvolver pequenas aplicações.",
+    "Você aprenderá conceitos fundamentais de programação, estruturas de controle, manipulação de dados e boas práticas de codificação.",
+    "Ao final, será capaz de aplicar Python para resolver problemas, criar programas funcionais e iniciar projetos de desenvolvimento mais complexos."
+  ],
+
+  "oQueVaiAprender": [
+    "Fundamentos da linguagem Python.",
+    "Tipos de dados e variáveis.",
+    "Estruturas condicionais e loops.",
+    "Funções e módulos.",
+    "Manipulação de arquivos.",
+    "Listas, dicionários e estruturas de dados.",
+    "Introdução a bibliotecas úteis como pandas e matplotlib.",
+    "Boas práticas de programação e depuração de código."
+  ],
+
+  "beneficios": [
+    "Aprender programação de forma prática e aplicada.",
+    "Automatizar tarefas repetitivas usando Python.",
+    "Desenvolver habilidades para iniciar projetos de programação.",
+    "Preparar-se para áreas de tecnologia, ciência de dados e automação."
+  ],
+
+  "mercado": "Python é uma das linguagens mais usadas no mundo, com aplicações em desenvolvimento web, automação, ciência de dados, inteligência artificial e análise de dados. Profissionais com habilidades em Python estão em alta demanda no mercado global.",
+
+  "estatisticas": [
+    { "valor": "90%", "descricao": "Das empresas utilizam Python para desenvolvimento de software e automação" },
+    { "valor": "85%", "descricao": "Dos profissionais de tecnologia recomendam aprender Python" },
+    { "valor": "70%", "descricao": "Dos iniciantes em programação começam pelo Python devido à sua simplicidade" }
+  ],
+
       "aulas": [
         {
           "titulo": "Introdução ao Python",
@@ -785,6 +1188,37 @@
       "imagem": "img/cursos/design_e_ferramentas_visuais.webp",
       "cargaHoraria": "30h",
       "nivel": "Básico",
+        "descricaoCompleta": [
+    "Aprenda a criar designs profissionais de forma simples usando Canva e Figma, duas das ferramentas mais populares e acessíveis para design gráfico.",
+    "O curso ensina desde a criação de posts para redes sociais até apresentações e identidade visual de marcas.",
+    "Ao final, você será capaz de produzir conteúdos visuais de qualidade, prontos para uso em marketing, redes sociais e projetos pessoais ou profissionais."
+  ],
+
+  "oQueVaiAprender": [
+    "Fundamentos de design gráfico.",
+    "Criação de posts e banners para redes sociais.",
+    "Desenvolvimento de identidade visual de marcas.",
+    "Uso de Canva e Figma para design online.",
+    "Ferramentas, templates e recursos visuais.",
+    "Boas práticas de cores, tipografia e composição.",
+    "Exportação de arquivos para diferentes formatos.",
+    "Colaboração e compartilhamento de projetos."
+  ],
+
+  "beneficios": [
+    "Aprender design gráfico de forma prática e acessível.",
+    "Criar conteúdos visuais profissionais sem precisar de software pago.",
+    "Desenvolver habilidades criativas aplicáveis em redes sociais e marketing.",
+    "Aumentar competitividade para projetos profissionais ou empreendedores."
+  ],
+
+  "mercado": "O mercado de design digital cresce a cada ano. Profissionais e empreendedores precisam criar conteúdos visuais atrativos para redes sociais, sites, marketing digital e apresentações corporativas. Saber usar ferramentas como Canva e Figma é uma habilidade muito valorizada.",
+
+  "estatisticas": [
+    { "valor": "80%", "descricao": "Empresas utilizam design digital para marketing e comunicação" },
+    { "valor": "75%", "descricao": "Profissionais e empreendedores buscam dominar ferramentas como Canva e Figma" },
+    { "valor": "65%", "descricao": "Projetos digitais incluem criação de conteúdos visuais regularmente" }
+  ],
       "aulas": [
         {
           "titulo": "Fundamentos do design gráfico",
@@ -838,6 +1272,38 @@
       "imagem": "img/cursos/informaticabasica.png",
       "cargaHoraria": "25h",
       "nivel": "Iniciante",
+        "descricaoCompleta": [
+    "Este curso ensina os conceitos fundamentais de informática para iniciantes, desde o uso de sistemas operacionais até ferramentas básicas de produtividade.",
+    "Você aprenderá a navegar na internet de forma segura, utilizar aplicativos essenciais como editores de texto e planilhas, e organizar arquivos e pastas.",
+    "Ao final, será capaz de realizar tarefas digitais com autonomia, segurança e eficiência."
+  ],
+
+  "oQueVaiAprender": [
+    "Noções básicas de hardware e software.",
+    "Uso de sistemas operacionais Windows ou Mac.",
+    "Navegação segura na internet.",
+    "Criação e edição de documentos de texto e planilhas.",
+    "Organização de arquivos e pastas.",
+    "Uso de e-mails e comunicação digital.",
+    "Segurança digital básica e proteção contra vírus.",
+    "Boas práticas de produtividade digital."
+  ],
+
+  "beneficios": [
+    "Dominar as principais ferramentas digitais do dia a dia.",
+    "Aumentar a produtividade com organização de arquivos e tarefas.",
+    "Garantir segurança ao navegar na internet.",
+    "Preparar-se para cursos mais avançados e habilidades profissionais."
+  ],
+
+  "mercado": "Ter habilidades básicas de informática é essencial para o mercado de trabalho atual. Profissionais que dominam aplicativos de escritório, navegação segura e organização digital são mais competitivos e preparados para o ambiente corporativo e empreendedor.",
+
+  "estatisticas": [
+    { "valor": "85%", "descricao": "Das empresas exigem conhecimento básico em informática para seus colaboradores." },
+    { "valor": "78%", "descricao": "Das pessoas utilizam computador ou internet diariamente para trabalho ou estudo." },
+    { "valor": "60%", "descricao": "Dos iniciantes em tecnologia procuram cursos de informática básica para melhorar habilidades digitais." }
+  ],
+
       "aulas": [
         {
           "titulo": "Introdução à informática",
@@ -870,6 +1336,38 @@
       "imagem": "img/cursos/desenvolvimentoweb.png",
       "cargaHoraria": "60h",
       "nivel": "Iniciante",
+       "descricaoCompleta": [
+    "Aprenda a construir sites e aplicações web do zero, entendendo como funcionam as tecnologias por trás da internet.",
+    "O curso aborda HTML, CSS, JavaScript e boas práticas de desenvolvimento para criar páginas modernas e funcionais.",
+    "Você sairá capaz de desenvolver sites responsivos, dinâmicos e prontos para o mercado digital."
+  ],
+
+  "oQueVaiAprender": [
+    "Fundamentos de desenvolvimento web.",
+    "Estrutura de páginas com HTML.",
+    "Estilização com CSS e design responsivo.",
+    "Programação básica com JavaScript.",
+    "Boas práticas de código e organização de projetos.",
+    "Publicação de sites na web.",
+    "Ferramentas de desenvolvimento e depuração.",
+    "Introdução a frameworks e bibliotecas."
+  ],
+
+  "beneficios": [
+    "Aprender a criar sites profissionais do zero.",
+    "Habilidade essencial para o mercado digital e desenvolvimento de produtos online.",
+    "Preparação para cargos de front-end ou full-stack júnior.",
+    "Autonomia para criar portfólio e projetos pessoais."
+  ],
+
+  "mercado": "O desenvolvimento web é uma das áreas de tecnologia com maior demanda no mercado. Empresas de todos os setores precisam de profissionais capazes de construir, manter e melhorar sites e aplicações digitais. Dominar essas habilidades abre portas para empregos, freelancing e empreendedorismo digital.",
+
+  "estatisticas": [
+    { "valor": "90%", "descricao": "Das empresas têm presença online e precisam de desenvolvedores web." },
+    { "valor": "75%", "descricao": "Dos freelancers de tecnologia atuam com desenvolvimento web." },
+    { "valor": "65%", "descricao": "Crescimento anual do setor de tecnologia e desenvolvimento web." }
+  ],
+
       "aulas": [
         {
           "titulo": "HTML básico",
@@ -898,6 +1396,38 @@
       "imagem": "img/cursos/ecommerce.png",
       "cargaHoraria": "30h",
       "nivel": "Iniciante",
+      "descricaoCompleta": [
+    "Neste curso você aprenderá como criar, gerenciar e vender produtos online em lojas virtuais e marketplaces.",
+    "O curso aborda desde a configuração da loja até estratégias de vendas, logística e atendimento ao cliente.",
+    "Ao final, você será capaz de gerenciar sua própria loja online ou oferecer serviços de e-commerce como freelancer."
+  ],
+
+  "oQueVaiAprender": [
+    "Como criar e configurar uma loja virtual.",
+    "Publicação de produtos e gerenciamento de estoque.",
+    "Integração com marketplaces populares.",
+    "Formas de pagamento e segurança digital.",
+    "Estratégias de marketing digital para e-commerce.",
+    "Atendimento ao cliente e suporte pós-venda.",
+    "Gestão de pedidos e logística.",
+    "Análise de resultados e métricas de vendas."
+  ],
+
+  "beneficios": [
+    "Capacidade de abrir sua própria loja virtual.",
+    "Aprender a vender online com segurança e eficácia.",
+    "Economia com desenvolvedores terceirizados.",
+    "Autonomia e independência no gerenciamento de negócios digitais."
+  ],
+
+  "mercado": "O comércio eletrônico cresce exponencialmente, sendo uma das áreas mais promissoras no Brasil. Profissionais que entendem e sabem gerenciar lojas virtuais e marketplaces são cada vez mais requisitados no mercado digital, abrindo oportunidades para empreendedorismo e serviços especializados.",
+
+  "estatisticas": [
+    { "valor": "21%", "descricao": "Crescimento anual do e-commerce no Brasil." },
+    { "valor": "88%", "descricao": "Dos consumidores preferem comprar online." },
+    { "valor": "10,5%", "descricao": "Participação do Brasil no e-commerce global." }
+  ],
+
       "aulas": [
         {
           "titulo": "Introdução ao e-commerce",
@@ -926,6 +1456,38 @@
       "imagem": "img/cursos/gestaoestoque.png",
       "cargaHoraria": "25h",
       "nivel": "Iniciante",
+      "descricaoCompleta": [
+    "Aprenda a organizar, controlar e monitorar estoques de produtos de forma eficiente.",
+    "O curso aborda métodos de registro, controle de entradas e saídas, e boas práticas para evitar perdas.",
+    "Ao final, você será capaz de gerenciar estoques de forma segura e organizada, aumentando a eficiência do seu negócio."
+  ],
+
+  "oQueVaiAprender": [
+    "Princípios básicos de gestão de estoque.",
+    "Organização de produtos e categorias.",
+    "Controle de entradas e saídas de mercadorias.",
+    "Registro e monitoramento de estoque.",
+    "Prevenção de perdas e desperdícios.",
+    "Ferramentas digitais para gestão de estoque.",
+    "Relatórios e indicadores de desempenho.",
+    "Boas práticas de logística e armazenamento."
+  ],
+
+  "beneficios": [
+    "Melhoria no controle do seu negócio ou loja.",
+    "Redução de perdas e desperdícios de produtos.",
+    "Habilidade para organizar estoques de forma profissional.",
+    "Preparação para funções administrativas ou de logística."
+  ],
+
+  "mercado": "A gestão de estoque é essencial para qualquer negócio físico ou digital. Profissionais capazes de organizar, controlar e otimizar estoques são cada vez mais valorizados, principalmente em e-commerce, logística e varejo, garantindo eficiência e lucro para a empresa.",
+
+  "estatisticas": [
+    { "valor": "65%", "descricao": "Empresas que perdem produtos por má gestão de estoque." },
+    { "valor": "78%", "descricao": "Empreendedores relatam dificuldades em controlar entradas e saídas." },
+    { "valor": "85%", "descricao": "Empresas que investem em gestão de estoque aumentam a eficiência operacional." }
+  ],
+
       "aulas": [
         {
           "titulo": "Conceitos de estoque",
@@ -954,6 +1516,37 @@
       "imagem": "img/cursos/criacaoloja.png",
       "cargaHoraria": "35h",
       "nivel": "Iniciante",
+      "descricaoCompleta": [
+    "Neste curso, você aprenderá a criar sua própria loja virtual do zero, sem precisar de conhecimentos avançados em design ou programação.",
+    "O curso aborda desde a configuração da loja, cadastro de produtos, integração com formas de pagamento, até estratégias de vendas online.",
+    "Ao final, você estará apta a montar, gerenciar e vender seus produtos em um ambiente digital seguro e eficiente."
+  ],
+
+  "oQueVaiAprender": [
+    "Planejamento e estrutura da loja online.",
+    "Instalação e configuração de plataformas de e-commerce.",
+    "Cadastro e organização de produtos.",
+    "Integração de métodos de pagamento e envio.",
+    "Estratégias de marketing digital para aumentar vendas.",
+    "Atendimento ao cliente e suporte pós-venda.",
+    "Gestão de pedidos, estoque e relatórios de vendas.",
+    "Boas práticas para melhorar a experiência do usuário."
+  ],
+
+  "beneficios": [
+    "Capacidade de criar sua própria loja online.",
+    "Autonomia para gerenciar vendas e produtos sem depender de terceiros.",
+    "Economia com desenvolvedores e consultorias externas.",
+    "Preparação para empreender digitalmente e aumentar renda."
+  ],
+
+  "mercado": "O e-commerce está em constante crescimento no Brasil e no mundo. Saber criar e gerenciar lojas virtuais abre portas para empreendedorismo, prestação de serviços como freelancer ou crescimento dentro de empresas digitais que buscam profissionais capacitados.",
+
+  "estatisticas": [
+    { "valor": "21%", "descricao": "Crescimento anual do e-commerce no Brasil." },
+    { "valor": "88%", "descricao": "Consumidores preferem comprar online." },
+    { "valor": "10,5%", "descricao": "Participação do Brasil no e-commerce global." }
+  ],
       "aulas": [
         {
           "titulo": "Planejamento da loja",
@@ -982,6 +1575,37 @@
       "imagem": "img/cursos/analise_sql_powerbi.jpg",
       "cargaHoraria": "40h",
       "nivel": "Intermediário",
+      "descricaoCompleta": [
+    "Neste curso, você aprenderá a usar SQL para consultar, manipular e analisar bancos de dados, extraindo informações essenciais para decisões estratégicas.",
+    "O curso cobre desde conceitos básicos de banco de dados, até consultas complexas e integração com ferramentas de análise.",
+    "Ao final, você estará apto a transformar dados brutos em insights acionáveis e relatórios precisos."
+  ],
+
+  "oQueVaiAprender": [
+    "Estrutura de bancos de dados relacionais.",
+    "Criação e manipulação de tabelas.",
+    "Consultas SQL básicas e avançadas (SELECT, JOIN, GROUP BY, etc.).",
+    "Filtragem e ordenação de dados.",
+    "Funções de agregação e análise de dados.",
+    "Boas práticas para otimização de consultas.",
+    "Exportação e integração de dados com ferramentas de análise.",
+    "Interpretação e visualização de resultados."
+  ],
+
+  "beneficios": [
+    "Habilidade de consultar e analisar dados de forma eficiente.",
+    "Capacidade de gerar relatórios estratégicos para negócios.",
+    "Aumento da empregabilidade em funções relacionadas a dados.",
+    "Preparação para integração com ferramentas como Power BI e Excel."
+  ],
+
+  "mercado": "O mercado de análise de dados cresce rapidamente, com alta demanda por profissionais que saibam extrair insights de grandes volumes de informação. Profissionais com conhecimento em SQL são requisitados em empresas de todos os setores para tomada de decisão baseada em dados.",
+
+  "estatisticas": [
+    { "valor": "27%", "descricao": "Crescimento anual da demanda por analistas de dados no Brasil." },
+    { "valor": "92%", "descricao": "Empresas utilizam SQL como linguagem principal para análise de dados." },
+    { "valor": "65%", "descricao": "Aumento da eficiência de decisões empresariais ao usar dados estruturados." }
+  ],
       "aulas": [
         {
           "titulo": "Introdução ao SQL",
