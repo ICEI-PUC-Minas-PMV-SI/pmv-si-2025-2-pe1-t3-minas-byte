@@ -673,7 +673,7 @@
       "titulo": "Marketing Digital para Iniciantes",
       "descricao": "Promova seu negócio nas redes sociais e na internet",
       "categoria": "gestao",
-      "imagem": "img/cursos/marketingdigital.png",
+      "imagem": "img/cursos/market.jpeg",
       "cargaHoraria": "30h",
       "nivel": "Básico",
        "descricaoCompleta": [
@@ -842,7 +842,7 @@
       "titulo": "Gestão Financeira Pessoal Digital",
       "descricao": "Organize suas finanças usando aplicativos e planilhas",
       "categoria": "basico",
-      "imagem": "img/cursos/financas.png",
+      "imagem": "img/cursos/gestao.jpeg",
       "cargaHoraria": "20h",
       "nivel": "Básico",
        "descricaoCompleta": [
@@ -1011,7 +1011,7 @@
       "titulo": "Análise de Dados com Excel",
       "descricao": "Transforme dados em insights usando Excel e ferramentas de análise",
       "categoria": "dados",
-      "imagem": "img/cursos/analise_sql_powerbi.jpg",
+      "imagem": "img/cursos/analisedados.jpeg",
       "cargaHoraria": "35h",
       "nivel": "Intermediário",
       "descricaoCompleta": [
