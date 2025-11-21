@@ -28,13 +28,25 @@ class Resultado {
       );
     }
 
-    // Caso não haja cursos filtrados, mostra alguns padrão
+    // Caso não haja cursos filtrados, escolhe 3 aleatórios
     if (!this.cursos || this.cursos.length === 0) {
-      console.warn("Nenhum curso filtrado — exibindo cursos padrão.");
+      console.warn("Nenhum curso filtrado — exibindo cursos aleatórios padrão.");
+      this.embaralharArray(todosOsCursos);
       this.cursos = todosOsCursos.slice(0, 3);
+    } else {
+      // Embaralha cursos filtrados
+      this.embaralharArray(this.cursos);
     }
 
     this.renderizarCursos();
+  }
+
+  // 🔥 Função de embaralhar (Fisher–Yates Shuffle)
+  embaralharArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
   }
 
   async carregarCursosDoJSON() {
