@@ -326,3 +326,41 @@ h3 {
         height: 250px;
     }
 }
+
+/* ESTADO DE AULA CONCLUÍDA */
+.titulo-item.concluida {
+    color: #059669; /* green */
+    font-weight: 700;
+    text-decoration: line-through;
+    opacity: 0.95;
+}
+
+.btn-concluir {
+    padding: 8px 14px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid #364c84;
+    background: #ffffff;
+    color: #364c84;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-concluir:hover:not(:disabled) {
+    transform: translateY(-2px);
+}
+
+.btn-concluir.concluida,
+.btn-concluir[disabled] {
+    background: #10b981; /* success */
+    color: #ffffff;
+    border: none;
+    padding: 6px 12px;
+    font-size: 13px;
+    cursor: default;
+    box-shadow: none;
+}
+
+.btn-concluir[disabled] {
+    opacity: 0.95;
+}

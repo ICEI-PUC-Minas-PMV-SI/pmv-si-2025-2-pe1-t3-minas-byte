@@ -34,11 +34,38 @@ body {
     gap: 24px;
 }
 
+.foto {
+    position: relative;
+    display: inline-block;
+}
+
 .perfil-info img {
     width: 120px;
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
+}
+
+.btn-trocar-foto {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #364c84;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.btn-trocar-foto:hover {
+    background: #2a3875;
 }
 
 .info-detalhes {
@@ -380,12 +407,175 @@ body {
     margin: 20px 0;
 }
 
-.explorar-favoritos {
+.explorar-favoritos,
+.sem-medalhas,
+.sem-certificados {
     text-align: center;
     padding: 40px 20px;
     border: 2px dashed #cbd5e1;
     border-radius: 16px;
     margin: 20px 0;
+    color: #64748b;
+}
+
+.explorar-favoritos i,
+.sem-medalhas i,
+.sem-certificados i {
+    color: #cbd5e1;
+    margin-bottom: 12px;
+    font-size: 2rem;
+    display: block;
+}
+
+.explorar-favoritos h4,
+.sem-medalhas h4,
+.sem-certificados h4 {
+    color: #1e293b;
+    margin-bottom: 8px;
+}
+
+.explorar-favoritos p,
+.sem-medalhas p,
+.sem-certificados p {
+    color: #64748b;
+    margin-bottom: 16px;
+}
+
+/* MENTORIAS AGENDADAS */
+.mentorias-card h3 {
+    color: #1e3a8a;
+    margin-bottom: 16px;
+}
+
+.mentorias-card h3 i {
+    color: #10b981;
+    margin-right: 8px;
+}
+
+.mentoria-agendada {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    background: #f0fdf4;
+    padding: 18px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #bbf7d0;
+    transition: all 0.3s ease;
+}
+
+.mentoria-agendada:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    background: #dcfce7;
+}
+
+.mentoria-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 1;
+}
+
+.mentora-thumb {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #10b981;
+}
+
+.mentoria-detalhes {
+    flex: 1;
+}
+
+.mentora-nome {
+    margin: 0 0 4px 0;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.mentoria-data {
+    margin: 0 0 4px 0;
+    font-size: 0.85rem;
+    color: #059669;
+    font-weight: 500;
+}
+
+.mentoria-tema {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #64748b;
+    line-height: 1.4;
+}
+
+.btn-entrar-mentoria {
+    background: #10b981;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.btn-entrar-mentoria:hover {
+    background: #059669;
+    transform: translateY(-1px);
+}
+
+/* BOTÃO 'DESMARCAR' MENTORIA - tamanho e estilo */
+.btn-desmarcar-mentoria {
+    padding: 6px 10px;
+    font-size: 12px;
+    border-radius: 6px;
+    background: #ffffff;
+    border: 1px solid #f87171; /* light red */
+    color: #ef4444; /* red */
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.15s ease;
+}
+
+.btn-desmarcar-mentoria:hover {
+    background: #ef4444;
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+@media (max-width: 480px) {
+    .btn-desmarcar-mentoria {
+        padding: 5px 8px;
+        font-size: 11px;
+    }
+}
+
+.sem-mentorias {
+    text-align: center;
+    padding: 40px 20px;
+    border: 2px dashed #cbd5e1;
+    border-radius: 16px;
+    margin: 20px 0;
+}
+
+.sem-mentorias i {
+    color: #10b981;
+    margin-bottom: 12px;
+}
+
+.sem-mentorias h4 {
+    color: #1e293b;
+    margin-bottom: 8px;
+}
+
+.sem-mentorias p {
+    color: #64748b;
+    margin-bottom: 16px;
 }
 
 /* SELETOR DE PERFIS */
@@ -405,6 +595,151 @@ body {
 .conquistas .card-title,
 .certificados .card-title {
     margin-bottom: 18px;
+}
+
+/* Estilos unificados de perfil-usuaria.css e perfil-dinamico.css */
+
+/* Tabs */
+.perfil-tabs {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.tabs-nav {
+    display: flex;
+    background: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 15px 20px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-weight: 500;
+    color: #666;
+    transition: all 0.3s ease;
+}
+
+.tab-btn:hover {
+    background: #e9ecef;
+}
+
+.tab-btn.active {
+    background: #e74c3c;
+    color: white;
+}
+
+.tab-content {
+    display: none;
+    padding: 30px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Progresso geral */
+.progresso-geral {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.estatistica {
+    text-align: center;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    flex: 1;
+}
+
+.estatistica .numero {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+.estatistica .label {
+    color: #666;
+    font-size: 0.9em;
+}
+
+/* Forms */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #e74c3c;
+    box-shadow: 0 0 0 2px rgba(231, 76, 60, 0.2);
+}
+
+/* Modal de conclusão */
+.modal-conclusao {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 500px;
+    text-align: center;
+}
+
+.modal-header h2 {
+    color: #e74c3c;
+    margin-bottom: 20px;
+}
+
+.modal-footer {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn-secondary {
+    background: #6c757d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-secondary:hover {
+    background: #5a6268;
 }
 
 /* RESPONSIVO */
@@ -480,6 +815,22 @@ body {
     .certificado .botoes .btn-base {
         flex: 1;
         min-width: 120px;
+    }
+
+    /* Tabs responsivos */
+    .tabs-nav {
+        flex-direction: column;
+    }
+
+    .progresso-geral {
+        flex-direction: column;
+    }
+
+    .curso-card,
+    .curso-inscrito,
+    .certificado-card {
+        flex-direction: column;
+        text-align: center;
     }
 }
 

@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil | InovaElas</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
@@ -14,8 +13,10 @@
 
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/perfil.css">
-    <link rel="stylesheet" href="css/perfil-dinamico.css">
+
     <link rel="stylesheet" href="css/background-circulos.css">
+
+    <title>Perfil | InovaElas</title>
 </head>
 
 <body>
@@ -32,45 +33,28 @@
         </div>
 
         <div class="container">
-            <!-- SELETOR DE PERFIS (DEMO) -->
-            <div class="seletor-perfis">
-                <div class="perfis-opcoes">
-                    <button class="btn-base btn-outline" onclick="trocarPerfil('AL001')">
-                        Maria Fernanda
-                    </button>
-                    <button class="btn-base btn-outline" onclick="trocarPerfil('AL002')">
-                        Julia Silva
-                    </button>
-                </div>
-            </div>
-
             <!-- CARD INFORMAÇÕES PESSOAIS -->
             <div class="card-base perfil-info">
                 <div class="foto">
-                    <img src="img/personas/comentarios/persona_julia_silva.jpeg" alt="Julia Silva">
+                    <img id="fotoUsuaria" src="img/personas/comentarios/persona_julia_silva.jpeg" alt="Foto do perfil">
+                    <button class="btn-trocar-foto" onclick="document.getElementById('inputFoto').click()">
+                        <i class="fa-solid fa-camera"></i>
+                    </button>
+                    <input type="file" id="inputFoto" accept="image/*" style="display: none;">
                 </div>
                 <div class="info-detalhes">
                     <div class="topo">
                         <div>
-                            <h2 class="heading-md">Julia Silva</h2>
-                            <p class="text-base cargo">Desenvolvedora Front-end</p>
+                            <h2 class="heading-md">Carregando...</h2>
+                            <p class="text-base cargo">Estudante InovaElas</p>
                             <div class="tags spacing-sm">
-                                <span class="badge-primary">JavaScript</span>
-                                <span class="badge-primary">React</span>
-                                <span class="badge-primary">UI/UX</span>
+                                <!-- Tags serão carregadas dinamicamente -->
                             </div>
                         </div>
                     </div>
 
-                    <div class="dados-contato grid-2">
-                        <div class="linha flex-start spacing-sm"><i class="fa-solid fa-envelope icon-sm"></i><span
-                                class="text-sm">julia.silva@gmail.com</span></div>
-                        <div class="linha flex-start spacing-sm"><i class="fa-solid fa-calendar icon-sm"></i><span
-                                class="text-sm">Membro desde Outubro de 2025</span></div>
-                        <div class="linha flex-start spacing-sm"><i class="fa-solid fa-phone icon-sm"></i><span
-                                class="text-sm">(21) 99999-9999</span></div>
-                        <div class="linha flex-start spacing-sm"><i class="fa-solid fa-location-dot icon-sm"></i><span
-                                class="text-sm">Rio de Janeiro - RJ</span></div>
+                    <div class="dados-contato grid-2" id="dadosContato">
+                        <!-- Dados serão carregados dinamicamente -->
                     </div>
                 </div>
             </div>
@@ -78,21 +62,24 @@
             <!-- CARD CURSO EM ANDAMENTO -->
             <div class="card-base curso-card">
                 <div class="card-header">
-                    <h3 class="card-title">Criação de Loja Virtual</h3>
-                    <span class="badge-base status-active">Em andamento</span>
+                    <div id="cursoAtual">
+                        <h3 class="card-title">Nenhum curso em andamento</h3>
+                    </div>
+                    <span class="badge-base status-inactive">Inativo</span>
                 </div>
-                <p class="text-sm aulas">28/30 aulas</p>
+                <p class="text-sm aulas">0/0 aulas</p>
 
                 <div class="barra-progresso">
-                    <div class="progresso" style="width: 80%;"></div>
+                    <div class="progresso" style="width: 0%;"></div>
                 </div>
 
                 <div class="proxima-aula flex-between">
                     <div>
-                        <p class="text-sm"><strong>Próxima aula:</strong> Sua loja está pronta, e agora?</p>
+                        <p class="text-sm"><strong>Próxima aula:</strong> Inscreva-se em um curso</p>
                     </div>
-                    <a href="aula.html">
-                        <button class="btn-base btn-primary"><i class="fa-solid fa-play icon-sm"></i> Continuar</button>
+                    <a href="cursos.html">
+                        <button class="btn-base btn-outline"><i class="fa-solid fa-search icon-sm"></i>
+                            Explorar</button>
                     </a>
                 </div>
             </div>
@@ -106,66 +93,34 @@
                             style="color: var(--primary-blue); margin-bottom: 12px;"></i>
                         <h4 class="heading-sm">Explore novos cursos</h4>
                         <p class="text-sm card-content">Descubra novos conhecimentos e expanda suas habilidades</p>
-                        <button class="btn-base btn-outline"
-                            onclick="window.location.href='index.html#nossosCursos'">Explorar Catálogo</button>
+                        <button class="btn-base btn-outline" onclick="window.location.href='cursos.html'">Explorar
+                            Catálogo</button>
                     </div>
+                </div>
+            </div>
+
+            <!-- CARD MENTORIAS AGENDADAS -->
+            <div class="card-base mentorias-card">
+                <h3 class="card-title"><i class="fa-solid fa-calendar icon-md"></i> Mentorias Agendadas</h3>
+                <div class="mentorias-agendadas" id="mentoriasAgendadas">
+                    <!-- Mentorias serão carregadas dinamicamente -->
                 </div>
             </div>
 
             <!-- CONQUISTAS E CERTIFICADOS -->
             <div class="linha-cards">
                 <div class="card-base conquistas">
-                    <h3 class="card-title">Medalhas e Conquistas</h3>
-                    <div class="medalha comum flex-start spacing-md">
-                        <i class="fa-solid fa-medal icon-lg" style="color: #fbbf24;"></i>
-                        <div>
-                            <p class="titulo text-base font-weight-600">Primeira Conquista</p>
-                            <p class="descricao text-sm">Complete seu primeiro curso</p>
-                            <p class="data text-xs">Conquistada em 20 de Outubro de 2025</p>
-                        </div>
-                    </div>
-                    <div class="medalha rara">
-                        <i class="fa-solid fa-trophy"></i>
-                        <div>
-                            <p class="titulo">Maratonista</p>
-                            <p class="descricao">Complete 5 cursos</p>
-                            <p class="data">Conquistada em 30 de Novembro de 2025</p>
-                        </div>
-                    </div>
-                    <div class="medalha epica">
-                        <i class="fa-solid fa-gem"></i>
-                        <div>
-                            <p class="titulo">Expert em JavaScript</p>
-                            <p class="descricao">Domine todos os conceitos de JS</p>
-                            <p class="data">Conquistada em 20 de Outubro de 2025</p>
-                        </div>
-                    </div>
-                    <div class="medalha lendaria">
-                        <i class="fa-solid fa-fire"></i>
-                        <div>
-                            <p class="titulo">Dedicação Total</p>
-                            <p class="descricao">Estude por 30 dias consecutivos</p>
-                        </div>
-                    </div>
+                    <!-- Medalhas serão carregadas dinamicamente -->
                 </div>
 
                 <div class="card-base certificados">
-                    <h3 class="card-title">Certificados</h3>
-                    <div class="certificado">
-                        <p class="titulo heading-sm">Desenvolvimento Web Completo</p>
-                        <p class="descricao text-sm">Emitido em: 15 Mar 2025</p>
-                        <p class="descricao text-sm">Carga horária: 70h</p>
-                        <div class="botoes flex-start spacing-md">
-                            <button class="btn-base btn-outline" onclick="visualizarCertificado()"><i
-                                    class="fa-regular fa-eye icon-sm"></i> Visualizar</button>
-                            <button class="btn-base btn-primary" onclick="baixarCertificado()"><i
-                                    class="fa-solid fa-download icon-sm"></i> Download</button>
-                        </div>
-                    </div>
+                    <!-- Certificados serão carregados dinamicamente -->
                 </div>
             </div>
         </div>
     </section>
+    <script src="js/app-core.js"></script>
+    <script src="js/usuaria-service.js"></script>
     <script src="js/perfil.js"></script>
     <script src="js/header.js"></script>
 

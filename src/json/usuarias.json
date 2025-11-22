@@ -1,0 +1,58 @@
+{
+    "usuarias": [
+        {
+            "id": "test-001",
+            "nome": "Giovana Silva",
+            "email": "gigi@gmail.com",
+            "senha": "12345",
+            "foto": "img/personas/comentarios/persona_julia_silva.jpeg",
+            "favoritos": [
+                1,
+                5,
+                9
+            ],
+            "inscritos": [
+                9
+            ],
+            "progressoCursos": {
+                "9": 0
+            },
+            "aulasConcluidas": {
+                "9": [ ]
+            },
+            "agendamentos": [
+                {
+                    "id": "agenda-001",
+                    "mentoraNome": "Ana Costa",
+                    "data": "2025-01-20",
+                    "horario": "14:00",
+                    "tema": "Carreira em Tecnologia",
+                    "dataAgendamento": "2025-01-15T10:00:00.000Z"
+                }
+            ],
+            "grupos": [],
+            "certificados": [
+                {
+                    "id": "cert-001",
+                    "cursoId": "Desenvolvimento Web Completo",
+                    "dataEmissao": "2025-03-15T00:00:00.000Z",
+                    "cargaHoraria": "70h",
+                    "arquivo": "certificado_desenvolvimento_Julia_Silva.pdf"
+                }
+            ]
+        },
+        {
+            "id": "test-002",
+            "nome": "Teste Usuario",
+            "email": "teste@teste.com",
+            "senha": "be32",
+            "foto": "",
+            "favoritos": [],
+            "inscritos": [],
+            "progressoCursos": {},
+            "agendamentos": [],
+            "grupos": [],
+            "certificados": []
+        }
+    ]
+}

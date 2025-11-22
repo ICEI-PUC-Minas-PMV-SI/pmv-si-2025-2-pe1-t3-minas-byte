@@ -1,60 +1,55 @@
+// Carregar cursos
 document.addEventListener("DOMContentLoaded", async () => {
     try {
-        const response = await fetch("json/cursos.json");
-        if (!response.ok) throw new Error(); // Falha na requisição
-        const data = await response.json();
-        if (!data?.cursos) throw new Error(); // JSON inválido
+        const res = await fetch("json/cursos.json");
+        const data = (res.ok && await res.json()) || null;
+        if (!data?.cursos) throw new Error("JSON inválido");
         renderizarCursos(data.cursos);
-    } catch (error) {
-        console.error("Erro ao carregar cursos:", error);
+    } catch (e) {
+        console.error("Erro ao carregar cursos:", e);
     }
 });
 
+// Renderizar cursos
 function renderizarCursos(cursos) {
     const categorias = {
-        basico: { titulo: "Inclusão Digital", cursos: [] },
-        programacao: { titulo: "Tecnologia da informação", cursos: [] },
-        gestao: { titulo: "E-commerce, logística e operações", cursos: [] },
-        design: { titulo: "Design e Comunicação", cursos: [] },
-        dados: { titulo: "Análise de Dados", cursos: [] }
+        basico:       { titulo: "Inclusão Digital" },
+        programacao:  { titulo: "Tecnologia da informação" },
+        gestao:       { titulo: "E-commerce, logística e operações" },
+        design:       { titulo: "Design e Comunicação" },
+        dados:        { titulo: "Análise de Dados" }
     };
 
-    cursos.forEach(curso => {
-        if (categorias[curso.categoria]) {
-            categorias[curso.categoria].cursos.push(curso);
-        }
-    });
-
     const hero = document.querySelector(".quiz-hero");
-    if (!hero) return; // Elemento base não encontrado
+    if (!hero) return;
 
-    const container = hero.parentNode;
-    container.querySelectorAll(".container").forEach(cont => cont.remove()); // Remove blocos antigos
+    const containerMaster = hero.parentNode;
+    containerMaster.querySelectorAll(".container").forEach(el => el.remove());
 
-    if (typeof criarCursoHTML !== "function") return; // Evita erro se a função não existir
+    // Agrupar por categoria
+    const grupos = cursos.reduce((acc, c) => {
+        if (categorias[c.categoria]) {
+            (acc[c.categoria] ||= []).push(c);
+        }
+        return acc;
+    }, {});
 
-    Object.entries(categorias).forEach(([key, categoria]) => {
-        if (categoria.cursos.length === 0) return;
+    if (typeof criarCursoHTML !== "function") return;
 
-        const containerDiv = document.createElement("div");
-        containerDiv.className = "container";
+    // Criar blocos de categoria
+    Object.entries(grupos).forEach(([cat, lista]) => {
+        const bloco = document.createElement("div");
+        bloco.className = "container";
 
-        const title = document.createElement("h3");
-        title.className = "category-title";
-        title.textContent = categoria.titulo;
-        containerDiv.appendChild(title);
+        bloco.innerHTML = `
+            <h3 class="category-title">${categorias[cat].titulo}</h3>
+            <div class="cursos">
+                ${lista.map(criarCursoHTML).join("")}
+            </div>
+        `;
 
-        const cursosDiv = document.createElement("div");
-        cursosDiv.className = "cursos";
-        cursosDiv.innerHTML = categoria.cursos
-            .map(curso => criarCursoHTML(curso))
-            .join("");
-
-        containerDiv.appendChild(cursosDiv);
-        container.appendChild(containerDiv);
+        containerMaster.appendChild(bloco);
     });
 
-    if (typeof ativarEventos === "function") {
-        ativarEventos(); // Ativa interações
-    }
+    typeof ativarEventos === "function" && ativarEventos();
 }
