@@ -30,7 +30,7 @@
 
 
       <p>A plataforma que valoriza o talento feminino e aproxima você da solução certa.</p>
-      <button>Encontre um freelancer</button>
+      <button>Oferecer serviço</button>
     </section>
     <section class="jobs-section">
       <aside class="sidebar">
@@ -112,6 +112,25 @@
   </main>
 
   <div id="footer"></div>
+  <!-- FORMULÁRIO PARA CRIAR SERVIÇO -->
+  <div id="modal-servico" class="modal hidden">
+    <div class="modal-content">
+      <h3>Cadastrar Novo Serviço</h3>
+
+      <label>Título</label>
+      <input type="text" id="titulo-servico">
+
+      <label>Descrição</label>
+      <textarea id="descricao-servico"></textarea>
+
+      <label>Tags (separe por vírgulas)</label>
+      <input type="text" id="tags-servico">
+
+      <button id="btn-salvar-servico">Salvar Serviço</button>
+      <button id="btn-fechar-modal">Cancelar</button>
+    </div>
+  </div>
+
 
   <script src="js/app-core.js"></script>
   <script src="js/usuaria-service.js"></script>
