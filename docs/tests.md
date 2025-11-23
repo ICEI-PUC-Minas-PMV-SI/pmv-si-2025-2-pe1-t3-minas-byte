@@ -233,7 +233,7 @@ O processo de testes também contribuiu para validar a experiência geral de uso
 
 O objetivo do Plano de Testes de Usabilidade é obter informações quanto à expectativa dos usuários em relação à  funcionalidade da aplicação de forma geral.
 
-Para tanto, elaboramos quatro cenários, cada um baseado na definição apresentada sobre as histórias dos usuários, definido na etapa das especificações do projeto.
+Para tanto, elaboramos cinco cenários, cada um baseado na definição apresentada sobre as histórias dos usuários, definido na etapa das especificações do projeto.
 
 Foram convidadas quatro pessoas que os perfis se encaixassem nas definições das histórias apresentadas na documentação, visando averiguar os seguintes indicadores:
 
@@ -264,6 +264,7 @@ Apresente os cenários de testes utilizados na realização dos testes de usabil
 | 2             | Você busca oportunidades profissionais. Acesse a área destinada às empresas parceiras e visualize seu próprio perfil público. |
 | 3             | Você deseja assistir uma aula. Acesse o curso já iniciado e reproduza a primeira videoaula. |
 | 4             | Você deseja visualizar seus certificados. Acesse a aba de Perfil, localize a seção “Cursos Concluídos” e abra o certificado digital disponível. |
+| 5             | Você deseja saber qual o melhor curso de acordo com a sua necessidade e conhecimento. Inicie o quiz, responda todas as perguntas e veja o curso mais apropriado . |
 
 
 
