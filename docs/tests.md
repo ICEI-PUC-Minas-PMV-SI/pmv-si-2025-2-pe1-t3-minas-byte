@@ -347,6 +347,20 @@ Cenário 4: Você deseja visualizar seus certificados. Acesse a aba de Perfil, l
 
     Comentários dos usuários: A participante informou que a navegação até a aba de Perfil está clara e intuitiva. Sugeriu destacar visualmente a seção “Cursos Concluídos” para acelerar a localização dos certificados.
 
+Cenário 5: Você deseja saber qual o melhor curso de acordo com a sua necessidade e conhecimento. Inicie o quiz, responda todas as perguntas e veja o curso mais apropriado. 
+
+| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
+|---------|-----------------|----------------------|---------------------------------|
+| 1       | SIM             | 4                    | 54.35 segundos                          |
+| 2       | SIM             | 4                    | 49.67 segundos                          |
+| 3       | SIM             | 5                    | 57.21 segundos                          |
+|  |  |  |  |
+| **Média**     | 100%           | 4,33                | 53.74 segundos                           |
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 40.78 segundos|
+
+
+    Comentários dos usuários: Foi informado que foi intuitiva e clara a realização do quiz e as perguntas bem planejadas. Um ponto é, 10 perguntas podem cansar o usuário e seria bom rever. No mais, o resultado sugerido e a interface lhes agradaram.  
+
 ## Avaliação dos Testes de Usabilidade
 
 Tomando como base os resultados obtidos nos três cenários avaliados, foi possível observar que a aplicação apresenta um desempenho consistente quanto à taxa de sucesso, já que todas as participantes conseguiram concluir as tarefas propostas. Isso demonstra que as funcionalidades principais — acesso aos cursos, visualização de perfil profissional e reprodução de aulas — estão acessíveis e compreensíveis para o público-alvo.
