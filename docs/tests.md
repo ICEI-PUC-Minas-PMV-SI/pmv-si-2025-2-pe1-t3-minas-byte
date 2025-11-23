@@ -192,6 +192,11 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 |Requisito Associado | RF-003 - O sistema deve organizar cursos por áreas (tecnologia, finanças, empreendedorismo etc.).|
 |Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/personal/1592155_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IQAuOouy6JQKRIYddM-K9pkrAcIxGJBi9T3IqeOlZrFRjZw&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=mMJwI7 | 
 
+|*Caso de Teste*                                 |*CT04*                                        |
+|---|---|
+|Requisito Associado | RF-004 - O sistema deve disponibilizar um quiz inicial para recomendar trilhas de aprendizado personalizadas. |
+|Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/personal/1543583_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IQBIqdYjUxgCSbA53VUxoHdRAY2rVOpvkMkiASs3wOpb7dA&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=qsHeNV | 
+
 |*Caso de Teste*                                 |*CT05*                                        |
 |---|---|
 |Requisito Associado | RF-005 - O sistema deve proporcionar um ambiente para as usuárias assistirem as aulas.|
