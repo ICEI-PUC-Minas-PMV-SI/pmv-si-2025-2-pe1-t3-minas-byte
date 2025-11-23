@@ -263,6 +263,7 @@ Apresente os cenários de testes utilizados na realização dos testes de usabil
 | 1             | Você é uma mulher que deseja iniciar uma formação profissional. Acesse a plataforma, faça login, encontre a área de cursos e se inscreva. |
 | 2             | Você busca oportunidades profissionais. Acesse a área destinada às empresas parceiras e visualize seu próprio perfil público. |
 | 3             | Você deseja assistir uma aula. Acesse o curso já iniciado e reproduza a primeira videoaula. |
+| 4             | Você deseja visualizar seus certificados. Acesse a aba de Perfil, localize a seção “Cursos Concluídos” e abra o certificado digital disponível. |
 
 
 
@@ -309,6 +310,20 @@ Cenário 3: Você deseja assistir uma aula. Acesse o curso já iniciado e reprod
 
 
     Comentários dos usuários: A navegação até o player de vídeo foi bem avaliado e  ocorreu sem dificuldades.
+
+Cenário 4: Você deseja visualizar seus certificados. Acesse a aba de Perfil, localize a seção “Cursos Concluídos” e abra o certificado digital disponível.
+
+| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
+|---------|-----------------|----------------------|---------------------------------|
+| 1       | SIM             | 5                    | 26.14 segundos                          |
+| 2       | SIM             | 4                    | 34.22 segundos                          |
+| 3       | SIM             | 5                    | 29.87 segundos                          |
+|  |  |  |  |
+| **Média**     | 100%           | 4.67                | 30.07 segundos                           |
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 12.33segundos |
+
+
+    Comentários dos usuários: A participante informou que a navegação até a aba de Perfil está clara e intuitiva. Sugeriu destacar visualmente a seção “Cursos Concluídos” para acelerar a localização dos certificados.
 
 ## Avaliação dos Testes de Usabilidade
 
