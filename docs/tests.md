@@ -359,7 +359,7 @@ Cenário 5: Você deseja saber qual o melhor curso de acordo com a sua necessida
 | **Tempo para conclusão pelo especialista** | SIM | 5 | 40.78 segundos|
 
 
-    Comentários dos usuários: Foi informado que foi intuitiva e clara a realização do quiz e as perguntas bem planejadas. Um ponto é, 10 perguntas podem cansar o usuário e seria bom rever. No mais, o resultado sugerido e a interface lhes agradaram.  
+    Comentários dos usuários: Foi informado que foi intuitiva e clara a realização do quiz e as perguntas bem planejadas. Um ponto a ser revisto é, 10 perguntas podem cansar o usuário. No mais, o resultado sugerido e a interface lhes agradaram.  
 
 ## Avaliação dos Testes de Usabilidade
 
