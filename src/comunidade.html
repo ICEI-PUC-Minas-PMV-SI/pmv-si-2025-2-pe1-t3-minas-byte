@@ -263,6 +263,42 @@
                 <button class="btn btn-mais">Mostrar Mais</button>
                 <button class="btn btn-grupo">Criar Grupo</button>
             </div>
+            <div id="popup" class="popup-overlay">
+                <div class="popup-box">
+                    <h3 id="popup-titulo">Sucesso!</h3>
+                    <p id="popup-mensagem"></p>
+                    <button id="popup-ok">OK</button>
+                </div>
+            </div>
+            <div id="modal-chat" class="modal">
+                <div class="modal-content">
+
+                    <span class="fechar-modal">&times;</span>
+
+                    <div class="header-chat">
+                        <img src="./img/personas/comentarios/persona_julia_silva.jpeg" class="avatar-ficticio"
+                            alt="Avatar da usuária">
+                        <h3>Chat do Grupo</h3>
+                    </div>
+
+                    <div id="chat-mensagens" class="chat-mensagens">
+                        <div class="msg outra">
+                            <img src="./img/personas/comentarios/pesona_x_uso_pg_Home_e_Comun.jpeg" class="avatar-msg">
+                            <span>Ana: Oi meninas, tudo bem?</span>
+                        </div>
+
+                        <div class="msg outra">
+                            <img src="./img/personas/comentarios/persona_y_uso_pg_home_pg_comun.png" class="avatar-msg">
+                            <span>Luiza: animada pro encontro da semana?</span>
+                        </div>
+                    </div>
+
+                    <div class="chat-input">
+                        <input type="text" id="mensagem-input" placeholder="Digite sua mensagem...">
+                        <button id="btn-enviar">Enviar</button>
+                    </div>
+                </div>
+            </div>
         </section>
 
 
@@ -314,7 +350,7 @@
                         </div>
                     </div>
                     <div class="resposta">
-                        <img src="img/personas/comentarios/pesona_x_uso_pg_Home_e_Comun.jpeg" alt="user">
+                        <img src="./img/img_comunidade/img_pg_comun_1.png" alt="user">
                         <div class="texto">
                             <p><strong>Antonia Peixoto Felosa</strong></p>
                             <p>Pensa no if/else tipo um exame se a condição acontece → faz isso; senão → faz outra
@@ -331,7 +367,7 @@
                 </div>
                 <div class="post" data-id="3">
                     <div class="comentario">
-                        <img src="./img/personas/comentarios/persona_y_uso_pg_home_pg_comun.png" alt="user">
+                        <img src="./img/img_comunidade/img_pg_comun_1.png" alt="user">
                         <div class="texto">
                             <p><strong>Mayara Gomes Vignoli</strong></p>
                             <p>Comecei a estudar banco de dados e não entendo a diferença entre SQL e MySQL. É a mesma
@@ -406,7 +442,7 @@
     </main>
 
     <div id="footer"></div>
-    
+
     <script src="js/app-core.js"></script>
     <script src="js/usuaria-service.js"></script>
     <script src="js/comunidade.js"></script>
