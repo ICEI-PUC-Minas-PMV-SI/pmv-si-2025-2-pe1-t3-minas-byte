@@ -197,6 +197,12 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 |Requisito Associado | RF-005 - O sistema deve proporcionar um ambiente para as usuárias assistirem as aulas.|
 |Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/personal/1592155_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IQC8YpP5f6w6SLrru-9h-JIxAVmqSWj6moyQU-fwBiJobtg&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=97Qvps | 
 
+|*Caso de Teste*                                 |*CT06*                                        |
+|---|---|
+|Requisito Associado | RF-006 - O sistema deve mostrar percentual de conclusão de curso em andamento da cada aluna. |
+|Link do vídeo do teste realizado: |https://sgapucminasbr-my.sharepoint.com/personal/1575909_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IQBGQd7U7PioQ5slAo_JKnx0AeO6kJHCaRsCVGGkK6734yU&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=olVZYz | 
+
+
 |*Caso de Teste*                                 |*CT08*                                        |
 |---|---|
 |Requisito Associado | RF-008 - O sistema deve disponibilizar um espaço onde empresas parceiras acessem perfis das alunas.|
@@ -207,6 +213,11 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 |Requisito Associado | RF-009 - O sistema deve gerar certificados digitais para cursos concluídos.|
 |Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/personal/1592155_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IQBVMlm9t5aATKNJTSvEWwilAa798o9v0E6lmXnSVtJ8EuU&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=10IazC | 
 
+|*Caso de Teste*                                 |*CT10*                                        |
+|---|---|
+|Requisito Associado | RF-010 - O sistema deve permitir que alunas e ex-alunas ofereçam serviços. |
+|Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/personal/1575909_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IQBmdDXnSUoGS6SMdIFosx5-AdxKonmgORbOSoQQIz0CsVU&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=TW90AP| 
+
 |*Caso de Teste*                                 |*CT11*                                        |
 |---|---|
 |Requisito Associado | RF-011 - O sistema deve proporcionar um canal de suporte simples as alunas (formulário).|
@@ -214,13 +225,23 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 |*Caso de Teste*                                 |*CT12*                                        |
 |---|---|
-|Requisito Associado | RF-012 - O sistema deve permitir que usuárias compartilhem experiências e comentários.|
+|Requisito Associado | RF-012 - O sistema deve permitir que usuárias tirem dúvidas sobre temas de cursos com outras usuárias.|
 |Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/personal/1592155_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IQB0HLmILBe1SJwy5C5-6GOOAfdvNn0TNDwFRqJun_Y3oz8&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=9M4CBa | 
+
+|*Caso de Teste*                                 |*CT13*                                        |
+|---|---|
+|Requisito Associado | RF-013 - O sistema deve permitir que usuárias compartilhem experiências e comentários.|
+|Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/personal/1575909_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IQCPbAH82fuSSq9XGpoNKBO7AVP1k-xgaUsqWAZpMNNlFAU&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=VFYacq | 
 
 |*Caso de Teste*                                 |*CT14*                                        |
 |---|---|
 |Requisito Associado | RF-014 - O sistema deve permitir usuárias solicitarem mentoria.|
 |Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/personal/1592155_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IQBEtw73aN3eSaaKzT9OL3nGAbH5raw9emhhciXB2Szx6nI&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=6dJ4Gs | 
+
+|*Caso de Teste*                                 |*CT15*                                        |
+|---|---|
+|Requisito Associado | RF-015 - O sistema deve exibir medalhas conquistadas pelas usuárias.|
+|Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/personal/1575909_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IQDvPFgK9bIoQ67PnbMMJwAAAXPXgblKYLxz_o6a9Vhdm84&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=IqEJUP | 
 
 
 ## Avaliação dos Testes de Software
