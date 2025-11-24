@@ -303,8 +303,10 @@ Cenário 1: Você é uma mulher que deseja iniciar uma formação profissional. 
 | 1       | SIM             | 5                    | 25.12 segundos                  |
 | 2       | SIM             | 5                    | 18.77 segundos                  |
 | 3       | SIM             | 5                    | 32.04 segundos                  |
+| 4       | SIM             | 5                    | 56.04 segundos                  |
+| 5       | SIM             | 5                    | 36.56 segundos                  |
 |  |  |  |  |
-| **Média**     | 100%           | 5                | 25.31 segundos                           |
+| **Média**     | 100%           | 5                | 33.70 segundos                           |
 | **Tempo para conclusão pelo especialista** | SIM | 5 | 9.45 segundos |
 
 
@@ -317,8 +319,10 @@ Cenário 2: Você busca oportunidades profissionais. Acesse a área destinada à
 | 1       | SIM             | 5                    | 21.33 segundos                          |
 | 2       | SIM             | 5                    | 27.88 segundos                          |
 | 3       | SIM             | 4                    | 30.11 segundos                          |
+| 4       | SIM             | 5                    | 43.76 segundos                          |
+| 5       | SIM             | 5                    | 43.03 segundos                          |
 |  |  |  |  |
-| **Média**     | 100%           | 4.67                | 26.44 segundos                           |
+| **Média**     | 100%           | 4.67                | 33.22 segundos                           |
 | **Tempo para conclusão pelo especialista** | SIM | 5 | 11.02 segundos |
 
 
@@ -331,8 +335,10 @@ Cenário 3: Você deseja assistir uma aula. Acesse o curso já iniciado e reprod
 | 1       | SIM             | 5                    | 24.55 segundos                          |
 | 2       | SIM             | 5                    | 29.73 segundos                          |
 | 3       | SIM             | 4                    | 34.19 segundos                          |
+| 4       | SIM             | 5                    | 22.39 segundos                          |
+| 5       | SIM             | 5                    | 31.07 segundos                          |
 |  |  |  |  |
-| **Média**     | 100%           | 4.67                | 29.49 segundos                           |
+| **Média**     | 100%           | 4.67                | 28.38 segundos                           |
 | **Tempo para conclusão pelo especialista** | SIM | 5 | 12.14 segundos |
 
 
@@ -345,8 +351,10 @@ Cenário 4: Você deseja visualizar seus certificados. Acesse a aba de Perfil, l
 | 1       | SIM             | 5                    | 26.14 segundos                          |
 | 2       | SIM             | 4                    | 34.22 segundos                          |
 | 3       | SIM             | 5                    | 29.87 segundos                          |
+| 4       | SIM             | 0                    | 26.02 segundos                          |
+| 5       | SIM             | 0                    | 21.98 segundos                          |
 |  |  |  |  |
-| **Média**     | 100%           | 4.67                | 30.07 segundos                           |
+| **Média**     | 100%           | 4.67                | 27.64 segundos                           |
 | **Tempo para conclusão pelo especialista** | SIM | 5 | 12.33segundos |
 
 
@@ -359,8 +367,10 @@ Cenário 5: Você deseja saber qual o melhor curso de acordo com a sua necessida
 | 1       | SIM             | 4                    | 54.35 segundos                          |
 | 2       | SIM             | 4                    | 49.67 segundos                          |
 | 3       | SIM             | 5                    | 57.21 segundos                          |
+| 4       | SIM             | 5                    | 2 minutos e 36 segundos                 |
+| 5       | SIM             | 5                    | 2 minutos e 7 segundos                  |
 |  |  |  |  |
-| **Média**     | 100%           | 4,33                | 53.74 segundos                           |
+| **Média**     | 100%           | 4,33                | 1 minuto e 28 segundos                           |
 | **Tempo para conclusão pelo especialista** | SIM | 5 | 40.78 segundos|
 
 
