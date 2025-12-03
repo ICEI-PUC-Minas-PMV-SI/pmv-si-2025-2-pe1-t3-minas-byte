@@ -9,8 +9,8 @@ async function init() {
 
     try {
         const [cursosData, mentorasData, perfilCompleto] = await Promise.all([
-            fetch('./json/cursos.json').then(r => r.json()),
-            fetch('./json/mentoras.json').then(r => r.json()),
+            app && typeof app.getCursos === 'function' ? app.getCursos() : fetch('./json/cursos.json').then(r => r.json()),
+            app && typeof app.getResource === 'function' ? app.getResource('mentoras') : fetch('./json/mentoras.json').then(r => r.json()),
             usuariaService.carregarPerfil(usuariaLogada.id)
         ]);
 
@@ -127,16 +127,16 @@ function carregarPerfilUsuaria(usuaria) {
                 const dataFormatada = new Date(mentoria.data).toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' });
                 const mentoraDados = dados.mentoras.find(m => m.nome === mentoria.mentoraNome) || {};
                 const mentoraImagem = mentoraDados.imagem || 'img/Mentoria/mentora1.jpg';
-                const mentoraArea = mentoraDados.categoria || 'Mentoria';
+                const mentoraArea = mentoraDados.categoria || mentoria.area || 'Mentoria';
                 return `
                     <div class="mentoria-agendada">
                         <div class="mentoria-info">
-                            <img src="${mentoraImagem}" alt="${mentoria.mentoraNome}" class="mentora-thumb">
+                            <img src="${mentoraImagem}" alt="${mentoria.mentoraNome || "Mentora"}" class="mentora-thumb">
                             <div class="mentoria-detalhes">
-                                <h4 class="mentora-nome">${mentoria.mentoraNome}</h4>
+                                <h4 class="mentora-nome">${mentoria.mentoraNome || "Mentora"}</h4>
                                 <p class="mentora-area">${mentoraArea}</p>
                                 <p class="mentoria-data">${dataFormatada} às ${mentoria.horario}</p>
-                                <p class="mentoria-tema">${mentoria.tema}</p>
+                                ${mentoria.tema ? `<p class="mentoria-tema"><strong>Tema:</strong> ${mentoria.tema}</p>` : ''}
                             </div>
                         </div>
                         <div class="mentoria-acoes">

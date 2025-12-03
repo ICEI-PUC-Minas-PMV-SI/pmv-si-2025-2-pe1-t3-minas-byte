@@ -228,13 +228,20 @@
     <div class="conversa-janela" id="conversaJanela">
         <div class="conversa-cabecalho">
             <div class="mentora-info">
-                <img src="" alt="Mentora" class="mentora-foto" id="mentoraFoto">
-                <div>
+                <div class="mentora-avatar">
+                    <img src="" alt="Mentora" class="mentora-foto" id="mentoraFoto">
+                </div>
+                <div class="mentora-dados">
                     <div class="mentora-nome" id="mentoraNome">Mentora</div>
-                    <div style="font-size: 0.8rem; opacity: 0.9;">Online</div>
+                    <div class="mentora-status">
+                        <span class="status-indicator"></span>
+                        <span>Online</span>
+                    </div>
                 </div>
             </div>
-            <button class="fechar-conversa" onclick="fecharConversa()">×</button>
+            <div class="conversa-acoes">
+                <button class="fechar-conversa" onclick="fecharConversa()" title="Fechar" aria-label="Fechar chat">×</button>
+            </div>
         </div>
         <div class="area-mensagens" id="areaMensagens">
             <!-- Mensagens aparecem aqui -->

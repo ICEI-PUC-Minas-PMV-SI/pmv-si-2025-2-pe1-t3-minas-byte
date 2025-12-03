@@ -2,8 +2,8 @@
     "usuarias": [
         {
             "id": "test-001",
-            "nome": "Giovana Silva",
-            "email": "gigi@gmail.com",
+            "nome": "Julia Silva",
+            "email": "julia.silva@gmail.com",
             "senha": "12345",
             "foto": "img/personas/comentarios/persona_julia_silva.jpeg",
             "favoritos": [

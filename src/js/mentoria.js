@@ -1,7 +1,8 @@
-// Seleciona todos os botões de "Inscreva-se"
-const botoes = document.querySelectorAll('.btn-inscreva-mentorias');
+// Seleciona todos os botões de "Inscreva-se" - carregado após DOM estar pronto
+function inicializarBotoesInscricao() {
+    const botoes = document.querySelectorAll('.btn-inscreva-mentorias');
 
-botoes.forEach(botao => {
+    botoes.forEach(botao => {
     botao.addEventListener('click', () => {
         // Evita múltiplos cliques
         if(botao.classList.contains('inscrita')){
@@ -64,3 +65,10 @@ botoes.forEach(botao => {
         botao.style.cursor = 'default';
     });
 });
+}
+
+// Inicializar botões após DOM estar pronto
+document.addEventListener('DOMContentLoaded', () => {
+    inicializarBotoesInscricao();
+});
+

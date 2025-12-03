@@ -21,6 +21,11 @@ class AulaIntegration {
 
     // Concluir aula atual
     async concluirAula() {
+        if (!this.usuariaService) {
+            alert('Serviço de usuária não disponível');
+            return;
+        }
+        
         const usuaria = this.usuariaService.getUsuariaLogada();
         if (!usuaria) {
             alert('Faça login para marcar aulas como concluídas');
@@ -84,6 +89,8 @@ class AulaIntegration {
 
     // Verificar se aula já foi concluída
     async verificarStatusAula() {
+        if (!this.usuariaService) return;
+        
         const usuaria = this.usuariaService.getUsuariaLogada();
         if (!usuaria) return;
 
