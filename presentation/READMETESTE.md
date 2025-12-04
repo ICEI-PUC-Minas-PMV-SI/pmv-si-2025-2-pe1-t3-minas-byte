@@ -35,7 +35,7 @@ A documentação do projeto foi elaborada para facilitar o entendimento da solu�
 ## Arquivos da Apresentação
 
 * Apresentação final -- arquivo com os slides da apresentação final do projeto
-* Vídeo de demonstração -- arquivo com a demonstração do funcionamento do sistema
+* [Vídeo de demonstração](https://sgapucminasbr-my.sharepoint.com/personal/1592155_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IgBGwLN38_IcSo0Bu0OzMMSZAQN02njt-dPTH8Dm2qC8Psc&e=FfjA0H) -- arquivo com a demonstração do funcionamento do sistema
 
 ## Título do Projeto
 
