@@ -126,6 +126,7 @@ class UsuariaService {
 
     logout() {
         localStorage.removeItem('usuariaLogada');
+        localStorage.removeItem('aulasConcluidas');
         this.cacheManager.clear();
     }
 
@@ -218,14 +219,18 @@ class UsuariaService {
         if (!usuaria) return null;
 
         if (!usuaria.certificados) usuaria.certificados = [];
-        if (usuaria.certificados.some(c => c.cursoId === cursoId)) return null;
+        if (usuaria.certificados.some(c => c.cursoId == cursoId)) return null;
 
         let nomeCurso = `Curso ${cursoId}`;
+        let cargaHoraria = "40h";
         try {
             const r = await fetch('./json/cursos.json');
             const json = await r.json();
             const curso = json.cursos.find(c => c.id == cursoId);
-            if (curso) nomeCurso = curso.titulo;
+            if (curso) {
+                nomeCurso = curso.titulo;
+                cargaHoraria = curso.cargaHoraria || "40h";
+            }
         } catch (e) { }
 
         const certificado = {
@@ -233,7 +238,7 @@ class UsuariaService {
             cursoId,
             nomeCurso,
             dataEmissao: new Date().toISOString(),
-            cargaHoraria: "40h",
+            cargaHoraria,
             arquivo: `certificado_${cursoId}_${usuaria.nome.replace(/\s+/g, '_')}.pdf`
         };
 
@@ -263,7 +268,32 @@ class UsuariaService {
             const concluidas = usuaria.aulasConcluidas[cursoId].length;
             usuaria.progressoCursos[cursoId] = Math.round((concluidas / totalAulas) * 100);
 
-            if (usuaria.progressoCursos[cursoId] >= 100) await this.gerarCertificado(usuariaId, cursoId);
+            if (usuaria.progressoCursos[cursoId] >= 100) {
+                // Adicionar certificado diretamente
+                if (!usuaria.certificados) usuaria.certificados = [];
+                if (!usuaria.certificados.some(c => c.cursoId == cursoId)) {
+                    let nomeCurso = `Curso ${cursoId}`;
+                    let cargaHoraria = "40h";
+                    try {
+                        const r = await fetch('./json/cursos.json');
+                        const json = await r.json();
+                        const curso = json.cursos.find(c => c.id == cursoId);
+                        if (curso) {
+                            nomeCurso = curso.titulo;
+                            cargaHoraria = curso.cargaHoraria || "40h";
+                        }
+                    } catch (e) { }
+                    
+                    usuaria.certificados.push({
+                        id: this.generateUUID(),
+                        cursoId,
+                        nomeCurso,
+                        dataEmissao: new Date().toISOString(),
+                        cargaHoraria,
+                        arquivo: `certificado_${cursoId}_${usuaria.nome.replace(/\s+/g, '_')}.pdf`
+                    });
+                }
+            }
         }
 
         await this.saveUsuarias(data);
@@ -279,7 +309,16 @@ class UsuariaService {
         const usuaria = data.usuarias.find(u => u.id === usuariaId);
         if (!usuaria) throw new Error('Usuária não encontrada');
 
-        const agendamento = { id: this.generateUUID(), ...mentoriaData, dataAgendamento: new Date().toISOString() };
+        const agendamento = { 
+            id: this.generateUUID(), 
+            mentoraNome: mentoriaData.mentoraNome || 'Mentora',
+            area: mentoriaData.area || mentoriaData.tema || 'Área não especificada',
+            data: mentoriaData.data,
+            horario: mentoriaData.horario,
+            dataAgendamento: new Date().toISOString() 
+        };
+        
+        if (!usuaria.agendamentos) usuaria.agendamentos = [];
         usuaria.agendamentos.push(agendamento);
 
         await this.saveUsuarias(data);

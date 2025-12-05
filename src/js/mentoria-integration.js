@@ -3,7 +3,7 @@ class MentoriaIntegration {
         this.usuariaService = window.usuariaService;
     }
 
-    async agendarMentoria(mentoraNome, data, horario, tema) {
+    async agendarMentoria(mentoraNome, data, horario, tema, area) {
         const usuaria = this.usuariaService.getUsuariaLogada();
         if (!usuaria) {
             alert('Faça login para agendar mentorias');
@@ -11,13 +11,18 @@ class MentoriaIntegration {
         }
 
         try {
-            const mentoriaData = { mentoraNome, data, horario, tema };
+            const mentoriaData = {
+                mentoraNome: mentoraNome,
+                area: area || "Área não especificada",
+                data,
+                horario,
+                tema: tema || "Mentoria Personalizada"
+            };
             await this.usuariaService.agendarMentoria(usuaria.id, mentoriaData);
-            alert('Mentoria agendada com sucesso!');
             return true;
         } catch (error) {
-            // console.error('Erro ao agendar mentoria:', error);
-            // alert('Erro ao agendar mentoria');
+            console.error('Erro ao agendar mentoria:', error);
+            alert('Erro ao agendar mentoria');
             return false;
         }
     }
@@ -26,20 +31,27 @@ class MentoriaIntegration {
         if (typeof window.confirmarAgendamento !== 'function') return;
 
         const originalConfirmar = window.confirmarAgendamento;
+        const self = this;
 
         window.confirmarAgendamento = async () => {
-            const resultado = originalConfirmar();
-
             const data = document.getElementById('dataAgendamento')?.value;
             const horarioSelecionado = document.querySelector('.horario-opcao.selecionado')?.textContent;
-            const mentoraNome = document.getElementById('mentoraNome')?.textContent || 'Ana Costa';
-            const tema = 'Carreira em Tecnologia';
+            const mentoraSelecionada = window.mentoraSelecionada;
 
-            if (data && horarioSelecionado) {
-                await this.agendarMentoria(mentoraNome, data, horarioSelecionado, tema);
+            if (data && horarioSelecionado && mentoraSelecionada) {
+                const sucesso = await self.agendarMentoria(
+                    mentoraSelecionada.nome,
+                    data,
+                    horarioSelecionado,
+                    'Mentoria Personalizada',
+                    mentoraSelecionada.categoria
+                );
+                if (sucesso) {
+                    originalConfirmar();
+                }
+            } else {
+                originalConfirmar();
             }
-
-            return resultado;
         };
     }
 }

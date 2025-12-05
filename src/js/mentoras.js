@@ -12,8 +12,13 @@ class MentorasManager {
 
     async carregarMentoras() {
         try {
-            const response = await fetch('json/mentoras.json');
-            const data = await response.json();
+            let data;
+            if (window.app && typeof window.app.getResource === 'function') {
+                data = await window.app.getResource('mentoras');
+            } else {
+                const response = await fetch('json/mentoras.json');
+                data = await response.json();
+            }
             this.mentoras = data.mentoras;
         } catch (error) {
             console.error('Erro ao carregar mentoras:', error);
@@ -59,7 +64,7 @@ class MentorasManager {
                     <div class="mentora-actions">
                         <button class="btn-mentora" onclick="agendarMentoria(${mentora.id})">Agendar Mentoria</button>
                         <button class="btn-conversa" onclick="iniciarConversa(${mentora.id})">
-                            <img src="img/icons/chat.png" class="icone-conversa">
+                        <img src="img/icons/chat.png" alt="Chat" style="width: 20px; height: 20px; color: #fff">
                         </button>
                     </div>
                 </div>
@@ -92,7 +97,16 @@ class MentorasManager {
 }
 
 // Funções globais
-function agendarMentoria(id) { abrirModalAgendamento(); }
+function agendarMentoria(id) {
+    const mentorasManager = window.mentorasManagerInstance;
+    if (mentorasManager) {
+        const mentora = mentorasManager.mentoras.find(m => m.id === id);
+        if (mentora) {
+            window.mentoraSelecionada = mentora;
+        }
+    }
+    abrirModalAgendamento();
+}
 function iniciarConversa(id) {
     const mentorasManager = window.mentorasManagerInstance;
     if (!mentorasManager) return;
