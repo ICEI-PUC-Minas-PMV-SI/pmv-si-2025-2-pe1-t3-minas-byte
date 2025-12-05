@@ -16,8 +16,8 @@ class MentoriaIntegration {
             alert('Mentoria agendada com sucesso!');
             return true;
         } catch (error) {
-            console.error('Erro ao agendar mentoria:', error);
-            alert('Erro ao agendar mentoria');
+            // console.error('Erro ao agendar mentoria:', error);
+            // alert('Erro ao agendar mentoria');
             return false;
         }
     }
