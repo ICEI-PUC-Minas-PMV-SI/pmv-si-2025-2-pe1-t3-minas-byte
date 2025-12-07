@@ -22,7 +22,7 @@ class MentoriaIntegration {
             return true;
         } catch (error) {
             console.error('Erro ao agendar mentoria:', error);
-            alert('Erro ao agendar mentoria: ' + error.message);
+            alert('Erro ao agendar mentoria');
             return false;
         }
     }

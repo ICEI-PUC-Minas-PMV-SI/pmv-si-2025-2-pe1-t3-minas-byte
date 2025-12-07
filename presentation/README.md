@@ -1,47 +1,42 @@
 # Apresentação
 
-Faça uma apresentação de um resumo de todos o processo de desenvolvimento e no final apresente a solução desenvolvida, usando um pequeno vídeo.
+## Resumo do Processo de Desenvolvimento
 
-Liste os arquivos produzidos e postados nesta pasta, com suas localizaçãoes e descrição do conteúdo neste arquivo Readme.md.
+O projeto foi desenvolvido com o objetivo de criar uma plataforma web educacional voltada para a capacitação feminina, promovendo inclusão, aprendizagem e geração de oportunidades no mercado de trabalho por meio da tecnologia. O processo de desenvolvimento seguiu etapas bem definidas, desde a análise do problema até a implementação e validação da solução.
 
+## Levantamento do Contexto e Problema
 
-* [Pitch inicial](./sample-pitch.pdf) -- arquivo com os slides da apresentação inicial
-* [Apresentação final](./sample-presentation.pdf) -- arquivo com os slides da apresentação final
-* [Vídeo de demonstração](./sample-video.mp4) -- arquivo com a demonstração do funcionamento do sistema
+Foi identificado que muitas mulheres enfrentam dificuldades no acesso à capacitação profissional de qualidade e oportunidades de inserção no mercado de trabalho, seja por limitações financeiras, falta de orientação ou barreiras tecnológicas.
 
-O conjunto de slides deve ser apresentado em um arquivo PowerPoint ou PDF. A apresentação do projeto deve contemplar todos os itens trabalhados nos demais artefatos. Alguns aspectos que devem ser contemplados na apresentação são listados a seguir.
+## Definição dos Objetivos
+
+Foram estabelecidos objetivos claros para o projeto, com foco no desenvolvimento de uma plataforma educacional acessível, intuitiva e voltada ao aprendizado contínuo, oferecendo cursos, mentoria e suporte às usuárias.
+
+## Levantamento de Requisitos
+
+Os requisitos funcionais e não funcionais foram definidos para orientar o desenvolvimento da aplicação, incluindo cadastro e autenticação de usuárias, acesso a cursos, solicitação de mentoria, responsividade, segurança dos dados e compatibilidade com navegadores.
+
+## Modelagem das Estruturas de Dados
+
+Foram criadas estruturas de dados em formato JSON para representar as principais entidades do sistema, como usuárias, cursos e solicitações de mentoria, viabilizando a persistência de dados por meio do JSON Server e do localStorage.
+
+## Desenvolvimento das Funcionalidades
+
+As funcionalidades foram implementadas utilizando HTML, CSS e JavaScript, permitindo o cadastro e login de usuárias, navegação pela plataforma, acesso aos cursos e solicitação de mentoria.
+
+## Testes e Validação
+
+O sistema foi submetido a testes de software e testes de usabilidade, garantindo o correto funcionamento das principais funcionalidades, a responsividade da interface e a compatibilidade com diferentes navegadores.
+
+## Documentação e Orientação ao Usuário
+
+A documentação do projeto foi elaborada para facilitar o entendimento da solução, descrevendo as funcionalidades, estruturas de dados, requisitos e instruções básicas de uso do sistema.
+
+## Arquivos da Apresentação
+
+* [Apresentação final](https://sgapucminasbr-my.sharepoint.com/personal/1627797_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IQDHaxESY1WMQ79XSlvsml5YAV6YpIVfMPtz5L1BcyS8mVY&e=Epifvs) -- arquivo com os slides da apresentação final do projeto
+* [Vídeo de demonstração](https://sgapucminasbr-my.sharepoint.com/personal/1592155_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IgBGwLN38_IcSo0Bu0OzMMSZAQN02njt-dPTH8Dm2qC8Psc&e=FfjA0H) -- arquivo com a demonstração do funcionamento do sistema
 
 ## Título do Projeto
 
-Nome e marca do projeto
-
-## Identidade Visual (Marca, Design)
-
-O grupo deve ter o cuidado em utilizar figuras, imagens, e cores dentro do contexto da solução proposta, de forma a manter a temática do problema.
-
-> **Links Úteis**:
-> - [10 dicas de design para slides](https://rockcontent.com/blog/design-para-slides/)
-> - [7 dicas de design para criar apresentações de PowerPoint incríveis e eficientes](https://www.shutterstock.com/pt/blog/7-dicas-de-design-para-criar-apresentacoes-de-powerpoint-incriveis-e-eficientes)
-> - [Especialista do TED dá 10 dicas para criar slides eficazes e bonitos](https://soap.com.br/blog/especialista-do-ted-da-10-dicas-para-criar-slides-eficazes-e-bonitos)
-
-## Conjunto de Slides (Estrutura)
-
-O grupo deve distribuir de forma coerente o conteúdo a ser apresentado, dentro do tempo determinado. Importante ressaltar a importância da descrição clara de todo o andamento do projeto, insumos gerados e requisitos atendidos. Os arquivos devem ser postados na pasta [presentation](../presentation)
- 
-> **Links Úteis**:
-> - [A regra 10-20-30 para apresentações de sucesso](https://revistapegn.globo.com/Noticias/noticia/2014/07/regra-10-20-30-para-apresentacoes-de-sucesso.html)
-> - [Top Tips for Effective Presentations](https://www.skillsyouneed.com/present/presentation-tips.html)
-> - [How to make a great presentation](https://www.ted.com/playlists/574/how_to_make_a_great_presentation)
-
-## Vídeo de demonstração
-
-O grupo deverá gravar um vídeo de demonstração do site desenvolvido.
-
-> **Algumas informações úteis**
-> - O vídeo deve se limitar a 5 minutos e deve apresentar os objetivos do projeto antes de mostrar o sistema desenvolvido.
-> - O vídeo deve possuir uma narração que explica o que está sendo apresentado.
-> - Foque nas principais tarefas que o seu sistema desenvolveu. Não é necessário apresentar cada detalhe implementado.
-> - Não é necessário que todos os integrantes do grupo participem da gravação.
-> - Não é necessário que a face de algum integrante do grupo apareça na gravação.
-> - Uma ótima ferramenta open-source para gravação de vídeos é o [OBS](https://obsproject.com/pt-br/download)
-
+Nome do projeto: InovaElas
